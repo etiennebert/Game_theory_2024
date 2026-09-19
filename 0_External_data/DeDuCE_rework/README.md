@@ -37,6 +37,14 @@ Country averages over the eleven old sectors: old file 1.6–17% (Ivory Coast 17
 - Delete the GlobTari step. Drop every `qes`/`afeall` line.
 - Check `del_LUC` in the SL4 has dims AEZS × LCOV × REG (the reader assumes that order).
 
+Status (19 Sep 2026): the functions above are now inside the scripts themselves — `1_Code/CGE_Game_Theory_GTAPAEZ_all_V14.R` (new tariff values, sheet `AVE_pha400`), `V15.R` (forest commitment through `p_LANDCOVER_L`/`tinc`, parameter `"forest"`), `V16.R` (EUDR baseline as iteration 0). `rework_functions.R` is kept for reference only. Still to come: the bilateral tariff rule with the `tau` switch (coalition vs club).
+
+## EUDR baseline (`eudr_cut_shares.xlsx`, used by `1_Code/Baseline_EUDR.R`)
+
+The baseline is the EU alone applying the EUDR: its imports of the covered products from each origin fall by `s_u`, the share of that origin's output of the sector that comes from land deforested after the cut-off (31 Dec 2020). `s_u` = DeDuCE unamortised attribution 2021–2023 (ha, cumulative) ÷ the sector's land base in the GTAP-AEZ base data (harvested area `AREA` for `ocr`, `osd`; `Pastureland` cover `LCOV` for cattle). Covered: cattle meat + leather → `ruminant`, `RuminantMeat`; cocoa, coffee, natural rubber → `ocr`; soya, oil palm → `osd`, `vegoil`. GTAP `lea` is mostly footwear (outside the EUDR) and is not cut; wood is not attributed by DeDuCE and is not covered. Sheet `shocks` = the 94 EU import flows with `s_u ≥ 0.1 %` and positive base imports ($23.7 bn of EU imports); the other sheets show the ingredients. Orders of magnitude: Brazil pasture 2.6 %, Brazil soy 0.6 %, Indonesia palm 1.1 %, Ivory Coast `ocr` 6.2 %, DRC `ocr` 14.6 %; value-weighted cut on EU imports: `ocr` 1.6 %, `vegoil` 0.7 %, `RuminantMeat` 0.4 %. `eudr_scale` in the script multiplies the shares (traceability scenario: unverifiable output also excluded).
+
+A ban, not a tax: for each cut flow `swap qxs(c,r,"eu27") = ams(c,r,"eu27")`, `shock qxs = −100·s_u`; the model solves the iceberg import cost that produces the cut, no tariff revenue. The solved `ams` is saved (`ams_baseline.txt`) and the game script (V16, `eudr_in_loop = "outsiders"`) keeps it as an exogenous cost on non-members' exports to the EU; members are deemed compliant.
+
 ## Caveats to carry into the SI
 
 - DRC and Ivory Coast attributions are mostly statistical (quality index ≈ 0.2); Brazil soy 0.87, Argentina soy 0.80, Indonesia/Malaysia palm 0.6–0.7. Report the IQI sheet.

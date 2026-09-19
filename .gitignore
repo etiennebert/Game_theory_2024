@@ -70,8 +70,9 @@ aez-ceqexplen.har
 wmiccap.tmpwmic
 3_Output/**/*.har
 
-# ---- 4. files above GitHub's 100 MB limit (rebuilt by the Alteryx workflow DB_GTAPAEZ_all.yxmd)
-4_DB/Database_GTAPAEZ_all_results_2024.csv
+# ---- 4. files above GitHub's 100 MB limit (the ISO x AEZ split csv, rebuilt by the R script; the _agg csv are kept)
+4_DB/Database_GTAPAEZ_all_results_2024*.csv
+!4_DB/Database_GTAPAEZ_all_results_2024_agg*.csv
 
 # ---- 5. archives, temporary and system files --------------------------------------------
 *.zip

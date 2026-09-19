@@ -1,0 +1,76 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Modelgdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_ModelNATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+!Method = Gragg;
+!Steps = 4 8 16;
+automatic accuracy = yes;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap p_LANDCOVER_L(AEZ4,Forestland,ivorycoast) = tinc(AEZ4,forest,ivorycoast);
+shock p_LANDCOVER_L(AEZ4,Forestland,ivorycoast) = 0;
+swap p_LANDCOVER_L(AEZ5,Forestland,ivorycoast) = tinc(AEZ5,forest,ivorycoast);
+shock p_LANDCOVER_L(AEZ5,Forestland,ivorycoast) = 0;
+swap p_LANDCOVER_L(AEZ6,Forestland,ivorycoast) = tinc(AEZ6,forest,ivorycoast);
+shock p_LANDCOVER_L(AEZ6,Forestland,ivorycoast) = 0;
