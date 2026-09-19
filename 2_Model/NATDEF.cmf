@@ -31,9 +31,9 @@ Auxiliary files = "GTAPV7-AEZ" ;
 
 Verbal Description =
 Initial tariff applied per EU on all deforestation countries;
-Method = Euler;
-Steps = 2 4;
-automatic accuracy = no;
+!Method = Gragg;
+!Steps = 4 8 16;
+automatic accuracy = yes;
 !accuracy figures = 4;
 !accuracy percent = 80;
 !minimum subinterval length =  1.0E-0003;
@@ -66,5 +66,119 @@ Exogenous
 Rest endogenous;
 
 ! Part for productivity shocks;
-Shock tms_f =  file NATDEF.har header "0101";
-! Part for productivity shocks from R;
+
+shock tms("sgr","Brasil","eu27") = 1.1;
+shock tms("ruminant","Brasil","eu27") = 1.1;
+shock tms("gro","Brasil","eu27") = 3;
+shock tms("ocr","Brasil","eu27") = 1.6;
+shock tms("osd","Brasil","eu27") = 3;
+shock tms("pcr","Brasil","eu27") = 0.4;
+shock tms("pfb","Brasil","eu27") = 2.6;
+shock tms("v_f","Brasil","eu27") = 1.2;
+shock tms("wht","Brasil","eu27") = 1.4;
+
+shock tms("sgr","Indonesia","eu27") = 0.9;
+shock tms("ruminant","Indonesia","eu27") = 0.7;
+shock tms("gro","Indonesia","eu27") = 5.5;
+shock tms("ocr","Indonesia","eu27") = 1.3;
+shock tms("osd","Indonesia","eu27") = 4.8;
+shock tms("pcr","Indonesia","eu27") = 0.4;
+shock tms("pfb","Indonesia","eu27") = 12.9;
+shock tms("v_f","Indonesia","eu27") = 0.7;
+
+shock tms("sgr","Argentina","eu27") = 0.5;
+shock tms("ruminant","Argentina","eu27") = 4.3;
+shock tms("gro","Argentina","eu27") = 2.5;
+shock tms("ocr","Argentina","eu27") = 1;
+shock tms("osd","Argentina","eu27") = 1.3;
+shock tms("pcr","Argentina","eu27") = 1.8;
+shock tms("pfb","Argentina","eu27") = 1.6;
+shock tms("v_f","Argentina","eu27") = 0.8;
+shock tms("wht","Argentina","eu27") = 0.8;
+
+shock tms("sgr","bolivia","eu27") = 3.3;
+shock tms("ruminant","bolivia","eu27") = 1.4;
+shock tms("gro","bolivia","eu27") = 15.7;
+shock tms("ocr","bolivia","eu27") = 3.7;
+shock tms("osd","bolivia","eu27") = 4.2;
+shock tms("pcr","bolivia","eu27") = 3.9;
+shock tms("pfb","bolivia","eu27") = 10.2;
+shock tms("v_f","bolivia","eu27") = 2.7;
+shock tms("wht","bolivia","eu27") = 4.9;
+
+shock tms("sgr","colombia","eu27") = 1.9;
+shock tms("ruminant","colombia","eu27") = 1.5;
+shock tms("gro","colombia","eu27") = 4.1;
+shock tms("ocr","colombia","eu27") = 3.9;
+shock tms("osd","colombia","eu27") = 6.8;
+shock tms("pcr","colombia","eu27") = 2.5;
+shock tms("pfb","colombia","eu27") = 2.2;
+shock tms("v_f","colombia","eu27") = 3.6;
+shock tms("wht","colombia","eu27") = 4.4;
+
+shock tms("sgr","angola","eu27") = 0.6;
+shock tms("ruminant","angola","eu27") = 2.9;
+shock tms("gro","angola","eu27") = 10.9;
+shock tms("ocr","angola","eu27") = 1.2;
+shock tms("osd","angola","eu27") = 1;
+shock tms("pcr","angola","eu27") = 1;
+shock tms("pfb","angola","eu27") = 0.7;
+shock tms("v_f","angola","eu27") = 1;
+shock tms("wht","angola","eu27") = 0.3;
+
+shock tms("sgr","ghana","eu27") = 2.2;
+shock tms("ruminant","ghana","eu27") = 2.6;
+shock tms("gro","ghana","eu27") = 3.7;
+shock tms("ocr","ghana","eu27") = 6.3;
+shock tms("osd","ghana","eu27") = 5.7;
+shock tms("pcr","ghana","eu27") = 6.7;
+shock tms("pfb","ghana","eu27") = 9.1;
+shock tms("v_f","ghana","eu27") = 6.2;
+
+shock tms("sgr","ivorycoast","eu27") = 13.2;
+shock tms("ruminant","ivorycoast","eu27") = 14.6;
+shock tms("gro","ivorycoast","eu27") = 18.6;
+shock tms("ocr","ivorycoast","eu27") = 27.9;
+shock tms("osd","ivorycoast","eu27") = 20.9;
+shock tms("pcr","ivorycoast","eu27") = 15.1;
+shock tms("pfb","ivorycoast","eu27") = 21.3;
+shock tms("v_f","ivorycoast","eu27") = 22.6;
+
+shock tms("sgr","malasya","eu27") = 18.3;
+shock tms("ruminant","malasya","eu27") = 0.3;
+shock tms("gro","malasya","eu27") = 1.3;
+shock tms("ocr","malasya","eu27") = 1;
+shock tms("osd","malasya","eu27") = 2.3;
+shock tms("pcr","malasya","eu27") = 2;
+shock tms("pfb","malasya","eu27") = 17.1;
+shock tms("v_f","malasya","eu27") = 3.6;
+
+shock tms("sgr","paraguay","eu27") = 3.1;
+shock tms("ruminant","paraguay","eu27") = 2.9;
+shock tms("gro","paraguay","eu27") = 18.4;
+shock tms("ocr","paraguay","eu27") = 7.3;
+shock tms("osd","paraguay","eu27") = 9.2;
+shock tms("pcr","paraguay","eu27") = 24.2;
+shock tms("pfb","paraguay","eu27") = 12.5;
+shock tms("v_f","paraguay","eu27") = 5.7;
+shock tms("wht","paraguay","eu27") = 5.6;
+
+shock tms("sgr","peru","eu27") = 2.4;
+shock tms("ruminant","peru","eu27") = 3.6;
+shock tms("gro","peru","eu27") = 5;
+shock tms("ocr","peru","eu27") = 12.3;
+shock tms("osd","peru","eu27") = 10.7;
+shock tms("pcr","peru","eu27") = 2.8;
+shock tms("pfb","peru","eu27") = 9.5;
+shock tms("v_f","peru","eu27") = 4.7;
+shock tms("wht","peru","eu27") = 2.8;
+
+shock tms("sgr","drc","eu27") = 1.2;
+shock tms("ruminant","drc","eu27") = 0.8;
+shock tms("gro","drc","eu27") = 4.6;
+shock tms("ocr","drc","eu27") = 14.5;
+shock tms("osd","drc","eu27") = 9.9;
+shock tms("pcr","drc","eu27") = 2.9;
+shock tms("pfb","drc","eu27") = 15;
+shock tms("v_f","drc","eu27") = 4.5;
+shock tms("wht","drc","eu27") = 3.7;
