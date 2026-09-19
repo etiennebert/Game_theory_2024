@@ -1,0 +1,6 @@
+"oceania"
+"newzealand"
+"madagascar"
+"mexico"
+"uk"
+"efta"

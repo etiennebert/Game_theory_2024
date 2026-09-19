@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Original_forest.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="country" size="255" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Boreal, High-Humidity " source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Boreal, Humid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Boreal, Sub-humid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Boreal, Moist, semi-arid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Boreal, Dry, semi-arid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Boreal, Arid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Temperate, High-Humidity" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Temperate, Humid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Temperate, Sub-humid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Temperate, Moist, semi-arid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Temperate, Dry, semi-arid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Temperate, Arid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Tropical, High-Humidity" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Tropical, Humid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Tropical, Sub-humid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Tropical, Moist, semi-arid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Tropical, Dry, semi-arid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Tropical, Arid" source="File: C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="country" />
+          </KeyFields>
+          <DataFields>
+            <Field field="country" selected="False" />
+            <Field field="Boreal, High-Humidity " selected="True" />
+            <Field field="Boreal, Humid" selected="True" />
+            <Field field="Boreal, Sub-humid" selected="True" />
+            <Field field="Boreal, Moist, semi-arid" selected="True" />
+            <Field field="Boreal, Dry, semi-arid" selected="True" />
+            <Field field="Boreal, Arid" selected="True" />
+            <Field field="Temperate, High-Humidity" selected="True" />
+            <Field field="Temperate, Humid" selected="True" />
+            <Field field="Temperate, Sub-humid" selected="True" />
+            <Field field="Temperate, Moist, semi-arid" selected="True" />
+            <Field field="Temperate, Dry, semi-arid" selected="True" />
+            <Field field="Temperate, Arid" selected="True" />
+            <Field field="Tropical, High-Humidity" selected="True" />
+            <Field field="Tropical, Humid" selected="True" />
+            <Field field="Tropical, Sub-humid" selected="True" />
+            <Field field="Tropical, Moist, semi-arid" selected="True" />
+            <Field field="Tropical, Dry, semi-arid" selected="True" />
+            <Field field="Tropical, Arid" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="270" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Name</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Name</RootName>
+          <Delimeters value="," />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="462" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Humidity_Level"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="366" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="False" />
+            <SelectField field="Value" selected="True" rename="Original_Forest" />
+            <SelectField field="Name1" selected="True" rename="Climate_Type" />
+            <SelectField field="Name2" selected="True" rename="Humidity_Level" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="726" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\runGTAP375\Game_theory_2024\0_External_data\Original_forest_treated.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Original_forest_treated.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="570" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="country" action="GroupBy" rename="country" />
+            <SummarizeField field="Climate_Type" action="GroupBy" rename="Climate_Type" />
+            <SummarizeField field="Original_Forest" action="Sum" rename="Sum_Original_Forest" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output26" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Original_forest_values</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="fc337ed7-ba9a-4f68-8f1b-17d6fd69c072" />
+      <Telemetry>
+        <PreviousWorkflowId value="ba31ca14-fae6-4d8d-8243-d5dd7faa4840" />
+        <OriginWorkflowId value="ba31ca14-fae6-4d8d-8243-d5dd7faa4840" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

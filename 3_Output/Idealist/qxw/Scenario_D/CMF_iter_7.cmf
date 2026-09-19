@@ -1,0 +1,122 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Model_R1gdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_Model_R1NATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+!Method = Gragg;
+!Steps = 4 8 16;
+automatic accuracy = yes;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap qxw(sgr,indonesia)=tmf_f(sgr,indonesia);
+Shock qxw(sgr,indonesia) = -4.02463644516526;
+swap qxw(ruminant,indonesia)=tmf_f(ruminant,indonesia);
+Shock qxw(ruminant,indonesia) = -2.21780359929719;
+swap qxw(gro,indonesia)=tmf_f(gro,indonesia);
+Shock qxw(gro,indonesia) = -10.4427801912508;
+swap qxw(ocr,indonesia)=tmf_f(ocr,indonesia);
+Shock qxw(ocr,indonesia) = -3.01687531568011;
+swap qxw(osd,indonesia)=tmf_f(osd,indonesia);
+Shock qxw(osd,indonesia) = -18.7408779434365;
+swap qxw(pcr,indonesia)=tmf_f(pcr,indonesia);
+Shock qxw(pcr,indonesia) = -1.06772113234079;
+swap qxw(pfb,indonesia)=tmf_f(pfb,indonesia);
+Shock qxw(pfb,indonesia) = -41.4910488260658;
+swap qxw(v_f,indonesia)=tmf_f(v_f,indonesia);
+Shock qxw(v_f,indonesia) = -1.52063944315971;
+swap qxw(sgr,colombia)=tmf_f(sgr,colombia);
+Shock qxw(sgr,colombia) = -5.80837337991601;
+swap qxw(ruminant,colombia)=tmf_f(ruminant,colombia);
+Shock qxw(ruminant,colombia) = -1.86735562841864;
+swap qxw(gro,colombia)=tmf_f(gro,colombia);
+Shock qxw(gro,colombia) = -6.52496021470187;
+swap qxw(ocr,colombia)=tmf_f(ocr,colombia);
+Shock qxw(ocr,colombia) = -4.8699812692597;
+swap qxw(osd,colombia)=tmf_f(osd,colombia);
+Shock qxw(osd,colombia) = -20.8594932560012;
+swap qxw(pcr,colombia)=tmf_f(pcr,colombia);
+Shock qxw(pcr,colombia) = -8.04269112882153;
+swap qxw(pfb,colombia)=tmf_f(pfb,colombia);
+Shock qxw(pfb,colombia) = -4.18223893726233;
+swap qxw(v_f,colombia)=tmf_f(v_f,colombia);
+Shock qxw(v_f,colombia) = -6.77104320086869;
+swap qxw(wht,colombia)=tmf_f(wht,colombia);
+Shock qxw(wht,colombia) = -26.2090245549756;
+swap qxw(sgr,paraguay)=tmf_f(sgr,paraguay);
+Shock qxw(sgr,paraguay) = -6.64056814363647;
+swap qxw(ruminant,paraguay)=tmf_f(ruminant,paraguay);
+Shock qxw(ruminant,paraguay) = -0.407239662336554;
+swap qxw(gro,paraguay)=tmf_f(gro,paraguay);
+Shock qxw(gro,paraguay) = -18.6473039782644;
+swap qxw(ocr,paraguay)=tmf_f(ocr,paraguay);
+Shock qxw(ocr,paraguay) = -8.44420765829855;
+swap qxw(osd,paraguay)=tmf_f(osd,paraguay);
+Shock qxw(osd,paraguay) = -9.93624321506029;
+swap qxw(pcr,paraguay)=tmf_f(pcr,paraguay);
+Shock qxw(pcr,paraguay) = -47.7013350033843;
+swap qxw(pfb,paraguay)=tmf_f(pfb,paraguay);
+Shock qxw(pfb,paraguay) = -26.076203140711;
+swap qxw(v_f,paraguay)=tmf_f(v_f,paraguay);
+Shock qxw(v_f,paraguay) = -3.73838986162487;
+swap qxw(wht,paraguay)=tmf_f(wht,paraguay);
+Shock qxw(wht,paraguay) = -8.30961855085653;

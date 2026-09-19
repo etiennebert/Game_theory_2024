@@ -1,0 +1,88 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Model_R1gdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_Model_R1NATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+Method = Euler;
+Steps = 2 4;
+automatic accuracy = no;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap qo(sgr,brasil) = aoall(sgr,brasil);
+swap qo(ruminant,brasil) = aoall(ruminant,brasil);
+swap qo(gro,brasil) = aoall(gro,brasil);
+swap qo(ocr,brasil) = aoall(ocr,brasil);
+swap qo(osd,brasil) = aoall(osd,brasil);
+swap qo(pcr,brasil) = aoall(pcr,brasil);
+swap qo(pfb,brasil) = aoall(pfb,brasil);
+swap qo(v_f,brasil) = aoall(v_f,brasil);
+swap qo(wht,brasil) = aoall(wht,brasil);
+Shock qo(sgr,brasil) = -1.67233767949624;
+Shock qo(ruminant,brasil) = -1.91960790049249;
+Shock qo(gro,brasil) = -2.75589858485727;
+Shock qo(ocr,brasil) = -0.160464131033073;
+Shock qo(osd,brasil) = -4.11528966178195;
+Shock qo(pcr,brasil) = -0.324156057026354;
+Shock qo(pfb,brasil) = -5.28710235961433;
+Shock qo(v_f,brasil) = -0.455116296993773;
+Shock qo(wht,brasil) = -4.30821981506779;

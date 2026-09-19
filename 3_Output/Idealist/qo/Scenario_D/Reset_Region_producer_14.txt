@@ -1,0 +1,8 @@
+"indonesia"
+"colombia"
+"paraguay"
+"peru"
+"angola"
+"drc"
+"ivorycoast"
+"ghana"

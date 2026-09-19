@@ -1,0 +1,5 @@
+"oceania"
+"newzealand"
+"madagascar"
+"mexico"
+"eu27"

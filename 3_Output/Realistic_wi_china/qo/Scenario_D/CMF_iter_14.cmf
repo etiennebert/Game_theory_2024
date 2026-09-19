@@ -1,0 +1,124 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Model_R1gdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_Model_R1NATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+Method = Euler;
+Steps = 2 4;
+automatic accuracy = no;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap qo(sgr,colombia) = aoall(sgr,colombia);
+swap qo(ruminant,colombia) = aoall(ruminant,colombia);
+swap qo(gro,colombia) = aoall(gro,colombia);
+swap qo(ocr,colombia) = aoall(ocr,colombia);
+swap qo(osd,colombia) = aoall(osd,colombia);
+swap qo(pcr,colombia) = aoall(pcr,colombia);
+swap qo(pfb,colombia) = aoall(pfb,colombia);
+swap qo(v_f,colombia) = aoall(v_f,colombia);
+swap qo(wht,colombia) = aoall(wht,colombia);
+swap qo(sgr,ivorycoast) = aoall(sgr,ivorycoast);
+swap qo(ruminant,ivorycoast) = aoall(ruminant,ivorycoast);
+swap qo(gro,ivorycoast) = aoall(gro,ivorycoast);
+swap qo(ocr,ivorycoast) = aoall(ocr,ivorycoast);
+swap qo(osd,ivorycoast) = aoall(osd,ivorycoast);
+swap qo(pcr,ivorycoast) = aoall(pcr,ivorycoast);
+swap qo(pfb,ivorycoast) = aoall(pfb,ivorycoast);
+swap qo(v_f,ivorycoast) = aoall(v_f,ivorycoast);
+swap qo(wht,ivorycoast) = aoall(wht,ivorycoast);
+swap qo(sgr,ghana) = aoall(sgr,ghana);
+swap qo(ruminant,ghana) = aoall(ruminant,ghana);
+swap qo(gro,ghana) = aoall(gro,ghana);
+swap qo(ocr,ghana) = aoall(ocr,ghana);
+swap qo(osd,ghana) = aoall(osd,ghana);
+swap qo(pcr,ghana) = aoall(pcr,ghana);
+swap qo(pfb,ghana) = aoall(pfb,ghana);
+swap qo(v_f,ghana) = aoall(v_f,ghana);
+swap qo(wht,ghana) = aoall(wht,ghana);
+Shock qo(sgr,colombia) = -5.80837337991601;
+Shock qo(ruminant,colombia) = -1.86735562841864;
+Shock qo(gro,colombia) = -6.52496021470187;
+Shock qo(ocr,colombia) = -4.8699812692597;
+Shock qo(osd,colombia) = -20.8594932560012;
+Shock qo(pcr,colombia) = -8.04269112882153;
+Shock qo(pfb,colombia) = -4.18223893726233;
+Shock qo(v_f,colombia) = -6.77104320086869;
+Shock qo(wht,colombia) = -26.2090245549756;
+Shock qo(sgr,ivorycoast) = -7.51186989934635;
+Shock qo(ruminant,ivorycoast) = -0.479716679781462;
+Shock qo(gro,ivorycoast) = -2.57793825071984;
+Shock qo(ocr,ivorycoast) = -25.0595885845658;
+Shock qo(osd,ivorycoast) = -7.28322588435519;
+Shock qo(pcr,ivorycoast) = -11.4802738669402;
+Shock qo(pfb,ivorycoast) = -15.6107062311664;
+Shock qo(v_f,ivorycoast) = -11.5082533036973;
+Shock qo(wht,ivorycoast) = 0;
+Shock qo(sgr,ghana) = -8.22289865462056;
+Shock qo(ruminant,ghana) = -1.0104755651357;
+Shock qo(gro,ghana) = -1.06358688077863;
+Shock qo(ocr,ghana) = -8.96095721444909;
+Shock qo(osd,ghana) = -12.100729048226;
+Shock qo(pcr,ghana) = -26.4517754867878;
+Shock qo(pfb,ghana) = -26.4259744326548;
+Shock qo(v_f,ghana) = -10.7615992436893;
+Shock qo(wht,ghana) = 0;

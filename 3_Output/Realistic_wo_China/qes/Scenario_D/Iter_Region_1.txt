@@ -1,0 +1,6 @@
+"oceania"
+"newzealand"
+"mexico"
+"paraguay"
+"eu27"
+"ivorycoast"

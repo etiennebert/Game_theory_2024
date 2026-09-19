@@ -1,0 +1,8 @@
+"bolivia"
+"paraguay"
+"peru"
+"venezuela"
+"angola"
+"drc"
+"ivorycoast"
+"ghana"

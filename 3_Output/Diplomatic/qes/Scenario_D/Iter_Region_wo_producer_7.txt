@@ -1,0 +1,7 @@
+"madagascar"
+"canada"
+"mexico"
+"eu27"
+"uk"
+"restofworld"
+"eafr"

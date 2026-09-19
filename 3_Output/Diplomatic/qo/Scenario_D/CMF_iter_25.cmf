@@ -1,0 +1,142 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Model_R1gdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_Model_R1NATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+Method = Euler;
+Steps = 2 4;
+automatic accuracy = no;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap qo(sgr,argentina) = aoall(sgr,argentina);
+swap qo(ruminant,argentina) = aoall(ruminant,argentina);
+swap qo(gro,argentina) = aoall(gro,argentina);
+swap qo(ocr,argentina) = aoall(ocr,argentina);
+swap qo(osd,argentina) = aoall(osd,argentina);
+swap qo(pcr,argentina) = aoall(pcr,argentina);
+swap qo(pfb,argentina) = aoall(pfb,argentina);
+swap qo(v_f,argentina) = aoall(v_f,argentina);
+swap qo(wht,argentina) = aoall(wht,argentina);
+swap qo(sgr,brasil) = aoall(sgr,brasil);
+swap qo(ruminant,brasil) = aoall(ruminant,brasil);
+swap qo(gro,brasil) = aoall(gro,brasil);
+swap qo(ocr,brasil) = aoall(ocr,brasil);
+swap qo(osd,brasil) = aoall(osd,brasil);
+swap qo(pcr,brasil) = aoall(pcr,brasil);
+swap qo(pfb,brasil) = aoall(pfb,brasil);
+swap qo(v_f,brasil) = aoall(v_f,brasil);
+swap qo(wht,brasil) = aoall(wht,brasil);
+swap qo(sgr,paraguay) = aoall(sgr,paraguay);
+swap qo(ruminant,paraguay) = aoall(ruminant,paraguay);
+swap qo(gro,paraguay) = aoall(gro,paraguay);
+swap qo(ocr,paraguay) = aoall(ocr,paraguay);
+swap qo(osd,paraguay) = aoall(osd,paraguay);
+swap qo(pcr,paraguay) = aoall(pcr,paraguay);
+swap qo(pfb,paraguay) = aoall(pfb,paraguay);
+swap qo(v_f,paraguay) = aoall(v_f,paraguay);
+swap qo(wht,paraguay) = aoall(wht,paraguay);
+swap qo(sgr,ivorycoast) = aoall(sgr,ivorycoast);
+swap qo(ruminant,ivorycoast) = aoall(ruminant,ivorycoast);
+swap qo(gro,ivorycoast) = aoall(gro,ivorycoast);
+swap qo(ocr,ivorycoast) = aoall(ocr,ivorycoast);
+swap qo(osd,ivorycoast) = aoall(osd,ivorycoast);
+swap qo(pcr,ivorycoast) = aoall(pcr,ivorycoast);
+swap qo(pfb,ivorycoast) = aoall(pfb,ivorycoast);
+swap qo(v_f,ivorycoast) = aoall(v_f,ivorycoast);
+swap qo(wht,ivorycoast) = aoall(wht,ivorycoast);
+Shock qo(sgr,argentina) = -3.25928161652946;
+Shock qo(ruminant,argentina) = -10.3336857201162;
+Shock qo(gro,argentina) = -22.3948192711474;
+Shock qo(ocr,argentina) = -3.53308115941727;
+Shock qo(osd,argentina) = -2.01259726214166;
+Shock qo(pcr,argentina) = -4.46286223690614;
+Shock qo(pfb,argentina) = -1.66872583399816;
+Shock qo(v_f,argentina) = -2.75987748048514;
+Shock qo(wht,argentina) = -1.00508114256738;
+Shock qo(sgr,brasil) = -1.67233767949624;
+Shock qo(ruminant,brasil) = -1.91960790049249;
+Shock qo(gro,brasil) = -2.75589858485727;
+Shock qo(ocr,brasil) = -0.160464131033073;
+Shock qo(osd,brasil) = -4.11528966178195;
+Shock qo(pcr,brasil) = -0.324156057026354;
+Shock qo(pfb,brasil) = -5.28710235961433;
+Shock qo(v_f,brasil) = -0.455116296993773;
+Shock qo(wht,brasil) = -4.30821981506779;
+Shock qo(sgr,paraguay) = -6.64056814363647;
+Shock qo(ruminant,paraguay) = -0.407239662336554;
+Shock qo(gro,paraguay) = -18.6473039782644;
+Shock qo(ocr,paraguay) = -8.44420765829855;
+Shock qo(osd,paraguay) = -9.93624321506029;
+Shock qo(pcr,paraguay) = -47.7013350033843;
+Shock qo(pfb,paraguay) = -26.076203140711;
+Shock qo(v_f,paraguay) = -3.73838986162487;
+Shock qo(wht,paraguay) = -8.30961855085653;
+Shock qo(sgr,ivorycoast) = -7.51186989934635;
+Shock qo(ruminant,ivorycoast) = -0.479716679781462;
+Shock qo(gro,ivorycoast) = -2.57793825071984;
+Shock qo(ocr,ivorycoast) = -25.0595885845658;
+Shock qo(osd,ivorycoast) = -7.28322588435519;
+Shock qo(pcr,ivorycoast) = -11.4802738669402;
+Shock qo(pfb,ivorycoast) = -15.6107062311664;
+Shock qo(v_f,ivorycoast) = -11.5082533036973;
+Shock qo(wht,ivorycoast) = 0;

@@ -1,0 +1,7 @@
+"newzealand"
+"china"
+"madagascar"
+"mexico"
+"uruguay"
+"eu27"
+"eafr"

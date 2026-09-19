@@ -1,0 +1,8 @@
+"newzealand"
+"china"
+"mexico"
+"paraguay"
+"peru"
+"uruguay"
+"eu27"
+"mozambique"

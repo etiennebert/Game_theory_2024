@@ -1,0 +1,8 @@
+"brasil"
+"colombia"
+"paraguay"
+"peru"
+"uk"
+"efta"
+"ivorycoast"
+"ghana"

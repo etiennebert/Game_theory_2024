@@ -1,0 +1,430 @@
+! This file was created by program GtapAgg.
+! If you edit it directly, please observe the following rules:
+!   The file has 6 sections:
+!     A section marker is a line that starts with "=".
+!     Each section begins AND ends with its own section markers.
+!     Hence the file must contain 12 section marker lines.
+!     Blank lines are ignored.
+!     Lines starting with "!" are ignored.
+!
+!   Below, "sector" refers to "tradeable commodity"
+!      and "factor" refers to "endowment commodity".
+!
+!   Section 1 lists new (aggregated) sectors.
+!   Each line consists of:
+!             (a) name of new sector (max 12 letters)
+!             (b) an ampersand "&"
+! optionally, (c) description of new sector (max 30 letters)
+!   You may have to add or delete lines in Section 1
+!
+!   Section 2 lists original (disaggregated) sectors.
+!   Each line consists of:
+!             (a) name of old sector (max 12 letters)
+! optionally, (b) space or comma followed by description of new
+!                     sector (max 30 letters)
+!             (c) an ampersand "&"
+!             (d) matching new sector (must be one of the short
+!                     names mentioned in Section 1
+!   You are not expected to add or delete lines in Section 2,
+!        or to alter the stuff BEFORE the "&" on each line
+!
+! Sections 3 and 4 specify the regional aggregation.
+! They follow the same pattern as Sections 1 and 2.
+!
+! Sections 5 and 6 specify the factor (endowment) aggregation.
+! They follow a similar pattern to Sections 1 and 2.
+! However see notes preceding Section 5.
+!
+!
+! Section 1
+! One line for each new sector
+= = = = = =
+pdr          & Paddy rice
+wht          & Wheat
+gro          & Cereal grains nec
+v_f          & Vegetables, fruit, nuts
+osd          & Oil seeds
+c_b          & Sugar cane, sugar beet
+pfb          & Plant-based fibers
+ocr          & Crops nec
+ruminant     & Bovine cattle, sheep and goats
+nonRuminant  & Animal products nec
+rmk          & Raw milk
+wol          & Wool
+nonRumMeat   & Other Meat
+dairy        & dairyproduct
+forest       & Forestry
+fishing      & Fishing
+RuminantMeat & Bovine meat products
+Extraction   & Coal
+vegoil       & Vegetable oils and fats
+pcr          & Processed rice
+sgr          & Sugar
+ofd          & Food products nec
+b_t          & Beverages and tobacco products
+TextWapp     & Textiles
+lea          & Leather products
+lum          & Wood products
+ppp          & 
+HeavyMnfc    & Paper products, publishing
+MinMet       & Mineral products nec
+LightMnfc    & Motor vehicles and parts
+Util_Cons    & Electricity
+ServComm     & Trade
+Transport    & Transport nec
+FinServ      & Communication
+PublServ     & Recreational and other service
+= = = = = =
+!
+! Section 2
+! One line for each old sector
+! Old sector at left, corresponding new sector on right
+= = = = = =
+pdr            Paddy rice                      & pdr
+wht            Wheat                           & wht
+gro            Cereal grains nec               & gro
+v_f            Vegetables, fruit, nuts         & v_f
+osd            Oil seeds                       & osd
+c_b            Sugar cane, sugar beet          & c_b
+pfb            Plant-based fibers              & pfb
+ocr            Crops nec                       & ocr
+ctl            Bovine cattle, sheep and goats  & ruminant
+oap            Animal products nec             & nonRuminant
+rmk            Raw milk                        & rmk
+wol            Wool, silk-worm cocoons         & wol
+frs            Forestry                        & forest
+fsh            Fishing                         & fishing
+coa            Coal                            & Extraction
+oil            Oil                             & Extraction
+gas            Gas                             & Extraction
+oxt            Minerals nec                    & Extraction
+cmt            Bovine meat products            & RuminantMeat
+omt            Meat products nec               & nonRumMeat
+vol            Vegetable oils and fats         & vegoil
+mil            Dairy products                  & dairy
+pcr            Processed rice                  & pcr
+sgr            Sugar                           & sgr
+ofd            Food products nec               & ofd
+b_t            Beverages and tobacco products  & b_t
+tex            Textiles                        & TextWapp
+wap            Wearing apparel                 & TextWapp
+lea            Leather products                & lea
+lum            Wood products                   & lum
+ppp            Paper products, publishing      & ppp
+p_c            Petroleum, coal products        & HeavyMnfc
+chm            Chemical products               & HeavyMnfc
+bph            Basic pharmaceutical products   & HeavyMnfc
+rpp            Rubber and plastic products     & HeavyMnfc
+nmm            Mineral products nec            & MinMet
+i_s            Ferrous metals                  & MinMet
+nfm            Metals nec                      & MinMet
+fmp            Metal products                  & MinMet
+ele            Computer, electronic and optic  & HeavyMnfc
+eeq            Electrical equipment            & HeavyMnfc
+ome            Machinery and equipment nec     & HeavyMnfc
+mvh            Motor vehicles and parts        & LightMnfc
+otn            Transport equipment nec         & LightMnfc
+omf            Manufactures nec                & LightMnfc
+ely            Electricity                     & Util_Cons
+gdt            Gas manufacture, distribution   & Util_Cons
+wtr            Water                           & Util_Cons
+cns            Construction                    & Util_Cons
+trd            Trade                           & ServComm
+afs            Accommodation, Food and servic  & ServComm
+otp            Transport nec                   & Transport
+wtp            Water transport                 & Transport
+atp            Air transport                   & Transport
+whs            Warehousing and support activi  & ServComm
+cmn            Communication                   & ServComm
+ofi            Financial services nec          & FinServ
+ins            Insurance                       & FinServ
+rsa            Real estate activities          & FinServ
+obs            Business services nec           & FinServ
+ros            Recreational and other service  & PublServ
+osg            Public Administration and defe  & PublServ
+edu            Education                       & PublServ
+hht            Human health and social work a  & PublServ
+dwe            Dwellings                       & PublServ
+= = = = = =
+!
+! Section 3
+! One line for each new region
+= = = = = =
+Argentina    & Argentina
+Bolivia      & Bolivia (Plurinational State o
+Brasil       & Brazil
+Oceania      & Australia
+NewZealand   & New Zealand
+China        & China
+Japan        & Japan
+Korea        & Republic of Korea
+Indonesia    & Indonesia
+Madagascar   & Madagascar
+EastAsia     & Mongolia
+SEAsia       & Lao People's Democratic Republ
+Malasya      & Malaysia
+Myanmar      & Rest of Southeast Asia
+SouthAsia    & Afghanistan
+India        & India
+Canada       & Canada
+US           & United States of America
+Mexico       & Mexico
+Colombia     & Colombia
+LatinAmer    & Ecuador
+Paraguay     & 
+Peru         & Peru
+Uruguay      & Uruguay
+Venezuela    & Venezuela (Bolivarian Republic
+EU27         & Austria
+UK           & United Kingdom of Great Britai
+EFTA         & Switzerland
+RestofWorld  & Albania
+Russia       & Russian Federation
+MENA         & Bahrain
+Angola       & 
+DRC          & Angola
+NAfr         & 
+WAfr         & 
+CAfr         & 
+EAfr         & 
+SAfr         & 
+IvoryCoast   & C te d'Ivoire
+Ghana        & Ghana
+Nigeria      & Nigeria
+Mozambique   & Mozambique
+= = = = = =
+!
+! Section 4
+! One line for each old region
+! Old region at left, corresponding new region on right
+= = = = = =
+aus            Australia                       & Oceania
+nzl            New Zealand                     & NewZealand
+xoc            Rest of Oceania                 & Oceania
+chn            China                           & China
+hkg            China, Hong Kong SAR            & China
+jpn            Japan                           & Japan
+kor            Republic of Korea               & Korea
+mng            Mongolia                        & EastAsia
+twn            Taiwan Province of China        & EastAsia
+xea            Rest of East Asia               & EastAsia
+brn            Brunei Darussalam               & EastAsia
+khm            Cambodia                        & SEAsia
+idn            Indonesia                       & Indonesia
+lao            Lao People's Democratic Republ  & SEAsia
+mys            Malaysia                        & Malasya
+phl            Philippines                     & SEAsia
+sgp            Singapore                       & SEAsia
+tha            Thailand                        & SEAsia
+vnm            Viet Nam                        & SEAsia
+xse            Rest of Southeast Asia          & Myanmar
+afg            Afghanistan                     & SouthAsia
+bgd            Bangladesh                      & SouthAsia
+ind            India                           & India
+npl            Nepal                           & SouthAsia
+pak            Pakistan                        & SouthAsia
+lka            Sri Lanka                       & SouthAsia
+xsa            Rest of South Asia              & SouthAsia
+can            Canada                          & Canada
+usa            United States of America        & US
+mex            Mexico                          & Mexico
+xna            Rest of North America           & RestofWorld
+arg            Argentina                       & Argentina
+bol            Bolivia (Plurinational State o  & Bolivia
+bra            Brazil                          & Brasil
+chl            Chile                           & LatinAmer
+col            Colombia                        & Colombia
+ecu            Ecuador                         & LatinAmer
+pry            Paraguay                        & Paraguay
+per            Peru                            & Peru
+ury            Uruguay                         & Uruguay
+ven            Venezuela (Bolivarian Republic  & Venezuela
+xsm            Rest of South America           & LatinAmer
+cri            Costa Rica                      & LatinAmer
+gtm            Guatemala                       & LatinAmer
+hnd            Honduras                        & LatinAmer
+nic            Nicaragua                       & LatinAmer
+pan            Panama                          & LatinAmer
+slv            El Salvador                     & LatinAmer
+xca            Rest of Central America         & LatinAmer
+dom            Dominican Republic              & LatinAmer
+hti            Haiti                           & LatinAmer
+jam            Jamaica                         & LatinAmer
+pri            Puerto Rico                     & LatinAmer
+tto            Trinidad and Tobago             & LatinAmer
+xcb            Caribbean                       & LatinAmer
+aut            Austria                         & EU27
+bel            Belgium                         & EU27
+bgr            Bulgaria                        & EU27
+hrv            Croatia                         & EU27
+cyp            Cyprus                          & EU27
+cze            Czechia                         & EU27
+dnk            Denmark                         & EU27
+est            Estonia                         & EU27
+fin            Finland                         & EU27
+fra            France                          & EU27
+deu            Germany                         & EU27
+grc            Greece                          & EU27
+hun            Hungary                         & EU27
+irl            Ireland                         & EU27
+ita            Italy                           & EU27
+lva            Latvia                          & EU27
+ltu            Lithuania                       & EU27
+lux            Luxembourg                      & EU27
+mlt            Malta                           & EU27
+nld            Netherlands                     & EU27
+pol            Poland                          & EU27
+prt            Portugal                        & EU27
+rou            Romania                         & EU27
+svk            Slovakia                        & EU27
+svn            Slovenia                        & EU27
+esp            Spain                           & EU27
+swe            Sweden                          & EU27
+gbr            United Kingdom of Great Britai  & UK
+che            Switzerland                     & EFTA
+nor            Norway                          & EFTA
+xef            Rest of EFTA                    & EFTA
+alb            Albania                         & RestofWorld
+srb            Serbia                          & RestofWorld
+blr            Belarus                         & RestofWorld
+rus            Russian Federation              & Russia
+ukr            Ukraine                         & RestofWorld
+xee            Rest of Eastern Europe          & RestofWorld
+xer            Rest of Europe                  & RestofWorld
+kaz            Kazakhstan                      & RestofWorld
+kgz            Kyrgyzstan                      & RestofWorld
+tjk            Tajikistan                      & RestofWorld
+uzb            Uzbekistan                      & RestofWorld
+xsu            Rest of Former Soviet Union     & RestofWorld
+arm            Armenia                         & RestofWorld
+aze            Azerbaijan                      & RestofWorld
+geo            Georgia                         & RestofWorld
+bhr            Bahrain                         & MENA
+irn            Iran (Islamic Republic of)      & MENA
+irq            Iraq                            & MENA
+isr            Israel                          & MENA
+jor            Jordan                          & MENA
+kwt            Kuwait                          & MENA
+lbn            Lebanon                         & MENA
+omn            Oman                            & MENA
+pse            Palestine                       & MENA
+qat            Qatar                           & MENA
+sau            Saudi Arabia                    & MENA
+syr            Syrian Arab Republic            & MENA
+tur            T rkiye                         & MENA
+are            United Arab Emirates            & MENA
+xws            Rest of Western Asia            & MENA
+dza            Algeria                         & NAfr
+egy            Egypt                           & NAfr
+mar            Morocco                         & NAfr
+tun            Tunisia                         & NAfr
+xnf            Rest of North Africa            & NAfr
+ben            Benin                           & WAfr
+bfa            Burkina Faso                    & WAfr
+cmr            Cameroon                        & CAfr
+civ            C te d'Ivoire                   & IvoryCoast
+gha            Ghana                           & Ghana
+gin            Guinea                          & WAfr
+mli            Mali                            & WAfr
+mrt            Mauritania                      & NAfr
+ner            Niger                           & WAfr
+nga            Nigeria                         & Nigeria
+sen            Senegal                         & WAfr
+tgo            Togo                            & WAfr
+xwf            Rest of Western Africa          & WAfr
+ago            Angola                          & Angola
+caf            Central African Republic        & CAfr
+tcd            Chad                            & CAfr
+cog            Congo                           & CAfr
+cod            Democratic Republic of the Con  & DRC
+gnq            Equatorial Guinea               & CAfr
+gab            Gabon                           & CAfr
+stp            Sao Tome and Principe           & CAfr
+bdi            Burundi                         & CAfr
+com            Comoros                         & EAfr
+eth            Ethiopia                        & EAfr
+ken            Kenya                           & EAfr
+mdg            Madagascar                      & Madagascar
+mwi            Malawi                          & SAfr
+mus            Mauritius                       & EAfr
+moz            Mozambique                      & Mozambique
+rwa            Rwanda                          & EAfr
+sdn            Sudan                           & EAfr
+tza            United Republic of Tanzania     & EAfr
+uga            Uganda                          & EAfr
+zmb            Zambia                          & SAfr
+zwe            Zimbabwe                        & SAfr
+xec            Rest of Eastern Africa          & EAfr
+bwa            Botswana                        & SAfr
+swz            Eswatini                        & SAfr
+nam            Namibia                         & SAfr
+zaf            South Africa                    & SAfr
+xsc            Rest of Southern African Custo  & SAfr
+xtw            Rest of the World               & RestofWorld
+= = = = = =
+!
+! Section 5
+! One line for each new factor
+! Four fields separated by three ampersands (&)
+! (a) name of new factor (max 12 letters)
+! (b) an ampersand "&"
+! (c) either "sluggish" or "mobile"
+! (d) an ampersand "&"
+! (e) for sluggish ETRAE number <0, for mobile "---"
+! (f) an ampersand "&"
+! optionally, (g) description of new factor (max 30 letters)
+= = = = = =
+AEZ1         & sluggish &-1.000000 & 
+AEZ2         & sluggish &-1.000000 & 
+AEZ3         & sluggish &-1.000000 & 
+AEZ4         & sluggish &-1.000000 & 
+AEZ5         & sluggish &-1.000000 & 
+AEZ6         & sluggish &-1.000000 & 
+AEZ7         & sluggish &-1.000000 & 
+AEZ8         & sluggish &-1.000000 & 
+AEZ9         & sluggish &-1.000000 & 
+AEZ10        & sluggish &-1.000000 & 
+AEZ11        & sluggish &-1.000000 & 
+AEZ12        & sluggish &-1.000000 & 
+AEZ13        & sluggish &-1.000000 & 
+AEZ14        & sluggish &-1.000000 & 
+AEZ15        & sluggish &-1.000000 & 
+AEZ16        & sluggish &-1.000000 & 
+AEZ17        & sluggish &-1.000000 & 
+AEZ18        & sluggish &-1.000000 & 
+UnSkLab      &   mobile &     --- & 
+SkLab        &   mobile &     --- & 
+Capital      &   mobile &     --- & 
+NatRes       & sluggish &-0.001000 & 
+= = = = = =
+!
+! Section 6
+! One line for each old factor
+! Old factor at left, corresponding new factor on right
+= = = = = =
+AEZ1           Agro Ecological Zone 1          & AEZ1
+AEZ2           Agro Ecological Zone 2          & AEZ2
+AEZ3           Agro Ecological Zone 3          & AEZ3
+AEZ4           Agro Ecological Zone 4          & AEZ4
+AEZ5           Agro Ecological Zone 5          & AEZ5
+AEZ6           Agro Ecological Zone 6          & AEZ6
+AEZ7           Agro Ecological Zone 7          & AEZ7
+AEZ8           Agro Ecological Zone 8          & AEZ8
+AEZ9           Agro Ecological Zone 9          & AEZ9
+AEZ10          Agro Ecological Zone 10         & AEZ10
+AEZ11          Agro Ecological Zone 11         & AEZ11
+AEZ12          Agro Ecological Zone 12         & AEZ12
+AEZ13          Agro Ecological Zone 13         & AEZ13
+AEZ14          Agro Ecological Zone 14         & AEZ14
+AEZ15          Agro Ecological Zone 15         & AEZ15
+AEZ16          Agro Ecological Zone 16         & AEZ16
+AEZ17          Agro Ecological Zone 17         & AEZ17
+AEZ18          Agro Ecological Zone 18         & AEZ18
+tech_aspros    Technicians/AssocProfessional   & SkLab
+clerks         Clerks                          & UnSkLab
+service_shop   Service/Shop workers            & UnSkLab
+off_mgr_pros   Officials and Managers          & SkLab
+ag_othlowsk    Agricultural and Unskilled      & UnSkLab
+Capital        Capital                         & Capital
+NatlRes        Natural Resources               & NatRes
+= = = = = =

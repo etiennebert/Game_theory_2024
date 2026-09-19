@@ -1,0 +1,4 @@
+"bolivia"
+"indonesia"
+"malasya"
+"peru"

@@ -1,0 +1,6 @@
+"brasil"
+"indonesia"
+"colombia"
+"paraguay"
+"ivorycoast"
+"ghana"

@@ -1,0 +1,6 @@
+"argentina"
+"bolivia"
+"malasya"
+"paraguay"
+"peru"
+"angola"

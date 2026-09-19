@@ -1,0 +1,130 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Model_R1gdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_Model_R1NATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+!Method = Gragg;
+!Steps = 4 8 16;
+automatic accuracy = yes;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap qes(AEZ4,sgr,ghana)=afeall(AEZ4,sgr,ghana);
+shock qes(AEZ4,sgr,ghana) = -0.05816157248982213;
+swap qes(AEZ5,sgr,ghana)=afeall(AEZ5,sgr,ghana);
+shock qes(AEZ5,sgr,ghana) = -8.561403508771914;
+swap qes(AEZ6,sgr,ghana)=afeall(AEZ6,sgr,ghana);
+shock qes(AEZ6,sgr,ghana) = -8.561403508771912;
+swap qes(AEZ3,ruminant,ghana)=afeall(AEZ3,ruminant,ghana);
+shock qes(AEZ3,ruminant,ghana) = -0.2557544757033248;
+swap qes(AEZ4,ruminant,ghana)=afeall(AEZ4,ruminant,ghana);
+shock qes(AEZ4,ruminant,ghana) = -0.4532462229481422;
+swap qes(AEZ5,ruminant,ghana)=afeall(AEZ5,ruminant,ghana);
+shock qes(AEZ5,ruminant,ghana) = -1.590623691921306;
+swap qes(AEZ6,ruminant,ghana)=afeall(AEZ6,ruminant,ghana);
+shock qes(AEZ6,ruminant,ghana) = -1.409199680935921;
+swap qes(AEZ3,gro,ghana)=afeall(AEZ3,gro,ghana);
+shock qes(AEZ3,gro,ghana) = -0.02087829094500032;
+swap qes(AEZ4,gro,ghana)=afeall(AEZ4,gro,ghana);
+shock qes(AEZ4,gro,ghana) = -0.1523374210373966;
+swap qes(AEZ5,gro,ghana)=afeall(AEZ5,gro,ghana);
+shock qes(AEZ5,gro,ghana) = -0.8188762238961105;
+swap qes(AEZ6,gro,ghana)=afeall(AEZ6,gro,ghana);
+shock qes(AEZ6,gro,ghana) = -3.196493276120775;
+swap qes(AEZ3,ocr,ghana)=afeall(AEZ3,ocr,ghana);
+shock qes(AEZ3,ocr,ghana) = -0.006957017569510174;
+swap qes(AEZ4,ocr,ghana)=afeall(AEZ4,ocr,ghana);
+shock qes(AEZ4,ocr,ghana) = -0.1032473768419958;
+swap qes(AEZ5,ocr,ghana)=afeall(AEZ5,ocr,ghana);
+shock qes(AEZ5,ocr,ghana) = -17.30305549276534;
+swap qes(AEZ3,osd,ghana)=afeall(AEZ3,osd,ghana);
+shock qes(AEZ3,osd,ghana) = -0.01421265487512864;
+swap qes(AEZ4,osd,ghana)=afeall(AEZ4,osd,ghana);
+shock qes(AEZ4,osd,ghana) = -0.09984324700616792;
+swap qes(AEZ5,osd,ghana)=afeall(AEZ5,osd,ghana);
+shock qes(AEZ5,osd,ghana) = -20.50566745830772;
+swap qes(AEZ6,osd,ghana)=afeall(AEZ6,osd,ghana);
+shock qes(AEZ6,osd,ghana) = -20.50566745830767;
+swap qes(AEZ3,pcr,ghana)=afeall(AEZ3,pcr,ghana);
+shock qes(AEZ3,pcr,ghana) = -0.07974557864221443;
+swap qes(AEZ4,pcr,ghana)=afeall(AEZ4,pcr,ghana);
+shock qes(AEZ4,pcr,ghana) = -0.3450252114191872;
+swap qes(AEZ5,pcr,ghana)=afeall(AEZ5,pcr,ghana);
+shock qes(AEZ5,pcr,ghana) = -65.97806263658713;
+swap qes(AEZ6,pcr,ghana)=afeall(AEZ6,pcr,ghana);
+shock qes(AEZ6,pcr,ghana) = -73.06762751892667;
+swap qes(AEZ3,pfb,ghana)=afeall(AEZ3,pfb,ghana);
+shock qes(AEZ3,pfb,ghana) = -0.5359652754548322;
+swap qes(AEZ4,pfb,ghana)=afeall(AEZ4,pfb,ghana);
+shock qes(AEZ4,pfb,ghana) = -0.1402772983129457;
+swap qes(AEZ5,pfb,ghana)=afeall(AEZ5,pfb,ghana);
+shock qes(AEZ5,pfb,ghana) = -28.44879970706081;
+swap qes(AEZ6,pfb,ghana)=afeall(AEZ6,pfb,ghana);
+shock qes(AEZ6,pfb,ghana) = -85.52154858606333;
+swap qes(AEZ3,v_f,ghana)=afeall(AEZ3,v_f,ghana);
+shock qes(AEZ3,v_f,ghana) = -0.03321818862636314;
+swap qes(AEZ4,v_f,ghana)=afeall(AEZ4,v_f,ghana);
+shock qes(AEZ4,v_f,ghana) = -0.08216834223282209;
+swap qes(AEZ5,v_f,ghana)=afeall(AEZ5,v_f,ghana);
+shock qes(AEZ5,v_f,ghana) = -10.02965584314797;
+swap qes(AEZ6,v_f,ghana)=afeall(AEZ6,v_f,ghana);
+shock qes(AEZ6,v_f,ghana) = -24.16228922538913;

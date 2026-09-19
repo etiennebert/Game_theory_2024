@@ -1,0 +1,6 @@
+"oceania"
+"madagascar"
+"india"
+"canada"
+"mexico"
+"efta"

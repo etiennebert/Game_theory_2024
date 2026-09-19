@@ -1,0 +1,4 @@
+"colombia"
+"paraguay"
+"peru"
+"ivorycoast"

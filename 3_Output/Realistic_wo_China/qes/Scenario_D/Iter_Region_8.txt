@@ -1,0 +1,8 @@
+"oceania"
+"newzealand"
+"madagascar"
+"mexico"
+"paraguay"
+"uk"
+"efta"
+"ivorycoast"

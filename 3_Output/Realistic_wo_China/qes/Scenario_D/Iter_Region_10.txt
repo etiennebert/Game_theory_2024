@@ -1,0 +1,6 @@
+"newzealand"
+"mexico"
+"eu27"
+"uk"
+"efta"
+"ghana"

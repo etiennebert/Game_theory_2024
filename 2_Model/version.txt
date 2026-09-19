@@ -1,0 +1,57 @@
+GTAP-AEZ version 7 (GTAPv7-aez) model
+
+--------------------------------------------------
+I. File description: gtapv7-aez.zip 
+--------------------------------------------------
+File: gtapv7-aez.zip
+Description: 
+ This zip file contains the GEMPACK-based code of the GTAPv7-aez model and files to 
+ run GTAP-AEZ model simulations in RunGTAP.
+
+ The theory behind the standard GTAP model is described in:   
+    Erwin L. Corong, Thomas W. Hertel, Robert A. McDougall, Marinos E. Tsigas, 
+    and Dominique van der Mensbrugghe. The Standard GTAP Model, Version 7. 
+    Journal of Global Economic Analysis, [S.l.], v.2, n.1, p. 1-119, june 2017. 
+    Available at: https://jgea.org/ojs/index.php/jgea/article/view/47
+			  or  dx.doi.org/10.21642/JGEA.020101AF.
+
+--------------------------------------------------
+II. Data summary: 10-sectors x 10-regions
+--------------------------------------------------
+ 
+ The data aggregation is based on default.agg file which aggregates the GTAP Data Base into 10 sectors (commodities/activities) and 10 regions.    
+
+ Activities/Commodities		
+ 1.  Crops
+ 2.  Grazeliv
+ 3.  Ngraeliv
+ 4.  Forest
+ 5.  Extraction
+ 6.  ProcFood
+ 7.  Manuf
+ 8.  Util_Cons
+ 9.  TransComm
+ 10. OthServices
+
+ Regions
+ 1.  Oceania
+ 2.  EastAsia
+ 3.  SEAsia
+ 4.  SouthAsia
+ 5.  NAmerica
+ 6.  LatinAmer
+ 7.  WestEurope
+ 8.  MENA
+ 9.  SSA
+ 10. RestofWorld
+ 
+--------------------------------------------------
+III. Experiment files
+--------------------------------------------------
+     1. gtapv7-aez.exp - Numeraire shock 
+     2. tarshock.exp   - Eliminate global tariffs 
+
+--------------------------------------------------
+Last updated (ELC): August 26, 2024
+Comments/Questions: ecorong@purdue.edu
+--------------------------------------------------

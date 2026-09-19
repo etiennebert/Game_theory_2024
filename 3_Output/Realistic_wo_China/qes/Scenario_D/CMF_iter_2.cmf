@@ -1,0 +1,184 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Model_R1gdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_Model_R1NATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+!Method = Gragg;
+!Steps = 4 8 16;
+automatic accuracy = yes;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap qes(AEZ4,sgr,paraguay)=afeall(AEZ4,sgr,paraguay);
+shock qes(AEZ4,sgr,paraguay) = -26.05600000000005;
+swap qes(AEZ5,sgr,paraguay)=afeall(AEZ5,sgr,paraguay);
+shock qes(AEZ5,sgr,paraguay) = -5.363021188589235;
+swap qes(AEZ6,sgr,paraguay)=afeall(AEZ6,sgr,paraguay);
+shock qes(AEZ6,sgr,paraguay) = -7.163365951849489;
+swap qes(AEZ12,sgr,paraguay)=afeall(AEZ12,sgr,paraguay);
+shock qes(AEZ12,sgr,paraguay) = -6.120629206715487;
+swap qes(AEZ4,ruminant,paraguay)=afeall(AEZ4,ruminant,paraguay);
+shock qes(AEZ4,ruminant,paraguay) = -1.67089961235129;
+swap qes(AEZ5,ruminant,paraguay)=afeall(AEZ5,ruminant,paraguay);
+shock qes(AEZ5,ruminant,paraguay) = -0.669928929278807;
+swap qes(AEZ6,ruminant,paraguay)=afeall(AEZ6,ruminant,paraguay);
+shock qes(AEZ6,ruminant,paraguay) = -0.1256772607942803;
+swap qes(AEZ4,gro,paraguay)=afeall(AEZ4,gro,paraguay);
+shock qes(AEZ4,gro,paraguay) = -63.03676824309969;
+swap qes(AEZ5,gro,paraguay)=afeall(AEZ5,gro,paraguay);
+shock qes(AEZ5,gro,paraguay) = -19.63716619064311;
+swap qes(AEZ6,gro,paraguay)=afeall(AEZ6,gro,paraguay);
+shock qes(AEZ6,gro,paraguay) = -17.65410026969369;
+swap qes(AEZ12,gro,paraguay)=afeall(AEZ12,gro,paraguay);
+shock qes(AEZ12,gro,paraguay) = -19.97523694892575;
+swap qes(AEZ4,ocr,paraguay)=afeall(AEZ4,ocr,paraguay);
+shock qes(AEZ4,ocr,paraguay) = -27.12375823971766;
+swap qes(AEZ5,ocr,paraguay)=afeall(AEZ5,ocr,paraguay);
+shock qes(AEZ5,ocr,paraguay) = -10.98774323100132;
+swap qes(AEZ6,ocr,paraguay)=afeall(AEZ6,ocr,paraguay);
+shock qes(AEZ6,ocr,paraguay) = -8.078622028852218;
+swap qes(AEZ12,ocr,paraguay)=afeall(AEZ12,ocr,paraguay);
+shock qes(AEZ12,ocr,paraguay) = -8.616422298747654;
+swap qes(AEZ4,osd,paraguay)=afeall(AEZ4,osd,paraguay);
+shock qes(AEZ4,osd,paraguay) = -31.86810272965761;
+swap qes(AEZ5,osd,paraguay)=afeall(AEZ5,osd,paraguay);
+shock qes(AEZ5,osd,paraguay) = -7.662120617066345;
+swap qes(AEZ6,osd,paraguay)=afeall(AEZ6,osd,paraguay);
+shock qes(AEZ6,osd,paraguay) = -9.464830596207932;
+swap qes(AEZ12,osd,paraguay)=afeall(AEZ12,osd,paraguay);
+shock qes(AEZ12,osd,paraguay) = -10.30967807041408;
+swap qes(AEZ4,pcr,paraguay)=afeall(AEZ4,pcr,paraguay);
+shock qes(AEZ4,pcr,paraguay) = -90;
+swap qes(AEZ5,pcr,paraguay)=afeall(AEZ5,pcr,paraguay);
+shock qes(AEZ5,pcr,paraguay) = -46.08057589167592;
+swap qes(AEZ6,pcr,paraguay)=afeall(AEZ6,pcr,paraguay);
+shock qes(AEZ6,pcr,paraguay) = -46.25010571914175;
+swap qes(AEZ12,pcr,paraguay)=afeall(AEZ12,pcr,paraguay);
+shock qes(AEZ12,pcr,paraguay) = -48.36890469611139;
+swap qes(AEZ5,pfb,paraguay)=afeall(AEZ5,pfb,paraguay);
+shock qes(AEZ5,pfb,paraguay) = -20.32170735865207;
+swap qes(AEZ6,pfb,paraguay)=afeall(AEZ6,pfb,paraguay);
+shock qes(AEZ6,pfb,paraguay) = -26.45723453233363;
+swap qes(AEZ12,pfb,paraguay)=afeall(AEZ12,pfb,paraguay);
+shock qes(AEZ12,pfb,paraguay) = -25.38825968965572;
+swap qes(AEZ4,v_f,paraguay)=afeall(AEZ4,v_f,paraguay);
+shock qes(AEZ4,v_f,paraguay) = -12.3997934116274;
+swap qes(AEZ5,v_f,paraguay)=afeall(AEZ5,v_f,paraguay);
+shock qes(AEZ5,v_f,paraguay) = -3.394611200842112;
+swap qes(AEZ6,v_f,paraguay)=afeall(AEZ6,v_f,paraguay);
+shock qes(AEZ6,v_f,paraguay) = -3.765427093905993;
+swap qes(AEZ12,v_f,paraguay)=afeall(AEZ12,v_f,paraguay);
+shock qes(AEZ12,v_f,paraguay) = -3.66714972167899;
+swap qes(AEZ4,wht,paraguay)=afeall(AEZ4,wht,paraguay);
+shock qes(AEZ4,wht,paraguay) = -43.03674418604665;
+swap qes(AEZ5,wht,paraguay)=afeall(AEZ5,wht,paraguay);
+shock qes(AEZ5,wht,paraguay) = -9.974232759190558;
+swap qes(AEZ6,wht,paraguay)=afeall(AEZ6,wht,paraguay);
+shock qes(AEZ6,wht,paraguay) = -9.109678379237824;
+swap qes(AEZ12,wht,paraguay)=afeall(AEZ12,wht,paraguay);
+shock qes(AEZ12,wht,paraguay) = -7.621459442900186;
+swap qes(AEZ4,sgr,ivorycoast)=afeall(AEZ4,sgr,ivorycoast);
+shock qes(AEZ4,sgr,ivorycoast) = -0.2320165852575052;
+swap qes(AEZ5,sgr,ivorycoast)=afeall(AEZ5,sgr,ivorycoast);
+shock qes(AEZ5,sgr,ivorycoast) = -3.341074829558311;
+swap qes(AEZ6,sgr,ivorycoast)=afeall(AEZ6,sgr,ivorycoast);
+shock qes(AEZ6,sgr,ivorycoast) = -24.54761702489167;
+swap qes(AEZ4,ruminant,ivorycoast)=afeall(AEZ4,ruminant,ivorycoast);
+shock qes(AEZ4,ruminant,ivorycoast) = -0.01473187978786093;
+swap qes(AEZ5,ruminant,ivorycoast)=afeall(AEZ5,ruminant,ivorycoast);
+shock qes(AEZ5,ruminant,ivorycoast) = -0.004458911133901101;
+swap qes(AEZ6,ruminant,ivorycoast)=afeall(AEZ6,ruminant,ivorycoast);
+shock qes(AEZ6,ruminant,ivorycoast) = -5.105673812589955;
+swap qes(AEZ4,gro,ivorycoast)=afeall(AEZ4,gro,ivorycoast);
+shock qes(AEZ4,gro,ivorycoast) = -0.1710721657939391;
+swap qes(AEZ5,gro,ivorycoast)=afeall(AEZ5,gro,ivorycoast);
+shock qes(AEZ5,gro,ivorycoast) = -1.272423450365255;
+swap qes(AEZ6,gro,ivorycoast)=afeall(AEZ6,gro,ivorycoast);
+shock qes(AEZ6,gro,ivorycoast) = -11.13108962023437;
+swap qes(AEZ4,ocr,ivorycoast)=afeall(AEZ4,ocr,ivorycoast);
+shock qes(AEZ4,ocr,ivorycoast) = -1.264501816717689;
+swap qes(AEZ6,ocr,ivorycoast)=afeall(AEZ6,ocr,ivorycoast);
+shock qes(AEZ6,ocr,ivorycoast) = -71.39195756547299;
+swap qes(AEZ4,osd,ivorycoast)=afeall(AEZ4,osd,ivorycoast);
+shock qes(AEZ4,osd,ivorycoast) = -0.4343598026933223;
+swap qes(AEZ5,osd,ivorycoast)=afeall(AEZ5,osd,ivorycoast);
+shock qes(AEZ5,osd,ivorycoast) = -2.6720674719587;
+swap qes(AEZ6,osd,ivorycoast)=afeall(AEZ6,osd,ivorycoast);
+shock qes(AEZ6,osd,ivorycoast) = -25.00094475514341;
+swap qes(AEZ4,pcr,ivorycoast)=afeall(AEZ4,pcr,ivorycoast);
+shock qes(AEZ4,pcr,ivorycoast) = -2.90848911300673;
+swap qes(AEZ5,pcr,ivorycoast)=afeall(AEZ5,pcr,ivorycoast);
+shock qes(AEZ5,pcr,ivorycoast) = -4.861887955588666;
+swap qes(AEZ6,pcr,ivorycoast)=afeall(AEZ6,pcr,ivorycoast);
+shock qes(AEZ6,pcr,ivorycoast) = -35.52097256948318;
+swap qes(AEZ4,pfb,ivorycoast)=afeall(AEZ4,pfb,ivorycoast);
+shock qes(AEZ4,pfb,ivorycoast) = -2.728886704206304;
+swap qes(AEZ5,pfb,ivorycoast)=afeall(AEZ5,pfb,ivorycoast);
+shock qes(AEZ5,pfb,ivorycoast) = -7.682170160675825;
+swap qes(AEZ6,pfb,ivorycoast)=afeall(AEZ6,pfb,ivorycoast);
+shock qes(AEZ6,pfb,ivorycoast) = -47.40707067955455;
+swap qes(AEZ4,v_f,ivorycoast)=afeall(AEZ4,v_f,ivorycoast);
+shock qes(AEZ4,v_f,ivorycoast) = -0.6664569907104126;
+swap qes(AEZ5,v_f,ivorycoast)=afeall(AEZ5,v_f,ivorycoast);
+shock qes(AEZ5,v_f,ivorycoast) = -3.814156947537834;
+swap qes(AEZ6,v_f,ivorycoast)=afeall(AEZ6,v_f,ivorycoast);
+shock qes(AEZ6,v_f,ivorycoast) = -33.48399685510658;

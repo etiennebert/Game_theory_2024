@@ -1,0 +1,8 @@
+"oceania"
+"china"
+"madagascar"
+"india"
+"canada"
+"uruguay"
+"efta"
+"mozambique"

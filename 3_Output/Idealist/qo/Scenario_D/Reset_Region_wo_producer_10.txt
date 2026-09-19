@@ -1,0 +1,8 @@
+"china"
+"madagascar"
+"seasia"
+"southasia"
+"india"
+"nafr"
+"wafr"
+"cafr"

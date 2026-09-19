@@ -1,0 +1,6 @@
+"newzealand"
+"canada"
+"mexico"
+"uruguay"
+"restofworld"
+"mozambique"

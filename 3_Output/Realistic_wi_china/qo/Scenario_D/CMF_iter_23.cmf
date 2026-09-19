@@ -1,0 +1,106 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Model_R1gdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_Model_R1NATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+Method = Euler;
+Steps = 2 4;
+automatic accuracy = no;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap qo(sgr,paraguay) = aoall(sgr,paraguay);
+swap qo(ruminant,paraguay) = aoall(ruminant,paraguay);
+swap qo(gro,paraguay) = aoall(gro,paraguay);
+swap qo(ocr,paraguay) = aoall(ocr,paraguay);
+swap qo(osd,paraguay) = aoall(osd,paraguay);
+swap qo(pcr,paraguay) = aoall(pcr,paraguay);
+swap qo(pfb,paraguay) = aoall(pfb,paraguay);
+swap qo(v_f,paraguay) = aoall(v_f,paraguay);
+swap qo(wht,paraguay) = aoall(wht,paraguay);
+swap qo(sgr,peru) = aoall(sgr,peru);
+swap qo(ruminant,peru) = aoall(ruminant,peru);
+swap qo(gro,peru) = aoall(gro,peru);
+swap qo(ocr,peru) = aoall(ocr,peru);
+swap qo(osd,peru) = aoall(osd,peru);
+swap qo(pcr,peru) = aoall(pcr,peru);
+swap qo(pfb,peru) = aoall(pfb,peru);
+swap qo(v_f,peru) = aoall(v_f,peru);
+swap qo(wht,peru) = aoall(wht,peru);
+Shock qo(sgr,paraguay) = -6.64056814363647;
+Shock qo(ruminant,paraguay) = -0.407239662336554;
+Shock qo(gro,paraguay) = -18.6473039782644;
+Shock qo(ocr,paraguay) = -8.44420765829855;
+Shock qo(osd,paraguay) = -9.93624321506029;
+Shock qo(pcr,paraguay) = -47.7013350033843;
+Shock qo(pfb,paraguay) = -26.076203140711;
+Shock qo(v_f,paraguay) = -3.73838986162487;
+Shock qo(wht,paraguay) = -8.30961855085653;
+Shock qo(sgr,peru) = -6.45718402540648;
+Shock qo(ruminant,peru) = -4.68697795113589;
+Shock qo(gro,peru) = -2.49525629529072;
+Shock qo(ocr,peru) = -15.3736177279787;
+Shock qo(osd,peru) = -21.6776126003181;
+Shock qo(pcr,peru) = -5.31756074430098;
+Shock qo(pfb,peru) = -24.7290644124698;
+Shock qo(v_f,peru) = -2.48731618327204;
+Shock qo(wht,peru) = -2.97962986417088;

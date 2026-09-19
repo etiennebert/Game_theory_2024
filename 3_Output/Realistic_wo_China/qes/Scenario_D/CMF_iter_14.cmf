@@ -1,0 +1,238 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Model_R1gdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_Model_R1NATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+!Method = Gragg;
+!Steps = 4 8 16;
+automatic accuracy = yes;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap qes(AEZ3,sgr,brasil)=afeall(AEZ3,sgr,brasil);
+shock qes(AEZ3,sgr,brasil) = -0.3257025415154298;
+swap qes(AEZ4,sgr,brasil)=afeall(AEZ4,sgr,brasil);
+shock qes(AEZ4,sgr,brasil) = -0.4618622507765748;
+swap qes(AEZ5,sgr,brasil)=afeall(AEZ5,sgr,brasil);
+shock qes(AEZ5,sgr,brasil) = -2.576382044066422;
+swap qes(AEZ6,sgr,brasil)=afeall(AEZ6,sgr,brasil);
+shock qes(AEZ6,sgr,brasil) = -0.6703931491417997;
+swap qes(AEZ11,sgr,brasil)=afeall(AEZ11,sgr,brasil);
+shock qes(AEZ11,sgr,brasil) = -0.3647831405488107;
+swap qes(AEZ12,sgr,brasil)=afeall(AEZ12,sgr,brasil);
+shock qes(AEZ12,sgr,brasil) = -1.426678124603474;
+swap qes(AEZ3,ruminant,brasil)=afeall(AEZ3,ruminant,brasil);
+shock qes(AEZ3,ruminant,brasil) = -0.005537711817477019;
+swap qes(AEZ4,ruminant,brasil)=afeall(AEZ4,ruminant,brasil);
+shock qes(AEZ4,ruminant,brasil) = -0.5375911297463591;
+swap qes(AEZ5,ruminant,brasil)=afeall(AEZ5,ruminant,brasil);
+shock qes(AEZ5,ruminant,brasil) = -1.686080138224894;
+swap qes(AEZ6,ruminant,brasil)=afeall(AEZ6,ruminant,brasil);
+shock qes(AEZ6,ruminant,brasil) = -5.228450649772223;
+swap qes(AEZ11,ruminant,brasil)=afeall(AEZ11,ruminant,brasil);
+shock qes(AEZ11,ruminant,brasil) = -0.04557885141294439;
+swap qes(AEZ12,ruminant,brasil)=afeall(AEZ12,ruminant,brasil);
+shock qes(AEZ12,ruminant,brasil) = -0.557499674123392;
+swap qes(AEZ3,gro,brasil)=afeall(AEZ3,gro,brasil);
+shock qes(AEZ3,gro,brasil) = -0.158737539270079;
+swap qes(AEZ4,gro,brasil)=afeall(AEZ4,gro,brasil);
+shock qes(AEZ4,gro,brasil) = -0.7611663764833244;
+swap qes(AEZ5,gro,brasil)=afeall(AEZ5,gro,brasil);
+shock qes(AEZ5,gro,brasil) = -7.901638446781643;
+swap qes(AEZ6,gro,brasil)=afeall(AEZ6,gro,brasil);
+shock qes(AEZ6,gro,brasil) = -1.361031739943125;
+swap qes(AEZ11,gro,brasil)=afeall(AEZ11,gro,brasil);
+shock qes(AEZ11,gro,brasil) = -0.487855939581634;
+swap qes(AEZ12,gro,brasil)=afeall(AEZ12,gro,brasil);
+shock qes(AEZ12,gro,brasil) = -2.808760052861555;
+swap qes(AEZ3,ocr,brasil)=afeall(AEZ3,ocr,brasil);
+shock qes(AEZ3,ocr,brasil) = -0.04994058941387068;
+swap qes(AEZ4,ocr,brasil)=afeall(AEZ4,ocr,brasil);
+shock qes(AEZ4,ocr,brasil) = -0.06123531091823587;
+swap qes(AEZ5,ocr,brasil)=afeall(AEZ5,ocr,brasil);
+shock qes(AEZ5,ocr,brasil) = -0.2757321515465497;
+swap qes(AEZ6,ocr,brasil)=afeall(AEZ6,ocr,brasil);
+shock qes(AEZ6,ocr,brasil) = -0.08953617077505882;
+swap qes(AEZ11,ocr,brasil)=afeall(AEZ11,ocr,brasil);
+shock qes(AEZ11,ocr,brasil) = -0.01745302374788685;
+swap qes(AEZ12,ocr,brasil)=afeall(AEZ12,ocr,brasil);
+shock qes(AEZ12,ocr,brasil) = -0.1336813296117691;
+swap qes(AEZ3,osd,brasil)=afeall(AEZ3,osd,brasil);
+shock qes(AEZ3,osd,brasil) = -0.3076798982718404;
+swap qes(AEZ4,osd,brasil)=afeall(AEZ4,osd,brasil);
+shock qes(AEZ4,osd,brasil) = -0.8968756662289267;
+swap qes(AEZ5,osd,brasil)=afeall(AEZ5,osd,brasil);
+shock qes(AEZ5,osd,brasil) = -10.16199037854699;
+swap qes(AEZ6,osd,brasil)=afeall(AEZ6,osd,brasil);
+shock qes(AEZ6,osd,brasil) = -1.604046271274084;
+swap qes(AEZ11,osd,brasil)=afeall(AEZ11,osd,brasil);
+shock qes(AEZ11,osd,brasil) = -0.8518794265030817;
+swap qes(AEZ12,osd,brasil)=afeall(AEZ12,osd,brasil);
+shock qes(AEZ12,osd,brasil) = -4.673077233154839;
+swap qes(AEZ3,pcr,brasil)=afeall(AEZ3,pcr,brasil);
+shock qes(AEZ3,pcr,brasil) = -0.06092816663531912;
+swap qes(AEZ4,pcr,brasil)=afeall(AEZ4,pcr,brasil);
+shock qes(AEZ4,pcr,brasil) = -0.09941355149514824;
+swap qes(AEZ5,pcr,brasil)=afeall(AEZ5,pcr,brasil);
+shock qes(AEZ5,pcr,brasil) = -0.9341866065359129;
+swap qes(AEZ6,pcr,brasil)=afeall(AEZ6,pcr,brasil);
+shock qes(AEZ6,pcr,brasil) = -0.1931493807565818;
+swap qes(AEZ11,pcr,brasil)=afeall(AEZ11,pcr,brasil);
+shock qes(AEZ11,pcr,brasil) = -0.01905128636773139;
+swap qes(AEZ12,pcr,brasil)=afeall(AEZ12,pcr,brasil);
+shock qes(AEZ12,pcr,brasil) = -0.2776931479515723;
+swap qes(AEZ3,pfb,brasil)=afeall(AEZ3,pfb,brasil);
+shock qes(AEZ3,pfb,brasil) = -1.172378659098873;
+swap qes(AEZ4,pfb,brasil)=afeall(AEZ4,pfb,brasil);
+shock qes(AEZ4,pfb,brasil) = -1.98340600792201;
+swap qes(AEZ5,pfb,brasil)=afeall(AEZ5,pfb,brasil);
+shock qes(AEZ5,pfb,brasil) = -11.58046034932939;
+swap qes(AEZ6,pfb,brasil)=afeall(AEZ6,pfb,brasil);
+shock qes(AEZ6,pfb,brasil) = -3.19312431102974;
+swap qes(AEZ11,pfb,brasil)=afeall(AEZ11,pfb,brasil);
+shock qes(AEZ11,pfb,brasil) = -0.8647493947986952;
+swap qes(AEZ12,pfb,brasil)=afeall(AEZ12,pfb,brasil);
+shock qes(AEZ12,pfb,brasil) = -4.774475963517242;
+swap qes(AEZ3,v_f,brasil)=afeall(AEZ3,v_f,brasil);
+shock qes(AEZ3,v_f,brasil) = -0.1205786968841154;
+swap qes(AEZ4,v_f,brasil)=afeall(AEZ4,v_f,brasil);
+shock qes(AEZ4,v_f,brasil) = -0.1672175120699068;
+swap qes(AEZ5,v_f,brasil)=afeall(AEZ5,v_f,brasil);
+shock qes(AEZ5,v_f,brasil) = -1.13171873693187;
+swap qes(AEZ6,v_f,brasil)=afeall(AEZ6,v_f,brasil);
+shock qes(AEZ6,v_f,brasil) = -0.2637165426494932;
+swap qes(AEZ11,v_f,brasil)=afeall(AEZ11,v_f,brasil);
+shock qes(AEZ11,v_f,brasil) = -0.1453621250485594;
+swap qes(AEZ12,v_f,brasil)=afeall(AEZ12,v_f,brasil);
+shock qes(AEZ12,v_f,brasil) = -0.6506405559284514;
+swap qes(AEZ3,wht,brasil)=afeall(AEZ3,wht,brasil);
+shock qes(AEZ3,wht,brasil) = -0.1645935035569065;
+swap qes(AEZ4,wht,brasil)=afeall(AEZ4,wht,brasil);
+shock qes(AEZ4,wht,brasil) = -0.8913401925748952;
+swap qes(AEZ5,wht,brasil)=afeall(AEZ5,wht,brasil);
+shock qes(AEZ5,wht,brasil) = -11.63471196817913;
+swap qes(AEZ6,wht,brasil)=afeall(AEZ6,wht,brasil);
+shock qes(AEZ6,wht,brasil) = -1.809778053324743;
+swap qes(AEZ11,wht,brasil)=afeall(AEZ11,wht,brasil);
+shock qes(AEZ11,wht,brasil) = -1.421528481184639;
+swap qes(AEZ12,wht,brasil)=afeall(AEZ12,wht,brasil);
+shock qes(AEZ12,wht,brasil) = -6.048961313454038;
+swap qes(AEZ4,sgr,ghana)=afeall(AEZ4,sgr,ghana);
+shock qes(AEZ4,sgr,ghana) = -0.05816157248982213;
+swap qes(AEZ5,sgr,ghana)=afeall(AEZ5,sgr,ghana);
+shock qes(AEZ5,sgr,ghana) = -8.561403508771914;
+swap qes(AEZ6,sgr,ghana)=afeall(AEZ6,sgr,ghana);
+shock qes(AEZ6,sgr,ghana) = -8.561403508771912;
+swap qes(AEZ3,ruminant,ghana)=afeall(AEZ3,ruminant,ghana);
+shock qes(AEZ3,ruminant,ghana) = -0.2557544757033248;
+swap qes(AEZ4,ruminant,ghana)=afeall(AEZ4,ruminant,ghana);
+shock qes(AEZ4,ruminant,ghana) = -0.4532462229481422;
+swap qes(AEZ5,ruminant,ghana)=afeall(AEZ5,ruminant,ghana);
+shock qes(AEZ5,ruminant,ghana) = -1.590623691921306;
+swap qes(AEZ6,ruminant,ghana)=afeall(AEZ6,ruminant,ghana);
+shock qes(AEZ6,ruminant,ghana) = -1.409199680935921;
+swap qes(AEZ3,gro,ghana)=afeall(AEZ3,gro,ghana);
+shock qes(AEZ3,gro,ghana) = -0.02087829094500032;
+swap qes(AEZ4,gro,ghana)=afeall(AEZ4,gro,ghana);
+shock qes(AEZ4,gro,ghana) = -0.1523374210373966;
+swap qes(AEZ5,gro,ghana)=afeall(AEZ5,gro,ghana);
+shock qes(AEZ5,gro,ghana) = -0.8188762238961105;
+swap qes(AEZ6,gro,ghana)=afeall(AEZ6,gro,ghana);
+shock qes(AEZ6,gro,ghana) = -3.196493276120775;
+swap qes(AEZ3,ocr,ghana)=afeall(AEZ3,ocr,ghana);
+shock qes(AEZ3,ocr,ghana) = -0.006957017569510174;
+swap qes(AEZ4,ocr,ghana)=afeall(AEZ4,ocr,ghana);
+shock qes(AEZ4,ocr,ghana) = -0.1032473768419958;
+swap qes(AEZ5,ocr,ghana)=afeall(AEZ5,ocr,ghana);
+shock qes(AEZ5,ocr,ghana) = -17.30305549276534;
+swap qes(AEZ3,osd,ghana)=afeall(AEZ3,osd,ghana);
+shock qes(AEZ3,osd,ghana) = -0.01421265487512864;
+swap qes(AEZ4,osd,ghana)=afeall(AEZ4,osd,ghana);
+shock qes(AEZ4,osd,ghana) = -0.09984324700616792;
+swap qes(AEZ5,osd,ghana)=afeall(AEZ5,osd,ghana);
+shock qes(AEZ5,osd,ghana) = -20.50566745830772;
+swap qes(AEZ6,osd,ghana)=afeall(AEZ6,osd,ghana);
+shock qes(AEZ6,osd,ghana) = -20.50566745830767;
+swap qes(AEZ3,pcr,ghana)=afeall(AEZ3,pcr,ghana);
+shock qes(AEZ3,pcr,ghana) = -0.07974557864221443;
+swap qes(AEZ4,pcr,ghana)=afeall(AEZ4,pcr,ghana);
+shock qes(AEZ4,pcr,ghana) = -0.3450252114191872;
+swap qes(AEZ5,pcr,ghana)=afeall(AEZ5,pcr,ghana);
+shock qes(AEZ5,pcr,ghana) = -65.97806263658713;
+swap qes(AEZ6,pcr,ghana)=afeall(AEZ6,pcr,ghana);
+shock qes(AEZ6,pcr,ghana) = -73.06762751892667;
+swap qes(AEZ3,pfb,ghana)=afeall(AEZ3,pfb,ghana);
+shock qes(AEZ3,pfb,ghana) = -0.5359652754548322;
+swap qes(AEZ4,pfb,ghana)=afeall(AEZ4,pfb,ghana);
+shock qes(AEZ4,pfb,ghana) = -0.1402772983129457;
+swap qes(AEZ5,pfb,ghana)=afeall(AEZ5,pfb,ghana);
+shock qes(AEZ5,pfb,ghana) = -28.44879970706081;
+swap qes(AEZ6,pfb,ghana)=afeall(AEZ6,pfb,ghana);
+shock qes(AEZ6,pfb,ghana) = -85.52154858606333;
+swap qes(AEZ3,v_f,ghana)=afeall(AEZ3,v_f,ghana);
+shock qes(AEZ3,v_f,ghana) = -0.03321818862636314;
+swap qes(AEZ4,v_f,ghana)=afeall(AEZ4,v_f,ghana);
+shock qes(AEZ4,v_f,ghana) = -0.08216834223282209;
+swap qes(AEZ5,v_f,ghana)=afeall(AEZ5,v_f,ghana);
+shock qes(AEZ5,v_f,ghana) = -10.02965584314797;
+swap qes(AEZ6,v_f,ghana)=afeall(AEZ6,v_f,ghana);
+shock qes(AEZ6,v_f,ghana) = -24.16228922538913;

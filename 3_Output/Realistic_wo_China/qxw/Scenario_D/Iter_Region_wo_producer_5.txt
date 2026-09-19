@@ -1,0 +1,3 @@
+"oceania"
+"mexico"
+"eu27"

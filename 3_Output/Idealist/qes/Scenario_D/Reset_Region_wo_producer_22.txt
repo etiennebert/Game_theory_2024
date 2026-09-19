@@ -1,0 +1,6 @@
+"china"
+"southasia"
+"india"
+"uruguay"
+"venezuela"
+"mena"

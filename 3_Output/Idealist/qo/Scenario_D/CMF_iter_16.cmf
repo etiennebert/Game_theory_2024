@@ -1,0 +1,124 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ; ! XAC file
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = inbasedata.har;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Model_R1gdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_Model_R1NATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+Method = Euler;
+Steps = 2 4;
+automatic accuracy = no;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+! Part for productivity shocks from R;
+swap qo(sgr,bolivia) = aoall(sgr,bolivia);
+swap qo(ruminant,bolivia) = aoall(ruminant,bolivia);
+swap qo(gro,bolivia) = aoall(gro,bolivia);
+swap qo(ocr,bolivia) = aoall(ocr,bolivia);
+swap qo(osd,bolivia) = aoall(osd,bolivia);
+swap qo(pcr,bolivia) = aoall(pcr,bolivia);
+swap qo(pfb,bolivia) = aoall(pfb,bolivia);
+swap qo(v_f,bolivia) = aoall(v_f,bolivia);
+swap qo(wht,bolivia) = aoall(wht,bolivia);
+swap qo(sgr,colombia) = aoall(sgr,colombia);
+swap qo(ruminant,colombia) = aoall(ruminant,colombia);
+swap qo(gro,colombia) = aoall(gro,colombia);
+swap qo(ocr,colombia) = aoall(ocr,colombia);
+swap qo(osd,colombia) = aoall(osd,colombia);
+swap qo(pcr,colombia) = aoall(pcr,colombia);
+swap qo(pfb,colombia) = aoall(pfb,colombia);
+swap qo(v_f,colombia) = aoall(v_f,colombia);
+swap qo(wht,colombia) = aoall(wht,colombia);
+swap qo(sgr,angola) = aoall(sgr,angola);
+swap qo(ruminant,angola) = aoall(ruminant,angola);
+swap qo(gro,angola) = aoall(gro,angola);
+swap qo(ocr,angola) = aoall(ocr,angola);
+swap qo(osd,angola) = aoall(osd,angola);
+swap qo(pcr,angola) = aoall(pcr,angola);
+swap qo(pfb,angola) = aoall(pfb,angola);
+swap qo(v_f,angola) = aoall(v_f,angola);
+swap qo(wht,angola) = aoall(wht,angola);
+Shock qo(sgr,bolivia) = -12.6499516894656;
+Shock qo(ruminant,bolivia) = -2.57645213638019;
+Shock qo(gro,bolivia) = -28.2738177667483;
+Shock qo(ocr,bolivia) = -11.3850961730964;
+Shock qo(osd,bolivia) = -13.4056320307858;
+Shock qo(pcr,bolivia) = -8.53465166606994;
+Shock qo(pfb,bolivia) = -36.3610723536191;
+Shock qo(v_f,bolivia) = -5.19460868547363;
+Shock qo(wht,bolivia) = -30.7044960978428;
+Shock qo(sgr,colombia) = -5.80837337991601;
+Shock qo(ruminant,colombia) = -1.86735562841864;
+Shock qo(gro,colombia) = -6.52496021470187;
+Shock qo(ocr,colombia) = -4.8699812692597;
+Shock qo(osd,colombia) = -20.8594932560012;
+Shock qo(pcr,colombia) = -8.04269112882153;
+Shock qo(pfb,colombia) = -4.18223893726233;
+Shock qo(v_f,colombia) = -6.77104320086869;
+Shock qo(wht,colombia) = -26.2090245549756;
+Shock qo(sgr,angola) = -3.25928161652946;
+Shock qo(ruminant,angola) = -10.3336857201162;
+Shock qo(gro,angola) = -22.3948192711474;
+Shock qo(ocr,angola) = -3.53308115941727;
+Shock qo(osd,angola) = -2.01259726214166;
+Shock qo(pcr,angola) = -4.46286223690614;
+Shock qo(pfb,angola) = -1.66872583399816;
+Shock qo(v_f,angola) = -2.75987748048514;
+Shock qo(wht,angola) = -1.00508114256738;

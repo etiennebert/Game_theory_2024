@@ -1,0 +1,8 @@
+"japan"
+"myanmar"
+"india"
+"venezuela"
+"eu27"
+"uk"
+"mena"
+"nigeria"

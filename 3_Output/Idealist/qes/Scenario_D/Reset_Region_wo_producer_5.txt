@@ -1,0 +1,6 @@
+"oceania"
+"madagascar"
+"seasia"
+"us"
+"mena"
+"cafr"

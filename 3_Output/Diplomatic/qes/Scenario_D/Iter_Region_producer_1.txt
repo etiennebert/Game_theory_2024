@@ -1,0 +1,5 @@
+"bolivia"
+"brasil"
+"paraguay"
+"peru"
+"ivorycoast"

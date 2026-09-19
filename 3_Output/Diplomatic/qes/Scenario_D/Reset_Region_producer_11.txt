@@ -1,0 +1,7 @@
+"indonesia"
+"malasya"
+"colombia"
+"paraguay"
+"angola"
+"drc"
+"ghana"
