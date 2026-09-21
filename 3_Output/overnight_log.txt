@@ -1,0 +1,91 @@
+2026-09-19 00:06:04 START run 1 of 7 : approach=Realistic_wi_china tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 00:22:01 END   run 1 OK - 16 min 
+2026-09-19 00:22:01 START run 2 of 7 : approach=Realistic_wi_china tmsf_sheet=AVE_pha400 tau=5 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 01:03:21 START run 1 of 7 : approach=Realistic_wi_china tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 01:08:02 START run 1 of 28 : approach=Realistic_wi_china tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 01:22:45 END   run 1 OK - 15 min 
+2026-09-19 01:22:45 START run 2 of 28 : approach=Realistic_wi_china tmsf_sheet=AVE_pha400 tau=5 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 02:06:39 END   run 2 OK - 44 min 
+2026-09-19 02:06:39 START run 3 of 28 : approach=Realistic_wi_china tmsf_sheet=AVE_pha400 tau=5 tau_scope=all eudr_in_loop=outsiders 
+2026-09-19 06:12:31 END   run 3 OK - 246 min 
+2026-09-19 06:12:31 START run 4 of 28 : approach=Realistic_wi_china tmsf_sheet=AVE_pha2000 tau=0 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 06:47:09 END   run 4 OK - 35 min 
+2026-09-19 06:47:09 START run 5 of 28 : approach=Realistic_wi_china tmsf_sheet=AVE_pha10000 tau=0 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 09:32:45 END   run 5 OK - 166 min 
+2026-09-19 09:32:45 START run 6 of 28 : approach=Realistic_wi_china tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=none 
+2026-09-19 09:56:03 END   run 6 OK - 23 min 
+2026-09-19 09:56:03 START run 7 of 28 : approach=Realistic_wi_china tmsf_sheet=AVE_co2_100 tau=0 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 14:41:01 END   run 7 OK - 285 min 
+2026-09-19 14:41:01 START run 8 of 28 : approach=Realistic_wo_china tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 14:54:09 END   run 8 OK - 13 min 
+2026-09-19 14:54:09 START run 9 of 28 : approach=Realistic_wo_china tmsf_sheet=AVE_pha400 tau=5 tau_scope=charged eudr_in_loop=outsiders 
+2026-09-19 15:57:28 END   run 9 OK - 63 min 
+2026-09-19 15:57:28 START run 10 of 28 : approach=Realistic_wo_china tmsf_sheet=AVE_pha400 tau=5 tau_scope=all eudr_in_loop=outsiders 
+2026-09-19 19:46:36 START run 1 of 12 : tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 seed_name=EU seed=eu27 
+2026-09-19 20:00:04 END   run 1 OK - 13 min 
+2026-09-19 20:00:04 START run 2 of 12 : tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay 
+2026-09-19 20:12:24 END   run 2 OK - 12 min 
+2026-09-19 20:12:24 START run 3 of 12 : tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 seed_name=EUMercosurChina seed=eu27,brasil,argentina,paraguay,uruguay,china 
+2026-09-19 20:25:03 END   run 3 OK - 13 min 
+2026-09-19 20:25:03 START run 4 of 12 : tmsf_sheet=AVE_pha2000 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 seed_name=EU seed=eu27 
+2026-09-19 20:37:11 END   run 4 OK - 12 min 
+2026-09-19 20:37:11 START run 5 of 12 : tmsf_sheet=AVE_pha2000 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay 
+2026-09-19 20:52:22 END   run 5 OK - 15 min 
+2026-09-19 20:52:22 START run 6 of 12 : tmsf_sheet=AVE_pha2000 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 seed_name=EUMercosurChina seed=eu27,brasil,argentina,paraguay,uruguay,china 
+2026-09-19 21:04:19 END   run 6 OK - 12 min 
+2026-09-19 21:04:19 START run 7 of 12 : tmsf_sheet=AVE_pha400 tau=2 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 seed_name=EU seed=eu27 
+2026-09-19 22:30:57 START run 1 of 12 : tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EU seed=eu27 
+2026-09-19 22:43:14 START run 1 of 6 : tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=TRUE stability_scope=brasil,argentina,paraguay,uruguay,indonesia,malasya,china,us,india,japan bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EU seed=eu27 
+2026-09-19 23:16:57 START run 1 of 21 : tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EU seed=eu27 
+2026-09-19 23:36:16 END   run 1 OK - 19 min 
+2026-09-19 23:36:16 START run 2 of 21 : tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay 
+2026-09-19 23:53:01 END   run 2 OK - 17 min 
+2026-09-19 23:53:01 START run 3 of 21 : tmsf_sheet=AVE_pha400 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosurChina seed=eu27,brasil,argentina,paraguay,uruguay,china 
+2026-09-20 00:08:46 END   run 3 OK - 16 min 
+2026-09-20 00:08:46 START run 4 of 21 : tmsf_sheet=AVE_pha2000 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EU seed=eu27 
+2026-09-20 00:26:07 END   run 4 OK - 17 min 
+2026-09-20 00:26:07 START run 5 of 21 : tmsf_sheet=AVE_pha2000 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay 
+2026-09-20 00:39:53 END   run 5 OK - 14 min 
+2026-09-20 00:39:53 START run 6 of 21 : tmsf_sheet=AVE_pha2000 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosurChina seed=eu27,brasil,argentina,paraguay,uruguay,china 
+2026-09-20 00:53:09 END   run 6 OK - 13 min 
+2026-09-20 00:53:09 START run 7 of 21 : tmsf_sheet=AVE_pha400 tau=2 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EU seed=eu27 
+2026-09-20 01:19:32 END   run 7 OK - 26 min 
+2026-09-20 01:19:32 START run 8 of 21 : tmsf_sheet=AVE_pha400 tau=2 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay 
+2026-09-20 01:45:30 END   run 8 OK - 26 min 
+2026-09-20 01:45:30 START run 9 of 21 : tmsf_sheet=AVE_pha400 tau=2 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosurChina seed=eu27,brasil,argentina,paraguay,uruguay,china 
+2026-09-20 02:12:21 END   run 9 OK - 27 min 
+2026-09-20 02:12:21 START run 10 of 21 : tmsf_sheet=AVE_pha400 tau=5 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EU seed=eu27 
+2026-09-20 02:37:51 END   run 10 OK - 26 min 
+2026-09-20 02:37:51 START run 11 of 21 : tmsf_sheet=AVE_pha400 tau=5 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay 
+2026-09-20 03:04:02 END   run 11 OK - 26 min 
+2026-09-20 03:04:02 START run 12 of 21 : tmsf_sheet=AVE_pha400 tau=5 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosurChina seed=eu27,brasil,argentina,paraguay,uruguay,china 
+2026-09-20 03:33:34 END   run 12 OK - 30 min 
+2026-09-20 03:33:34 START run 13 of 21 : tmsf_sheet=AVE_pha400 tau=7 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EU seed=eu27 
+2026-09-20 03:59:11 END   run 13 OK - 26 min 
+2026-09-20 03:59:11 START run 14 of 21 : tmsf_sheet=AVE_pha400 tau=7 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay 
+2026-09-20 04:24:36 END   run 14 OK - 25 min 
+2026-09-20 04:24:36 START run 15 of 21 : tmsf_sheet=AVE_pha400 tau=7 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosurChina seed=eu27,brasil,argentina,paraguay,uruguay,china 
+2026-09-20 05:04:03 END   run 15 OK - 39 min 
+2026-09-20 05:04:03 START run 16 of 21 : tmsf_sheet=AVE_co2_100 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EU seed=eu27 
+2026-09-20 06:53:39 END   run 16 OK - 110 min 
+2026-09-20 06:53:39 START run 17 of 21 : tmsf_sheet=AVE_co2_100 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay 
+2026-09-20 08:11:50 END   run 17 OK - 78 min 
+2026-09-20 08:11:50 START run 18 of 21 : tmsf_sheet=AVE_co2_100 tau=0 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosurChina seed=eu27,brasil,argentina,paraguay,uruguay,china 
+2026-09-20 09:45:33 END   run 18 OK - 94 min 
+2026-09-20 09:45:33 START run 19 of 21 : tmsf_sheet=AVE_pha0 tau=5 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EU seed=eu27 
+2026-09-20 10:10:51 END   run 19 OK - 25 min 
+2026-09-20 10:10:51 START run 20 of 21 : tmsf_sheet=AVE_pha0 tau=5 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay 
+2026-09-20 10:37:24 END   run 20 OK - 27 min 
+2026-09-20 10:37:25 START run 21 of 21 : tmsf_sheet=AVE_pha0 tau=5 tau_scope=charged eudr_in_loop=outsiders approach=Realistic_wi_china friction=sheet dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 seed_name=EUMercosurChina seed=eu27,brasil,argentina,paraguay,uruguay,china 
+2026-09-20 11:07:16 END   run 21 OK - 30 min 
+2026-09-20 19:49:06 START run 1 of 9 : tmsf_sheet=AVE_pha400 tau=0 seed_name=EU seed=eu27 tau_scope=charged eudr_in_loop=none approach=Realistic_wi_china friction=sheet friction_base=trade friction_floor=2 dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 
+2026-09-20 20:04:18 END   run 1 OK - 15 min 
+2026-09-20 20:04:18 START run 2 of 9 : tmsf_sheet=AVE_pha400 tau=0 seed_name=EUMercosur seed=eu27,brasil,argentina,paraguay,uruguay tau_scope=charged eudr_in_loop=none approach=Realistic_wi_china friction=sheet friction_base=trade friction_floor=2 dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 
+2026-09-20 20:22:00 END   run 2 OK - 18 min 
+2026-09-20 20:22:00 START run 3 of 9 : tmsf_sheet=AVE_pha2000 tau=0 seed_name=EU seed=eu27 tau_scope=charged eudr_in_loop=none approach=Realistic_wi_china friction=sheet friction_base=trade friction_floor=2 dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 
+2026-09-20 20:39:23 END   run 3 OK - 17 min 
+2026-09-20 20:39:23 START run 4 of 9 : tmsf_sheet=AVE_pha400 tau=2 seed_name=EU seed=eu27 tau_scope=charged eudr_in_loop=none approach=Realistic_wi_china friction=sheet friction_base=trade friction_floor=2 dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 
+2026-09-20 22:51:08 END   run 4 OK - 132 min 
+2026-09-20 22:51:08 START run 5 of 9 : tmsf_sheet=AVE_pha400 tau=5 seed_name=EU seed=eu27 tau_scope=charged eudr_in_loop=none approach=Realistic_wi_china friction=sheet friction_base=trade friction_floor=2 dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 
+2026-09-20 23:19:54 END   run 5 OK - 29 min 
+2026-09-20 23:19:54 START run 6 of 9 : tmsf_sheet=AVE_pha400 tau=7 seed_name=EU seed=eu27 tau_scope=charged eudr_in_loop=none approach=Realistic_wi_china friction=sheet friction_base=trade friction_floor=2 dynamics=on stability=FALSE stability_scope=all bau_outsiders=cover min_face=7 solve_mode=accurate max_pass=2 join_rule=consecutive bau_horizon=5 bau_eta=0.66 

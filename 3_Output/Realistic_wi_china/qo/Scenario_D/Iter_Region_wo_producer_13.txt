@@ -1,6 +1,0 @@
-"newzealand"
-"japan"
-"mexico"
-"uruguay"
-"eu27"
-"uk"

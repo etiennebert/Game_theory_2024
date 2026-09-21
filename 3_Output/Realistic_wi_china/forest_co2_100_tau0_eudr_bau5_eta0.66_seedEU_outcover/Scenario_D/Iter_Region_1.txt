@@ -1,0 +1,8 @@
+"madagascar"
+"mexico"
+"colombia"
+"paraguay"
+"peru"
+"cafr"
+"ivorycoast"
+"ghana"

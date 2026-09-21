@@ -1,3 +1,0 @@
-"bolivia"
-"colombia"
-"peru"

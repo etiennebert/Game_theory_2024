@@ -1,0 +1,6 @@
+"china"
+"madagascar"
+"mexico"
+"uruguay"
+"eu27"
+"cafr"

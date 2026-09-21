@@ -1,8 +1,0 @@
-"china"
-"korea"
-"myanmar"
-"mexico"
-"nafr"
-"wafr"
-"cafr"
-"eafr"

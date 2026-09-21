@@ -1,4 +1,0 @@
-"oceania"
-"mexico"
-"eu27"
-"ghana"

@@ -1,4 +1,0 @@
-"southasia"
-"india"
-"eu27"
-"mena"

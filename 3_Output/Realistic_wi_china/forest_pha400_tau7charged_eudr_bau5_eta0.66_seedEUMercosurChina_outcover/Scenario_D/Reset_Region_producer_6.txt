@@ -1,0 +1,8 @@
+"bolivia"
+"indonesia"
+"malasya"
+"colombia"
+"paraguay"
+"angola"
+"drc"
+"ivorycoast"

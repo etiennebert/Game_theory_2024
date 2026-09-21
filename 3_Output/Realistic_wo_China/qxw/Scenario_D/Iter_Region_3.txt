@@ -1,6 +1,0 @@
-"oceania"
-"madagascar"
-"mexico"
-"paraguay"
-"eu27"
-"ivorycoast"

@@ -1,0 +1,7 @@
+"cell" "tinc_forest" "passes" "still_falling"
+"aez6|brasil" -0.224280372262001 2 ""
+"aez12|brasil" -0.0821877270936966 2 ""
+"aez12|paraguay" -0.237742558121681 2 ""
+"aez4|ghana" -1.48075306415558 2 ""
+"aez5|ghana" -1.61106991767883 2 ""
+"aez6|ghana" -1.97332692146301 2 ""

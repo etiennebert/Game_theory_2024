@@ -1,8 +1,0 @@
-"newzealand"
-"japan"
-"madagascar"
-"mexico"
-"uruguay"
-"uk"
-"eafr"
-"mozambique"

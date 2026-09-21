@@ -1,7 +1,0 @@
-"china"
-"seasia"
-"southasia"
-"nafr"
-"wafr"
-"cafr"
-"safr"

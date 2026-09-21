@@ -1,0 +1,8 @@
+"canada"
+"us"
+"mexico"
+"latinamer"
+"uruguay"
+"venezuela"
+"russia"
+"cafr"

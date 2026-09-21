@@ -1,0 +1,4 @@
+"cell" "tinc_forest" "tinc_bau" "passes" "still_falling"
+"aez4|ivorycoast" 3.90633273124695 6212.255859375 1 ""
+"aez5|ivorycoast" 3.88174438476562 6087.4765625 1 ""
+"aez6|ivorycoast" 3.97223401069641 52396.140625 1 ""

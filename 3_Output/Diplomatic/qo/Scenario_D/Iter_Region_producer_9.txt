@@ -1,4 +1,0 @@
-"argentina"
-"bolivia"
-"brasil"
-"paraguay"

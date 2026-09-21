@@ -1,8 +1,0 @@
-"brasil"
-"newzealand"
-"madagascar"
-"mexico"
-"paraguay"
-"eu27"
-"ivorycoast"
-"ghana"

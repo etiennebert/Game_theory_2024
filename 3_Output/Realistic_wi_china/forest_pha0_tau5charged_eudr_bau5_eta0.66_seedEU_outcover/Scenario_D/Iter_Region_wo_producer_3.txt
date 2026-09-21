@@ -1,0 +1,8 @@
+"oceania"
+"newzealand"
+"china"
+"canada"
+"eu27"
+"uk"
+"efta"
+"mozambique"

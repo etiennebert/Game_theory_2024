@@ -1,0 +1,6 @@
+"colombia"
+"paraguay"
+"peru"
+"eu27"
+"ivorycoast"
+"ghana"

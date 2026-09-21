@@ -1,8 +1,0 @@
-"oceania"
-"newzealand"
-"southasia"
-"india"
-"us"
-"eu27"
-"mena"
-"mozambique"

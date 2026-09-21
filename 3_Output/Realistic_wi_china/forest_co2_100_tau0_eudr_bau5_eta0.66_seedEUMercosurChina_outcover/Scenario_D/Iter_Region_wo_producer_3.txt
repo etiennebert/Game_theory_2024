@@ -1,0 +1,6 @@
+"newzealand"
+"canada"
+"mexico"
+"uruguay"
+"eu27"
+"mozambique"

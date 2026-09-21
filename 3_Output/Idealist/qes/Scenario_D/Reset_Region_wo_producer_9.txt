@@ -1,6 +1,0 @@
-"oceania"
-"newzealand"
-"madagascar"
-"seasia"
-"us"
-"uruguay"

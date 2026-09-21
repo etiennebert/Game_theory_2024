@@ -1,0 +1,6 @@
+"china"
+"madagascar"
+"uruguay"
+"eu27"
+"uk"
+"efta"

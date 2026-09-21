@@ -1,7 +1,0 @@
-"argentina"
-"bolivia"
-"newzealand"
-"colombia"
-"venezuela"
-"drc"
-"nafr"

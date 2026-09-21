@@ -1,7 +1,0 @@
-"indonesia"
-"malasya"
-"colombia"
-"angola"
-"drc"
-"ivorycoast"
-"ghana"

@@ -1,7 +1,0 @@
-"newzealand"
-"mexico"
-"paraguay"
-"peru"
-"uruguay"
-"ivorycoast"
-"mozambique"

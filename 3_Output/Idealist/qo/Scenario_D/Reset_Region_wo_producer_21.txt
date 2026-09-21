@@ -1,7 +1,0 @@
-"korea"
-"madagascar"
-"eastasia"
-"seasia"
-"india"
-"nafr"
-"nigeria"

@@ -1,0 +1,6 @@
+"argentina"
+"brasil"
+"china"
+"paraguay"
+"uruguay"
+"eu27"

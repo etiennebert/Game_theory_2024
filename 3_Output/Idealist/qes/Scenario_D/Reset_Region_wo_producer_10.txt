@@ -1,7 +1,0 @@
-"newzealand"
-"china"
-"southasia"
-"india"
-"venezuela"
-"mena"
-"nafr"

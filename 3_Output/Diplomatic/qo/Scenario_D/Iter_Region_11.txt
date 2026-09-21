@@ -1,7 +1,0 @@
-"oceania"
-"madagascar"
-"canada"
-"uruguay"
-"efta"
-"ghana"
-"nigeria"

@@ -1,6 +1,0 @@
-"myanmar"
-"venezuela"
-"eu27"
-"mena"
-"wafr"
-"cafr"
