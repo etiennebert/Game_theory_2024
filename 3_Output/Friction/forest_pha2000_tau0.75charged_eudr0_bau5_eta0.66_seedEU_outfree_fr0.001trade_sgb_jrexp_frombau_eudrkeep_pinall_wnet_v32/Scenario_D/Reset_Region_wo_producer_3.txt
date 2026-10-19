@@ -1,0 +1,5 @@
+"venezuela"
+"eu27"
+"uk"
+"efta"
+"cafr"

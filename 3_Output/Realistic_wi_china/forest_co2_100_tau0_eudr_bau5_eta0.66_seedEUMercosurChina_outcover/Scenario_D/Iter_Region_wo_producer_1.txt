@@ -1,6 +1,0 @@
-"madagascar"
-"mexico"
-"uruguay"
-"eu27"
-"cafr"
-"mozambique"

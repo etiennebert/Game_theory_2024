@@ -1,0 +1,7 @@
+"japan"
+"korea"
+"mexico"
+"venezuela"
+"eu27"
+"nafr"
+"cafr"

@@ -1,5 +1,0 @@
-"newzealand"
-"china"
-"uruguay"
-"eu27"
-"mozambique"

@@ -1,0 +1,8 @@
+"korea"
+"eastasia"
+"myanmar"
+"venezuela"
+"russia"
+"mena"
+"wafr"
+"cafr"

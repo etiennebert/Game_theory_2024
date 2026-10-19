@@ -1,0 +1,7 @@
+"china"
+"eastasia"
+"uruguay"
+"eu27"
+"mena"
+"nafr"
+"nigeria"

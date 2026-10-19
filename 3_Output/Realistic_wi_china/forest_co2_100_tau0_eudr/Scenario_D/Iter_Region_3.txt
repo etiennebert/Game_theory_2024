@@ -1,8 +1,0 @@
-"bolivia"
-"madagascar"
-"mexico"
-"colombia"
-"peru"
-"cafr"
-"ivorycoast"
-"ghana"

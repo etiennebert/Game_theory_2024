@@ -1,5 +1,0 @@
-iter_1 1 15.5 9 TRUE  
-iter_2 1 15.2 9 TRUE  
-iter_3 1 15.4 9 TRUE  
-iter_4 1 15.6 9 TRUE  
-iter_5 1 16.1 9 TRUE  

@@ -1,0 +1,35 @@
+V22 one-deviation stability check - Friction / forest_pha0_tau0_eudr0_bau5_eta0.66_seedSminmercosur0_fixed_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32
+seed: eu27 argentina brasil china eastasia mena nafr nigeria paraguay uruguay | dynamics: off | converged: TRUE | safeguard: baseline | iterations: 1
+final coalition S (10): eu27 argentina brasil paraguay china eastasia uruguay mena nafr nigeria
+EV in S vs baseline ($M/yr) - members: 27 | outsiders: -362 | world: -335 | members losing vs baseline: eu27 china eastasia mena nafr
+tropical forest change (kha, AEZ1-6, world): baseline 13 | S 8142 | difference 8130
+internally stable (no member gains by leaving alone): FALSE - would leave: china eastasia uruguay mena
+externally stable (no outsider gains by joining alone): FALSE - would join: indonesia malasya ivorycoast us india
+with the thresholds as moving cost - would leave:  | would join: malasya ivorycoast india
+transfers to keep the leavers ($M/yr): 37 | what the members who prefer S could pay: 886 | duty raised by the charge in S: 0
+deviation solves failed: 0
+
+     region      status EV_baseline   EV_in_S EV_in_S_vs_baseline EV_deviation world_EV_deviation tropical_forest_kha_deviation solve_ok gain_from_moving threshold wants_to_move wants_to_move_with_friction transfer_needed revenue_charge
+       eu27 eu27_anchor  -1.459e+02 -456.4522           -310.5297           NA                 NA                            NA       NA               NA        NA            NA                          NA          0.0000              0
+  argentina      member   3.659e+00   96.4617             92.8031       76.924             -448.4                        8146.0     TRUE         -19.5376    36.918         FALSE                       FALSE          0.0000              0
+     brasil      member  -1.251e+01  742.6460            755.1601       49.733             -497.1                         743.3     TRUE        -692.9127    73.434         FALSE                       FALSE          0.0000              0
+   paraguay      member  -5.006e-01  104.9165            105.4171       15.287             -523.3                        7940.9     TRUE         -89.6290     4.785         FALSE                       FALSE          0.0000              0
+      china      member  -1.638e+00 -447.4408           -445.8031     -410.839             -376.5                        8175.4     TRUE          36.6016   214.886          TRUE                       FALSE         36.6016              0
+   eastasia      member  -1.444e-01  -21.8754            -21.7310      -21.748             -555.3                        8142.4     TRUE           0.1275    12.340          TRUE                       FALSE          0.1275              0
+    uruguay      member   1.500e-01    8.2135              8.0635        8.537             -554.4                        8142.6     TRUE           0.3234     4.998          TRUE                       FALSE          0.3234              0
+       mena      member  -2.339e+00 -169.3159           -166.9770     -169.138             -552.9                        8142.1     TRUE           0.1781    82.750          TRUE                       FALSE          0.1781              0
+       nafr      member  -3.113e-03  -66.3620            -66.3589      -66.480             -553.3                        8142.4     TRUE          -0.1183    38.950         FALSE                       FALSE          0.0000              0
+    nigeria      member  -8.375e-01   76.1973             77.0347       -7.177             -587.0                        7562.1     TRUE         -83.3741     4.935         FALSE                       FALSE          0.0000              0
+  indonesia    outsider  -1.415e+00   -7.7686             -6.3536       19.752             -808.2                        8861.1     TRUE          27.5206    43.346          TRUE                       FALSE          0.0000              0
+    malasya    outsider   4.003e-01   -6.7198             -7.1200       30.313             -639.5                        8226.5     TRUE          37.0332    25.656          TRUE                        TRUE          0.0000              0
+ ivorycoast    outsider  -3.893e+01  -24.5866             14.3412       12.583             -845.4                        9160.7     TRUE          37.1697     6.880          TRUE                        TRUE          0.0000              0
+      ghana    outsider  -6.184e+00   -3.6210              2.5627      -24.327             -605.6                        8462.6     TRUE         -20.7060     4.004         FALSE                       FALSE          0.0000              0
+   colombia    outsider  -9.123e+00   -0.4239              8.6987     -454.002            -1170.1                        8905.2     TRUE        -453.5779    10.847         FALSE                       FALSE          0.0000              0
+         us    outsider   9.888e+00  -23.1382            -33.0265      -19.589             -576.8                        8116.6     TRUE           3.5493   195.710          TRUE                       FALSE          0.0000              0
+      india    outsider   5.000e+00   -4.6330             -9.6333      158.807             -551.9                        8570.2     TRUE         163.4398    49.589          TRUE                        TRUE          0.0000              0
+     seasia    outsider  -8.821e+00  -43.8671            -35.0458     -109.394            -1198.3                        8970.4     TRUE         -65.5271   104.153         FALSE                       FALSE          0.0000              0
+    bolivia    outsider  -1.191e-01    2.8775              2.9966       -7.365             -681.1                        9240.4     TRUE         -10.2422     2.000         FALSE                       FALSE          0.0000              0
+        drc    outsider  -5.905e-01   -1.3656             -0.7751     -100.340             -624.3                       10501.9     TRUE         -98.9746     2.000         FALSE                       FALSE          0.0000              0
+     angola    outsider  -8.437e-02   -5.1112             -5.0268       -7.663             -559.0                        8478.2     TRUE          -2.5517     2.000         FALSE                       FALSE          0.0000              0
+       cafr    outsider  -1.914e+00  -12.5659            -10.6521      -96.284             -650.7                        8639.7     TRUE         -83.7182     2.764         FALSE                       FALSE          0.0000              0
+  venezuela    outsider   2.752e-02   -3.0829             -3.1104      -19.899             -594.9                        8256.5     TRUE         -16.8160     2.000         FALSE                       FALSE          0.0000              0

@@ -1,7 +1,0 @@
-"brasil"
-"indonesia"
-"mexico"
-"peru"
-"eu27"
-"ghana"
-"mozambique"

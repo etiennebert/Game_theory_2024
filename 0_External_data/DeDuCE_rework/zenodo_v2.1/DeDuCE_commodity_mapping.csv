@@ -1,0 +1,183 @@
+Commodity group,Commodity,GTAP activity,In the charge,"World ha/yr 2018-2023, amortized","World ha/yr 2018-2023, unamortized"
+Sugar crops,Sugar cane,c_b,yes,68448.0,53550.0
+Sugar crops,Sugar beet,c_b,yes,334.0,167.0
+Sugar crops,Other sugar crops n.e.c.,c_b,yes,83.0,21.0
+Forest plantation,Forest plantation (Unclassified),forest,no (forest plantations excluded),634444.0,552930.0
+Forest plantation,Forest plantation (Pine),forest,no (forest plantations excluded),96.0,75.0
+Forest plantation,Forest plantation (Gum),forest,no (forest plantations excluded),81.0,81.0
+Forest plantation,Forest plantation (Bamboo),forest,no (forest plantations excluded),77.0,72.0
+Forest plantation,Forest plantation (Birch),forest,no (forest plantations excluded),30.0,16.0
+Forest plantation,Forest plantation (Teak),forest,no (forest plantations excluded),25.0,20.0
+Forest plantation,Forest plantation (Maple),forest,no (forest plantations excluded),18.0,20.0
+Forest plantation,Forest plantation (Needleleaf),forest,no (forest plantations excluded),11.0,8.0
+Forest plantation,Forest plantation (Broadleaf),forest,no (forest plantations excluded),8.0,6.0
+Forest plantation,Forest plantation (Bluegum),forest,no (forest plantations excluded),6.0,7.0
+Forest plantation,Forest plantation (Alder),forest,no (forest plantations excluded),3.0,2.0
+Forest plantation,Forest plantation (Mix of needleleaf and broadleaf),forest,no (forest plantations excluded),0.0,0.0
+Forest plantation,Forest plantation (Padauk),forest,no (forest plantations excluded),0.0,0.0
+Forest plantation,Forest plantation (Sal),forest,no (forest plantations excluded),0.0,0.0
+Forest plantation,Forest plantation (Fir),forest,no (forest plantations excluded),0.0,0.0
+Forest plantation,Forest plantation (Australian Blackwood),forest,no (forest plantations excluded),0.0,0.0
+Cereals,Maize (corn),gro,yes,259921.0,240688.0
+Cereals,Sorghum,gro,yes,52938.0,39595.0
+Cereals,Millet,gro,yes,13831.0,21247.0
+Cereals,Barley,gro,yes,10248.0,4838.0
+Cereals,Quinoa,gro,yes,4168.0,4013.0
+Cereals,Oats,gro,yes,3379.0,1820.0
+Cereals,Rye,gro,yes,2015.0,1073.0
+Cereals,Cereals n.e.c.,gro,yes,1509.0,705.0
+Cereals,Fonio,gro,yes,629.0,712.0
+Cereals,Triticale,gro,yes,467.0,278.0
+Cereals,Buckwheat,gro,yes,385.0,213.0
+Cereals,Canary seed,gro,yes,254.0,147.0
+Cereals,Mixed grain,gro,yes,170.0,35.0
+"Stimulant, spice and aromatic crops",Cocoa beans,ocr,yes,170035.0,118083.0
+Fibre crops,Natural rubber in primary forms,ocr,yes,104260.0,82112.0
+"Stimulant, spice and aromatic crops","Coffee, green",ocr,yes,74030.0,53927.0
+"Stimulant, spice and aromatic crops",Tea leaves,ocr,yes,8694.0,3364.0
+"Stimulant, spice and aromatic crops","Cinnamon and cinnamon-tree flowers, raw",ocr,yes,8653.0,7036.0
+"Stimulant, spice and aromatic crops","Nutmeg, mace, cardamoms, raw",ocr,yes,7944.0,3517.0
+Fibre crops,Unmanufactured tobacco,ocr,yes,7900.0,5504.0
+"Stimulant, spice and aromatic crops","Pepper (Piper spp.), raw",ocr,yes,3757.0,419.0
+"Stimulant, spice and aromatic crops","Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw",ocr,yes,2963.0,1796.0
+"Stimulant, spice and aromatic crops","Cloves (whole stems), raw",ocr,yes,2421.0,452.0
+"Stimulant, spice and aromatic crops","Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw",ocr,yes,2006.0,2446.0
+"Stimulant, spice and aromatic crops",Maté leaves,ocr,yes,1698.0,1847.0
+"Stimulant, spice and aromatic crops","Ginger, raw",ocr,yes,1374.0,1135.0
+"Stimulant, spice and aromatic crops","Other stimulant, spice and aromatic crops, n.e.c.",ocr,yes,1224.0,723.0
+"Stimulant, spice and aromatic crops","Stimulant, spice and aromatic crops, n.e.c.",ocr,yes,176.0,224.0
+Fibre crops,"Pyrethrum, dried flowers",ocr,yes,119.0,99.0
+"Stimulant, spice and aromatic crops","Vanilla, raw",ocr,yes,107.0,72.0
+"Stimulant, spice and aromatic crops",Hop cones,ocr,yes,49.0,12.0
+Fibre crops,"Peppermint, spearmint",ocr,yes,5.0,2.0
+"Stimulant, spice and aromatic crops",Chicory roots,ocr,yes,3.0,0.0
+Oilseeds and oleaginous fruits,Oil palm fruit,osd,yes,337195.0,217742.0
+Oilseeds and oleaginous fruits,Soya beans,osd,yes,218158.0,188326.0
+Oilseeds and oleaginous fruits,"Groundnuts, excluding shelled",osd,yes,40270.0,35099.0
+Oilseeds and oleaginous fruits,"Coconuts, in shell",osd,yes,26230.0,19787.0
+Oilseeds and oleaginous fruits,Sunflower seed,osd,yes,24196.0,23706.0
+Oilseeds and oleaginous fruits,Rape or colza seed,osd,yes,17688.0,23183.0
+Oilseeds and oleaginous fruits,Sesame seed,osd,yes,11455.0,11563.0
+Oilseeds and oleaginous fruits,Olives,osd,yes,2420.0,1764.0
+Oilseeds and oleaginous fruits,"Other oil seeds, n.e.c.",osd,yes,1646.0,1278.0
+Oilseeds and oleaginous fruits,Safflower seed,osd,yes,1564.0,1416.0
+Oilseeds and oleaginous fruits,Castor oil seeds,osd,yes,908.0,1503.0
+Oilseeds and oleaginous fruits,Linseed,osd,yes,883.0,918.0
+Oilseeds and oleaginous fruits,Melonseed,osd,yes,860.0,901.0
+Oilseeds and oleaginous fruits,Mustard seed,osd,yes,165.0,82.0
+Oilseeds and oleaginous fruits,Palm nuts and kernels,osd,yes,98.0,46.0
+Oilseeds and oleaginous fruits,Karite nuts (sheanuts),osd,yes,78.0,69.0
+Oilseeds and oleaginous fruits,Tung nuts,osd,yes,59.0,64.0
+Oilseeds and oleaginous fruits,Hempseed,osd,yes,59.0,15.0
+Oilseeds and oleaginous fruits,Kapok fruit,osd,yes,49.0,49.0
+Oilseeds and oleaginous fruits,Tallowtree seeds,osd,yes,35.0,31.0
+Oilseeds and oleaginous fruits,Poppy seed,osd,yes,5.0,0.0
+Oilseeds and oleaginous fruits,Jojoba seeds,osd,yes,1.0,0.0
+Cereals,Rice,pdr,yes,265945.0,317833.0
+Fibre crops,"Seed cotton, unginned",pfb,yes,31636.0,28452.0
+Fibre crops,"Jute, raw or retted",pfb,yes,4830.0,513.0
+Fibre crops,"Other fibre crops, raw, n.e.c.",pfb,yes,1060.0,978.0
+Fibre crops,"Sisal, raw",pfb,yes,862.0,709.0
+Fibre crops,"Abaca, manila hemp, raw",pfb,yes,437.0,234.0
+Fibre crops,"Agave fibres, raw, n.e.c.",pfb,yes,156.0,111.0
+Fibre crops,"Kenaf, and other textile bast fibres, raw or retted",pfb,yes,149.0,115.0
+Fibre crops,"Flax, raw or retted",pfb,yes,50.0,26.0
+Fibre crops,"True hemp, raw or retted",pfb,yes,25.0,17.0
+Fibre crops,"Ramie, raw or retted",pfb,yes,5.0,1.0
+Pasture,Cattle meat,ruminant,"yes, split ruminant/rmk/wol by AEZ land-rent shares",2246173.0,2178896.0
+Pasture,Leather,ruminant,"yes, split ruminant/rmk/wol by AEZ land-rent shares",118220.0,114679.0
+Edible roots and tubers with high starch or inulin content,"Cassava, fresh",v_f,yes,266887.0,245759.0
+Pulses (dried leguminous vegetables),"Beans, dry",v_f,yes,66415.0,70253.0
+Edible roots and tubers with high starch or inulin content,Yams,v_f,yes,42109.0,31706.0
+Fruit and nuts,Plantains and cooking bananas,v_f,yes,38311.0,30011.0
+Fruit and nuts,Bananas,v_f,yes,32245.0,25385.0
+Fruit and nuts,"Mangoes, guavas and mangosteens",v_f,yes,27350.0,16078.0
+Fruit and nuts,"Cashew nuts, in shell",v_f,yes,25354.0,25232.0
+Fruit and nuts,Avocados,v_f,yes,21009.0,15118.0
+Edible roots and tubers with high starch or inulin content,Potatoes,v_f,yes,16924.0,17209.0
+Edible roots and tubers with high starch or inulin content,Sweet potatoes,v_f,yes,13375.0,13633.0
+Vegetables,"Other vegetables, fresh n.e.c.",v_f,yes,13292.0,11430.0
+Pulses (dried leguminous vegetables),"Cow peas, dry",v_f,yes,13241.0,13078.0
+Fruit and nuts,Oranges,v_f,yes,11780.0,8654.0
+Vegetables,Okra,v_f,yes,11227.0,18229.0
+Vegetables,"Onions and shallots, dry (excluding dehydrated)",v_f,yes,10011.0,7848.0
+Vegetables,Tomatoes,v_f,yes,9149.0,10676.0
+Fruit and nuts,"Other fruits, n.e.c.",v_f,yes,8058.0,5768.0
+Fruit and nuts,Lemons and limes,v_f,yes,7413.0,6139.0
+Vegetables,"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",v_f,yes,7314.0,4761.0
+Edible roots and tubers with high starch or inulin content,Taro,v_f,yes,7176.0,7665.0
+Pulses (dried leguminous vegetables),"Chick peas, dry",v_f,yes,6374.0,4879.0
+Vegetables,Green corn (maize),v_f,yes,4758.0,2295.0
+Fruit and nuts,"Tangerines, mandarins, clementines",v_f,yes,4578.0,3066.0
+Fruit and nuts,Pineapples,v_f,yes,4300.0,3283.0
+Pulses (dried leguminous vegetables),"Pigeon peas, dry",v_f,yes,4028.0,4397.0
+Fruit and nuts,Pomelos and grapefruits,v_f,yes,3819.0,1982.0
+Fruit and nuts,Areca nuts,v_f,yes,3660.0,3649.0
+Fruit and nuts,"Walnuts, in shell",v_f,yes,3447.0,2258.0
+Edible roots and tubers with high starch or inulin content,"Edible roots and tubers with high starch or inulin content, n.e.c., fresh",v_f,yes,3343.0,2526.0
+Fruit and nuts,"Other tropical fruits, n.e.c.",v_f,yes,3100.0,2409.0
+Pulses (dried leguminous vegetables),"Peas, dry",v_f,yes,3010.0,2882.0
+Vegetables,Watermelons,v_f,yes,2936.0,2157.0
+Fruit and nuts,Blueberries,v_f,yes,2551.0,1577.0
+Fruit and nuts,Grapes,v_f,yes,2372.0,1135.0
+Vegetables,"Pumpkins, squash and gourds",v_f,yes,2277.0,1635.0
+Pulses (dried leguminous vegetables),Other pulses n.e.c.,v_f,yes,2175.0,1109.0
+Pulses (dried leguminous vegetables),"Lentils, dry",v_f,yes,2170.0,2596.0
+Vegetables,Carrots and turnips,v_f,yes,1782.0,1323.0
+Fruit and nuts,Papayas,v_f,yes,1773.0,1432.0
+Pulses (dried leguminous vegetables),"Broad beans and horse beans, dry",v_f,yes,1767.0,737.0
+Pulses (dried leguminous vegetables),"Bambara beans, dry",v_f,yes,1653.0,1487.0
+Vegetables,"Peas, green",v_f,yes,1580.0,1098.0
+Vegetables,Green garlic,v_f,yes,1575.0,833.0
+Fruit and nuts,"Other citrus fruit, n.e.c.",v_f,yes,1426.0,921.0
+Vegetables,Cauliflowers and broccoli,v_f,yes,1414.0,944.0
+Vegetables,Asparagus,v_f,yes,1407.0,926.0
+Vegetables,Cucumbers and gherkins,v_f,yes,1390.0,1027.0
+Fruit and nuts,"Other nuts (excluding wild edible nuts and groundnuts), in shell, n.e.c.",v_f,yes,1354.0,451.0
+Fruit and nuts,Peaches and nectarines,v_f,yes,1289.0,1214.0
+Vegetables,Cabbages,v_f,yes,1271.0,864.0
+Fruit and nuts,"Almonds, in shell",v_f,yes,1245.0,238.0
+Fruit and nuts,Kola nuts,v_f,yes,1098.0,1470.0
+Vegetables,Eggplants (aubergines),v_f,yes,1061.0,853.0
+Vegetables,Cantaloupes and other melons,v_f,yes,1050.0,675.0
+Fruit and nuts,Apples,v_f,yes,983.0,673.0
+Vegetables,"Other beans, green",v_f,yes,955.0,556.0
+Fruit and nuts,"Pistachios, in shell",v_f,yes,906.0,315.0
+Fruit and nuts,Persimmons,v_f,yes,810.0,855.0
+Vegetables,Spinach,v_f,yes,805.0,712.0
+Vegetables,Lettuce and chicory,v_f,yes,789.0,510.0
+Vegetables,"Broad beans and horse beans, green",v_f,yes,658.0,312.0
+Fruit and nuts,Strawberries,v_f,yes,615.0,580.0
+Fruit and nuts,"Chestnuts, in shell",v_f,yes,613.0,261.0
+Vegetables,Leeks and other alliaceous vegetables,v_f,yes,521.0,373.0
+Fruit and nuts,Cherries,v_f,yes,442.0,431.0
+Fruit and nuts,Plums and sloes,v_f,yes,414.0,212.0
+Vegetables,Artichokes,v_f,yes,410.0,401.0
+Fruit and nuts,"Hazelnuts, in shell",v_f,yes,369.0,266.0
+Pulses (dried leguminous vegetables),Lupins,v_f,yes,366.0,160.0
+Fruit and nuts,Kiwi fruit,v_f,yes,361.0,105.0
+Fruit and nuts,Raspberries,v_f,yes,319.0,231.0
+Vegetables,"Onions and shallots, green",v_f,yes,284.0,154.0
+Vegetables,String beans,v_f,yes,246.0,159.0
+Fruit and nuts,Dates,v_f,yes,225.0,125.0
+Pulses (dried leguminous vegetables),Vetches,v_f,yes,141.0,103.0
+Fruit and nuts,Other berries and fruits of the genus vaccinium n.e.c.,v_f,yes,126.0,60.0
+Fruit and nuts,Figs,v_f,yes,105.0,79.0
+Fruit and nuts,Pears,v_f,yes,105.0,97.0
+Fruit and nuts,"Other tropical and subtropical fruits, n.e.c.",v_f,yes,104.0,84.0
+Fruit and nuts,Tangerines and mandarins,v_f,yes,101.0,76.0
+Edible roots and tubers with high starch or inulin content,Yautia,v_f,yes,77.0,64.0
+Fruit and nuts,Apricots,v_f,yes,47.0,24.0
+Fruit and nuts,Mangoes,v_f,yes,47.0,58.0
+Fruit and nuts,Guavas,v_f,yes,36.0,24.0
+Pulses (dried leguminous vegetables),"Pulses, n.e.c.",v_f,yes,36.0,32.0
+Fruit and nuts,Currants,v_f,yes,22.0,15.0
+Fruit and nuts,Quinces,v_f,yes,19.0,10.0
+Fruit and nuts,Sour cherries,v_f,yes,18.0,8.0
+Fruit and nuts,Other stone fruits,v_f,yes,11.0,6.0
+Fruit and nuts,Other pome fruits,v_f,yes,10.0,5.0
+Fruit and nuts,Locust beans (carobs),v_f,yes,7.0,3.0
+Fruit and nuts,Gooseberries,v_f,yes,3.0,1.0
+Fruit and nuts,Cranberries,v_f,yes,1.0,0.0
+Fruit and nuts,Cashewapple,v_f,yes,1.0,0.0
+Cereals,Wheat,wht,yes,45549.0,30012.0

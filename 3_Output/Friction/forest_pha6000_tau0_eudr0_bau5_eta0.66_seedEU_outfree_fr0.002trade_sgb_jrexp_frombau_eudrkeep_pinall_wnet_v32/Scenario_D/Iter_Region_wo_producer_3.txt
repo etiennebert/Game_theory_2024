@@ -1,0 +1,5 @@
+"japan"
+"madagascar"
+"latinamer"
+"eu27"
+"uk"

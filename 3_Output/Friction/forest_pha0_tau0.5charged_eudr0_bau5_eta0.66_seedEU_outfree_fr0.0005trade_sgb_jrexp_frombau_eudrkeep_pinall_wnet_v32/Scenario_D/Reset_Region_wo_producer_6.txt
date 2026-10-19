@@ -1,0 +1,8 @@
+"japan"
+"venezuela"
+"uk"
+"mena"
+"wafr"
+"cafr"
+"safr"
+"mozambique"

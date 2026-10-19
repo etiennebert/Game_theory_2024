@@ -1,8 +1,0 @@
-"argentina"
-"brasil"
-"china"
-"paraguay"
-"uruguay"
-"eu27"
-"ivorycoast"
-"ghana"

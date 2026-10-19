@@ -1,0 +1,11 @@
+V22 one-deviation stability check - Friction / forest_pha4000_tau0_eudr0_bau5_eta0.66_seedSmincoalitionXouts_fixed_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32
+seed: eu27 argentina bolivia brasil canada eafr eastasia efta ghana india indonesia ivorycoast latinamer madagascar malasya mexico mozambique newzealand nigeria paraguay peru seasia us | dynamics: off | converged: TRUE | safeguard: baseline | iterations: 1
+final coalition S (23): eu27 argentina bolivia brasil indonesia malasya paraguay peru ivorycoast ghana newzealand madagascar eastasia seasia india canada us mexico latinamer efta eafr nigeria mozambique
+tested - members out alone: none | outsiders in alone: japan korea mena myanmar nafr oceania restofworld russia safr southasia uk wafr
+EV in S vs baseline ($M/yr) - members: -21 | outsiders: -2443 | world: -2464 | members losing vs baseline: eu27 bolivia malasya newzealand eastasia seasia canada us efta mozambique
+tropical forest change (kha, AEZ1-6, world): baseline 13 | S 14711 | difference 14698
+internally stable (no member gains by leaving alone): TRUE
+externally stable (no outsider gains by joining alone): FALSE - would join: japan korea mena nafr oceania restofworld russia safr southasia uk
+with the thresholds as moving cost - would leave:  | would join: safr
+transfers to keep the leavers ($M/yr): 0 | what the members who prefer S could pay: 0 | duty raised by the charge in S: 201
+deviation solves failed: 0

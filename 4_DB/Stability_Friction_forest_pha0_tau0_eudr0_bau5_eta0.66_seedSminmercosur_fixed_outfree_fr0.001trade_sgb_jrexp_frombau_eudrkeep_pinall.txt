@@ -1,0 +1,59 @@
+V22 one-deviation stability check - Friction / forest_pha0_tau0_eudr0_bau5_eta0.66_seedSminmercosur_fixed_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall
+seed: eu27 argentina brasil china eastasia mena nafr nigeria paraguay uruguay | dynamics: off | converged: TRUE | safeguard: baseline | iterations: 1
+final coalition S (10): eu27 argentina brasil paraguay china eastasia uruguay mena nafr nigeria
+EV in S vs baseline ($M/yr) - members: 1127 | outsiders: -339 | world: 788 | members losing vs baseline: eu27 china eastasia mena nafr
+tropical forest change (kha, AEZ1-6, world): baseline 13 | S 8142 | difference 8129
+internally stable (no member gains by leaving alone): FALSE - would leave: china eastasia uruguay mena
+externally stable (no outsider gains by joining alone): FALSE - would join: indonesia malasya ivorycoast ghana us india seasia drc
+with the thresholds as moving cost - would leave:  | would join: indonesia malasya ivorycoast ghana india seasia drc
+transfers to keep the leavers ($M/yr): 29 | what the members who prefer S could pay: 1833 | duty raised by the charge in S: 0
+deviation solves failed: 0
+
+     region      status EV_baseline  EV_in_S EV_in_S_vs_baseline EV_deviation world_EV_deviation tropical_forest_kha_deviation solve_ok
+       eu27 eu27_anchor  -1.458e+02 -315.878            -170.031           NA                 NA                            NA       NA
+  argentina      member   3.657e+00   94.138              90.481      72.8649             681.90                        8145.6     TRUE
+     brasil      member  -1.207e+01  871.279             883.346      57.5080             530.52                         732.7     TRUE
+   paraguay      member  -4.881e-01  150.727             151.215      14.6970             562.26                        7940.4     TRUE
+      china      member  -1.609e+00 -440.404            -438.795    -411.5820             753.37                        8175.0     TRUE
+   eastasia      member  -1.444e-01  -21.698             -21.554     -21.5656             574.92                        8141.9     TRUE
+    uruguay      member   1.500e-01    8.071               7.921       8.3880             575.82                        8142.2     TRUE
+       mena      member  -2.345e+00 -166.459            -164.114    -166.2843             577.40                        8141.7     TRUE
+       nafr      member  -7.028e-03  -66.310             -66.303     -66.5268             576.83                        8141.9     TRUE
+    nigeria      member  -6.301e-01  854.194             854.824      -7.1474            -227.85                        7561.5     TRUE
+  indonesia    outsider  -1.232e+00   -9.663              -8.431     119.0616             403.38                        8860.8     TRUE
+    malasya    outsider   7.061e-01  -10.472             -11.178     528.4406             951.93                        8226.3     TRUE
+ ivorycoast    outsider  -3.521e+01   12.472              47.677     494.4468             720.58                        9159.2     TRUE
+      ghana    outsider  -5.850e+00    1.767               7.617     106.3425             640.30                        8462.3     TRUE
+   colombia    outsider  -9.004e+00    8.039              17.043    -437.9026             -42.66                        8904.5     TRUE
+         us    outsider   9.899e+00  -34.371             -44.270     -17.8115             563.31                        8116.2     TRUE
+      india    outsider   4.998e+00  -13.905             -18.904     197.1766             614.81                        8569.7     TRUE
+     seasia    outsider  -8.383e+00  -41.246             -32.863      85.3829              87.74                        8970.6     TRUE
+    bolivia    outsider  -1.051e-01    2.500               2.605       0.1954             455.05                        9239.5     TRUE
+        drc    outsider   1.433e-01   -1.726              -1.869     128.8755             728.25                       10501.2     TRUE
+     angola    outsider  -8.435e-02   -5.036              -4.952      -7.4650             571.24                        8477.8     TRUE
+       cafr    outsider  -1.738e+00  -11.256              -9.518     -85.0302             485.16                        8639.4     TRUE
+  venezuela    outsider   2.801e-02   -3.118              -3.146     -19.8236             535.03                        8256.0     TRUE
+ gain_from_moving threshold wants_to_move wants_to_move_with_friction transfer_needed revenue_charge
+               NA        NA            NA                          NA          0.0000              0
+         -21.2730    36.918         FALSE                       FALSE          0.0000              0
+        -813.7705    73.434         FALSE                       FALSE          0.0000              0
+        -136.0296     4.785         FALSE                       FALSE          0.0000              0
+          28.8217   214.886          TRUE                       FALSE         28.8217              0
+           0.1327    12.340          TRUE                       FALSE          0.1327              0
+           0.3170     4.998          TRUE                       FALSE          0.3170              0
+           0.1749    82.750          TRUE                       FALSE          0.1749              0
+          -0.2166    38.950         FALSE                       FALSE          0.0000              0
+        -861.3415     4.935         FALSE                       FALSE          0.0000              0
+         128.7244    43.346          TRUE                        TRUE          0.0000              0
+         538.9129    25.656          TRUE                        TRUE          0.0000              0
+         481.9749     6.880          TRUE                        TRUE          0.0000              0
+         104.5752     4.004          TRUE                        TRUE          0.0000              0
+        -445.9415    10.847         FALSE                       FALSE          0.0000              0
+          16.5593   195.710          TRUE                       FALSE          0.0000              0
+         211.0821    49.589          TRUE                        TRUE          0.0000              0
+         126.6289   104.153          TRUE                        TRUE          0.0000              0
+          -2.3046     2.000         FALSE                       FALSE          0.0000              0
+         130.6015     2.000          TRUE                        TRUE          0.0000              0
+          -2.4291     2.000         FALSE                       FALSE          0.0000              0
+         -73.7738     2.764         FALSE                       FALSE          0.0000              0
+         -16.7053     2.000         FALSE                       FALSE          0.0000              0

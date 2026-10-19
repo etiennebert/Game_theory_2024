@@ -1,0 +1,29 @@
+eppa_region,region_name,n_gtap_regions,gtap_regions,countries_and_territories
+USA,United States of America,1,USA,United States of America
+CAN,Canada,1,CAN,Canada
+MEX,Mexico,1,MEX,Mexico
+JPN,Japan,1,JPN,Japan
+ANZ,Australia and New Zealand (+ rest of Oceania and rest of the world),4,"AUS, NZL, XOC, XTW","Australia; New Zealand; Papua New Guinea; Fiji; Solomon Islands; Vanuatu; New Caledonia; French Polynesia; Samoa; Tonga; Kiribati; Micronesia; Marshall Islands; Palau; Nauru; Tuvalu; Cook Islands; Niue; Tokelau; Wallis and Futuna; Guam; Northern Mariana Islands; American Samoa; Norfolk Island; Pitcairn; rest of the world residual (XTW: Antarctica, Bouvet, British Indian Ocean Territory, French Southern Territories, Heard and McDonald, US minor outlying islands)"
+EUR,European Union 28 + EFTA,30,"AUT, BEL, BGR, CYP, CZE, DNK, EST, FIN, FRA, DEU, GRC, HUN, IRL, ITA, LVA, LTU, LUX, MLT, NLD, POL, PRT, ROU, SVK, SVN, ESP, SWE, GBR, CHE, NOR, XEF","Austria; Belgium; Bulgaria; Cyprus; Czech Republic; Denmark; Estonia; Finland; France (incl. Reunion, Guadeloupe, Martinique, French Guiana per GTAP); Germany; Greece; Hungary; Ireland; Italy; Latvia; Lithuania; Luxembourg; Malta; Netherlands; Poland; Portugal; Romania; Slovakia; Slovenia; Spain; Sweden; United Kingdom; Switzerland; Norway; Iceland; Liechtenstein"
+ROE,Rest of Europe and Central Asia (incl. Turkey),16,"ALB, BLR, HRV, UKR, XEE, XER, SRB, KAZ, KGZ, TJK, UZB, XSU, ARM, AZE, GEO, TUR","Albania; Belarus; Croatia; Ukraine; Moldova; Bosnia and Herzegovina; North Macedonia; Montenegro; Kosovo; Andorra; Monaco; San Marino; Holy See; Gibraltar; Faroe Islands; Guernsey; Jersey; Isle of Man; Serbia; Kazakhstan; Kyrgyzstan; Tajikistan; Uzbekistan; Turkmenistan; Armenia; Azerbaijan; Georgia; Turkey"
+RUS,Russia,1,RUS,Russian Federation
+ASI,Dynamic Asia (Southeast Asia),6,"TWN, BRN, MYS, PHL, SGP, THA","Taiwan; Brunei; Malaysia; Philippines; Singapore; Thailand"
+CHN,China and Hong Kong,2,"CHN, HKG","China; Hong Kong"
+IND,India,1,IND,India
+BRA,Brazil,1,BRA,Brazil
+AF1,North Africa (Maghreb + Egypt),5,"EGY, MAR, TUN, DZA, XNF","Egypt; Morocco; Tunisia; Algeria; Libya; Western Sahara"
+AF2,Sahel and francophone West Africa (Benin-Niger belt),9,"BEN, BFA, GIN, SEN, TGO, MLI, MRT, NER, XWF","Benin; Burkina Faso; Guinea; Senegal; Togo; Mali; Mauritania; Niger; Cabo Verde; Gambia; Guinea-Bissau; Liberia; Sierra Leone; Saint Helena"
+AF3,Gabon + Sao Tome + Botswana + Namibia (non-contiguous),4,"GAB, STP, BWA, NAM","Gabon; Sao Tome and Principe; Botswana; Namibia"
+AF4,East Africa and Zambezi belt (Zambia moved to AF6 in AFRC),11,"KEN, MDG, MWI, MUS, MOZ, RWA, TZA, UGA, ZWE, BDI, COM","Kenya; Madagascar; Malawi; Mauritius; Mozambique; Rwanda; Tanzania; Uganda; Zimbabwe; Burundi; Comoros"
+AF5,Chad-CAR-Sudan-Ethiopia corridor,4,"CAF, TCD, ETH, SDN","Central African Republic; Chad; Ethiopia; Sudan"
+AF6,Congo basin + Zambia Copperbelt,4,"COG, GNQ, COD, ZMB","Congo (Brazzaville); Equatorial Guinea; Democratic Republic of the Congo; Zambia"
+AF7,Gulf of Guinea cocoa belt (Cote d'Ivoire + Cameroon + Ghana),3,"CMR, CIV, GHA","Cameroon; Cote d'Ivoire; Ghana"
+AF9,South Africa + SACU rest,3,"ZAF, XSC, SWZ","South Africa; Lesotho; Eswatini"
+AF10,Nigeria,1,NGA,Nigeria
+AF11,Angola,1,AGO,Angola
+AF12,Horn of Africa rest (XEC),1,XEC,"Djibouti; Eritrea; Somalia; South Sudan; Seychelles; Mayotte"
+MES,Middle East,14,"BHR, IRN, ISR, JOR, KWT, OMN, QAT, SAU, ARE, XWS, IRQ, LBN, PSE, SYR","Bahrain; Iran; Israel; Jordan; Kuwait; Oman; Qatar; Saudi Arabia; United Arab Emirates; Yemen; Iraq; Lebanon; Palestine; Syria"
+LAM,Latin America (excl. Brazil and Mexico),24,"XNA, ARG, BOL, CHL, COL, ECU, PRY, PER, URY, VEN, XSM, CRI, GTM, HND, NIC, PAN, SLV, XCA, DOM, JAM, PRI, TTO, XCB, HTI","Bermuda; Greenland; Saint Pierre and Miquelon; Argentina; Bolivia; Chile; Colombia; Ecuador; Paraguay; Peru; Uruguay; Venezuela; Guyana; Suriname; Falkland Islands; Costa Rica; Guatemala; Honduras; Nicaragua; Panama; El Salvador; Belize; Dominican Republic; Jamaica; Puerto Rico; Trinidad and Tobago; Haiti; Cuba; Bahamas; Barbados; Antigua and Barbuda; Dominica; Grenada; Saint Kitts and Nevis; Saint Lucia; Saint Vincent and the Grenadines; Aruba; Curacao; Sint Maarten; Cayman Islands; Turks and Caicos; British Virgin Islands; US Virgin Islands; Anguilla; Montserrat"
+REA,Rest of Asia (South and Southeast Asia rest, Mongolia),12,"MNG, XEA, KHM, LAO, VNM, XSE, BGD, NPL, PAK, LKA, XSA, AFG","Mongolia; North Korea; Macao; Cambodia; Laos; Viet Nam; Myanmar; Timor-Leste; Bangladesh; Nepal; Pakistan; Sri Lanka; Bhutan; Maldives; Afghanistan"
+KOR,Korea,1,KOR,Republic of Korea
+IDZ,Indonesia,1,IDN,Indonesia

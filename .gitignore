@@ -22,6 +22,7 @@ gdx.zip
 gtapv6.zip
 
 # ---- 2. archive folders: old model copies (contain the database, exe's, solutions) --------
+9_Archive/
 **/0. Old/
 **/Old/
 **/2_Model_*/

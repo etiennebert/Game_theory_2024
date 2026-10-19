@@ -1,0 +1,7 @@
+"myanmar"
+"colombia"
+"venezuela"
+"angola"
+"drc"
+"cafr"
+"mozambique"

@@ -1,0 +1,8 @@
+"bolivia"
+"indonesia"
+"malasya"
+"colombia"
+"peru"
+"drc"
+"ivorycoast"
+"ghana"

@@ -1,7 +1,0 @@
-"newzealand"
-"china"
-"uruguay"
-"eu27"
-"uk"
-"efta"
-"ivorycoast"

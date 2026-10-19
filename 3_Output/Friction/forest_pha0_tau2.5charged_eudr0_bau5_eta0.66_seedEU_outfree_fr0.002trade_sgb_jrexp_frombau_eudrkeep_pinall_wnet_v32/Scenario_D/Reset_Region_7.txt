@@ -1,0 +1,8 @@
+"japan"
+"colombia"
+"venezuela"
+"eu27"
+"mena"
+"angola"
+"drc"
+"cafr"

@@ -1,0 +1,8 @@
+"brasil"
+"colombia"
+"venezuela"
+"eu27"
+"efta"
+"angola"
+"drc"
+"cafr"

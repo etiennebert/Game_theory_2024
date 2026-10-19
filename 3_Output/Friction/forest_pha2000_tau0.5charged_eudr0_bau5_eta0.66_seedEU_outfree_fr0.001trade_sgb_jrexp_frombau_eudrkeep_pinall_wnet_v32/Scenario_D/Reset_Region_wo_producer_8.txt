@@ -1,0 +1,6 @@
+"eastasia"
+"myanmar"
+"venezuela"
+"mena"
+"wafr"
+"cafr"

@@ -1,5 +1,0 @@
-"us"
-"peru"
-"venezuela"
-"eu27"
-"russia"

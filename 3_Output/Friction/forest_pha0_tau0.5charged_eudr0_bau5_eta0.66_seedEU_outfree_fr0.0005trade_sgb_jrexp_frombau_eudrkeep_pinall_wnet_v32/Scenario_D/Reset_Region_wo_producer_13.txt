@@ -1,0 +1,5 @@
+"myanmar"
+"venezuela"
+"eu27"
+"wafr"
+"cafr"

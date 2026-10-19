@@ -1,0 +1,80 @@
+
+=== club 1.5 %: 35 members at convergence (iteration 7)
+  trade (0.1 %)  : identical path through convergence
+  geo symmetric  : diverges at iteration 2: replay adds ['newzealand', 'oceania'], drops ['eafr'] | eafr (outsider) measure 19.0 vs threshold 19.3 -> stays out; newzealand (outsider) measure 15.1 vs threshold 14.2 -> joins; oceania (outsider) measure 19.7 vs threshold 17.9 -> joins
+  geo asymmetric : diverges at iteration 2: replay adds ['newzealand', 'oceania'], drops ['eafr'] | eafr (outsider) measure 19.0 vs threshold 19.3 -> stays out; newzealand (outsider) measure 15.1 vs threshold 14.2 -> joins; oceania (outsider) measure 19.7 vs threshold 17.9 -> joins
+
+=== club 1.25 %: 35 members at convergence (iteration 7)
+  trade (0.1 %)  : identical path through convergence
+  geo symmetric  : diverges at iteration 2: replay adds [], drops ['nafr'] | nafr (outsider) measure 42.0 vs threshold 47.8 -> stays out
+  geo asymmetric : diverges at iteration 2: replay adds [], drops ['nafr'] | nafr (outsider) measure 42.0 vs threshold 47.8 -> stays out
+
+=== club 1.0 %: 8 members at convergence (iteration 3)
+  trade (0.1 %)  : identical path through convergence
+  geo symmetric  : diverges at iteration 2: replay adds ['brasil', 'uruguay'], drops [] | brasil (outsider) measure 68.9 vs threshold 65.2 -> joins; uruguay (outsider) measure 5.0 vs threshold 4.8 -> joins
+  geo asymmetric : diverges at iteration 2: replay adds ['brasil', 'uruguay'], drops [] | brasil (outsider) measure 68.9 vs threshold 65.2 -> joins; uruguay (outsider) measure 5.0 vs threshold 4.8 -> joins
+
+=== coalition 4,000: 23 members at convergence (iteration 6)
+  trade (0.1 %)  : identical path through convergence
+  geo symmetric  : diverges at iteration 2: replay adds [], drops ['bolivia'] | bolivia (outsider) measure 2.0 vs threshold 2.5 -> stays out
+  geo asymmetric : diverges at iteration 2: replay adds [], drops ['bolivia'] | bolivia (outsider) measure 2.0 vs threshold 2.5 -> stays out
+
+=== coalition 2,000: 18 members at convergence (iteration 7)
+  trade (0.1 %)  : identical path through convergence
+  geo symmetric  : diverges at iteration 3: replay adds ['canada', 'us'], drops ['malasya', 'nafr'] | canada (outsider) measure 28.9 vs threshold 22.8 -> joins; malasya (outsider) measure 29.6 vs threshold 29.8 -> stays out; nafr (outsider) measure 39.9 vs threshold 47.8 -> stays out; us (outsider) measure 175.5 vs threshold 97.9 -> joins
+  geo asymmetric : diverges at iteration 3: replay adds ['canada', 'us'], drops ['malasya', 'nafr'] | canada (outsider) measure 28.9 vs threshold 22.8 -> joins; malasya (outsider) measure 29.6 vs threshold 29.8 -> stays out; nafr (outsider) measure 39.9 vs threshold 47.8 -> stays out; us (outsider) measure 175.5 vs threshold 97.9 -> joins
+
+=== coalition 1,500: 10 members at convergence (iteration 7)
+  trade (0.1 %)  : identical path through convergence
+  geo symmetric  : diverges at iteration 3: replay adds ['canada', 'us'], drops [] | canada (outsider) measure 25.0 vs threshold 22.8 -> joins; us (outsider) measure 148.2 vs threshold 97.9 -> joins
+  geo asymmetric : diverges at iteration 3: replay adds ['canada', 'us'], drops [] | canada (outsider) measure 25.0 vs threshold 22.8 -> joins; us (outsider) measure 148.2 vs threshold 97.9 -> joins
+
+=== coalition 3,500: 22 members at convergence (iteration 5)
+  trade (0.1 %)  : identical path through convergence
+  geo symmetric  : diverges at iteration 3: replay adds ['us'], drops [] | us (outsider) measure 156.9 vs threshold 97.9 -> joins
+  geo asymmetric : diverges at iteration 3: replay adds ['us'], drops [] | us (outsider) measure 156.9 vs threshold 97.9 -> joins
+
+=== coalition 3,000: 18 members at convergence (iteration 6)
+  trade (0.1 %)  : identical path through convergence
+  geo symmetric  : diverges at iteration 3: replay adds ['canada', 'us'], drops ['nafr'] | canada (outsider) measure 31.4 vs threshold 22.8 -> joins; nafr (outsider) measure 41.0 vs threshold 47.8 -> stays out; us (outsider) measure 181.2 vs threshold 97.9 -> joins
+  geo asymmetric : diverges at iteration 3: replay adds ['canada', 'us'], drops ['nafr'] | canada (outsider) measure 31.4 vs threshold 22.8 -> joins; nafr (outsider) measure 41.0 vs threshold 47.8 -> stays out; us (outsider) measure 181.2 vs threshold 97.9 -> joins
+
+=== one-deviation tests (gain from moving vs threshold)
+
+pha0_tau0 Sminmercosur0:
+    china (leaves) gain 36.6: trade (0.1 %): stays (thr 214.9), geo symmetric: stays (thr 252.6), geo asymmetric: stays (thr 182.8)
+    eastasia (leaves) gain 0.1: trade (0.1 %): stays (thr 12.3), geo symmetric: stays (thr 14.1), geo asymmetric: stays (thr 10.8)
+    uruguay (leaves) gain 0.3: trade (0.1 %): stays (thr 5.0), geo symmetric: stays (thr 4.8), geo asymmetric: stays (thr 5.3)
+    mena (leaves) gain 0.2: trade (0.1 %): stays (thr 82.8), geo symmetric: stays (thr 93.1), geo asymmetric: stays (thr 73.6)
+    indonesia (joins) gain 27.5: trade (0.1 %): stays (thr 43.3), geo symmetric: stays (thr 52.4), geo asymmetric: stays (thr 52.4)
+    malasya (joins) gain 37.0: trade (0.1 %): moves (thr 25.7), geo symmetric: moves (thr 29.8), geo asymmetric: moves (thr 29.8)
+    ivorycoast (joins) gain 37.2: trade (0.1 %): moves (thr 6.9), geo symmetric: moves (thr 6.7), geo asymmetric: moves (thr 6.7)
+    us (joins) gain 3.5: trade (0.1 %): stays (thr 195.7), geo symmetric: stays (thr 97.9), geo asymmetric: stays (thr 97.9)
+    india (joins) gain 163.4: trade (0.1 %): moves (thr 49.6), geo symmetric: moves (thr 49.5), geo asymmetric: moves (thr 49.5)
+
+pha0_tau1.12charged Smineuchinaclub112:
+    myanmar (leaves) gain 4.1: trade (0.1 %): stays (thr 5.7), geo symmetric: stays (thr 6.4), geo asymmetric: stays (thr 5.1)
+
+pha0_tau1.5charged SminclubY:
+
+pha0_tau1.5charged SminclubYjapan:
+    japan (joins) gain 34.5: trade (0.1 %): stays (thr 39.5), geo symmetric: moves (thr 26.0), geo asymmetric: moves (thr 26.0)
+
+pha4000_tau0 SmincoalitionX:
+    madagascar (leaves) gain 2.7: trade (0.1 %): moves (thr 2.0), geo symmetric: moves (thr 2.1), geo asymmetric: moves (thr 2.0)
+    eastasia (leaves) gain 1.8: trade (0.1 %): stays (thr 12.3), geo symmetric: stays (thr 14.1), geo asymmetric: stays (thr 10.8)
+    mozambique (leaves) gain 1.5: trade (0.1 %): stays (thr 2.0), geo symmetric: stays (thr 2.3), geo asymmetric: stays (thr 2.0)
+    uruguay (joins) gain 1.2: trade (0.1 %): stays (thr 5.0), geo symmetric: stays (thr 4.8), geo asymmetric: stays (thr 4.8)
+    china (joins) gain 110.2: trade (0.1 %): stays (thr 214.9), geo symmetric: stays (thr 252.6), geo asymmetric: stays (thr 252.6)
+
+pha4000_tau0 SmincoalitionXouts:
+    japan (joins) gain 11.1: trade (0.1 %): stays (thr 39.5), geo symmetric: stays (thr 26.0), geo asymmetric: stays (thr 26.0)
+    korea (joins) gain 8.3: trade (0.1 %): stays (thr 24.6), geo symmetric: stays (thr 15.2), geo asymmetric: stays (thr 15.2)
+    mena (joins) gain 1.1: trade (0.1 %): stays (thr 82.8), geo symmetric: stays (thr 93.1), geo asymmetric: stays (thr 93.1)
+    nafr (joins) gain 1.4: trade (0.1 %): stays (thr 39.0), geo symmetric: stays (thr 47.8), geo asymmetric: stays (thr 47.8)
+    oceania (joins) gain 33.0: trade (0.1 %): stays (thr 35.9), geo symmetric: moves (thr 17.9), geo asymmetric: moves (thr 17.9)
+    restofworld (joins) gain 7.3: trade (0.1 %): stays (thr 46.0), geo symmetric: stays (thr 37.7), geo asymmetric: stays (thr 37.7)
+    russia (joins) gain 6.8: trade (0.1 %): stays (thr 35.8), geo symmetric: stays (thr 35.8), geo asymmetric: stays (thr 35.8)
+    safr (joins) gain 30.6: trade (0.1 %): moves (thr 11.4), geo symmetric: moves (thr 12.5), geo asymmetric: moves (thr 12.5)
+    southasia (joins) gain 13.0: trade (0.1 %): stays (thr 28.3), geo symmetric: stays (thr 31.1), geo asymmetric: stays (thr 31.1)
+    uk (joins) gain 0.7: trade (0.1 %): stays (thr 48.1), geo symmetric: stays (thr 24.1), geo asymmetric: stays (thr 24.1)

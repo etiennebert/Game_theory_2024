@@ -1,0 +1,1451 @@
+[
+ {
+  "seed": "EUChina",
+  "pha": 0,
+  "tau": 0.75,
+  "last": 3,
+  "works": false,
+  "brasil": {
+   "r1": 64.92,
+   "T": 73.434,
+   "joins": null,
+   "final": false,
+   "dev_final": -81.3
+  },
+  "drc": {
+   "r1": 0.39,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": -0.8
+  },
+  "bolivia": {
+   "r1": -0.03,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": 0.0
+  },
+  "seasia": {
+   "r1": 91.61,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -149.5
+  },
+  "ivorycoast": {
+   "r1": 9.23,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 51.3
+  },
+  "colombia": {
+   "r1": 5.82,
+   "T": 10.847,
+   "joins": null,
+   "final": false,
+   "dev_final": 1.4
+  },
+  "indonesia": {
+   "r1": 21.41,
+   "T": 43.346,
+   "joins": null,
+   "final": false,
+   "dev_final": -39.9
+  },
+  "nigeria": {
+   "r1": 3.33,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 79.0
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 0,
+  "tau": 0.75,
+  "last": 4,
+  "works": false,
+  "brasil": {
+   "r1": 51.85,
+   "T": 73.434,
+   "joins": null,
+   "final": false,
+   "dev_final": -46.2
+  },
+  "drc": {
+   "r1": 0.25,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": -0.6
+  },
+  "bolivia": {
+   "r1": 0.11,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": -0.2
+  },
+  "seasia": {
+   "r1": 48.16,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -95.4
+  },
+  "ivorycoast": {
+   "r1": 9.48,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 49.3
+  },
+  "colombia": {
+   "r1": 6.66,
+   "T": 10.847,
+   "joins": null,
+   "final": false,
+   "dev_final": 1.1
+  },
+  "indonesia": {
+   "r1": 10.89,
+   "T": 43.346,
+   "joins": null,
+   "final": false,
+   "dev_final": -19.1
+  },
+  "nigeria": {
+   "r1": 2.38,
+   "T": 4.935,
+   "joins": null,
+   "final": false,
+   "dev_final": -7.2
+  }
+ },
+ {
+  "seed": "EUChina",
+  "pha": 0,
+  "tau": 0.87,
+  "last": 7,
+  "works": true,
+  "brasil": {
+   "r1": 82.11,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1058.5
+  },
+  "drc": {
+   "r1": 0.44,
+   "T": 2.0,
+   "joins": 3,
+   "final": false,
+   "dev_final": -4.5
+  },
+  "bolivia": {
+   "r1": -0.02,
+   "T": 2.0,
+   "joins": 6,
+   "final": false,
+   "dev_final": 1.8
+  },
+  "seasia": {
+   "r1": 107.46,
+   "T": 104.153,
+   "joins": 2,
+   "final": true,
+   "dev_final": -53.1
+  },
+  "ivorycoast": {
+   "r1": 11.09,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 100.5
+  },
+  "colombia": {
+   "r1": 7.04,
+   "T": 10.847,
+   "joins": 4,
+   "final": false,
+   "dev_final": 14.0
+  },
+  "indonesia": {
+   "r1": 24.86,
+   "T": 43.346,
+   "joins": 3,
+   "final": true,
+   "dev_final": 42.8
+  },
+  "nigeria": {
+   "r1": 3.69,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 69.0
+  }
+ },
+ {
+  "seed": "EUChina",
+  "pha": 0,
+  "tau": 1.12,
+  "last": 7,
+  "works": true,
+  "brasil": {
+   "r1": 117.68,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1046.2
+  },
+  "drc": {
+   "r1": 0.53,
+   "T": 2.0,
+   "joins": 3,
+   "final": false,
+   "dev_final": -5.2
+  },
+  "bolivia": {
+   "r1": -0.01,
+   "T": 2.0,
+   "joins": 6,
+   "final": false,
+   "dev_final": -1.1
+  },
+  "seasia": {
+   "r1": 140.2,
+   "T": 104.153,
+   "joins": 2,
+   "final": true,
+   "dev_final": -101.5
+  },
+  "ivorycoast": {
+   "r1": 14.95,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 99.9
+  },
+  "colombia": {
+   "r1": 9.58,
+   "T": 10.847,
+   "joins": 4,
+   "final": false,
+   "dev_final": -8.3
+  },
+  "indonesia": {
+   "r1": 32.0,
+   "T": 43.346,
+   "joins": 3,
+   "final": true,
+   "dev_final": 23.6
+  },
+  "nigeria": {
+   "r1": 4.42,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 68.8
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 0,
+  "tau": 1.25,
+  "last": 7,
+  "works": true,
+  "brasil": {
+   "r1": 85.84,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1041.7
+  },
+  "drc": {
+   "r1": 0.42,
+   "T": 2.0,
+   "joins": 5,
+   "final": false,
+   "dev_final": -5.3
+  },
+  "bolivia": {
+   "r1": 0.18,
+   "T": 2.0,
+   "joins": 4,
+   "final": false,
+   "dev_final": -2.0
+  },
+  "seasia": {
+   "r1": 79.84,
+   "T": 104.153,
+   "joins": 3,
+   "final": true,
+   "dev_final": -92.4
+  },
+  "ivorycoast": {
+   "r1": 15.75,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 100.6
+  },
+  "colombia": {
+   "r1": 11.05,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -20.8
+  },
+  "indonesia": {
+   "r1": 18.0,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 24.7
+  },
+  "nigeria": {
+   "r1": 3.93,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 68.3
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 0,
+  "tau": 1.5,
+  "last": 7,
+  "works": true,
+  "brasil": {
+   "r1": 102.58,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1048.5
+  },
+  "drc": {
+   "r1": 0.5,
+   "T": 2.0,
+   "joins": 4,
+   "final": false,
+   "dev_final": -5.8
+  },
+  "bolivia": {
+   "r1": 0.22,
+   "T": 2.0,
+   "joins": 4,
+   "final": false,
+   "dev_final": -3.5
+  },
+  "seasia": {
+   "r1": 95.51,
+   "T": 104.153,
+   "joins": 3,
+   "final": true,
+   "dev_final": -100.2
+  },
+  "ivorycoast": {
+   "r1": 18.85,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 100.5
+  },
+  "colombia": {
+   "r1": 13.22,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -32.0
+  },
+  "indonesia": {
+   "r1": 21.51,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 24.2
+  },
+  "nigeria": {
+   "r1": 4.69,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 68.8
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 0,
+  "tau": 1.0,
+  "last": 3,
+  "works": false,
+  "brasil": {
+   "r1": 68.93,
+   "T": 73.434,
+   "joins": null,
+   "final": false,
+   "dev_final": -68.1
+  },
+  "drc": {
+   "r1": 0.34,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": -0.9
+  },
+  "bolivia": {
+   "r1": 0.14,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": 0.1
+  },
+  "seasia": {
+   "r1": 64.05,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -113.8
+  },
+  "ivorycoast": {
+   "r1": 12.62,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 57.3
+  },
+  "colombia": {
+   "r1": 8.86,
+   "T": 10.847,
+   "joins": null,
+   "final": false,
+   "dev_final": 0.9
+  },
+  "indonesia": {
+   "r1": 14.46,
+   "T": 43.346,
+   "joins": null,
+   "final": false,
+   "dev_final": -40.6
+  },
+  "nigeria": {
+   "r1": 3.16,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 78.7
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 0,
+  "tau": 2.5,
+  "last": 6,
+  "works": true,
+  "brasil": {
+   "r1": 167.92,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1069.6
+  },
+  "drc": {
+   "r1": 0.82,
+   "T": 2.0,
+   "joins": 3,
+   "final": false,
+   "dev_final": -7.3
+  },
+  "bolivia": {
+   "r1": 0.35,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -4.5
+  },
+  "seasia": {
+   "r1": 157.16,
+   "T": 104.153,
+   "joins": 2,
+   "final": true,
+   "dev_final": -92.7
+  },
+  "ivorycoast": {
+   "r1": 31.05,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 103.3
+  },
+  "colombia": {
+   "r1": 21.71,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -108.5
+  },
+  "indonesia": {
+   "r1": 35.26,
+   "T": 43.346,
+   "joins": 3,
+   "final": true,
+   "dev_final": 27.4
+  },
+  "nigeria": {
+   "r1": 7.71,
+   "T": 4.935,
+   "joins": 2,
+   "final": true,
+   "dev_final": 67.2
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 0,
+  "tau": 5.0,
+  "last": 5,
+  "works": true,
+  "brasil": {
+   "r1": 320.26,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1076.0
+  },
+  "drc": {
+   "r1": 1.6,
+   "T": 2.0,
+   "joins": 3,
+   "final": false,
+   "dev_final": -10.8
+  },
+  "bolivia": {
+   "r1": 0.67,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -4.8
+  },
+  "seasia": {
+   "r1": 303.7,
+   "T": 104.153,
+   "joins": 2,
+   "final": true,
+   "dev_final": -96.4
+  },
+  "ivorycoast": {
+   "r1": 60.13,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 106.7
+  },
+  "colombia": {
+   "r1": 41.66,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -262.9
+  },
+  "indonesia": {
+   "r1": 67.64,
+   "T": 43.346,
+   "joins": 2,
+   "final": true,
+   "dev_final": 27.2
+  },
+  "nigeria": {
+   "r1": 14.88,
+   "T": 4.935,
+   "joins": 2,
+   "final": true,
+   "dev_final": 67.1
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 1000,
+  "tau": 0.62,
+  "last": 9,
+  "works": true,
+  "brasil": {
+   "r1": 65.68,
+   "T": 73.434,
+   "joins": 4,
+   "final": true,
+   "dev_final": 1055.6
+  },
+  "drc": {
+   "r1": 1.66,
+   "T": 2.0,
+   "joins": 5,
+   "final": false,
+   "dev_final": -12.5
+  },
+  "bolivia": {
+   "r1": 0.68,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -4.3
+  },
+  "seasia": {
+   "r1": 41.82,
+   "T": 104.153,
+   "joins": 4,
+   "final": true,
+   "dev_final": -92.4
+  },
+  "ivorycoast": {
+   "r1": 56.07,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 102.0
+  },
+  "colombia": {
+   "r1": 10.94,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -6.6
+  },
+  "indonesia": {
+   "r1": 11.24,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 25.8
+  },
+  "nigeria": {
+   "r1": 1.92,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 67.5
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 1000,
+  "tau": 0.87,
+  "last": 8,
+  "works": true,
+  "brasil": {
+   "r1": 82.53,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1057.5
+  },
+  "drc": {
+   "r1": 1.73,
+   "T": 2.0,
+   "joins": 5,
+   "final": false,
+   "dev_final": -12.8
+  },
+  "bolivia": {
+   "r1": 0.71,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -4.3
+  },
+  "seasia": {
+   "r1": 57.74,
+   "T": 104.153,
+   "joins": 4,
+   "final": true,
+   "dev_final": -92.3
+  },
+  "ivorycoast": {
+   "r1": 58.92,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 102.5
+  },
+  "colombia": {
+   "r1": 13.12,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -23.6
+  },
+  "indonesia": {
+   "r1": 14.79,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 25.7
+  },
+  "nigeria": {
+   "r1": 2.7,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 66.8
+  }
+ },
+ {
+  "seed": "EUChina",
+  "pha": 1000,
+  "tau": 0.0,
+  "last": 4,
+  "works": true,
+  "brasil": {
+   "r1": 105.84,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 732.8
+  },
+  "drc": {
+   "r1": 1.68,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": -3.4
+  },
+  "bolivia": {
+   "r1": 0.49,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": 1.2
+  },
+  "seasia": {
+   "r1": -3.98,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -91.2
+  },
+  "ivorycoast": {
+   "r1": 48.69,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 54.6
+  },
+  "colombia": {
+   "r1": 4.04,
+   "T": 10.847,
+   "joins": null,
+   "final": false,
+   "dev_final": 11.4
+  },
+  "indonesia": {
+   "r1": 8.03,
+   "T": 43.346,
+   "joins": null,
+   "final": false,
+   "dev_final": -7.3
+  },
+  "nigeria": {
+   "r1": 1.31,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 71.9
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 1000,
+  "tau": 1.12,
+  "last": 8,
+  "works": true,
+  "brasil": {
+   "r1": 99.21,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1061.5
+  },
+  "drc": {
+   "r1": 1.8,
+   "T": 2.0,
+   "joins": 4,
+   "final": false,
+   "dev_final": -13.3
+  },
+  "bolivia": {
+   "r1": 0.74,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -4.3
+  },
+  "seasia": {
+   "r1": 73.55,
+   "T": 104.153,
+   "joins": 4,
+   "final": true,
+   "dev_final": -101.3
+  },
+  "ivorycoast": {
+   "r1": 61.75,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 102.4
+  },
+  "colombia": {
+   "r1": 15.28,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -35.3
+  },
+  "indonesia": {
+   "r1": 18.32,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 24.9
+  },
+  "nigeria": {
+   "r1": 3.47,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 67.3
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 1500,
+  "tau": 0.0,
+  "last": 7,
+  "works": false,
+  "brasil": {
+   "r1": 34.19,
+   "T": 73.434,
+   "joins": null,
+   "final": false,
+   "dev_final": 3.5
+  },
+  "drc": {
+   "r1": 1.96,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": -3.4
+  },
+  "bolivia": {
+   "r1": 0.86,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -8.1
+  },
+  "seasia": {
+   "r1": 3.03,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -27.3
+  },
+  "ivorycoast": {
+   "r1": 71.61,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 53.4
+  },
+  "colombia": {
+   "r1": 8.17,
+   "T": 10.847,
+   "joins": 4,
+   "final": false,
+   "dev_final": 6.3
+  },
+  "indonesia": {
+   "r1": 3.5,
+   "T": 43.346,
+   "joins": null,
+   "final": false,
+   "dev_final": -15.7
+  },
+  "nigeria": {
+   "r1": -0.06,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 75.5
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 2000,
+  "tau": 0.5,
+  "last": 10,
+  "works": true,
+  "brasil": {
+   "r1": 78.49,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1060.0
+  },
+  "drc": {
+   "r1": 2.46,
+   "T": 2.0,
+   "joins": 2,
+   "final": false,
+   "dev_final": -17.5
+  },
+  "bolivia": {
+   "r1": 1.18,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -4.3
+  },
+  "seasia": {
+   "r1": 36.41,
+   "T": 104.153,
+   "joins": 4,
+   "final": true,
+   "dev_final": -90.3
+  },
+  "ivorycoast": {
+   "r1": 98.39,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 103.2
+  },
+  "colombia": {
+   "r1": 15.26,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -18.6
+  },
+  "indonesia": {
+   "r1": 11.86,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 25.8
+  },
+  "nigeria": {
+   "r1": 1.5,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 67.4
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 2000,
+  "tau": 0.75,
+  "last": 8,
+  "works": true,
+  "brasil": {
+   "r1": 95.13,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 1060.6
+  },
+  "drc": {
+   "r1": 2.52,
+   "T": 2.0,
+   "joins": 2,
+   "final": false,
+   "dev_final": -17.6
+  },
+  "bolivia": {
+   "r1": 1.21,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -4.4
+  },
+  "seasia": {
+   "r1": 52.34,
+   "T": 104.153,
+   "joins": 4,
+   "final": true,
+   "dev_final": -86.4
+  },
+  "ivorycoast": {
+   "r1": 100.97,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 103.9
+  },
+  "colombia": {
+   "r1": 17.42,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -29.3
+  },
+  "indonesia": {
+   "r1": 15.4,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 26.3
+  },
+  "nigeria": {
+   "r1": 2.28,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 67.3
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 2000,
+  "tau": 0.0,
+  "last": 7,
+  "works": true,
+  "brasil": {
+   "r1": 44.72,
+   "T": 73.434,
+   "joins": 4,
+   "final": true,
+   "dev_final": 863.4
+  },
+  "drc": {
+   "r1": 2.33,
+   "T": 2.0,
+   "joins": 2,
+   "final": false,
+   "dev_final": -6.4
+  },
+  "bolivia": {
+   "r1": 1.12,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -5.8
+  },
+  "seasia": {
+   "r1": 4.23,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -96.6
+  },
+  "ivorycoast": {
+   "r1": 93.17,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 68.2
+  },
+  "colombia": {
+   "r1": 10.89,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": 10.1
+  },
+  "indonesia": {
+   "r1": 4.71,
+   "T": 43.346,
+   "joins": null,
+   "final": false,
+   "dev_final": -29.8
+  },
+  "nigeria": {
+   "r1": -0.08,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 69.0
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 2500,
+  "tau": 0.0,
+  "last": 7,
+  "works": true,
+  "brasil": {
+   "r1": 54.79,
+   "T": 73.434,
+   "joins": 4,
+   "final": true,
+   "dev_final": 891.5
+  },
+  "drc": {
+   "r1": 2.63,
+   "T": 2.0,
+   "joins": 2,
+   "final": false,
+   "dev_final": -8.2
+  },
+  "bolivia": {
+   "r1": 1.36,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -5.4
+  },
+  "seasia": {
+   "r1": 5.49,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -98.9
+  },
+  "ivorycoast": {
+   "r1": 113.64,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 71.7
+  },
+  "colombia": {
+   "r1": 13.58,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": 8.9
+  },
+  "indonesia": {
+   "r1": 5.94,
+   "T": 43.346,
+   "joins": null,
+   "final": false,
+   "dev_final": -40.5
+  },
+  "nigeria": {
+   "r1": -0.09,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 70.7
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 3000,
+  "tau": 0.0,
+  "last": 6,
+  "works": true,
+  "brasil": {
+   "r1": 64.44,
+   "T": 73.434,
+   "joins": 4,
+   "final": true,
+   "dev_final": 897.8
+  },
+  "drc": {
+   "r1": 2.87,
+   "T": 2.0,
+   "joins": 2,
+   "final": false,
+   "dev_final": -8.8
+  },
+  "bolivia": {
+   "r1": 1.59,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -5.3
+  },
+  "seasia": {
+   "r1": 6.83,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -107.6
+  },
+  "ivorycoast": {
+   "r1": 133.09,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 72.6
+  },
+  "colombia": {
+   "r1": 16.26,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": 6.2
+  },
+  "indonesia": {
+   "r1": 7.17,
+   "T": 43.346,
+   "joins": null,
+   "final": false,
+   "dev_final": -47.7
+  },
+  "nigeria": {
+   "r1": -0.11,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 70.7
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 3500,
+  "tau": 0.0,
+  "last": 5,
+  "works": true,
+  "brasil": {
+   "r1": 73.7,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 986.4
+  },
+  "drc": {
+   "r1": 3.07,
+   "T": 2.0,
+   "joins": 2,
+   "final": false,
+   "dev_final": -18.5
+  },
+  "bolivia": {
+   "r1": 1.81,
+   "T": 2.0,
+   "joins": 3,
+   "final": true,
+   "dev_final": -4.5
+  },
+  "seasia": {
+   "r1": 8.23,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -130.5
+  },
+  "ivorycoast": {
+   "r1": 151.57,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 88.1
+  },
+  "colombia": {
+   "r1": 18.92,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -15.5
+  },
+  "indonesia": {
+   "r1": 8.42,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 52.9
+  },
+  "nigeria": {
+   "r1": -0.12,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 69.0
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 4000,
+  "tau": 0.0,
+  "last": 6,
+  "works": true,
+  "brasil": {
+   "r1": 82.58,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 970.0
+  },
+  "drc": {
+   "r1": 3.24,
+   "T": 2.0,
+   "joins": 2,
+   "final": false,
+   "dev_final": -20.6
+  },
+  "bolivia": {
+   "r1": 2.01,
+   "T": 2.0,
+   "joins": 2,
+   "final": true,
+   "dev_final": -4.6
+  },
+  "seasia": {
+   "r1": 9.69,
+   "T": 104.153,
+   "joins": 4,
+   "final": true,
+   "dev_final": -101.0
+  },
+  "ivorycoast": {
+   "r1": 169.12,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 98.6
+  },
+  "colombia": {
+   "r1": 21.55,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -14.4
+  },
+  "indonesia": {
+   "r1": 9.68,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 30.8
+  },
+  "nigeria": {
+   "r1": -0.12,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 20.2
+  }
+ },
+ {
+  "seed": "EUChina",
+  "pha": 500,
+  "tau": 0.0,
+  "last": 3,
+  "works": false,
+  "brasil": {
+   "r1": 32.26,
+   "T": 73.434,
+   "joins": null,
+   "final": false,
+   "dev_final": -16.9
+  },
+  "drc": {
+   "r1": 1.02,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": -1.4
+  },
+  "bolivia": {
+   "r1": 0.22,
+   "T": 2.0,
+   "joins": null,
+   "final": false,
+   "dev_final": -0.2
+  },
+  "seasia": {
+   "r1": -6.73,
+   "T": 104.153,
+   "joins": null,
+   "final": false,
+   "dev_final": -22.8
+  },
+  "ivorycoast": {
+   "r1": 23.71,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 43.5
+  },
+  "colombia": {
+   "r1": 1.04,
+   "T": 10.847,
+   "joins": null,
+   "final": false,
+   "dev_final": 8.9
+  },
+  "indonesia": {
+   "r1": 3.75,
+   "T": 43.346,
+   "joins": null,
+   "final": false,
+   "dev_final": -10.6
+  },
+  "nigeria": {
+   "r1": 1.2,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 80.4
+  }
+ },
+ {
+  "seed": "EU",
+  "pha": 6000,
+  "tau": 0.0,
+  "last": 6,
+  "works": true,
+  "brasil": {
+   "r1": 114.86,
+   "T": 73.434,
+   "joins": 2,
+   "final": true,
+   "dev_final": 975.4
+  },
+  "drc": {
+   "r1": 3.74,
+   "T": 2.0,
+   "joins": 2,
+   "final": false,
+   "dev_final": -23.0
+  },
+  "bolivia": {
+   "r1": 2.76,
+   "T": 2.0,
+   "joins": 2,
+   "final": true,
+   "dev_final": -4.6
+  },
+  "seasia": {
+   "r1": 16.1,
+   "T": 104.153,
+   "joins": 4,
+   "final": true,
+   "dev_final": -97.0
+  },
+  "ivorycoast": {
+   "r1": 230.94,
+   "T": 6.88,
+   "joins": 2,
+   "final": true,
+   "dev_final": 101.1
+  },
+  "colombia": {
+   "r1": 31.87,
+   "T": 10.847,
+   "joins": 2,
+   "final": false,
+   "dev_final": -45.8
+  },
+  "indonesia": {
+   "r1": 14.77,
+   "T": 43.346,
+   "joins": 4,
+   "final": true,
+   "dev_final": 30.3
+  },
+  "nigeria": {
+   "r1": -0.1,
+   "T": 4.935,
+   "joins": 3,
+   "final": true,
+   "dev_final": 20.3
+  }
+ }
+]

@@ -1,0 +1,4 @@
+"china"
+"japan"
+"eu27"
+"cafr"

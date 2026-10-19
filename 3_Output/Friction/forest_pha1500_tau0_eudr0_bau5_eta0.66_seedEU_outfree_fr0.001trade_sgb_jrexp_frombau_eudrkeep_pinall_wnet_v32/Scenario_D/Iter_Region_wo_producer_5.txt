@@ -1,0 +1,5 @@
+"korea"
+"madagascar"
+"latinamer"
+"efta"
+"nigeria"

@@ -1,5 +1,0 @@
-"madagascar"
-"mexico"
-"uruguay"
-"eu27"
-"mozambique"

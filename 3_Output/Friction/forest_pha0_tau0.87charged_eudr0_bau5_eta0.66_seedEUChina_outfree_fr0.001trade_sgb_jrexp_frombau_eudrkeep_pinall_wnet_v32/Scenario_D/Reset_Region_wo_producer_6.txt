@@ -1,0 +1,7 @@
+"japan"
+"korea"
+"madagascar"
+"myanmar"
+"venezuela"
+"mena"
+"cafr"

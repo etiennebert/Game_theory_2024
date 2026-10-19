@@ -1,0 +1,8 @@
+"bolivia"
+"myanmar"
+"colombia"
+"venezuela"
+"mena"
+"angola"
+"drc"
+"cafr"

@@ -1,7 +1,0 @@
-"argentina"
-"brasil"
-"colombia"
-"paraguay"
-"peru"
-"ivorycoast"
-"ghana"

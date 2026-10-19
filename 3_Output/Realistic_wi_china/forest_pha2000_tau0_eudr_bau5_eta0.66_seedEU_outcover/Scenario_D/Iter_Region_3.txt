@@ -1,4 +1,0 @@
-"china"
-"eu27"
-"ivorycoast"
-"ghana"
