@@ -51,9 +51,15 @@ def load_harpy():
     """GEMPACK's HARPY (github.com/GEMPACKsoftware/HARPY): installed (pip install git+https://github.com/GEMPACKsoftware/HARPY.git),
     or a copy of the repository folder named HARPY (or HARPY-master) next to this script, in DeDuCE_rework, or in the model folder, or HARPY_PATH."""
     cands = [None, os.environ.get("HARPY_PATH")] + [os.path.join(b, n) for b in (HERE, os.path.dirname(HERE), REPO) for n in ("HARPY", "HARPY-master")]
+    def pkg_root(c):   # the folder that holds the harpy package: c itself, or one level down (a zip extracted into a folder of the same name)
+        if c is None: return None
+        for d in [c] + [os.path.join(c, x) for x in (os.listdir(c) if os.path.isdir(c) else [])]:
+            if os.path.isfile(os.path.join(d, "harpy", "har_file.py")): return d
+        return ""
     test = os.path.join(GTAP, "sets.har")
-    for c in cands:
-        if c is not None and not os.path.isdir(os.path.join(c, "harpy")): continue
+    if not hasattr(np, "chararray"): np.chararray = np.char.chararray   # HARPY still uses np.chararray, dropped from the top level of numpy 2.x
+    for c in [pkg_root(c) for c in cands]:
+        if c == "": continue
         for m in [m for m in sys.modules if m == "harpy" or m.startswith("harpy.")]: del sys.modules[m]
         if c is not None: sys.path.insert(0, c)
         try:
