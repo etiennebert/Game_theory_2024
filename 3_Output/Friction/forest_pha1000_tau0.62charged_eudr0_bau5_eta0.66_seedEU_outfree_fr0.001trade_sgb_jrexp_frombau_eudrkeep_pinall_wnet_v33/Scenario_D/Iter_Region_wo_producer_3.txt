@@ -1,0 +1,4 @@
+"japan"
+"eu27"
+"uk"
+"nigeria"

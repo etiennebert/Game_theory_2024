@@ -1,0 +1,5 @@
+"china"
+"eastasia"
+"venezuela"
+"mena"
+"cafr"

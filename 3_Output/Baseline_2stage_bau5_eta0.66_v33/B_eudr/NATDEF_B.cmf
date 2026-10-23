@@ -1,0 +1,259 @@
+! This Command file
+! C:\runGTAP375\work\NATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ;
+slc file = no ;
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = in\SUMMARY.har;
+file WELVIEW = in\DECOMP.har;
+file GTAPVOL = in\GTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = C:\runGTAP375\Game_theory_2024\3_Output\Baseline_2stage_bau5_eta0.66_v33\A_bau\gdata_bau.upd;
+file gtapPARM = in\default.prm;
+file gtapSETS = in\sets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:\runGTAP375\Game_theory_2024\2_Model\gdata.upd;
+Solution file = C:\runGTAP375\Game_theory_2024\2_Model\NATDEF.sl4;
+
+Auxiliary files = "GTAPV7-AEZ" ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+Method = Gragg;
+Steps = 2 4 6;
+automatic accuracy = yes;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header "0101";
+! Part for productivity shocks from R;
+swap qxs("ruminant","Argentina","EU27") = ams("ruminant","Argentina","EU27");
+swap qxs("RuminantMeat","Argentina","EU27") = ams("RuminantMeat","Argentina","EU27");
+swap qxs("ruminant","Bolivia","EU27") = ams("ruminant","Bolivia","EU27");
+swap qxs("RuminantMeat","Bolivia","EU27") = ams("RuminantMeat","Bolivia","EU27");
+swap qxs("ocr","Bolivia","EU27") = ams("ocr","Bolivia","EU27");
+swap qxs("osd","Bolivia","EU27") = ams("osd","Bolivia","EU27");
+swap qxs("vegoil","Bolivia","EU27") = ams("vegoil","Bolivia","EU27");
+swap qxs("ruminant","Brasil","EU27") = ams("ruminant","Brasil","EU27");
+swap qxs("RuminantMeat","Brasil","EU27") = ams("RuminantMeat","Brasil","EU27");
+swap qxs("ocr","Brasil","EU27") = ams("ocr","Brasil","EU27");
+swap qxs("osd","Brasil","EU27") = ams("osd","Brasil","EU27");
+swap qxs("vegoil","Brasil","EU27") = ams("vegoil","Brasil","EU27");
+swap qxs("ocr","Oceania","EU27") = ams("ocr","Oceania","EU27");
+swap qxs("osd","Oceania","EU27") = ams("osd","Oceania","EU27");
+swap qxs("vegoil","Oceania","EU27") = ams("vegoil","Oceania","EU27");
+swap qxs("ruminant","Japan","EU27") = ams("ruminant","Japan","EU27");
+swap qxs("RuminantMeat","Japan","EU27") = ams("RuminantMeat","Japan","EU27");
+swap qxs("osd","Japan","EU27") = ams("osd","Japan","EU27");
+swap qxs("vegoil","Japan","EU27") = ams("vegoil","Japan","EU27");
+swap qxs("ruminant","Korea","EU27") = ams("ruminant","Korea","EU27");
+swap qxs("RuminantMeat","Korea","EU27") = ams("RuminantMeat","Korea","EU27");
+swap qxs("ruminant","Indonesia","EU27") = ams("ruminant","Indonesia","EU27");
+swap qxs("RuminantMeat","Indonesia","EU27") = ams("RuminantMeat","Indonesia","EU27");
+swap qxs("osd","Indonesia","EU27") = ams("osd","Indonesia","EU27");
+swap qxs("vegoil","Indonesia","EU27") = ams("vegoil","Indonesia","EU27");
+swap qxs("ruminant","Madagascar","EU27") = ams("ruminant","Madagascar","EU27");
+swap qxs("RuminantMeat","Madagascar","EU27") = ams("RuminantMeat","Madagascar","EU27");
+swap qxs("ocr","Madagascar","EU27") = ams("ocr","Madagascar","EU27");
+swap qxs("ruminant","SEAsia","EU27") = ams("ruminant","SEAsia","EU27");
+swap qxs("RuminantMeat","SEAsia","EU27") = ams("RuminantMeat","SEAsia","EU27");
+swap qxs("ocr","SEAsia","EU27") = ams("ocr","SEAsia","EU27");
+swap qxs("osd","SEAsia","EU27") = ams("osd","SEAsia","EU27");
+swap qxs("vegoil","SEAsia","EU27") = ams("vegoil","SEAsia","EU27");
+swap qxs("ruminant","Malasya","EU27") = ams("ruminant","Malasya","EU27");
+swap qxs("RuminantMeat","Malasya","EU27") = ams("RuminantMeat","Malasya","EU27");
+swap qxs("osd","Malasya","EU27") = ams("osd","Malasya","EU27");
+swap qxs("vegoil","Malasya","EU27") = ams("vegoil","Malasya","EU27");
+swap qxs("ruminant","Myanmar","EU27") = ams("ruminant","Myanmar","EU27");
+swap qxs("RuminantMeat","Myanmar","EU27") = ams("RuminantMeat","Myanmar","EU27");
+swap qxs("ocr","Myanmar","EU27") = ams("ocr","Myanmar","EU27");
+swap qxs("ruminant","Mexico","EU27") = ams("ruminant","Mexico","EU27");
+swap qxs("RuminantMeat","Mexico","EU27") = ams("RuminantMeat","Mexico","EU27");
+swap qxs("RuminantMeat","Colombia","EU27") = ams("RuminantMeat","Colombia","EU27");
+swap qxs("ocr","Colombia","EU27") = ams("ocr","Colombia","EU27");
+swap qxs("osd","Colombia","EU27") = ams("osd","Colombia","EU27");
+swap qxs("vegoil","Colombia","EU27") = ams("vegoil","Colombia","EU27");
+swap qxs("ruminant","LatinAmer","EU27") = ams("ruminant","LatinAmer","EU27");
+swap qxs("RuminantMeat","LatinAmer","EU27") = ams("RuminantMeat","LatinAmer","EU27");
+swap qxs("ocr","LatinAmer","EU27") = ams("ocr","LatinAmer","EU27");
+swap qxs("osd","LatinAmer","EU27") = ams("osd","LatinAmer","EU27");
+swap qxs("vegoil","LatinAmer","EU27") = ams("vegoil","LatinAmer","EU27");
+swap qxs("RuminantMeat","Paraguay","EU27") = ams("RuminantMeat","Paraguay","EU27");
+swap qxs("osd","Paraguay","EU27") = ams("osd","Paraguay","EU27");
+swap qxs("vegoil","Paraguay","EU27") = ams("vegoil","Paraguay","EU27");
+swap qxs("ruminant","Peru","EU27") = ams("ruminant","Peru","EU27");
+swap qxs("ocr","Peru","EU27") = ams("ocr","Peru","EU27");
+swap qxs("osd","Peru","EU27") = ams("osd","Peru","EU27");
+swap qxs("vegoil","Peru","EU27") = ams("vegoil","Peru","EU27");
+swap qxs("osd","Uruguay","EU27") = ams("osd","Uruguay","EU27");
+swap qxs("vegoil","Uruguay","EU27") = ams("vegoil","Uruguay","EU27");
+swap qxs("ruminant","Venezuela","EU27") = ams("ruminant","Venezuela","EU27");
+swap qxs("RuminantMeat","Venezuela","EU27") = ams("RuminantMeat","Venezuela","EU27");
+swap qxs("ocr","Venezuela","EU27") = ams("ocr","Venezuela","EU27");
+swap qxs("osd","Venezuela","EU27") = ams("osd","Venezuela","EU27");
+swap qxs("vegoil","Venezuela","EU27") = ams("vegoil","Venezuela","EU27");
+swap qxs("ruminant","Angola","EU27") = ams("ruminant","Angola","EU27");
+swap qxs("RuminantMeat","Angola","EU27") = ams("RuminantMeat","Angola","EU27");
+swap qxs("ocr","Angola","EU27") = ams("ocr","Angola","EU27");
+swap qxs("ruminant","DRC","EU27") = ams("ruminant","DRC","EU27");
+swap qxs("RuminantMeat","DRC","EU27") = ams("RuminantMeat","DRC","EU27");
+swap qxs("ocr","DRC","EU27") = ams("ocr","DRC","EU27");
+swap qxs("osd","DRC","EU27") = ams("osd","DRC","EU27");
+swap qxs("vegoil","DRC","EU27") = ams("vegoil","DRC","EU27");
+swap qxs("ocr","WAfr","EU27") = ams("ocr","WAfr","EU27");
+swap qxs("ruminant","CAfr","EU27") = ams("ruminant","CAfr","EU27");
+swap qxs("RuminantMeat","CAfr","EU27") = ams("RuminantMeat","CAfr","EU27");
+swap qxs("ocr","CAfr","EU27") = ams("ocr","CAfr","EU27");
+swap qxs("osd","CAfr","EU27") = ams("osd","CAfr","EU27");
+swap qxs("vegoil","CAfr","EU27") = ams("vegoil","CAfr","EU27");
+swap qxs("ocr","EAfr","EU27") = ams("ocr","EAfr","EU27");
+swap qxs("osd","SAfr","EU27") = ams("osd","SAfr","EU27");
+swap qxs("vegoil","SAfr","EU27") = ams("vegoil","SAfr","EU27");
+swap qxs("ocr","IvoryCoast","EU27") = ams("ocr","IvoryCoast","EU27");
+swap qxs("osd","IvoryCoast","EU27") = ams("osd","IvoryCoast","EU27");
+swap qxs("vegoil","IvoryCoast","EU27") = ams("vegoil","IvoryCoast","EU27");
+swap qxs("ruminant","Ghana","EU27") = ams("ruminant","Ghana","EU27");
+swap qxs("RuminantMeat","Ghana","EU27") = ams("RuminantMeat","Ghana","EU27");
+swap qxs("ocr","Ghana","EU27") = ams("ocr","Ghana","EU27");
+swap qxs("osd","Ghana","EU27") = ams("osd","Ghana","EU27");
+swap qxs("vegoil","Ghana","EU27") = ams("vegoil","Ghana","EU27");
+swap qxs("RuminantMeat","Nigeria","EU27") = ams("RuminantMeat","Nigeria","EU27");
+swap qxs("ocr","Nigeria","EU27") = ams("ocr","Nigeria","EU27");
+swap qxs("osd","Nigeria","EU27") = ams("osd","Nigeria","EU27");
+swap qxs("vegoil","Nigeria","EU27") = ams("vegoil","Nigeria","EU27");
+shock qxs("ruminant","Argentina","EU27") =  -0.128;
+shock qxs("RuminantMeat","Argentina","EU27") =  -0.128;
+shock qxs("ruminant","Bolivia","EU27") =  -0.826;
+shock qxs("RuminantMeat","Bolivia","EU27") =  -0.826;
+shock qxs("ocr","Bolivia","EU27") =  -0.818;
+shock qxs("osd","Bolivia","EU27") =  -4.861;
+shock qxs("vegoil","Bolivia","EU27") =  -4.861;
+shock qxs("ruminant","Brasil","EU27") =  -2.627;
+shock qxs("RuminantMeat","Brasil","EU27") =  -2.627;
+shock qxs("ocr","Brasil","EU27") =  -0.447;
+shock qxs("osd","Brasil","EU27") =  -0.637;
+shock qxs("vegoil","Brasil","EU27") =  -0.637;
+shock qxs("ocr","Oceania","EU27") =  -0.400;
+shock qxs("osd","Oceania","EU27") =  -0.404;
+shock qxs("vegoil","Oceania","EU27") =  -0.404;
+shock qxs("ruminant","Japan","EU27") =  -0.245;
+shock qxs("RuminantMeat","Japan","EU27") =  -0.245;
+shock qxs("osd","Japan","EU27") =  -0.134;
+shock qxs("vegoil","Japan","EU27") =  -0.134;
+shock qxs("ruminant","Korea","EU27") =  -0.464;
+shock qxs("RuminantMeat","Korea","EU27") =  -0.464;
+shock qxs("ruminant","Indonesia","EU27") =  -0.281;
+shock qxs("RuminantMeat","Indonesia","EU27") =  -0.281;
+shock qxs("osd","Indonesia","EU27") =  -1.139;
+shock qxs("vegoil","Indonesia","EU27") =  -1.139;
+shock qxs("ruminant","Madagascar","EU27") =  -0.232;
+shock qxs("RuminantMeat","Madagascar","EU27") =  -0.232;
+shock qxs("ocr","Madagascar","EU27") =  -0.622;
+shock qxs("ruminant","SEAsia","EU27") =  -4.242;
+shock qxs("RuminantMeat","SEAsia","EU27") =  -4.242;
+shock qxs("ocr","SEAsia","EU27") =  -3.560;
+shock qxs("osd","SEAsia","EU27") =  -0.187;
+shock qxs("vegoil","SEAsia","EU27") =  -0.187;
+shock qxs("ruminant","Malasya","EU27") = -24.633;
+shock qxs("RuminantMeat","Malasya","EU27") = -24.633;
+shock qxs("osd","Malasya","EU27") =  -1.394;
+shock qxs("vegoil","Malasya","EU27") =  -1.394;
+shock qxs("ruminant","Myanmar","EU27") = -11.858;
+shock qxs("RuminantMeat","Myanmar","EU27") = -11.858;
+shock qxs("ocr","Myanmar","EU27") = -13.095;
+shock qxs("ruminant","Mexico","EU27") =  -0.177;
+shock qxs("RuminantMeat","Mexico","EU27") =  -0.177;
+shock qxs("RuminantMeat","Colombia","EU27") =  -0.338;
+shock qxs("ocr","Colombia","EU27") =  -0.209;
+shock qxs("osd","Colombia","EU27") = -11.525;
+shock qxs("vegoil","Colombia","EU27") = -11.525;
+shock qxs("ruminant","LatinAmer","EU27") =  -0.297;
+shock qxs("RuminantMeat","LatinAmer","EU27") =  -0.297;
+shock qxs("ocr","LatinAmer","EU27") =  -0.921;
+shock qxs("osd","LatinAmer","EU27") =  -0.578;
+shock qxs("vegoil","LatinAmer","EU27") =  -0.578;
+shock qxs("RuminantMeat","Paraguay","EU27") =  -1.019;
+shock qxs("osd","Paraguay","EU27") =  -0.779;
+shock qxs("vegoil","Paraguay","EU27") =  -0.779;
+shock qxs("ruminant","Peru","EU27") =  -0.758;
+shock qxs("ocr","Peru","EU27") =  -1.730;
+shock qxs("osd","Peru","EU27") =  -8.126;
+shock qxs("vegoil","Peru","EU27") =  -8.126;
+shock qxs("osd","Uruguay","EU27") =  -0.107;
+shock qxs("vegoil","Uruguay","EU27") =  -0.107;
+shock qxs("ruminant","Venezuela","EU27") =  -0.117;
+shock qxs("RuminantMeat","Venezuela","EU27") =  -0.117;
+shock qxs("ocr","Venezuela","EU27") =  -0.525;
+shock qxs("osd","Venezuela","EU27") =  -0.283;
+shock qxs("vegoil","Venezuela","EU27") =  -0.283;
+shock qxs("ruminant","Angola","EU27") =  -0.527;
+shock qxs("RuminantMeat","Angola","EU27") =  -0.527;
+shock qxs("ocr","Angola","EU27") =  -0.755;
+shock qxs("ruminant","DRC","EU27") =  -0.759;
+shock qxs("RuminantMeat","DRC","EU27") =  -0.759;
+shock qxs("ocr","DRC","EU27") = -14.596;
+shock qxs("osd","DRC","EU27") =  -2.605;
+shock qxs("vegoil","DRC","EU27") =  -2.605;
+shock qxs("ocr","WAfr","EU27") =  -1.984;
+shock qxs("ruminant","CAfr","EU27") =  -0.129;
+shock qxs("RuminantMeat","CAfr","EU27") =  -0.129;
+shock qxs("ocr","CAfr","EU27") =  -2.157;
+shock qxs("osd","CAfr","EU27") =  -0.414;
+shock qxs("vegoil","CAfr","EU27") =  -0.414;
+shock qxs("ocr","EAfr","EU27") =  -0.133;
+shock qxs("osd","SAfr","EU27") =  -0.351;
+shock qxs("vegoil","SAfr","EU27") =  -0.351;
+shock qxs("ocr","IvoryCoast","EU27") =  -6.181;
+shock qxs("osd","IvoryCoast","EU27") =  -1.300;
+shock qxs("vegoil","IvoryCoast","EU27") =  -1.300;
+shock qxs("ruminant","Ghana","EU27") =  -0.708;
+shock qxs("RuminantMeat","Ghana","EU27") =  -0.708;
+shock qxs("ocr","Ghana","EU27") =  -2.856;
+shock qxs("osd","Ghana","EU27") =  -0.914;
+shock qxs("vegoil","Ghana","EU27") =  -0.914;
+shock qxs("RuminantMeat","Nigeria","EU27") =  -0.269;
+shock qxs("ocr","Nigeria","EU27") =  -0.827;
+shock qxs("osd","Nigeria","EU27") =  -0.783;
+shock qxs("vegoil","Nigeria","EU27") =  -0.783;

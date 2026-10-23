@@ -1,0 +1,8 @@
+"japan"
+"korea"
+"india"
+"eu27"
+"uk"
+"efta"
+"russia"
+"nigeria"

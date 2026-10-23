@@ -46,6 +46,8 @@ eudr_scale  <- 1
 bau_horizon <- 5
 bau_cap_pct <- 25
 bau_eta     <- 0.66      # yield of the cleared hectares relative to the activity's existing land (0.66 = the model's ETA for new cropland)
+generation  <- "v33"     # V33 (20 Oct 2026): the Miranda-calibrated land-supply elasticities (2_Model/in/default.prm = default_miranda_final.prm); suffix of the
+                         # output file and the log folder so that nothing of V32 is overwritten ("" = the V32 files)
 max_pass    <- 6
 dedu_sheet  <- "D_unamort_w2018_2023"   # DeDuCE hectares by region x GTAP activity, the window of bau_deforestation.xlsx
 set_solver_lines <- function(lines, mode) {   # identical to the game script's (V23)
@@ -62,8 +64,10 @@ set_solver_lines <- function(lines, mode) {   # identical to the game script's (
   lines <- set_line(lines, "^!? *slc file *=",           "slc file = no ;")
   lines
 }
-out_file <- paste0(external_data_path, "/DeDuCE_rework/bau_afeall_eta", bau_eta, ".txt")
-log_dir  <- file.path(parent_folder, "3_Output", "Calibrate_BAU_productivity", "/"); dir.create(log_dir, recursive = TRUE, showWarnings = FALSE)
+gen_sfx  <- if (nzchar(generation)) paste0("_", generation) else ""
+out_file <- paste0(external_data_path, "/DeDuCE_rework/bau_afeall_eta", bau_eta, gen_sfx, ".txt")
+log_dir  <- file.path(parent_folder, "3_Output", paste0("Calibrate_BAU_productivity", gen_sfx), "/"); dir.create(log_dir, recursive = TRUE, showWarnings = FALSE)
+if (nzchar(generation)) print(paste0("generation ", generation, ": parameter file ", normalizePath("in/default.prm"), " (must be the Miranda-calibrated one); output ", out_file))
 
 ## ---- 1. start from the RunGTAP backup, zero tariff header (as Baseline_EUDR.R) ------------------------
 for (f in c("NATDEF.cmf", "NATDEF.har")) file.copy(file.path(parent_folder, "2_Model", "BU", f), file.path(GTAPAEZ_path, f), overwrite = TRUE)

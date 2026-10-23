@@ -1,0 +1,7 @@
+"eu27"
+"uk"
+"efta"
+"restofworld"
+"cafr"
+"ivorycoast"
+"ghana"

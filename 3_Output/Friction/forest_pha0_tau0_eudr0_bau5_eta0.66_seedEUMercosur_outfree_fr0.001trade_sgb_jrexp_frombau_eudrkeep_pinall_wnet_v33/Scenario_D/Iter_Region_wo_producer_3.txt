@@ -1,0 +1,8 @@
+"china"
+"korea"
+"eastasia"
+"uruguay"
+"uk"
+"efta"
+"mena"
+"nafr"

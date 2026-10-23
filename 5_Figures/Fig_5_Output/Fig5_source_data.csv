@@ -1,253 +1,253 @@
 instrument,run,item,label,zone,level_2019_kha,stageA_bau_clearing_change_kha,stageB_eudr_change_kha,baseline_level_kha,club_change_from_stageA_kha,club_vs_baseline_kha,club_vs_baseline_pct
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez2,0.0,0.0,0.0,0.0,0.0,0.0,nan
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez3,0.0,0.0,0.0,0.0,0.0,0.0,nan
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez4,7476.4,-379.4,1.07,7098.2,379.4,378.3,5.33
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez5,35639.1,-1808.3,3.87,33834.6,1808.3,1804.4,5.33
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez6,105091.7,-5332.3,5.82,99765.2,5332.3,5326.5,5.34
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez12,5080.6,-257.8,0.74,4823.6,257.8,257.0,5.33
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez1,0.0,0.0,0.0,0.0,0.0,0.0,nan
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez10,0.0,0.0,0.0,0.0,0.0,0.0,nan
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez11,0.0,0.0,0.0,0.0,0.0,0.0,nan
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,brasil,153287.9,-7777.8,11.5,145521.6,7777.8,7766.3,5.34
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez2,600.4,21.6,0.01,622.0,-21.8,-21.8,-3.5
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez3,7885.3,74.8,0.07,7960.1,-75.3,-75.3,-0.95
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez4,37041.9,563.8,-0.72,37604.9,-565.7,-565.0,-1.5
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez5,75506.6,1780.0,-2.43,77284.2,-1781.6,-1779.1,-2.3
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez6,31614.0,4001.4,-3.52,35611.9,-4003.9,-4000.4,-11.23
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez12,14972.0,266.5,0.11,15238.6,-267.2,-267.3,-1.75
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez1,130.6,1.3,-0.0,132.0,-1.4,-1.4,-1.02
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez10,0.4,0.1,0.0,0.5,-0.1,-0.1,-13.43
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez11,156.9,3.1,0.03,160.0,-3.0,-3.1,-1.92
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",brasil,167908.2,6712.5,-6.45,174614.2,-6719.9,-6713.4,-3.84
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez2,336.1,-21.6,-0.01,314.5,21.8,21.8,6.93
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez3,5031.4,-74.8,-0.07,4956.5,75.3,75.3,1.52
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez4,11053.5,-184.4,-0.35,10868.7,186.4,186.7,1.72
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez5,19812.0,28.3,-1.43,19838.8,-26.8,-25.3,-0.13
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez6,15233.4,1331.0,-2.31,16562.1,-1328.4,-1326.1,-8.01
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez12,11881.3,-8.7,-0.84,11871.8,9.4,10.2,0.09
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez1,75.9,-1.3,0.0,74.6,1.4,1.4,1.81
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez10,1.4,-0.1,-0.0,1.3,0.1,0.1,5.1
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez11,80.1,-3.1,-0.03,77.0,3.0,3.1,4.0
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,brasil,63505.2,1065.2,-5.04,64565.3,-1057.9,-1052.8,-1.63
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez2,60.2,-0.5,-0.01,59.7,0.6,0.6,0.94
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez3,273.4,-2.8,-0.05,270.6,2.9,2.9,1.08
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez4,10412.5,-73.5,-0.91,10338.1,76.1,77.0,0.74
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez5,8210.2,66.0,-0.87,8275.3,-63.7,-62.8,-0.76
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez6,8144.0,644.4,-1.77,8786.6,-641.9,-640.1,-7.28
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez12,9689.8,23.0,-1.53,9711.3,-21.2,-19.7,-0.2
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez1,4.3,-0.1,-0.0,4.2,0.1,0.1,1.38
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez10,0.4,0.0,0.0,0.4,-0.0,-0.0,-1.35
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez11,13.8,0.1,0.0,13.9,-0.1,-0.1,-0.56
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",brasil,36808.5,656.7,-5.14,37460.0,-647.3,-642.1,-1.71
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez2,494.2,-8.0,0.06,486.2,8.1,8.1,1.66
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez3,1731.4,-30.5,0.17,1701.1,30.8,30.6,1.8
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez4,3258.1,-38.7,0.69,3220.1,38.7,38.0,1.18
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez5,3462.3,0.3,0.68,3463.3,-0.1,-0.8,-0.02
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez6,4813.6,341.4,0.51,5155.5,-341.0,-341.5,-6.62
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez12,5028.3,-26.4,0.72,5002.6,26.1,25.4,0.51
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez1,9.6,-0.2,0.0,9.4,0.2,0.2,2.1
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez10,1.9,0.0,0.0,1.9,-0.0,-0.0,-0.65
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez11,163.8,-0.2,0.07,163.7,0.3,0.2,0.15
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",brasil,18963.2,237.7,2.89,19203.8,-236.8,-239.7,-1.25
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez2,34.8,-1.0,-0.0,33.7,1.1,1.1,3.14
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez3,172.6,-5.4,-0.02,167.2,5.5,5.5,3.28
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez4,1932.6,-36.3,0.04,1896.4,37.2,37.2,1.96
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez5,5463.3,-40.1,0.01,5423.2,42.9,42.9,0.79
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez6,2309.9,130.1,-0.23,2439.8,-128.8,-128.6,-5.27
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez12,150.7,-1.2,-0.01,149.5,1.2,1.2,0.84
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez1,14.3,-0.5,-0.0,13.8,0.5,0.5,3.58
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez10,2.2,-0.0,0.0,2.2,0.0,0.0,0.79
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez11,12.1,-0.2,0.0,11.9,0.2,0.2,1.6
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,brasil,10092.4,45.5,-0.21,10137.7,-40.2,-40.0,-0.39
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez2,3.6,-0.0,0.0,3.6,0.0,0.0,0.43
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez3,4.9,-0.0,0.0,4.9,0.0,0.0,0.57
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez4,31.0,-0.0,0.02,31.0,0.1,0.0,0.13
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez5,33.3,0.9,0.02,34.3,-0.9,-0.9,-2.7
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez6,860.7,73.2,0.43,934.3,-72.0,-72.5,-7.76
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez12,1168.8,9.1,0.59,1178.6,-7.8,-8.4,-0.71
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez1,0.0,0.0,0.0,0.0,0.0,0.0,nan
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez10,0.4,0.0,0.0,0.4,-0.0,-0.0,-1.85
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez11,0.7,0.0,0.0,0.7,-0.0,-0.0,-1.07
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,brasil,2103.6,83.2,1.07,2187.9,-80.6,-81.7,-3.73
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez2,6.5,-0.1,-0.0,6.4,0.1,0.1,1.19
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez3,69.9,-1.0,-0.01,69.0,0.9,0.9,1.33
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez4,515.1,-8.2,-0.02,506.9,7.6,7.6,1.5
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez5,305.2,0.9,-0.02,306.1,-1.3,-1.3,-0.42
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez6,155.9,11.7,-0.03,167.6,-11.8,-11.8,-7.05
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez12,653.2,-1.1,-0.07,652.0,0.2,0.3,0.05
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez1,0.2,-0.0,-0.0,0.2,0.0,0.0,1.63
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez10,0.1,0.0,0.0,0.1,-0.0,-0.0,-1.1
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez11,3.9,0.0,0.0,3.9,-0.0,-0.0,-0.31
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,brasil,1710.1,2.2,-0.14,1712.1,-4.4,-4.2,-0.25
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez2,508.1,-10.9,-0.0,497.2,11.0,11.1,2.22
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez3,1391.2,-31.7,-0.04,1359.5,32.1,32.1,2.36
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez4,1503.0,-22.2,0.13,1480.9,22.3,22.2,1.5
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez5,1387.0,-2.1,0.1,1385.0,2.3,2.2,0.16
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez6,1198.8,78.2,-0.03,1277.0,-78.0,-78.0,-6.11
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez12,1040.6,-7.0,0.02,1033.6,7.1,7.0,0.68
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez1,21.7,-0.6,0.0,21.2,0.6,0.6,2.66
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez10,5.6,0.0,0.0,5.6,-0.0,-0.0,-0.1
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez11,46.4,-0.3,0.01,46.1,0.3,0.3,0.7
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",brasil,7102.6,3.4,0.18,7106.2,-2.3,-2.5,-0.04
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez2,95.9,0.4,0.0,96.3,-0.4,-0.4,-0.41
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez3,150.9,0.4,-0.0,151.3,-0.4,-0.4,-0.27
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez4,758.7,0.6,0.09,759.4,-0.8,-0.8,-0.11
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez5,551.5,11.1,0.05,562.6,-11.2,-11.2,-2.0
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez6,155.3,14.5,-0.0,169.7,-14.5,-14.5,-8.53
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez12,23.0,0.4,0.0,23.3,-0.4,-0.4,-1.54
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez1,11.0,-0.0,0.0,11.0,0.0,0.0,0.02
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez10,0.8,0.0,0.0,0.8,-0.0,-0.0,-2.67
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez11,1.5,0.0,0.0,1.5,-0.0,-0.0,-1.89
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",brasil,1748.5,27.3,0.14,1776.0,-27.6,-27.8,-1.56
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez2,35.8,-1.4,-0.05,34.3,1.3,1.3,3.87
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez3,94.8,-3.8,-0.13,90.9,3.5,3.6,4.02
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez4,301.8,-6.1,-0.38,295.3,5.1,5.5,1.86
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez5,1084.5,-8.8,-1.4,1074.2,5.2,6.6,0.61
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez6,815.8,37.6,-1.19,852.2,-40.3,-39.1,-4.59
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez12,422.0,-5.5,-0.56,415.9,4.1,4.7,1.12
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez1,0.8,-0.0,-0.0,0.7,0.0,0.0,4.32
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez10,7.0,-0.1,-0.01,6.8,0.1,0.1,1.51
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez11,107.8,-2.6,-0.12,105.1,2.3,2.4,2.33
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",brasil,2870.1,9.2,-3.83,2875.5,-18.7,-14.8,-0.52
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_pdr,"output, % change (not kha)",national,,-0.103,0.003,,-0.056,,-0.06
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_wht,"output, % change (not kha)",national,,2.817,0.063,,-2.642,,-2.7
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_gro,"output, % change (not kha)",national,,0.957,0.027,,-0.978,,-1.0
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_v_f,"output, % change (not kha)",national,,0.347,0.013,,-0.372,,-0.38
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_osd,"output, % change (not kha)",national,,1.333,-0.004,,-1.326,,-1.32
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_c_b,"output, % change (not kha)",national,,0.39,0.007,,-0.399,,-0.41
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_pfb,"output, % change (not kha)",national,,1.27,0.016,,-1.303,,-1.32
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_ocr,"output, % change (not kha)",national,,0.496,-0.123,,-0.887,,-0.77
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_ruminant,"output, % change (not kha)",national,,0.749,-0.031,,-0.731,,-0.7
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_rmk,"output, % change (not kha)",national,,0.299,0.002,,-0.295,,-0.3
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_wol,"output, % change (not kha)",national,,-0.293,0.001,,0.328,,0.33
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_ruminantmeat,"output, % change (not kha)",national,,0.894,-0.039,,-0.868,,-0.83
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_dairy,"output, % change (not kha)",national,,0.215,0.002,,-0.21,,-0.21
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_vegoil,"output, % change (not kha)",national,,-0.001,-0.056,,-0.038,,0.02
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_sgr,"output, % change (not kha)",national,,0.504,0.008,,-0.521,,-0.53
-penalty,forest_pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_pcr,"output, % change (not kha)",national,,-0.049,0.0,,0.038,,0.04
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez2,0.0,0.0,0.0,0.0,0.0,0.0,nan
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez3,0.0,0.0,0.0,0.0,0.0,0.0,nan
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez4,7476.4,-379.4,1.07,7098.2,379.4,378.3,5.33
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez5,35639.1,-1808.3,3.87,33834.6,1808.3,1804.4,5.33
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez6,105091.7,-5332.3,5.82,99765.2,5332.3,5326.5,5.34
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez12,5080.6,-257.8,0.74,4823.6,257.8,257.0,5.33
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez1,0.0,0.0,0.0,0.0,0.0,0.0,nan
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez10,0.0,0.0,0.0,0.0,0.0,0.0,nan
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,aez11,0.0,0.0,0.0,0.0,0.0,0.0,nan
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,forestland,Forest,brasil,153287.9,-7777.8,11.5,145521.6,7777.8,7766.3,5.34
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez2,600.4,21.6,0.01,622.0,-20.8,-20.8,-3.35
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez3,7885.3,74.8,0.07,7960.1,-71.9,-71.9,-0.9
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez4,37041.9,563.8,-0.72,37604.9,-551.9,-551.2,-1.47
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez5,75506.6,1780.0,-2.43,77284.2,-1765.5,-1763.1,-2.28
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez6,31614.0,4001.4,-3.52,35611.9,-3982.8,-3979.2,-11.17
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez12,14972.0,266.5,0.11,15238.6,-257.3,-257.4,-1.69
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez1,130.6,1.3,-0.0,132.0,-1.3,-1.3,-0.98
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez10,0.4,0.1,0.0,0.5,-0.1,-0.1,-12.93
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",aez11,156.9,3.1,0.03,160.0,-2.9,-3.0,-1.86
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pastureland,"Pasture (cattle, dairy)",brasil,167908.2,6712.5,-6.45,174614.2,-6654.4,-6648.0,-3.81
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez2,336.1,-21.6,-0.01,314.5,20.8,20.8,6.63
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez3,5031.4,-74.8,-0.07,4956.5,71.9,71.9,1.45
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez4,11053.5,-184.4,-0.35,10868.7,172.6,172.9,1.59
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez5,19812.0,28.3,-1.43,19838.8,-42.8,-41.4,-0.21
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez6,15233.4,1331.0,-2.31,16562.1,-1349.6,-1347.2,-8.13
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez12,11881.3,-8.7,-0.84,11871.8,-0.5,0.3,0.0
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez1,75.9,-1.3,0.0,74.6,1.3,1.3,1.73
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez10,1.4,-0.1,-0.0,1.3,0.1,0.1,4.92
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,aez11,80.1,-3.1,-0.03,77.0,2.9,3.0,3.87
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,cropland,Cropland,brasil,63505.2,1065.2,-5.04,64565.3,-1123.3,-1118.3,-1.73
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez2,60.2,-0.5,-0.01,59.7,0.3,0.4,0.6
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez3,273.4,-2.8,-0.05,270.6,1.9,2.0,0.72
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez4,10412.5,-73.5,-0.91,10338.1,55.5,56.4,0.55
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez5,8210.2,66.0,-0.87,8275.3,-84.3,-83.4,-1.01
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez6,8144.0,644.4,-1.77,8786.6,-664.6,-662.9,-7.54
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez12,9689.8,23.0,-1.53,9711.3,-39.8,-38.3,-0.39
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez1,4.3,-0.1,-0.0,4.2,0.0,0.0,1.03
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez10,0.4,0.0,0.0,0.4,-0.0,-0.0,-1.65
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",aez11,13.8,0.1,0.0,13.9,-0.1,-0.1,-0.88
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,osd,"Soybeans, other oilseeds",brasil,36808.5,656.7,-5.14,37460.0,-731.1,-726.0,-1.94
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez2,494.2,-8.0,0.06,486.2,7.9,7.8,1.61
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez3,1731.4,-30.5,0.17,1701.1,29.8,29.6,1.74
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez4,3258.1,-38.7,0.69,3220.1,41.9,41.2,1.28
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez5,3462.3,0.3,0.68,3463.3,1.4,0.7,0.02
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez6,4813.6,341.4,0.51,5155.5,-340.3,-340.8,-6.61
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez12,5028.3,-26.4,0.72,5002.6,31.3,30.6,0.61
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez1,9.6,-0.2,0.0,9.4,0.2,0.2,2.05
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez10,1.9,0.0,0.0,1.9,-0.0,-0.0,-0.66
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",aez11,163.8,-0.2,0.07,163.7,0.3,0.2,0.13
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,gro,"Maize, other grains",brasil,18963.2,237.7,2.89,19203.8,-227.5,-230.4,-1.2
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez2,34.8,-1.0,-0.0,33.7,1.0,1.0,3.08
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez3,172.6,-5.4,-0.02,167.2,5.4,5.4,3.21
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez4,1932.6,-36.3,0.04,1896.4,39.1,39.1,2.06
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez5,5463.3,-40.1,0.01,5423.2,45.3,45.2,0.83
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez6,2309.9,130.1,-0.23,2439.8,-128.5,-128.3,-5.26
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez12,150.7,-1.2,-0.01,149.5,1.4,1.4,0.94
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez1,14.3,-0.5,-0.0,13.8,0.5,0.5,3.53
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez10,2.2,-0.0,0.0,2.2,0.0,0.0,0.78
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,aez11,12.1,-0.2,0.0,11.9,0.2,0.2,1.58
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,c_b,Sugar cane,brasil,10092.4,45.5,-0.21,10137.7,-35.7,-35.5,-0.35
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez2,3.6,-0.0,0.0,3.6,0.0,0.0,0.41
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez3,4.9,-0.0,0.0,4.9,0.0,0.0,0.53
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez4,31.0,-0.0,0.02,31.0,0.1,0.1,0.25
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez5,33.3,0.9,0.02,34.3,-0.9,-0.9,-2.63
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez6,860.7,73.2,0.43,934.3,-71.7,-72.1,-7.72
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez12,1168.8,9.1,0.59,1178.6,-6.3,-6.9,-0.58
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez1,0.0,0.0,0.0,0.0,0.0,0.0,nan
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez10,0.4,0.0,0.0,0.4,-0.0,-0.0,-1.84
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,aez11,0.7,0.0,0.0,0.7,-0.0,-0.0,-1.06
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,wht,Wheat,brasil,2103.6,83.2,1.07,2187.9,-78.7,-79.8,-3.65
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez2,6.5,-0.1,-0.0,6.4,0.1,0.1,1.09
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez3,69.9,-1.0,-0.01,69.0,0.8,0.8,1.22
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez4,515.1,-8.2,-0.02,506.9,7.8,7.8,1.54
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez5,305.2,0.9,-0.02,306.1,-1.3,-1.3,-0.43
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez6,155.9,11.7,-0.03,167.6,-11.9,-11.9,-7.09
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez12,653.2,-1.1,-0.07,652.0,0.5,0.6,0.09
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez1,0.2,-0.0,-0.0,0.2,0.0,0.0,1.52
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez10,0.1,0.0,0.0,0.1,-0.0,-0.0,-1.17
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,aez11,3.9,0.0,0.0,3.9,-0.0,-0.0,-0.39
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pdr,Rice,brasil,1710.1,2.2,-0.14,1712.1,-4.0,-3.9,-0.23
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez2,508.1,-10.9,-0.0,497.2,10.8,10.8,2.17
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez3,1391.2,-31.7,-0.04,1359.5,31.2,31.2,2.3
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez4,1503.0,-22.2,0.13,1480.9,23.7,23.6,1.59
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez5,1387.0,-2.1,0.1,1385.0,2.8,2.7,0.2
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez6,1198.8,78.2,-0.03,1277.0,-77.9,-77.9,-6.1
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez12,1040.6,-7.0,0.02,1033.6,8.1,8.0,0.78
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez1,21.7,-0.6,0.0,21.2,0.6,0.6,2.61
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez10,5.6,0.0,0.0,5.6,-0.0,-0.0,-0.12
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",aez11,46.4,-0.3,0.01,46.1,0.3,0.3,0.67
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,v_f,"Vegetables, fruit",brasil,7102.6,3.4,0.18,7106.2,-0.6,-0.8,-0.01
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez2,95.9,0.4,0.0,96.3,-0.6,-0.6,-0.59
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez3,150.9,0.4,-0.0,151.3,-0.7,-0.7,-0.46
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez4,758.7,0.6,0.09,759.4,-1.0,-1.1,-0.15
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez5,551.5,11.1,0.05,562.6,-11.7,-11.7,-2.09
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez6,155.3,14.5,-0.0,169.7,-14.7,-14.7,-8.63
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez12,23.0,0.4,0.0,23.3,-0.4,-0.4,-1.57
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez1,11.0,-0.0,0.0,11.0,-0.0,-0.0,-0.16
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez10,0.8,0.0,0.0,0.8,-0.0,-0.0,-2.81
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",aez11,1.5,0.0,0.0,1.5,-0.0,-0.0,-2.05
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,pfb,"Cotton, other fibres",brasil,1748.5,27.3,0.14,1776.0,-29.1,-29.2,-1.64
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez2,35.8,-1.4,-0.05,34.3,1.3,1.3,3.85
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez3,94.8,-3.8,-0.13,90.9,3.5,3.6,3.98
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez4,301.8,-6.1,-0.38,295.3,5.5,5.9,1.99
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez5,1084.5,-8.8,-1.4,1074.2,6.0,7.4,0.69
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez6,815.8,37.6,-1.19,852.2,-40.0,-38.8,-4.55
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez12,422.0,-5.5,-0.56,415.9,4.6,5.2,1.25
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez1,0.8,-0.0,-0.0,0.7,0.0,0.0,4.3
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez10,7.0,-0.1,-0.01,6.8,0.1,0.1,1.53
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",aez11,107.8,-2.6,-0.12,105.1,2.3,2.4,2.33
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,ocr,"Coffee, cocoa, other crops",brasil,2870.1,9.2,-3.83,2875.5,-16.7,-12.8,-0.45
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_pdr,"output, % change (not kha)",national,,-0.103,0.003,,-0.064,,-0.07
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_wht,"output, % change (not kha)",national,,2.817,0.063,,-2.58,,-2.64
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_gro,"output, % change (not kha)",national,,0.957,0.027,,-0.946,,-0.97
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_v_f,"output, % change (not kha)",national,,0.347,0.013,,-0.356,,-0.37
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_osd,"output, % change (not kha)",national,,1.333,-0.004,,-1.586,,-1.58
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_c_b,"output, % change (not kha)",national,,0.39,0.007,,-0.382,,-0.39
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_pfb,"output, % change (not kha)",national,,1.27,0.016,,-1.404,,-1.42
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_ocr,"output, % change (not kha)",national,,0.496,-0.123,,-0.834,,-0.71
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_ruminant,"output, % change (not kha)",national,,0.749,-0.031,,-0.759,,-0.73
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_rmk,"output, % change (not kha)",national,,0.299,0.002,,-0.282,,-0.28
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_wol,"output, % change (not kha)",national,,-0.293,0.001,,0.278,,0.28
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_ruminantmeat,"output, % change (not kha)",national,,0.894,-0.039,,-0.902,,-0.86
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_dairy,"output, % change (not kha)",national,,0.215,0.002,,-0.201,,-0.2
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_vegoil,"output, % change (not kha)",national,,-0.001,-0.056,,0.004,,0.06
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_sgr,"output, % change (not kha)",national,,0.504,0.008,,-0.504,,-0.51
-surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32,qo_pcr,"output, % change (not kha)",national,,-0.049,0.0,,0.034,,0.03
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez2,0.0,0.0,0.0,0.0,0.0,0.0,nan
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez3,0.0,0.0,0.0,0.0,0.0,0.0,nan
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez4,7476.4,-379.4,1.47,7098.6,379.4,377.9,5.32
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez5,35639.1,-1808.3,4.0,33834.8,1808.3,1804.3,5.33
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez6,105091.7,-5332.3,0.84,99760.2,5332.3,5331.5,5.34
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez12,5080.6,-257.8,1.02,4823.9,257.8,256.8,5.32
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez1,0.0,0.0,0.0,0.0,0.0,0.0,nan
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez10,0.0,0.0,0.0,0.0,0.0,0.0,nan
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez11,0.0,0.0,0.0,0.0,0.0,0.0,nan
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,brasil,153287.9,-7777.8,7.33,145517.4,7777.8,7770.4,5.34
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez2,600.4,18.5,0.01,618.9,-18.6,-18.6,-3.01
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez3,7885.3,66.4,0.06,7951.7,-66.8,-66.9,-0.84
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez4,37041.9,529.7,-1.12,37570.4,-531.4,-530.3,-1.41
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez5,75506.6,1760.2,-2.62,77264.2,-1761.8,-1759.2,-2.28
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez6,31614.0,4513.4,-0.34,36127.1,-4516.0,-4515.7,-12.5
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez12,14972.0,253.0,-0.05,15224.9,-253.7,-253.7,-1.67
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez1,130.6,1.1,-0.0,131.7,-1.1,-1.1,-0.82
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez10,0.4,0.1,0.0,0.5,-0.1,-0.1,-14.41
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez11,156.9,4.4,0.03,161.4,-4.4,-4.4,-2.74
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",brasil,167908.2,7146.7,-4.04,175050.8,-7153.9,-7149.9,-4.08
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez2,336.1,-18.5,-0.01,317.7,18.6,18.6,5.86
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez3,5031.4,-66.4,-0.06,4964.9,66.8,66.9,1.35
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez4,11053.5,-150.3,-0.35,10902.8,152.0,152.4,1.4
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez5,19812.0,48.1,-1.38,19858.7,-46.5,-45.2,-0.23
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez6,15233.4,818.9,-0.5,16051.8,-816.3,-815.8,-5.08
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez12,11881.3,4.8,-0.97,11885.2,-4.1,-3.1,-0.03
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez1,75.9,-1.1,0.0,74.8,1.1,1.1,1.44
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez10,1.4,-0.1,-0.0,1.3,0.1,0.1,5.56
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez11,80.1,-4.4,-0.03,75.6,4.4,4.4,5.85
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,brasil,63505.2,631.1,-3.29,64132.9,-623.9,-620.6,-0.97
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez2,60.2,-0.4,-0.01,59.8,0.4,0.4,0.74
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez3,273.4,-2.4,-0.05,270.9,2.5,2.6,0.95
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez4,10412.5,-53.7,-0.88,10357.9,55.7,56.6,0.55
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez5,8210.2,75.7,-0.82,8285.0,-73.9,-73.1,-0.88
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez6,8144.0,406.7,-0.92,8549.7,-404.8,-403.9,-4.72
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez12,9689.8,31.7,-1.58,9719.9,-30.7,-29.1,-0.3
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez1,4.3,-0.1,-0.0,4.3,0.1,0.1,1.22
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez10,0.4,0.0,0.0,0.4,-0.0,-0.0,-3.76
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez11,13.8,0.3,0.0,14.1,-0.3,-0.3,-2.21
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",brasil,36808.5,457.8,-4.26,37262.1,-451.1,-446.8,-1.2
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez2,494.2,-6.1,0.06,488.1,6.2,6.2,1.27
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez3,1731.4,-25.1,0.17,1706.4,25.5,25.3,1.48
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez4,3258.1,-34.3,0.67,3224.4,34.6,33.9,1.05
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez5,3462.3,12.3,0.67,3475.2,-11.9,-12.5,-0.36
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez6,4813.6,211.9,0.94,5026.5,-211.3,-212.3,-4.22
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez12,5028.3,-11.9,0.66,5017.0,12.0,11.3,0.23
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez1,9.6,-0.2,0.0,9.4,0.2,0.2,1.76
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez10,1.9,0.1,0.0,1.9,-0.1,-0.1,-3.25
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez11,163.8,2.9,0.06,166.8,-2.8,-2.8,-1.7
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",brasil,18963.2,149.4,3.23,19115.8,-147.6,-150.8,-0.79
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez2,34.8,-0.6,-0.0,34.1,0.6,0.6,1.85
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez3,172.6,-3.4,-0.02,169.2,3.5,3.5,2.07
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez4,1932.6,-24.9,0.02,1907.7,25.6,25.6,1.34
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez5,5463.3,-9.4,-0.02,5453.8,11.6,11.6,0.21
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez6,2309.9,89.1,-0.03,2398.9,-88.1,-88.1,-3.67
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez12,150.7,-0.7,-0.01,150.0,0.7,0.7,0.48
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez1,14.3,-0.3,-0.0,13.9,0.3,0.3,2.34
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez10,2.2,0.1,0.0,2.3,-0.1,-0.1,-2.7
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez11,12.1,0.1,0.0,12.2,-0.1,-0.1,-1.13
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,brasil,10092.4,50.0,-0.05,10142.3,-46.0,-45.9,-0.45
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez2,3.6,0.0,0.0,3.6,0.0,0.0,0.03
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez3,4.9,-0.0,0.0,4.9,0.0,0.0,0.24
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez4,31.0,-0.0,0.02,31.0,0.0,0.0,0.08
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez5,33.3,0.9,0.02,34.3,-0.9,-0.9,-2.64
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez6,860.7,49.8,0.5,911.0,-48.6,-49.1,-5.39
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez12,1168.8,12.6,0.59,1182.1,-11.2,-11.8,-1.0
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez1,0.0,0.0,0.0,0.0,0.0,0.0,nan
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez10,0.4,0.0,0.0,0.4,-0.0,-0.0,-4.44
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez11,0.7,0.0,0.0,0.7,-0.0,-0.0,-2.9
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,brasil,2103.6,63.4,1.13,2168.1,-60.7,-61.9,-2.85
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez2,6.5,-0.1,-0.0,6.4,0.1,0.1,1.26
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez3,69.9,-1.1,-0.01,68.9,1.0,1.0,1.48
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez4,515.1,-8.8,-0.02,506.3,8.3,8.3,1.64
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez5,305.2,0.8,-0.01,306.0,-1.1,-1.1,-0.36
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez6,155.9,6.7,-0.01,162.6,-6.9,-6.9,-4.23
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez12,653.2,-2.1,-0.07,651.0,1.4,1.4,0.22
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez1,0.2,-0.0,-0.0,0.2,0.0,0.0,1.75
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez10,0.1,0.0,0.0,0.1,-0.0,-0.0,-3.26
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez11,3.9,0.1,0.0,4.0,-0.1,-0.1,-1.7
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,brasil,1710.1,-4.5,-0.12,1705.4,2.7,2.8,0.16
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez2,508.1,-7.8,-0.01,500.3,7.9,7.9,1.58
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez3,1391.2,-24.3,-0.03,1366.9,24.6,24.6,1.8
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez4,1503.0,-17.5,0.13,1485.6,17.6,17.5,1.18
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez5,1387.0,0.7,0.1,1387.8,-0.6,-0.7,-0.05
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez6,1198.8,49.0,0.08,1247.9,-48.9,-49.0,-3.92
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez12,1040.6,-5.6,0.01,1035.1,5.6,5.6,0.54
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez1,21.7,-0.4,0.0,21.3,0.4,0.4,2.07
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez10,5.6,0.2,0.0,5.8,-0.2,-0.2,-2.95
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez11,46.4,0.7,0.01,47.1,-0.6,-0.7,-1.39
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",brasil,7102.6,-5.2,0.28,7097.7,5.8,5.6,0.08
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez2,95.9,0.4,0.0,96.3,-0.4,-0.4,-0.42
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez3,150.9,0.3,0.0,151.2,-0.3,-0.3,-0.21
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez4,758.7,0.1,0.09,758.9,-0.3,-0.4,-0.05
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez5,551.5,11.2,0.06,562.8,-11.3,-11.4,-2.02
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez6,155.3,9.5,0.02,164.8,-9.6,-9.6,-5.82
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez12,23.0,0.3,0.0,23.3,-0.3,-0.3,-1.45
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez1,11.0,-0.0,0.0,11.0,0.0,0.0,0.06
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez10,0.8,0.0,0.0,0.9,-0.0,-0.0,-4.87
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez11,1.5,0.1,0.0,1.6,-0.1,-0.1,-3.34
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",brasil,1748.5,22.0,0.17,1770.6,-22.3,-22.5,-1.27
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez2,35.8,-3.8,-0.04,31.9,3.7,3.8,11.87
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez3,94.8,-10.3,-0.12,84.4,10.1,10.2,12.11
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez4,301.8,-11.1,-0.38,290.3,10.4,10.8,3.73
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez5,1084.5,-44.1,-1.37,1039.0,41.7,43.0,4.14
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez6,815.8,-3.8,-1.08,810.9,2.0,3.1,0.38
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez12,422.0,-19.5,-0.56,401.9,18.5,19.1,4.75
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez1,0.8,-0.1,-0.0,0.7,0.1,0.1,12.41
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez10,7.0,-0.5,-0.01,6.5,0.4,0.4,6.87
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez11,107.8,-8.6,-0.11,99.1,8.4,8.5,8.59
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",brasil,2870.1,-101.8,-3.68,2764.6,95.4,99.1,3.58
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_pdr,"output, % change (not kha)",national,,-0.082,0.003,,-0.057,,-0.06
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_wht,"output, % change (not kha)",national,,2.587,0.065,,-2.418,,-2.48
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_gro,"output, % change (not kha)",national,,0.899,0.028,,-0.911,,-0.94
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_v_f,"output, % change (not kha)",national,,0.309,0.013,,-0.333,,-0.35
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_osd,"output, % change (not kha)",national,,1.223,-0.003,,-1.221,,-1.22
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_c_b,"output, % change (not kha)",national,,0.343,0.007,,-0.35,,-0.36
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_pfb,"output, % change (not kha)",national,,1.251,0.016,,-1.285,,-1.3
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_ocr,"output, % change (not kha)",national,,1.758,-0.124,,-2.074,,-1.95
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_ruminant,"output, % change (not kha)",national,,0.759,-0.03,,-0.742,,-0.71
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_rmk,"output, % change (not kha)",national,,0.32,0.002,,-0.316,,-0.32
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_wol,"output, % change (not kha)",national,,-0.478,0.001,,0.523,,0.52
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_ruminantmeat,"output, % change (not kha)",national,,0.936,-0.038,,-0.913,,-0.87
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_dairy,"output, % change (not kha)",national,,0.235,0.002,,-0.229,,-0.23
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_vegoil,"output, % change (not kha)",national,,0.046,-0.056,,-0.104,,-0.05
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_sgr,"output, % change (not kha)",national,,0.423,0.008,,-0.437,,-0.44
+penalty,forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_pcr,"output, % change (not kha)",national,,-0.04,0.0,,0.03,,0.03
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez2,0.0,0.0,0.0,0.0,0.0,0.0,nan
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez3,0.0,0.0,0.0,0.0,0.0,0.0,nan
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez4,7476.4,-379.4,1.47,7098.6,379.4,377.9,5.32
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez5,35639.1,-1808.3,4.0,33834.8,1808.3,1804.3,5.33
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez6,105091.7,-5332.3,0.84,99760.2,5332.3,5331.5,5.34
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez12,5080.6,-257.8,1.02,4823.9,257.8,256.8,5.32
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez1,0.0,0.0,0.0,0.0,0.0,0.0,nan
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez10,0.0,0.0,0.0,0.0,0.0,0.0,nan
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,aez11,0.0,0.0,0.0,0.0,0.0,0.0,nan
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,forestland,Forest,brasil,153287.9,-7777.8,7.33,145517.4,7777.8,7770.4,5.34
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez2,600.4,18.5,0.01,618.9,-17.4,-17.4,-2.82
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez3,7885.3,66.4,0.06,7951.7,-62.5,-62.6,-0.79
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez4,37041.9,529.7,-1.12,37570.4,-518.0,-516.9,-1.38
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez5,75506.6,1760.2,-2.62,77264.2,-1743.1,-1740.4,-2.25
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez6,31614.0,4513.4,-0.34,36127.1,-4495.1,-4494.8,-12.44
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez12,14972.0,253.0,-0.05,15224.9,-244.8,-244.8,-1.61
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez1,130.6,1.1,-0.0,131.7,-1.0,-1.0,-0.76
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez10,0.4,0.1,0.0,0.5,-0.1,-0.1,-13.66
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",aez11,156.9,4.4,0.03,161.4,-4.2,-4.2,-2.61
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pastureland,"Pasture (cattle, dairy)",brasil,167908.2,7146.7,-4.04,175050.8,-7086.2,-7082.2,-4.05
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez2,336.1,-18.5,-0.01,317.7,17.4,17.4,5.49
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez3,5031.4,-66.4,-0.06,4964.9,62.5,62.6,1.26
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez4,11053.5,-150.3,-0.35,10902.8,138.7,139.0,1.27
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez5,19812.0,48.1,-1.38,19858.7,-65.3,-63.9,-0.32
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez6,15233.4,818.9,-0.5,16051.8,-837.2,-836.7,-5.21
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez12,11881.3,4.8,-0.97,11885.2,-13.0,-12.0,-0.1
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez1,75.9,-1.1,0.0,74.8,1.0,1.0,1.35
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez10,1.4,-0.1,-0.0,1.3,0.1,0.1,5.27
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,aez11,80.1,-4.4,-0.03,75.6,4.2,4.2,5.57
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,cropland,Cropland,brasil,63505.2,631.1,-3.29,64132.9,-691.5,-688.2,-1.07
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez2,60.2,-0.4,-0.01,59.8,0.4,0.4,0.68
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez3,273.4,-2.4,-0.05,270.9,2.3,2.4,0.88
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez4,10412.5,-53.7,-0.88,10357.9,50.4,51.3,0.5
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez5,8210.2,75.7,-0.82,8285.0,-78.3,-77.5,-0.94
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez6,8144.0,406.7,-0.92,8549.7,-418.4,-417.5,-4.88
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez12,9689.8,31.7,-1.58,9719.9,-44.9,-43.3,-0.45
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez1,4.3,-0.1,-0.0,4.3,0.0,0.0,1.14
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez10,0.4,0.0,0.0,0.4,-0.0,-0.0,-3.69
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",aez11,13.8,0.3,0.0,14.1,-0.3,-0.3,-2.14
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,osd,"Soybeans, other oilseeds",brasil,36808.5,457.8,-4.26,37262.1,-488.7,-484.4,-1.3
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez2,494.2,-6.1,0.06,488.1,5.6,5.5,1.13
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez3,1731.4,-25.1,0.17,1706.4,22.9,22.8,1.33
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez4,3258.1,-34.3,0.67,3224.4,30.5,29.8,0.92
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez5,3462.3,12.3,0.67,3475.2,-16.3,-17.0,-0.49
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez6,4813.6,211.9,0.94,5026.5,-223.0,-223.9,-4.45
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez12,5028.3,-11.9,0.66,5017.0,0.8,0.1,0.0
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez1,9.6,-0.2,0.0,9.4,0.2,0.2,1.59
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez10,1.9,0.1,0.0,1.9,-0.1,-0.1,-3.26
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",aez11,163.8,2.9,0.06,166.8,-2.8,-2.8,-1.7
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,gro,"Maize, other grains",brasil,18963.2,149.4,3.23,19115.8,-182.2,-185.4,-0.97
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez2,34.8,-0.6,-0.0,34.1,0.6,0.6,1.75
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez3,172.6,-3.4,-0.02,169.2,3.3,3.3,1.96
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez4,1932.6,-24.9,0.02,1907.7,23.9,23.9,1.25
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez5,5463.3,-9.4,-0.02,5453.8,6.6,6.6,0.12
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez6,2309.9,89.1,-0.03,2398.9,-92.8,-92.8,-3.87
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez12,150.7,-0.7,-0.01,150.0,0.4,0.4,0.3
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez1,14.3,-0.3,-0.0,13.9,0.3,0.3,2.22
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez10,2.2,0.1,0.0,2.3,-0.1,-0.1,-2.66
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,aez11,12.1,0.1,0.0,12.2,-0.1,-0.1,-1.1
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,c_b,Sugar cane,brasil,10092.4,50.0,-0.05,10142.3,-57.9,-57.8,-0.57
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez2,3.6,0.0,0.0,3.6,0.1,0.1,1.94
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez3,4.9,-0.0,0.0,4.9,0.1,0.1,2.14
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez4,31.0,-0.0,0.02,31.0,0.6,0.6,2.0
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez5,33.3,0.9,0.02,34.3,-0.2,-0.3,-0.77
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez6,860.7,49.8,0.5,911.0,-33.1,-33.6,-3.69
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez12,1168.8,12.6,0.59,1182.1,10.1,9.5,0.8
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez1,0.0,0.0,0.0,0.0,0.0,0.0,nan
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez10,0.4,0.0,0.0,0.4,-0.0,-0.0,-2.48
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,aez11,0.7,0.0,0.0,0.7,-0.0,-0.0,-0.92
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,wht,Wheat,brasil,2103.6,63.4,1.13,2168.1,-22.5,-23.6,-1.09
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez2,6.5,-0.1,-0.0,6.4,0.1,0.1,1.19
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez3,69.9,-1.1,-0.01,68.9,1.0,1.0,1.4
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez4,515.1,-8.8,-0.02,506.3,8.0,8.0,1.58
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez5,305.2,0.8,-0.01,306.0,-1.3,-1.3,-0.43
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez6,155.9,6.7,-0.01,162.6,-7.2,-7.1,-4.4
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez12,653.2,-2.1,-0.07,651.0,0.3,0.4,0.06
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez1,0.2,-0.0,-0.0,0.2,0.0,0.0,1.66
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez10,0.1,0.0,0.0,0.1,-0.0,-0.0,-3.2
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,aez11,3.9,0.1,0.0,4.0,-0.1,-0.1,-1.64
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pdr,Rice,brasil,1710.1,-4.5,-0.12,1705.4,0.8,0.9,0.05
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez2,508.1,-7.8,-0.01,500.3,7.6,7.6,1.53
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez3,1391.2,-24.3,-0.03,1366.9,23.7,23.7,1.73
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez4,1503.0,-17.5,0.13,1485.6,17.0,16.8,1.13
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez5,1387.0,0.7,0.1,1387.8,-1.3,-1.4,-0.1
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez6,1198.8,49.0,0.08,1247.9,-50.8,-50.9,-4.08
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez12,1040.6,-5.6,0.01,1035.1,4.1,4.1,0.4
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez1,21.7,-0.4,0.0,21.3,0.4,0.4,1.99
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez10,5.6,0.2,0.0,5.8,-0.2,-0.2,-2.88
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",aez11,46.4,0.7,0.01,47.1,-0.6,-0.6,-1.32
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,v_f,"Vegetables, fruit",brasil,7102.6,-5.2,0.28,7097.7,-0.0,-0.3,-0.0
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez2,95.9,0.4,0.0,96.3,-0.5,-0.5,-0.53
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez3,150.9,0.3,0.0,151.2,-0.5,-0.5,-0.33
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez4,758.7,0.1,0.09,758.9,-1.1,-1.2,-0.15
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez5,551.5,11.2,0.06,562.8,-11.9,-12.0,-2.12
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez6,155.3,9.5,0.02,164.8,-9.9,-9.9,-6.02
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez12,23.0,0.3,0.0,23.3,-0.4,-0.4,-1.64
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez1,11.0,-0.0,0.0,11.0,-0.0,-0.0,-0.08
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez10,0.8,0.0,0.0,0.9,-0.0,-0.0,-4.85
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",aez11,1.5,0.1,0.0,1.6,-0.1,-0.1,-3.32
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,pfb,"Cotton, other fibres",brasil,1748.5,22.0,0.17,1770.6,-24.4,-24.5,-1.39
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez2,35.8,-3.8,-0.04,31.9,3.6,3.7,11.44
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez3,94.8,-10.3,-0.12,84.4,9.7,9.8,11.66
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez4,301.8,-11.1,-0.38,290.3,9.3,9.7,3.34
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez5,1084.5,-44.1,-1.37,1039.0,37.5,38.9,3.75
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez6,815.8,-3.8,-1.08,810.9,-2.0,-0.9,-0.11
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez12,422.0,-19.5,-0.56,401.9,16.6,17.1,4.26
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez1,0.8,-0.1,-0.0,0.7,0.1,0.1,11.95
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez10,7.0,-0.5,-0.01,6.5,0.4,0.4,6.6
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",aez11,107.8,-8.6,-0.11,99.1,8.1,8.2,8.31
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,ocr,"Coffee, cocoa, other crops",brasil,2870.1,-101.8,-3.68,2764.6,83.4,87.0,3.15
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_pdr,"output, % change (not kha)",national,,-0.082,0.003,,-0.118,,-0.12
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_wht,"output, % change (not kha)",national,,2.587,0.065,,-0.528,,-0.59
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_gro,"output, % change (not kha)",national,,0.899,0.028,,-1.039,,-1.07
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_v_f,"output, % change (not kha)",national,,0.309,0.013,,-0.371,,-0.38
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_osd,"output, % change (not kha)",national,,1.223,-0.003,,-1.269,,-1.27
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_c_b,"output, % change (not kha)",national,,0.343,0.007,,-0.428,,-0.43
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_pfb,"output, % change (not kha)",national,,1.251,0.016,,-1.368,,-1.38
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_ocr,"output, % change (not kha)",national,,1.758,-0.124,,-2.434,,-2.31
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_ruminant,"output, % change (not kha)",national,,0.759,-0.03,,-0.771,,-0.74
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_rmk,"output, % change (not kha)",national,,0.32,0.002,,-0.302,,-0.3
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_wol,"output, % change (not kha)",national,,-0.478,0.001,,0.443,,0.44
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_ruminantmeat,"output, % change (not kha)",national,,0.936,-0.038,,-0.942,,-0.9
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_dairy,"output, % change (not kha)",national,,0.235,0.002,,-0.218,,-0.22
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_vegoil,"output, % change (not kha)",national,,0.046,-0.056,,-0.164,,-0.11
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_sgr,"output, % change (not kha)",national,,0.423,0.008,,-0.557,,-0.57
+surcharge,forest_pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33,qo_pcr,"output, % change (not kha)",national,,-0.04,0.0,,-0.003,,-0.0

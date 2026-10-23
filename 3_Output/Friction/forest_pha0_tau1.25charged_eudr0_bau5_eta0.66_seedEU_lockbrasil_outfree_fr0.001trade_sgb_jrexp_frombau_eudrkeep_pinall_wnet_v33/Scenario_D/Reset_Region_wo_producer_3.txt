@@ -1,0 +1,5 @@
+"eastasia"
+"mexico"
+"venezuela"
+"efta"
+"cafr"

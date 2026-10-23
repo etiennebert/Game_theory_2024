@@ -1,0 +1,4 @@
+"korea"
+"latinamer"
+"efta"
+"nigeria"

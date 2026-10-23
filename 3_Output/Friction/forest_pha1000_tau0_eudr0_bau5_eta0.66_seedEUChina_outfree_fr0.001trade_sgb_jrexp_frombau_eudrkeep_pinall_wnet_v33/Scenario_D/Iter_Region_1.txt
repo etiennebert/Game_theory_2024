@@ -1,0 +1,8 @@
+"brasil"
+"china"
+"japan"
+"eu27"
+"cafr"
+"ivorycoast"
+"ghana"
+"mozambique"

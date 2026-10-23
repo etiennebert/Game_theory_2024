@@ -1,0 +1,3 @@
+"region" "status" "EV_baseline" "EV_in_S" "EV_in_S_vs_baseline" "EV_deviation" "world_EV_deviation" "tropical_forest_kha_deviation" "solve_ok" "gain_from_moving" "threshold" "wants_to_move" "wants_to_move_with_friction" "transfer_needed" "revenue_charge"
+"eu27" "eu27_anchor" -146.709513728106 -1408.52077122723 -1261.81125749913 NA NA NA NA NA NA NA NA 0 48.7568460846543
+"japan" "outsider" 0.358193113565137 -407.185816273804 -407.544009387369 -372.428180087715 -2919.18751105604 14211.8619289398 TRUE 34.7576361860881 39.5011238521135 TRUE FALSE 0 0

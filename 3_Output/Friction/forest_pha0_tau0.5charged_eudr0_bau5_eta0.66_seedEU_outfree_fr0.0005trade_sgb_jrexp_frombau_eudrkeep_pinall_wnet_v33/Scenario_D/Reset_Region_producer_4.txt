@@ -1,0 +1,6 @@
+"argentina"
+"bolivia"
+"brasil"
+"angola"
+"drc"
+"ghana"

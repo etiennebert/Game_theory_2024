@@ -1,0 +1,6 @@
+"oceania"
+"us"
+"venezuela"
+"eu27"
+"restofworld"
+"cafr"

@@ -1,0 +1,7 @@
+"newzealand"
+"japan"
+"korea"
+"india"
+"efta"
+"russia"
+"nigeria"

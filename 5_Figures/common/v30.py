@@ -17,10 +17,10 @@ Reference frames, once and for all:
     (positive: extra clearing). Both in tropical hectares and in all-forest hectares (tropical + temperate + boreal).
 """
 import csv, glob, json, os, re, collections, openpyxl
-from paths import REPO, DB, EXT, OUT3, here, VERSION
+from paths import REPO, DB, EXT, OUT3, here, VERSION, BASELINE_SUFFIX
 
 SUFFIX = "_eudr0_bau5_eta0.66_seed{seed}{lock}_outfree_fr{fr}trade_sgb_jrexp_frombau_eudr{eudr}{pin}"
-BASELINE = os.path.join(OUT3, "Baseline_2stage_bau5_eta0.66")
+BASELINE = os.path.join(OUT3, "Baseline_2stage_bau5_eta0.66" + BASELINE_SUFFIX)
 ZONES = {"Tropical": "trop", "Temperate": "temp", "Boreal": "bor"}
 TOP = ["brasil", "drc", "bolivia", "seasia", "ivorycoast", "colombia", "indonesia", "nigeria"]   # the eight largest tropical deforesters
 
@@ -36,14 +36,14 @@ def tag_of(pha=0, tau=0.0, seed="EU", lock="", fr=0.001, eudr="keep", pin="all",
     return f"pha{fmt_num(pha)}_tau{fmt_num(tau)}{'charged' if tau > 0 else ''}" + SUFFIX.format(seed=seed, lock=lock_s, fr=fmt_num(fr), eudr=eudr, pin="_pinall" if pin == "all" else "") + (VERSION_SUFFIX if version is None else version)
 
 PAT = re.compile(r"agg_forest_pha(?P<pha>\d+)_tau(?P<tau>[\d.]+)(?:charged)?_eudr0_bau5_eta0\.66_seed(?P<seed>[A-Za-z0-9]+?)(?P<fixed>_fixed)?(?:_lock(?P<lock>[a-z\-]+))?"
-                 r"_outfree_fr(?P<fr>[\d.]+)trade_sgb_jrexp_frombau_eudr(?P<eudr>keep|lift)(?P<pin>_pinall)?(?P<wnet>_wnet)?(?P<v32>_v32)?\.csv$")
+                 r"_outfree_fr(?P<fr>[\d.]+)trade_sgb_jrexp_frombau_eudr(?P<eudr>keep|lift)(?P<pin>_pinall)?(?P<wnet>_wnet)?(?P<ver>_v3\d)?\.csv$")
 
 def parse_tag(path):
     m = PAT.search(os.path.basename(path))
     if not m: return None
     d = m.groupdict()
     return dict(pha=int(d["pha"]), tau=float(d["tau"]), seed=d["seed"], fixed=bool(d["fixed"]), lock=d["lock"] or "", fr=float(d["fr"]), eudr=d["eudr"],
-                pin="all" if d["pin"] else "bau", version=(d["wnet"] or "") + (d["v32"] or ""), tag=re.search(r"agg_forest_(.*)\.csv$", os.path.basename(path)).group(1))
+                pin="all" if d["pin"] else "bau", version=(d["wnet"] or "") + (d["ver"] or ""), tag=re.search(r"agg_forest_(.*)\.csv$", os.path.basename(path)).group(1))
 
 def csv_path(tag): return os.path.join(DB, f"Database_GTAPAEZ_all_results_2024_agg_forest_{tag}.csv")
 def run_dir(tag): return os.path.join(OUT3, "Friction", "forest_" + tag, "Scenario_D")

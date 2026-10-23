@@ -1,0 +1,6 @@
+iter_1 1 5.1 10 TRUE  
+iter_2 1 5 8 TRUE  
+iter_3 1 5.1 8 TRUE  
+iter_4 1 5 8 TRUE  
+iter_5 1 4.9 8 TRUE  
+iter_6 1 4.9 8 TRUE  

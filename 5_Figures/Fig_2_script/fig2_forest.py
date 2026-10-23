@@ -6,6 +6,7 @@ b  number of members round by round, four starting points (EU alone x two instru
 c  tropical forest kept by member region at convergence, every configuration on the disk
 d  forest lost outside the club (leakage) by outsider region, same configurations, tropical (dot) and all forest (ring)
 Reads all_data.json; writes Fig2_forest.png/.pdf and Fig2_source_data.csv."""
+
 import os, sys; sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "common"))   # the shared modules of the pipeline (paths, figstyle, mapping, v30)
 import json, csv
 from figstyle import *

@@ -1,0 +1,8 @@
+"bolivia"
+"japan"
+"madagascar"
+"colombia"
+"venezuela"
+"angola"
+"drc"
+"cafr"

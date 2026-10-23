@@ -9,8 +9,13 @@ GREENS = ['#d5f1d2', '#a5dc9f', '#6dba67', '#349130', '#006500', '#004000']
 ORANGES = ['#fbcbba', '#ef8d69', '#d0531e']; BLUES = ['#bedaff', '#71adfb', '#3280de']; NEUTRAL = "#f0efec"
 DARK, LIGHT = "#4b4a47", "#c9c8c1"           # producers / other regions
 BLUE3 = ["#6da7ec", "#256abf", "#0d366b"]    # switching-cost ordinal ramp (validated)
+def _font():
+    """Arial where it is installed (Windows, Mac), else Liberation Sans or Arimo, its metric-compatible clones (Linux); the same layout either way."""
+    from matplotlib import font_manager
+    have = {f.name for f in font_manager.fontManager.ttflist}
+    return next((n for n in ("Arial", "Liberation Sans", "Arimo") if n in have), "DejaVu Sans")
 def style():
-    mpl.rcParams.update({"font.family": "Liberation Sans", "font.size": 7, "axes.labelsize": 7, "axes.titlesize": 7.5,
+    mpl.rcParams.update({"font.family": _font(), "font.size": 7, "axes.labelsize": 7, "axes.titlesize": 7.5,
         "xtick.labelsize": 6.3, "ytick.labelsize": 6.3, "axes.edgecolor": BASE, "axes.linewidth": 0.6, "xtick.color": INK2, "ytick.color": INK2,
         "xtick.major.width": 0.6, "ytick.major.width": 0.6, "xtick.major.size": 2.5, "ytick.major.size": 2.5, "axes.labelcolor": INK, "text.color": INK,
         "pdf.fonttype": 42, "svg.fonttype": "none", "savefig.facecolor": SURF, "figure.facecolor": SURF, "hatch.linewidth": 0.5, "legend.fontsize": 6.2})

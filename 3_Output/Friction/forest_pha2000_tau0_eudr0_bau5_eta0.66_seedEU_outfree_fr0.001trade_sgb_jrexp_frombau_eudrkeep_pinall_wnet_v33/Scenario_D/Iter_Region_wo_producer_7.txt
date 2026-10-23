@@ -1,0 +1,8 @@
+"newzealand"
+"japan"
+"korea"
+"india"
+"latinamer"
+"efta"
+"russia"
+"nigeria"

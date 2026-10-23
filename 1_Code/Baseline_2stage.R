@@ -55,6 +55,9 @@ bau_horizon <- 5          # years of business-as-usual clearing
 bau_cap_pct <- 25         # a cell never loses more than this share of its forest cover over the horizon
 bau_eta     <- 0.66       # productivity of the cleared hectares (bau_afeall_eta<eta>.txt from Calibrate_BAU_productivity.R); 0 = none
 run_stage   <- c("A", "B")  # "A" alone recalibrates the BAU world; "B" alone reuses an existing A_bau/gdata_bau.upd
+generation  <- "v33"      # V33 (20 Oct 2026): the Miranda-calibrated elasticities; suffix of the output folder and of the productivity file
+                          # (bau_afeall_eta<eta>_<generation>.txt from Calibrate_BAU_productivity.R) so that nothing of V32 is overwritten ("" = V32)
+gen_sfx     <- if (nzchar(generation)) paste0("_", generation) else ""
 
 set_solver_lines <- function(lines, mode) {   # identical to Baseline_EUDR.R
   set_line <- function(lines, pattern, new) {
@@ -70,7 +73,7 @@ set_solver_lines <- function(lines, mode) {   # identical to Baseline_EUDR.R
   lines <- set_line(lines, "^!? *slc file *=",           "slc file = no ;")
   lines
 }
-out_path <- file.path(parent_folder, "3_Output", paste0("Baseline_2stage_bau", bau_horizon, if (bau_eta > 0) paste0("_eta", bau_eta) else ""), "/")
+out_path <- file.path(parent_folder, "3_Output", paste0("Baseline_2stage_bau", bau_horizon, if (bau_eta > 0) paste0("_eta", bau_eta) else "", gen_sfx), "/")
 out_A <- paste0(out_path, "A_bau/"); out_B <- paste0(out_path, "B_eudr/")
 dir.create(out_A, recursive = TRUE, showWarnings = FALSE); dir.create(out_B, recursive = TRUE, showWarnings = FALSE)
 
@@ -136,7 +139,7 @@ print(paste("BAU clearing:", nrow(bau), "region x AEZ cells,", round(sum(bau$bau
 
 lines_afe <- character(0); afe <- NULL
 if (bau_eta > 0) {
-  afe_file <- paste0(external_data_path, "/DeDuCE_rework/bau_afeall_eta", bau_eta, ".txt")
+  afe_file <- paste0(external_data_path, "/DeDuCE_rework/bau_afeall_eta", bau_eta, gen_sfx, ".txt")
   if (!file.exists(afe_file)) stop("Run 1_Code/Calibrate_BAU_productivity.R with bau_eta = ", bau_eta, " first: ", afe_file, " not found")
   afe <- read.table(afe_file, header = TRUE, stringsAsFactors = FALSE); afe <- afe[afe$afeall_pct > 0, ]
   lines_afe <- sprintf('shock afeall("%s","%s","%s") = %s;', afe$aez, afe$activity, afe$region, format(afe$afeall_pct, scientific = FALSE, digits = 10))

@@ -1,0 +1,5 @@
+"canada"
+"venezuela"
+"eu27"
+"mena"
+"cafr"

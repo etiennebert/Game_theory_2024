@@ -1,0 +1,16 @@
+ETR1 built from the 2023 file: 44 Miranda cells in 12 regions (argentina, bolivia, brasil, indonesia, malasya, colombia, paraguay, peru, angola, drc, ivorycoast, ghana); 28 of them can respond in the model (forest, agriculture and a forestry rent in the cell); every other cell carries the 2023 value -0.2 
+Miranda cells kept at their 2023 value because the model cannot move land there: argentina aez3; argentina aez4; argentina aez5; argentina aez6; brasil aez2; brasil aez3; indonesia aez3; colombia aez2; colombia aez3; paraguay aez2; paraguay aez3; paraguay aez4; paraguay aez5; angola aez6; ivorycoast aez3; ghana aez3 
+only_regions: bolivia, indonesia, malasya, colombia, ivorycoast 
+warm start from C:/runGTAP375/Game_theory_2024/3_Output/Miranda_calibration_drc_check2/ETR1_calibrated.csv: 28 calibrated cells start from their previous final value 
+pass 0: ETRAEL1 of the Miranda cells between -5 and -0.044 - solving (separate) 
+   solved in 1.3 min (Solve_bolivia.log) 
+   solved in 1.1 min (Solve_indonesia.log) 
+   solved in 1 min (Solve_malasya.log) 
+   solved in 1.1 min (Solve_colombia.log) 
+   solved in 1.6 min (Solve_ivorycoast.log) 
+   no usable response in: brasil aez4; brasil aez5; brasil aez6; colombia aez4; paraguay aez6; peru aez2; peru aez3; peru aez4; peru aez5; peru aez6; angola aez5; drc aez5; drc aez6; ghana aez4; ghana aez5; ghana aez6 - kept as they are 
+   producer price +0.602 % (median over regions); epsilon_model / epsilon_target: median 0.315, range 0.021 to 0.763; cells within 5 %: 0 of 12 (6 pinned at a bound) 
+stopped at max_pass = 0 without full convergence; ETR1_calibrated.csv shows the remaining gaps 
+cells at a bound of -5 / -0.02 (the CET cannot reach the Miranda value there, usually because forestry earns almost no rent in the cell): brasil aez4 -5; indonesia aez4 -5; indonesia aez5 -5; colombia aez5 -5; peru aez3 -5; ivorycoast aez4 -5; ivorycoast aez5 -5; ivorycoast aez6 -5 
+done: C:/runGTAP375/Game_theory_2024/3_Output/Miranda_calibration_bound_check/default_miranda.prm (in/default.prm + header ETR1), C:/runGTAP375/Game_theory_2024/3_Output/Miranda_calibration_bound_check/ETR1_calibrated.csv, solver logs and CMFs in pass_*/ 
+to run the baseline and the game with it: copy it over 2_Model/in/default.prm (keep the original as default_v7defaults.prm) or point 'file gtapPARM =' in BU/NATDEF.cmf to it; the TAB needs no change 

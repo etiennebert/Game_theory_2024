@@ -1,0 +1,8 @@
+"korea"
+"latinamer"
+"paraguay"
+"peru"
+"efta"
+"ivorycoast"
+"ghana"
+"nigeria"

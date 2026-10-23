@@ -11,16 +11,16 @@
 suppressMessages(library(HARr))
 args  <- commandArgs(trailingOnly = TRUE)
 repo  <- if (length(args) >= 1) args[1] else Sys.getenv("FOREST_CLUB_REPO", "C:/runGTAP375/Game_theory_2024")
-label <- if (length(args) >= 2) args[2] else { v <- Sys.getenv("FOREST_CLUB_VERSION", "_wnet_v32"); c("_wnet_v32" = "V32", "_wnet" = "V31")[v] }
+label <- if (length(args) >= 2) args[2] else { v <- Sys.getenv("FOREST_CLUB_VERSION", "_wnet_v32"); c("_wnet_v33" = "V33", "_wnet_v32" = "V32", "_wnet" = "V31")[v] }
 if (is.na(label)) label <- "V30"
 here  <- tryCatch(dirname(normalizePath(sys.frame(1)$ofile)), error = function(e) {
   f <- grep("^--file=", commandArgs(), value = TRUE); if (length(f)) dirname(normalizePath(sub("^--file=", "", f[1]))) else getwd() })
-runs_file <- file.path(here, paste0("brazil_runs_", label, ".txt"))
+runs_file <- file.path(here, "..", "data", paste0("brazil_runs_", label, ".txt"))   # 5_Figures\data\ (written by extract_all.py)
 if (!file.exists(runs_file)) stop("no ", runs_file, " - run extract_all.py first")
 runs <- read.table(runs_file, col.names = c("instrument", "folder", "sl4"), stringsAsFactors = FALSE)
 r <- "brasil"
 bd <- read_har(file.path(repo, "2_Model/in/basedata.har"))
-BASE <- file.path(repo, "3_Output/Baseline_2stage_bau5_eta0.66")
+BASE <- file.path(repo, paste0("3_Output/Baseline_2stage_bau5_eta0.66", if (label == "V33") "_v33" else ""))   # V33 reads the Miranda-calibrated baseline
 A <- read_SL4(file.path(BASE, "A_bau/NATDEF_A.sl4"))
 B <- read_SL4(file.path(BASE, "B_eudr/NATDEF_B.sl4"))
 aezs <- paste0("aez", 1:18); crops <- c("pdr", "wht", "gro", "v_f", "osd", "c_b", "pfb", "ocr"); covs <- c("forestland", "cropland", "pastureland")

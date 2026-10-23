@@ -1,6 +1,6 @@
 # 5_Figures — every figure, table and number of the Results, one folder per figure
 
-The pipeline reads the runs of one generation (the paper's: tag suffix `_wnet_v32`) from `4_DB\` and `3_Output\` of the model folder (the parent of this folder), extracts them once into `data\`, and draws each figure from there. Each figure has a `<Figure>_script\` folder holding its one script and a `<Figure>_Output\` folder holding its png, pdf and source-data csv; the script finds its output folder from its own location, so a figure is redrawn with `python Fig_3_script\fig3_plane.py` and lands in `Fig_3_Output\`. Fig. 1 of the paper is the schematic and is not drawn here.
+The pipeline reads the runs of one generation (the paper's: tag suffix `_wnet_v33`, the Miranda-calibrated elasticities of 20 October 2026; `_wnet_v32` is the previous generation, selected with `FOREST_CLUB_VERSION=_wnet_v32`) from `4_DB\` and `3_Output\` of the model folder (the parent of this folder), extracts them once into `data\`, and draws each figure from there. Each figure has a `<Figure>_script\` folder holding its one script and a `<Figure>_Output\` folder holding its png, pdf and source-data csv; the script finds its output folder from its own location, so a figure is redrawn with `python Fig_3_script\fig3_plane.py` and lands in `Fig_3_Output\`. Fig. 1 of the paper is the schematic and is not drawn here.
 
 ## Layout
 
@@ -39,8 +39,10 @@ Round 0 of every run is Stage B of the two-stage baseline (the EUDR world): fore
 
 ## Requirements
 
-Python 3.10+ with `matplotlib`, `numpy`, `pandas`, `openpyxl`, `geopandas`, `shapely`, `pyproj`, `Pillow` (`rasterio` only to rebuild `brazil_aez.geojson`); R with `HARr` for the two R steps. The font Liberation Sans must be installed (metric-compatible substitute for Arial; on Windows install it or change `font.family` in `common\figstyle.py` to Arial).
+Python 3.10+ with `matplotlib`, `numpy`, `pandas`, `openpyxl`, `geopandas`, `shapely`, `pyproj`, `Pillow` (`rasterio` only to rebuild `brazil_aez.geojson`); R with `HARr` for the two R steps. The figures use Arial where it is installed (Windows, Mac) and otherwise Liberation Sans or Arimo, its metric-compatible clones (`common\figstyle.py`, `_font()`); the layout is the same with either.
 
 ## History
 
 Built 29 September – 7 October 2026. The flat layout of 2–7 October (`scripts_v32\`, figures in `Figures_v2\<label>\`) and the earlier `Figures_v2\scripts\` of 29–30 September, with the V31 and V30 figures and data files, are in `9_Archive\`. The runs themselves: `1_Code\CGE_Game_Theory_GTAPAEZ_all_V32.R` driven by `1_Code\Run_V32_all.R`; result csv suffix of the paper's runs `_eudr0_bau5_eta0.66_seed<EU|EUChina|EUMercosur|EUMercosurChina|EUMercosur5>[_lock<region>]_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v32` (`fr0.0005` and `fr0.002` for the switching-cost sensitivity).
+
+V33 (21–22 October 2026): the same pipeline on the `_wnet_v33` runs (12 calibrated land-supply cells, −0.25 elsewhere); headline club 1.25 % (the lowest working penalty), coalition 4,000 USD/ha, lowest working surcharge 2,500 USD/ha (`EU_sur_min`, with its own lock-outs); `common\extract_all.py` reads the headline per version, `common\extract_brazil_aez.R` the suffixed baseline, `SI_script\si_v33_extract.R` writes `SI_script\data_v33\`. Outputs: `data\*_V33.*`, `Tables_Output\*_V33.*`, and the figure folders (the V32 figures are regenerated with `FOREST_CLUB_VERSION=_wnet_v32 python make_all.py`).

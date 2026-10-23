@@ -1,0 +1,7 @@
+"japan"
+"eastasia"
+"myanmar"
+"venezuela"
+"eu27"
+"cafr"
+"mozambique"

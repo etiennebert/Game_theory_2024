@@ -1,0 +1,8 @@
+"paraguay"
+"peru"
+"eu27"
+"uk"
+"efta"
+"cafr"
+"ivorycoast"
+"ghana"

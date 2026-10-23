@@ -1,0 +1,5 @@
+"mexico"
+"venezuela"
+"eu27"
+"efta"
+"cafr"

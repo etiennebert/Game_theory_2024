@@ -22,12 +22,13 @@ import json, os, glob, re
 from paths import here, LABEL, VERSION
 import v30
 
-HEADLINE = {"penalty": 1.5, "surcharge": 4000}   # the EU-alone values the programme is built on (Run_V32_all.R: Y and X)
+HEADLINE = {"_wnet_v33": {"penalty": 1.25, "surcharge": 4000}}.get(VERSION, {"penalty": 1.5, "surcharge": 4000})   # the EU-alone values the programme is built on (Run_V32_all.R: Y and X);
+# V33 (21 Oct 2026): Y = 1.25 % (the lowest working penalty), X = 4,000 USD/ha; the 2,500 coalition (lowest working surcharge) is EU_sur_min with its own lock-outs
 
 gdp = v30.read_gdp()
 metas = v30.all_runs(pin="all", eudr="keep")
 if not metas: raise SystemExit(f"no run with the suffix '{VERSION}' (generation {LABEL}) found in 4_DB")
-T = v30.read_thresholds(metas[0]["tag"])
+T = v30.read_thresholds(next((m["tag"] for m in metas if abs(m.get("fr", 0.001) - 0.001) < 1e-12), metas[0]["tag"]))   # a run at 0.1 % of trade (the first run is a fr0.0005 one once the brackets are in)
 S = [v30.run_stats(m["tag"], gdp, T, m) for m in metas]
 print(len(S), f"{LABEL} runs (pin all, EUDR kept on outsiders, suffix '{VERSION}')")
 for s in sorted(S, key=lambda s: (s["seed"], s["lock"], s["fr"], s["pha"], s["tau"])):
@@ -86,6 +87,8 @@ for seed, key, lab in (("EUMercosur", "EUM_0", "EU + Mercosur"), ("EUMercosurChi
 for lock, lab in (("brasil", "Brazil locked out"), ("us", "United States locked out"), ("us-china", "US and China locked out"), ("indonesia", "Indonesia locked out")):
     add(f"EU_pen_lock{lock}", f"EU alone · penalty {Y:g}% · {lab}", find("EU", 0, Y, lock=lock))
     add(f"EU_sur_lock{lock}", f"EU alone · surcharge {X:,} USD/ha · {lab}", find("EU", X, 0, lock=lock))
+    if "EU_sur_min" in configs and find("EU", configs["EU_sur_min"]["pha"], 0, lock=lock) is not None:   # V33: the lock-outs of the lowest working surcharge (2,500) as well
+        add(f"EU_sur_min_lock{lock}", f"EU alone · surcharge {configs['EU_sur_min']['pha']:,} USD/ha · {lab}", find("EU", configs["EU_sur_min"]["pha"], 0, lock=lock))
 for tau in (2.5, 5.0):
     add(f"EU_pen_{tau:g}", f"EU alone · penalty {tau:g}%", find("EU", 0, tau))
 add("EU_sur_6000", "EU alone · surcharge 6,000 USD/ha", find("EU", 6000, 0))

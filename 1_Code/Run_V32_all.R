@@ -1,59 +1,54 @@
 ## =====================================================================================
-##  Run_V32_all.R  -  the whole programme of the paper on V32 (V31 + the EUDR kept on non-members in every solve, the bug of
-##  V30 fixed on 2 Oct; "_wnet_v32" files). Every run is redone: nothing of V30/V31 is reused (the tags differ).
-##  Same world and settings as the V30/V31 runs of 30 Sept - 2 Oct (two-stage baseline, pin all, EUDR kept on outsiders -
-##  now really applied in every solve -, switching cost 0.1 % of trade, experience rule, safeguard 0.1 % of GDP, welfare net
-##  of the forest-land wedge term). No search: the runs are at fixed values with brackets on both sides (the thresholds may
-##  move a little with the EUDR now in the solves: every first-round loss grows by the region's own EUDR cost, Brazil's by
-##  about 13 M USD). A run whose csv exists is reused, so the script can be relaunched after an interruption and picks up
-##  where it was. Blocks, in order (times at 5-10 min per solve):
-##    "core"        the four headline configurations (club 1.5 %, coalition 4,000, EU + Mercosur 0, EU + China 1.12 %)
-##    "brackets"    the runs just below the minima and the remaining seeds: club 1.25 %, coalition 3,500, EU + China club 0.87 %
-##                  and coalition 1,000 / 500, EU + Mercosur + China at zero (6 runs, ~2.5 h)
-##    "complement"  Brazil and the US locked out at both minima; the penalty at 2,000 and 1,000 USD/ha of surcharge (the exchange
-##                  rate: 0.75 / 0.5 % and 1.12 / 0.87 %) (8 runs, ~5 h)
-##    "penalty_up"  does a higher penalty bring DRC, Angola, Bolivia in: the club at 2.5 % and 5 %; and Bolivia in the Mercosur
-##                  seed (EU + Mercosur-5 at zero) (3 runs, ~2 h)
-##    "stability"   one-deviation tests of the four core clubs (dynamics off, every member out alone, every outsider of
-##                  stability_scope in alone) (4 runs, ~5 h)
-##    "brackets2"   added 2 Oct: on the net measure the club forms at 1.25 % (Brazil's first-round loss 74.3 against a switching cost
-##                  of 73.4), so the bracket moves down: club 1.0 % and 0.75 %; and the penalty at 1,000 USD/ha of surcharge works at
-##                  0.87 %, so 0.62 % is run to close that bracket (3 runs, ~1.5 h)
-##    "plane"       the coalition at 6,000 USD/ha (the club at 2.5 % is in penalty_up) (1 run, ~1 h)
-##    "sensitivity" the switching cost halved (club 1.0 / 0.5 %, coalition 1,000 / 500) and doubled (club 2.5 / 2 %, coalition
-##                  4,000 / 6,000) (8 runs, ~6 h)
-##    "alliance"    Referee #4's conservative alliance: the US and China locked out together; and Indonesia locked out; both
-##                  instruments (4 runs, ~3 h)
-##    "brackets3"   added 4 Oct, after the first V32 pass: the open brackets. The coalition at 3,000 USD/ha (3,500 now works, with
-##                  Brazil's first-round loss 73.7 against a switching cost of 73.4, and nothing fails below it); the EU + China club
-##                  at 0.75 % (0.87 % works, nothing fails below it); the coalition at 8,000 USD/ha at the doubled switching cost
-##                  (6,000 fails, nothing works above it); and the club at 0.75 % at the halved switching cost (0.5 % hit the round
-##                  cap with Brazil inside, 1 % works) (4 runs, ~3 h)
-##    "brackets4"   added 4 Oct evening, after brackets3: the coalition at 3,000 USD/ha WORKS (Brazil's first-round loss 64 < 73, but the
-##                  round-3 coalition of 18 charges it 222 and it joins in round 4; 18 members with China inside, 12.65 Mha), so the
-##                  surcharge bracket is still open below: 2,500 and 2,000; and at the doubled switching cost 8,000 fails with Brazil's
-##                  first-round loss 143 against 147, so 9,000 (3 runs, ~2.5 h). The EU + China club at 0.75 % fails (0.87 works) and the
-##                  club at 0.75 % at the halved cost works: those two brackets are closed.
-##    "japan"       one-deviation test of Japan joining the 1.5 % club alone (Japan is the only outsider of that club not in the
-##                  stability_scope of the "stability" block): dynamics off, no member test, one solve (~10 min). Written to
-##                  Stability_*_seedSminclubYjapan_*.txt; the figure pipeline reads it as a second table of the same run
-##    "brackets5"   added 7 Oct, after brackets4: 2,500 and 2,000 USD/ha both WORK (Brazil's first-round loss 55 and 45 < 73; the
-##                  round-3 importers charge it 0.20 / 0.19 bn and it joins in round 4), so the surcharge still has no failing run
-##                  below. A chain: 1,500, then 1,000 if 1,500 works, then 500 if 1,000 works (the EU + China seed fails at 500 and
-##                  works at 1,000, so the EU-alone floor should be in between). Stops at the first run that fails (1-3 runs, ~1 h each)
-##    "coalition_outsiders"  added 7 Oct: one-deviation test of the outsiders of the 4,000 coalition that the "stability" block did
-##                  not test (the 12 regions outside stability_scope: Japan, Korea, the UK, Russia, the Middle East, North Africa, South
-##                  Asia, Myanmar, Oceania, Southern Africa, Western Africa, rest of world), each joining alone: dynamics off, no member
-##                  test, one solve per region (~2 h). Written to Stability_*_seedSmincoalitionXouts_*.txt; the pipeline merges it
-##                  into the coalition's stability table as it does the Japan file
-##  45-47 runs, about 32 h. Summary: 4_DB/V32_runs_<date>.txt, one line per run with members, hectares kept and leaked, and the
-##  EV of the key regions on both measures (net = the decision measure, gross = GTAP's EV).
+##  V33 (20-21 Oct 2026): the Miranda-calibrated land-supply elasticities (generation = "v33", see the setting in main()). The
+##  programme runs in two phases; a run whose csv exists is reused, so the script can be relaunched after an interruption and
+##  picks up where it was. Results: 4_DB/V33_runs_<date>.txt, one line per run. The V32 programme as it was run on 7 Oct is
+##  kept in 9_Archive/Run_V32_all_v32_2026-10-07.R, the phase-1 script in 9_Archive/Run_V32_all_phase1_2026-10-20.R.
+##
+##  PHASE 1 (20-21 Oct, done): the grid alone at the 0.1 % switching cost - every EU-alone charge, the seeds and the combined
+##  instruments (blocks grid_core, grid_penalty, grid_surcharge, grid_floor, grid_seeds, grid_combined; 26 runs, 172 solves, 12 h).
+##  Read in 3_Output/V33_grid_vs_V32_2026-10-21.md: the club forms from 1.25 % (Brazil joins in round 2 on its own first-round
+##  loss, 88 M USD against a switching cost of 73); the EU-alone surcharge forms the coalition from 2,500 USD/ha (Brazil's own loss
+##  56 < 73: the importers enter in round 3 and Brazil follows in round 4) and brings Brazil in on its own loss from 3,500 (75;
+##  4,000: 84); 2,000 fails (Brazil outside; it worked in V32 on a 0.5 % margin of Colombia's). EU + China: 0.87 % and 1,000 as in
+##  V32. Combined: 0.5 % + 2,000 works, 0.62 % + 1,000 fails (0.87 % works). coalition_4000 failed on a locked file left by the
+##  stopped V32 batch and is run again here (block grid_core).
+##
+##  PHASE 2 (this file): the runs that depend on the headline, at Y = 1.25 % and at BOTH surcharges X = 2,500 and 4,000, so that
+##  the two ways of presenting the surcharge (lowest charge at which the coalition forms / lowest at which Brazil joins on its own
+##  loss, the V32 value) are both on the table:
+##    "lockouts"    Brazil, the US, the US + China (Referee #4's conservative alliance) and Indonesia locked out of the 1.25 % club
+##                  (4 runs); Brazil and the US + China locked out of the 2,500 coalition (2 runs: the US and Indonesia never join
+##                  at 2,500, so locking them out alone is the base run); Brazil, the US, the US + China and Indonesia locked out of
+##                  the 4,000 coalition (4 runs). 10 runs, ~70 solves, ~6 h
+##    "stability"   one-deviation tests of the five core clubs - club 1.25 %, coalitions 2,500 and 4,000, EU + Mercosur at zero,
+##                  EU + China 1.12 % - with dynamics off from the converged club S: every member (the EU excepted) out alone, and,
+##                  with stability_scope = "all", EVERY outsider in alone (V32 tested the 19 regions of a list and ran the other
+##                  outsiders of the 4,000 coalition and Japan in two extra blocks; here they are all in the one test). One solve per
+##                  region: 35 + 6, 17 + 24, ~22 + 19, 11 + 30, 34 + 7 -> ~210 solves, 15-18 h. Written to
+##                  4_DB/Stability_Friction_forest_<tag>_seedSmin<name>_fixed_<...>.txt
+##    "japan"       the V32 remark kept for the SI: Japan joining the 1.5 % club alone (Japan is a member of the 1.25 % club, so
+##                  there is nothing to test there; at 1.5 % it joins in round 3 and leaves). Dynamics off, no member test, one solve
+##    "brackets"    the switching-cost sensitivity, halved (fr = 0.0005) and doubled (0.002), bracketed automatically for each
+##                  instrument: the V32 working value is run first (club 0.75 % and coalition 1,000 at 0.0005; club 2.5 % and
+##                  coalition 9,000 at 0.002); if it works the next lower grid value is run until one fails, if it fails the next
+##                  higher until one works. "Works" = converged with Brazil inside (V32: club 0.5 % at 0.0005 hit the round cap with
+##                  Brazil inside and counts as failing). 8-12 runs, 80-120 solves, 7-10 h
+##  About 30 h in all after the grid. Order: grid (reused, coalition_4000 run), lockouts, stability, japan, brackets.
+## -------------------------------------------------------------------------------------
+##  The V32 programme of 7 Oct (9_Archive/Run_V32_all_v32_2026-10-07.R), for reference: blocks core, brackets, complement,
+##  penalty_up, stability, brackets2, plane, sensitivity, alliance, brackets3, brackets4, japan, brackets5, coalition_outsiders -
+##  45-47 runs, 462 solves, ~32 h, at Y = 1.5 % and X = 4,000 (the EU-alone minima of 30 Sept). Same world and settings here:
+##  two-stage baseline, pin all, EUDR kept on outsiders in every solve, switching cost 0.1 % of trade (floor 2 M USD), experience
+##  rule, safeguard 0.1 % of GDP, welfare net of the forest-land wedge term, round cap 15 solves.
 ## =====================================================================================
 library("rstudioapi")
 
-blocks          <- c("core", "brackets", "complement", "penalty_up", "stability", "brackets2", "plane", "sensitivity", "alliance", "brackets3", "brackets4", "japan", "brackets5", "coalition_outsiders")   # the blocks already run are reused if their csv exists
-stability_scope <- "brasil,argentina,paraguay,uruguay,china,indonesia,malasya,ivorycoast,ghana,colombia,us,india,seasia,bolivia,nigeria,drc,angola,cafr,venezuela"
-Y <- 1.5; X <- 4000                       # the EU-alone minima found on 30 Sept (penalty %, surcharge USD/ha)
+blocks <- c("grid_core", "grid_penalty", "grid_surcharge", "grid_floor", "grid_seeds", "grid_combined",   # PHASE 1 (done 20-21 Oct: reused from the csv; coalition_4000 is run)
+            "lockouts", "stability", "japan", "brackets")                                                 # PHASE 2 (21 Oct)
+Y <- 1.25             # the headline penalty (%): the lowest grid value at which the club forms (V33 grid)
+X <- c(2500, 4000)    # the headline surcharges (USD/ha), both run: 2,500 = the lowest at which the coalition forms (importers first, Brazil in round 4);
+                      # 4,000 = the lowest, with a margin, at which Brazil joins on its own first-round loss (the V32 value)
+stability_scope <- "all"   # outsiders tested for joining alone in the stability block: "all", or a comma-separated list (V32: 19 regions)
 
 main <- function(blocks, stability_scope, Y, X) {
   force(blocks); force(stability_scope); force(Y); force(X)   # local copies: the game script clears the global environment
@@ -61,8 +56,10 @@ main <- function(blocks, stability_scope, Y, X) {
   game_script   <- file.path(script_folder, "CGE_Game_Theory_GTAPAEZ_all_V32.R")
   parent_folder <- dirname(script_folder)
   log_file      <- file.path(parent_folder, "3_Output", "overnight_log.txt")
-  result_file   <- file.path(parent_folder, "4_DB", paste0("V32_runs_", format(Sys.Date()), ".txt"))
-  two_stage <- file.path(parent_folder, "3_Output", "Baseline_2stage_bau5_eta0.66")
+  generation    <- "v33"   # V33 (20 Oct 2026): the Miranda-calibrated elasticities - baseline folder Baseline_2stage_bau5_eta0.66_v33, run tags _v33, summary V33_runs_<date>.txt ("v32" = the runs of 7 Oct)
+  gen_sfx       <- if (generation == "v32") "" else paste0("_", generation)
+  result_file   <- file.path(parent_folder, "4_DB", paste0(toupper(generation), "_runs_", format(Sys.Date()), ".txt"))
+  two_stage <- file.path(parent_folder, "3_Output", paste0("Baseline_2stage_bau5_eta0.66", gen_sfx))
   if (!file.exists(file.path(two_stage, "A_bau", "gdata_bau.upd")) || !file.exists(file.path(two_stage, "B_eudr", "NATDEF_B.sl4")))
     stop("run 1_Code/Baseline_2stage.R first (Stages A and B): ", two_stage)
   if (!file.exists(game_script)) stop("game script not found: ", game_script)
@@ -73,7 +70,8 @@ main <- function(blocks, stability_scope, Y, X) {
                solve_mode = "accurate", max_pass = 2, join_rule = "experience", max_rounds = 15, bau_horizon = 5, bau_eta = 0.66,
                seed = "eu27", seed_name = "EU", tmsf_sheet = "AVE_pha400", tau = 0, safeguard = "baseline", locked_out = "",
                start_from = "bau", eudr_outsiders = "keep", member_pin = "all",   # V30 settings of the 30 Sept - 1 Oct runs
-               welfare = "ev_net_wedge")                                          # V31
+               welfare = "ev_net_wedge",                                          # V31
+               generation = generation)                                           # V33
 
   run_tag_of <- function(cfg) {   # mirror of the V32 script's run_tag
     label <- if (!is.null(cfg$price_ha)) paste0("pha", format(cfg$price_ha, scientific = FALSE)) else
@@ -85,7 +83,7 @@ main <- function(blocks, stability_scope, Y, X) {
            c(baseline = "_sgb", level = "", off = "_sgoff")[[cfg$safeguard]],
            c(consecutive = "", baseline = "_jrbase", experience = "_jrexp")[[cfg$join_rule]],
            paste0("_frombau_eudr", cfg$eudr_outsiders, if (identical(cfg$member_pin, "all")) "_pinall" else ""),
-           if (identical(cfg$welfare, "ev_net_wedge")) "_wnet" else "", "_v32")   # V32
+           if (identical(cfg$welfare, "ev_net_wedge")) "_wnet" else "", "_", cfg$generation)   # V32 / V33
   }
 
   read_decomp <- function(folder, i) {   # the round's decomposition: Welfare_decomp_round_<i>.txt, else the last solve of that round
@@ -145,117 +143,114 @@ main <- function(blocks, stability_scope, Y, X) {
     cat(msg, "\n"); cat(msg, "\n", file = log_file, append = TRUE); cat(line, "\n", file = result_file, append = TRUE)
     r
   }
+  works <- function(r) !is.null(r) && isTRUE(r$converged) && ("brasil" %in% r$members)   # a run "works" when it converges with Brazil inside
 
   coalition <- function(price, seed = "eu27", name = "EU", ...) modifyList(base, list(price_ha = price, tau = 0, seed = seed, seed_name = name, ...))
   club      <- function(tau, seed = "eu27", name = "EU", ...)   modifyList(base, list(price_ha = 0, tau = tau, seed = seed, seed_name = name, ...))
   MERCOSUR  <- "eu27,brasil,argentina,paraguay,uruguay"
+  fmtv      <- function(x) format(x, scientific = FALSE, trim = TRUE)
   runs <- list(
-    ## core
-    club_Y              = club(Y),
-    coalition_X         = coalition(X),
+    ## PHASE 1 - the grid at the 0.1 % switching cost (the values of the V32 grid of 7 Oct)
+    club_1.5            = club(1.5),
+    coalition_4000      = coalition(4000),
     mercosur_0          = coalition(0, MERCOSUR, "EUMercosur"),
     euchina_club_1.12   = club(1.12, "eu27,china", "EUChina"),
-    ## brackets and the remaining seeds
     club_1.25           = club(1.25),
+    club_1              = club(1),
+    club_0.75           = club(0.75),
+    club_2.5            = club(2.5),
+    club_5              = club(5),
     coalition_3500      = coalition(3500),
+    coalition_3000      = coalition(3000),
+    coalition_2500      = coalition(2500),
+    coalition_2000      = coalition(2000),
+    coalition_6000      = coalition(6000),
+    coalition_1500      = coalition(1500),
+    coalition_1000      = coalition(1000),
+    coalition_500       = coalition(500),
     euchina_club_0.87   = club(0.87, "eu27,china", "EUChina"),
+    euchina_club_0.75   = club(0.75, "eu27,china", "EUChina"),
     euchina_coal_1000   = coalition(1000, "eu27,china", "EUChina"),
     euchina_coal_500    = coalition(500, "eu27,china", "EUChina"),
     mercosurchina_0     = coalition(0, paste0(MERCOSUR, ",china"), "EUMercosurChina"),
-    ## complement: lock-outs and the exchange rate
-    club_Y_lockbrasil       = club(Y, locked_out = "brasil"),
-    coalition_X_lockbrasil  = coalition(X, locked_out = "brasil"),
-    club_Y_lockus           = club(Y, locked_out = "us"),
-    coalition_X_lockus      = coalition(X, locked_out = "us"),
-    tau0.75_at_pha2000      = modifyList(base, list(price_ha = 2000, tau = 0.75)),
-    tau0.5_at_pha2000       = modifyList(base, list(price_ha = 2000, tau = 0.5)),
-    tau1.12_at_pha1000      = modifyList(base, list(price_ha = 1000, tau = 1.12)),
-    tau0.87_at_pha1000      = modifyList(base, list(price_ha = 1000, tau = 0.87)),
-    ## a higher penalty, and Bolivia in the Mercosur seed
-    club_2.5            = club(2.5),
-    club_5              = club(5),
     mercosur5_0         = coalition(0, paste0(MERCOSUR, ",bolivia"), "EUMercosur5"),
-    ## brackets, second pass (2 Oct)
-    club_1              = club(1),
-    club_0.75           = club(0.75),
-    tau0.62_at_pha1000  = modifyList(base, list(price_ha = 1000, tau = 0.62)),
-    ## plane
-    coalition_6000      = coalition(6000),
-    ## switching-cost sensitivity, at the values the V30 searches found
-    club_1_fr0.0005         = club(1,    friction = 0.0005),
-    club_0.5_fr0.0005       = club(0.5,  friction = 0.0005),
-    coalition_1000_fr0.0005 = coalition(1000, friction = 0.0005),
-    coalition_500_fr0.0005  = coalition(500,  friction = 0.0005),
-    club_2.5_fr0.002        = club(2.5,  friction = 0.002),
-    club_2_fr0.002          = club(2,    friction = 0.002),
-    coalition_4000_fr0.002  = coalition(4000, friction = 0.002),
-    coalition_6000_fr0.002  = coalition(6000, friction = 0.002),
-    ## Referee #4: a conservative alliance (US + China out), and Indonesia out
-    club_Y_lockus_china        = club(Y, locked_out = "us,china"),
-    coalition_X_lockus_china   = coalition(X, locked_out = "us,china"),
-    club_Y_lockindonesia       = club(Y, locked_out = "indonesia"),
-    coalition_X_lockindonesia  = coalition(X, locked_out = "indonesia"),
-    ## brackets, third pass (4 Oct): the open sides
-    coalition_3000             = coalition(3000),
-    euchina_club_0.75          = club(0.75, "eu27,china", "EUChina"),
-    coalition_8000_fr0.002     = coalition(8000, friction = 0.002),
-    club_0.75_fr0.0005         = club(0.75, friction = 0.0005),
-    ## brackets, fourth pass (4 Oct evening): below 3,000 and above 8,000
-    coalition_2500             = coalition(2500),
-    coalition_2000             = coalition(2000),
-    coalition_9000_fr0.002     = coalition(9000, friction = 0.002),
-    ## brackets, fifth pass (7 Oct): the floor of the surcharge, run as a chain (see the "brackets5" block)
-    coalition_1500             = coalition(1500),
-    coalition_1000             = coalition(1000),
-    coalition_500              = coalition(500))
+    tau0.75_at_pha2000  = modifyList(base, list(price_ha = 2000, tau = 0.75)),
+    tau0.5_at_pha2000   = modifyList(base, list(price_ha = 2000, tau = 0.5)),
+    tau1.12_at_pha1000  = modifyList(base, list(price_ha = 1000, tau = 1.12)),
+    tau0.87_at_pha1000  = modifyList(base, list(price_ha = 1000, tau = 0.87)),
+    tau0.62_at_pha1000  = modifyList(base, list(price_ha = 1000, tau = 0.62)))
+  ## PHASE 2 - the headline runs (Y, X) and their lock-outs; the names carry the values so that nothing is tied to "Y" or "X"
+  headline <- list(club = paste0("club_", fmtv(Y)), coalitions = paste0("coalition_", fmtv(X)))
+  for (nm in c(headline$club, headline$coalitions)) if (is.null(runs[[nm]])) stop("headline run not in the grid: ", nm)
+  lockouts <- character(0)
+  for (lk in c("brasil", "us", "us,china", "indonesia")) {   # the 1.25 % club: all four
+    nm <- paste0(headline$club, "_lock", gsub(",", "_", lk)); runs[[nm]] <- club(Y, locked_out = lk); lockouts <- c(lockouts, nm)
+  }
+  for (x in X) for (lk in c("brasil", "us", "us,china", "indonesia")) {
+    if (x < 3500 && lk %in% c("us", "indonesia")) next   # the US and Indonesia never join below 3,500 USD/ha: locking them out alone is the base run
+    nm <- paste0("coalition_", fmtv(x), "_lock", gsub(",", "_", lk)); runs[[nm]] <- coalition(x, locked_out = lk); lockouts <- c(lockouts, nm)
+  }
   blocks_def <- list(
-    core        = c("club_Y", "coalition_X", "mercosur_0", "euchina_club_1.12"),
-    brackets    = c("club_1.25", "coalition_3500", "euchina_club_0.87", "euchina_coal_1000", "euchina_coal_500", "mercosurchina_0"),
-    complement  = c("club_Y_lockbrasil", "coalition_X_lockbrasil", "club_Y_lockus", "coalition_X_lockus", "tau0.75_at_pha2000", "tau0.5_at_pha2000", "tau1.12_at_pha1000", "tau0.87_at_pha1000"),
-    penalty_up  = c("club_2.5", "club_5", "mercosur5_0"),
-    brackets2   = c("club_1", "club_0.75", "tau0.62_at_pha1000"),
-    plane       = c("coalition_6000"),
-    sensitivity = c("club_1_fr0.0005", "club_0.5_fr0.0005", "coalition_1000_fr0.0005", "coalition_500_fr0.0005", "club_2.5_fr0.002", "club_2_fr0.002", "coalition_4000_fr0.002", "coalition_6000_fr0.002"),
-    alliance    = c("club_Y_lockus_china", "coalition_X_lockus_china", "club_Y_lockindonesia", "coalition_X_lockindonesia"),
-    brackets3   = c("coalition_3000", "euchina_club_0.75", "coalition_8000_fr0.002", "club_0.75_fr0.0005"),
-    brackets4   = c("coalition_2500", "coalition_2000", "coalition_9000_fr0.002"),
-    brackets5   = c("coalition_1500", "coalition_1000", "coalition_500"))   # run as a chain: the next one only if the previous works
-  cat(paste0("== V32 runs, ", format(Sys.time()), " - welfare = ev_net_wedge | start_from = bau, eudr_outsiders = keep, member_pin = all | blocks: ", paste(blocks, collapse = " "), "\n"), file = result_file, append = TRUE)
+    grid_core      = c("club_1.5", "coalition_4000", "mercosur_0", "euchina_club_1.12"),
+    grid_penalty   = c("club_1.25", "club_1", "club_0.75", "club_2.5", "club_5"),
+    grid_surcharge = c("coalition_3500", "coalition_3000", "coalition_2500", "coalition_2000", "coalition_6000"),
+    grid_floor     = c("coalition_1500", "coalition_1000", "coalition_500"),   # a chain: the next one only if the previous works (Brazil inside)
+    grid_seeds     = c("euchina_club_0.87", "euchina_club_0.75", "euchina_coal_1000", "euchina_coal_500", "mercosurchina_0", "mercosur5_0"),
+    grid_combined  = c("tau0.75_at_pha2000", "tau0.5_at_pha2000", "tau1.12_at_pha1000", "tau0.87_at_pha1000", "tau0.62_at_pha1000"),
+    lockouts       = lockouts,
+    stability      = c(headline$club, headline$coalitions, "mercosur_0", "euchina_club_1.12"),   # the clubs tested (one-deviation, dynamics off)
+    japan          = "club_1.5")                                                                   # Japan joining this club alone (nothing to test where Japan is a member)
+  brackets_def <- list(   # the switching-cost brackets: start = the V32 working value; grid = the candidate values, low to high
+    list(fr = 0.0005, inst = "club",      start = 0.75, grid = c(0.25, 0.5, 0.62, 0.75, 0.87, 1, 1.12, 1.25, 1.5)),
+    list(fr = 0.0005, inst = "coalition", start = 1000, grid = c(250, 500, 750, 1000, 1500, 2000, 2500)),
+    list(fr = 0.002,  inst = "club",      start = 2.5,  grid = c(1.5, 2, 2.5, 3, 4, 5)),
+    list(fr = 0.002,  inst = "coalition", start = 9000, grid = c(4000, 6000, 8000, 9000, 10000, 12000)))
+  cat(paste0("== ", toupper(generation), " runs, ", format(Sys.time()), " - welfare = ev_net_wedge | start_from = bau, eudr_outsiders = keep, member_pin = all | Y = ", Y, " % | X = ", paste(X, collapse = " / "), " USD/ha | stability_scope = ", stability_scope, " | blocks: ", paste(blocks, collapse = " "), "\n"), file = result_file, append = TRUE)
+  note <- function(msg) { print(msg); cat(msg, "\n", file = result_file, append = TRUE) }
   done <- list()
   for (blk in blocks) {
     cat(paste0("== block ", blk, "\n"), file = result_file, append = TRUE)
-    if (blk == "stability") {   # one-deviation tests of the converged core clubs (dynamics off, S = the final members)
-      for (nm in blocks_def$core) {
+    if (blk == "grid_floor") {   # 7 Oct: the floor of the surcharge - each run only if the one above it works (Brazil inside at convergence)
+      for (nm in blocks_def[[blk]]) {
+        r <- run_one(nm, runs[[nm]]); done[[nm]] <- r
+        if (!works(r)) { note(paste(blk, ":", nm, if (is.null(r)) "failed to run" else "fails (Brazil outside) - the floor is bracketed, no lower run needed")); break }
+      }
+      next
+    }
+    if (blk == "stability") {   # one-deviation tests of the converged core clubs (dynamics off, S = the final members, every member out alone, every outsider of stability_scope in alone)
+      for (nm in blocks_def$stability) {
         r <- done[[nm]]; if (is.null(r)) r <- read_result(runs[[nm]])
-        if (is.null(r) || !r$converged) { print(paste("no converged run for the stability test of", nm)); next }
+        if (is.null(r) || !r$converged) { note(paste("no converged run for the stability test of", nm)); next }
         cfg <- modifyList(runs[[nm]], list(seed = paste(r$members, collapse = ","), seed_name = paste0("Smin", gsub("[^A-Za-z0-9]", "", nm)), dynamics = "off", stability = TRUE, stability_scope = stability_scope))
         run_one(paste0("stability of ", nm, " (", r$n, " members)"), cfg)
       }
       next
     }
-    if (blk == "brackets5") {   # 7 Oct: the floor of the surcharge - each run only if the one above it works (Brazil inside at convergence)
-      for (nm in blocks_def$brackets5) {
-        r <- run_one(nm, runs[[nm]]); done[[nm]] <- r
-        if (is.null(r) || !("brasil" %in% r$members)) { msg <- paste("brackets5:", nm, if (is.null(r)) "failed to run" else "fails (Brazil outside) - the floor is bracketed, no lower run needed"); print(msg); cat(msg, "\n", file = result_file, append = TRUE); break }
+    if (blk == "japan") {   # Japan joining a club alone - one solve, no member test (the V32 remark on the 1.5 % club)
+      for (nm in blocks_def$japan) {
+        r <- done[[nm]]; if (is.null(r)) r <- read_result(runs[[nm]])
+        if (is.null(r) || !r$converged) { note(paste("no converged run for the Japan test of", nm)); next }
+        if ("japan" %in% r$members) { note(paste("Japan is a member of", nm, "- nothing to test")); next }
+        cfg <- modifyList(runs[[nm]], list(seed = paste(r$members, collapse = ","), seed_name = paste0("Smin", gsub("[^A-Za-z0-9]", "", nm), "japan"), dynamics = "off", stability = TRUE, stability_scope = "japan", stability_members = "none"))
+        run_one(paste0("stability of ", nm, ": Japan joining alone"), cfg)
       }
       next
     }
-    if (blk == "coalition_outsiders") {   # 7 Oct: the outsiders of the 4,000 coalition that the stability block did not test, each joining alone
-      r <- done[["coalition_X"]]; if (is.null(r)) r <- read_result(runs[["coalition_X"]])
-      if (is.null(r) || !r$converged) { print("no converged coalition_X for the outsiders test"); next }
-      untested <- setdiff(r$outsiders, c(trimws(strsplit(stability_scope, ",")[[1]]), "eu27"))
-      if (length(untested) == 0) { print("every outsider of coalition_X is in stability_scope: nothing to test"); next }
-      cfg <- modifyList(runs[["coalition_X"]], list(seed = paste(r$members, collapse = ","), seed_name = "SmincoalitionXouts", dynamics = "off", stability = TRUE,
-                                                     stability_scope = paste(untested, collapse = ","), stability_members = "none"))
-      run_one(paste0("stability of coalition_X: ", length(untested), " untested outsiders joining alone (", paste(untested, collapse = " "), ")"), cfg)
-      next
-    }
-    if (blk == "japan") {   # 4 Oct: Japan joining the 1.5 % club alone - one solve, no member test
-      r <- done[["club_Y"]]; if (is.null(r)) r <- read_result(runs[["club_Y"]])
-      if (is.null(r) || !r$converged) { print("no converged club_Y for the Japan test"); next }
-      if ("japan" %in% r$members) { print("Japan is a member of club_Y: nothing to test"); next }
-      cfg <- modifyList(runs[["club_Y"]], list(seed = paste(r$members, collapse = ","), seed_name = "SminclubYjapan", dynamics = "off", stability = TRUE, stability_scope = "japan", stability_members = "none"))
-      run_one("stability of club_Y: Japan joining alone", cfg)
+    if (blk == "brackets") {   # the switching-cost brackets, found automatically from the V32 working value (see brackets_def)
+      for (b in brackets_def) {
+        mk <- function(v) { cfg <- if (b$inst == "club") club(v, friction = b$fr) else coalition(v, friction = b$fr); list(name = paste0(b$inst, "_", fmtv(v), "_fr", fmtv(b$fr)), cfg = cfg) }
+        i <- match(b$start, b$grid); if (is.na(i)) stop("bracket start not in its grid: ", b$inst, " ", b$fr)
+        x <- mk(b$grid[i]); r <- run_one(x$name, x$cfg); done[[x$name]] <- r
+        if (works(r)) {   # go down until a run fails
+          j <- i - 1; lo <- NA
+          while (j >= 1) { x <- mk(b$grid[j]); r2 <- run_one(x$name, x$cfg); done[[x$name]] <- r2; if (!works(r2)) { lo <- b$grid[j]; break }; i <- j; j <- j - 1 }
+          note(paste0("brackets ", b$inst, " fr ", fmtv(b$fr), ": works from ", fmtv(b$grid[i]), if (is.na(lo)) " (nothing below it fails - grid exhausted)" else paste0(", fails at ", fmtv(lo))))
+        } else {          # go up until a run works
+          j <- i + 1; hi <- NA
+          while (j <= length(b$grid)) { x <- mk(b$grid[j]); r2 <- run_one(x$name, x$cfg); done[[x$name]] <- r2; if (works(r2)) { hi <- b$grid[j]; break }; i <- j; j <- j + 1 }
+          note(paste0("brackets ", b$inst, " fr ", fmtv(b$fr), ": fails at ", fmtv(b$grid[i]), if (is.na(hi)) " (nothing above it works - grid exhausted)" else paste0(", works from ", fmtv(hi))))
+        }
+      }
       next
     }
     if (is.null(blocks_def[[blk]])) { print(paste("unknown block", blk)); next }

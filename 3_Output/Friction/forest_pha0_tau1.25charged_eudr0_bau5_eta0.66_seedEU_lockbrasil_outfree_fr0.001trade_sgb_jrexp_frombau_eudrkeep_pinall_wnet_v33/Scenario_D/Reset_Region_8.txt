@@ -1,0 +1,8 @@
+"bolivia"
+"brasil"
+"colombia"
+"venezuela"
+"eu27"
+"drc"
+"cafr"
+"ghana"

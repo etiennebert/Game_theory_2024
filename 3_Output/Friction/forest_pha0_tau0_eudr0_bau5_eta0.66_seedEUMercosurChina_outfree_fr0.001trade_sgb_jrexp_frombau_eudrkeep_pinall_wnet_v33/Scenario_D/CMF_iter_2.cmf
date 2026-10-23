@@ -1,0 +1,361 @@
+! This Command file
+! C:runGTAP375workNATDEF.cmf
+! was written by RunGTAP (Version 3.75 built 23/May/2022)
+! If a version has no CMFSTART file of its own
+! RunGTAP creates one by copying the supplied file CMFSTART.DEF
+CPU = yes;  ! log show simulation times
+NDS = yes;  ! no displays
+Extrapolation accuracy file = YES ;
+slc file = no ;
+!servants=1; ! use 2 processors at once, if possible
+file GTAPSUM = inSUMMARY.har;
+file WELVIEW = inDECOMP.har;
+file GTAPVOL = inGTAPVOL.har;
+!@ end of CMFSTART part
+
+! Tell the model the data, parameters and sets - start
+! Original Data files
+! -------------------
+file gtapDATA = C:runGTAP375Game_theory_20243_OutputBaseline_2stage_bau5_eta0.66_v33A_baugdata_bau.upd;
+file gtapPARM = indefault.prm;
+file gtapSETS = insets.har;
+
+! Tell the model where to store the model sims - start
+! Output files
+! ------------
+!
+
+Updated file gtapDATA = C:runGTAP375Game_theory_20242_Modelgdata.upd;
+Solution file = C:runGTAP375Game_theory_20242_ModelNATDEF.sl4;
+
+Auxiliary files = GTAPV7-AEZ ;
+
+Verbal Description =
+Initial tariff applied per EU on all deforestation countries;
+Method = Gragg;
+Steps = 2 4 6;
+automatic accuracy = yes;
+!accuracy figures = 4;
+!accuracy percent = 80;
+!minimum subinterval length =  1.0E-0003;
+!minimum subinterval fails = stop;
+!accuracy criterion = Data;
+subintervals = 3;
+
+! basic closure
+Exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack 
+          tradslack
+          ams atm atf ats atd
+          aosec aoreg avasec avareg
+          aintsec aintreg aintall
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall
+          au dppriv dpgov dpsave
+          to tinc
+          tpreg tm tms tx txs
+          tfd_f tmf_f tms_f
+          qe
+          qesf
+! GTAP-AEZ: Additional exogenous variables
+          p_UNMGLANDF  ! AEZS*UNMGL*REG   supply of unmanaged land cover e in r
+
+          ;
+Rest endogenous;
+
+! Part for productivity shocks;
+Shock tms_f =  file NATDEF.har header 0101;
+shock ams(ruminant,Bolivia,EU27) = -0.34876838326;
+shock ams(RuminantMeat,Bolivia,EU27) = -0.16381059587;
+shock ams(ocr,Bolivia,EU27) = -0.60438823700;
+shock ams(osd,Bolivia,EU27) = -1.41268694401;
+shock ams(vegoil,Bolivia,EU27) = -1.00645947456;
+shock ams(ocr,Oceania,EU27) = -0.52852946520;
+shock ams(osd,Oceania,EU27) = -0.24126325548;
+shock ams(vegoil,Oceania,EU27) = -0.18263456225;
+shock ams(ruminant,Indonesia,EU27) = -0.16240495443;
+shock ams(RuminantMeat,Indonesia,EU27) = -0.07587755471;
+shock ams(osd,Indonesia,EU27) = -0.43717914820;
+shock ams(vegoil,Indonesia,EU27) = -0.31632658839;
+shock ams(ruminant,Madagascar,EU27) = -0.18352000415;
+shock ams(RuminantMeat,Madagascar,EU27) = -0.08327475190;
+shock ams(ocr,Madagascar,EU27) = -0.64223957062;
+shock ams(ruminant,SEAsia,EU27) = -1.52165603638;
+shock ams(RuminantMeat,SEAsia,EU27) = -0.68184429407;
+shock ams(ocr,SEAsia,EU27) = -1.19639086723;
+shock ams(osd,SEAsia,EU27) = -0.20166520774;
+shock ams(vegoil,SEAsia,EU27) = -0.14917252958;
+shock ams(ruminant,Malasya,EU27) = -9.06262969971;
+shock ams(RuminantMeat,Malasya,EU27) = -4.16541433334;
+shock ams(osd,Malasya,EU27) = -0.52530688047;
+shock ams(vegoil,Malasya,EU27) = -0.37360575795;
+shock ams(ruminant,Myanmar,EU27) = -4.18278789520;
+shock ams(RuminantMeat,Myanmar,EU27) = -1.90020740032;
+shock ams(ocr,Myanmar,EU27) = -2.96805000305;
+shock ams(ruminant,Mexico,EU27) = -0.11498461664;
+shock ams(RuminantMeat,Mexico,EU27) = -0.05599340796;
+shock ams(RuminantMeat,Colombia,EU27) = -0.12350799143;
+shock ams(ocr,Colombia,EU27) = -0.55047678947;
+shock ams(osd,Colombia,EU27) = -3.36394834518;
+shock ams(vegoil,Colombia,EU27) = -2.34920358658;
+shock ams(ruminant,LatinAmer,EU27) = -0.16581617296;
+shock ams(RuminantMeat,LatinAmer,EU27) = -0.07829605788;
+shock ams(ocr,LatinAmer,EU27) = -0.65013337135;
+shock ams(osd,LatinAmer,EU27) = -0.28411218524;
+shock ams(vegoil,LatinAmer,EU27) = -0.21004211903;
+shock ams(ruminant,Peru,EU27) = -0.37252664566;
+shock ams(ocr,Peru,EU27) = -0.93038779497;
+shock ams(osd,Peru,EU27) = -2.46449732780;
+shock ams(vegoil,Peru,EU27) = -1.62280857563;
+shock ams(ruminant,DRC,EU27) = -0.38645482063;
+shock ams(RuminantMeat,DRC,EU27) = -0.15725398064;
+shock ams(ocr,DRC,EU27) = -3.59460234642;
+shock ams(osd,DRC,EU27) = -0.86620640755;
+shock ams(vegoil,DRC,EU27) = -0.60235249996;
+shock ams(ocr,WAfr,EU27) = -0.84664559364;
+shock ams(ocr,EAfr,EU27) = -0.47227531672;
+shock ams(osd,SAfr,EU27) = -0.20055761933;
+shock ams(vegoil,SAfr,EU27) = -0.16417637467;
+shock ams(ocr,IvoryCoast,EU27) = -2.35898661613;
+shock ams(osd,IvoryCoast,EU27) = -1.01929450035;
+shock ams(vegoil,IvoryCoast,EU27) = -0.42032936215;
+shock ams(ruminant,Ghana,EU27) = -0.42534253001;
+shock ams(RuminantMeat,Ghana,EU27) = -0.15453432500;
+shock ams(ocr,Ghana,EU27) = -1.19587051868;
+shock ams(osd,Ghana,EU27) = -0.49006277323;
+shock ams(vegoil,Ghana,EU27) = -0.27673542500;
+swap p_LANDCOVER_L(AEZ7,Forestland,Argentina) = tinc(AEZ7,forest,Argentina);
+swap p_LANDCOVER_L(AEZ8,Forestland,Argentina) = tinc(AEZ8,forest,Argentina);
+swap p_LANDCOVER_L(AEZ9,Forestland,Argentina) = tinc(AEZ9,forest,Argentina);
+swap p_LANDCOVER_L(AEZ10,Forestland,Argentina) = tinc(AEZ10,forest,Argentina);
+swap p_LANDCOVER_L(AEZ12,Forestland,Argentina) = tinc(AEZ12,forest,Argentina);
+swap p_LANDCOVER_L(AEZ13,Forestland,Argentina) = tinc(AEZ13,forest,Argentina);
+swap p_LANDCOVER_L(AEZ14,Forestland,Argentina) = tinc(AEZ14,forest,Argentina);
+swap p_LANDCOVER_L(AEZ15,Forestland,Argentina) = tinc(AEZ15,forest,Argentina);
+swap p_LANDCOVER_L(AEZ4,Forestland,Brasil) = tinc(AEZ4,forest,Brasil);
+swap p_LANDCOVER_L(AEZ5,Forestland,Brasil) = tinc(AEZ5,forest,Brasil);
+swap p_LANDCOVER_L(AEZ6,Forestland,Brasil) = tinc(AEZ6,forest,Brasil);
+swap p_LANDCOVER_L(AEZ12,Forestland,Brasil) = tinc(AEZ12,forest,Brasil);
+swap p_LANDCOVER_L(AEZ6,Forestland,Paraguay) = tinc(AEZ6,forest,Paraguay);
+swap p_LANDCOVER_L(AEZ12,Forestland,Paraguay) = tinc(AEZ12,forest,Paraguay);
+swap p_LANDCOVER_L(AEZ2,Forestland,Venezuela) = tinc(AEZ2,forest,Venezuela);
+swap p_LANDCOVER_L(AEZ4,Forestland,Venezuela) = tinc(AEZ4,forest,Venezuela);
+swap p_LANDCOVER_L(AEZ5,Forestland,Venezuela) = tinc(AEZ5,forest,Venezuela);
+swap p_LANDCOVER_L(AEZ6,Forestland,Venezuela) = tinc(AEZ6,forest,Venezuela);
+swap p_LANDCOVER_L(AEZ3,Forestland,Angola) = tinc(AEZ3,forest,Angola);
+swap p_LANDCOVER_L(AEZ4,Forestland,Angola) = tinc(AEZ4,forest,Angola);
+swap p_LANDCOVER_L(AEZ5,Forestland,Angola) = tinc(AEZ5,forest,Angola);
+swap p_LANDCOVER_L(AEZ9,Forestland,Angola) = tinc(AEZ9,forest,Angola);
+swap p_LANDCOVER_L(AEZ10,Forestland,Angola) = tinc(AEZ10,forest,Angola);
+swap p_LANDCOVER_L(AEZ2,Forestland,CAfr) = tinc(AEZ2,forest,CAfr);
+swap p_LANDCOVER_L(AEZ4,Forestland,CAfr) = tinc(AEZ4,forest,CAfr);
+swap p_LANDCOVER_L(AEZ5,Forestland,CAfr) = tinc(AEZ5,forest,CAfr);
+swap p_LANDCOVER_L(AEZ6,Forestland,CAfr) = tinc(AEZ6,forest,CAfr);
+swap p_LANDCOVER_L(AEZ4,Forestland,Nigeria) = tinc(AEZ4,forest,Nigeria);
+swap p_LANDCOVER_L(AEZ5,Forestland,Nigeria) = tinc(AEZ5,forest,Nigeria);
+swap p_LANDCOVER_L(AEZ6,Forestland,Nigeria) = tinc(AEZ6,forest,Nigeria);
+shock p_LANDCOVER_L(AEZ7,Forestland,Argentina) =  3.137810422;
+shock p_LANDCOVER_L(AEZ8,Forestland,Argentina) =  3.137877864;
+shock p_LANDCOVER_L(AEZ9,Forestland,Argentina) =  3.137844938;
+shock p_LANDCOVER_L(AEZ10,Forestland,Argentina) =  3.137855587;
+shock p_LANDCOVER_L(AEZ12,Forestland,Argentina) =  3.137859670;
+shock p_LANDCOVER_L(AEZ13,Forestland,Argentina) =  3.138445963;
+shock p_LANDCOVER_L(AEZ14,Forestland,Argentina) =  3.137946525;
+shock p_LANDCOVER_L(AEZ15,Forestland,Argentina) =  3.137979439;
+shock p_LANDCOVER_L(AEZ4,Forestland,Brasil) =  5.345172919;
+shock p_LANDCOVER_L(AEZ5,Forestland,Brasil) =  5.345165169;
+shock p_LANDCOVER_L(AEZ6,Forestland,Brasil) =  5.345166203;
+shock p_LANDCOVER_L(AEZ12,Forestland,Brasil) =  5.345160091;
+shock p_LANDCOVER_L(AEZ6,Forestland,Paraguay) = 33.333333333;
+shock p_LANDCOVER_L(AEZ12,Forestland,Paraguay) = 33.333333333;
+shock p_LANDCOVER_L(AEZ2,Forestland,Venezuela) =  2.275312856;
+shock p_LANDCOVER_L(AEZ4,Forestland,Venezuela) =  2.280416792;
+shock p_LANDCOVER_L(AEZ5,Forestland,Venezuela) =  2.280523623;
+shock p_LANDCOVER_L(AEZ6,Forestland,Venezuela) =  2.280570812;
+shock p_LANDCOVER_L(AEZ3,Forestland,Angola) =  1.260186628;
+shock p_LANDCOVER_L(AEZ4,Forestland,Angola) =  1.260311252;
+shock p_LANDCOVER_L(AEZ5,Forestland,Angola) =  1.260312057;
+shock p_LANDCOVER_L(AEZ9,Forestland,Angola) =  1.259427751;
+shock p_LANDCOVER_L(AEZ10,Forestland,Angola) =  1.260327949;
+shock p_LANDCOVER_L(AEZ2,Forestland,CAfr) =  1.574527642;
+shock p_LANDCOVER_L(AEZ4,Forestland,CAfr) =  1.577430660;
+shock p_LANDCOVER_L(AEZ5,Forestland,CAfr) =  1.577400459;
+shock p_LANDCOVER_L(AEZ6,Forestland,CAfr) =  1.577398360;
+shock p_LANDCOVER_L(AEZ4,Forestland,Nigeria) = 17.415884137;
+shock p_LANDCOVER_L(AEZ5,Forestland,Nigeria) = 17.415831819;
+shock p_LANDCOVER_L(AEZ6,Forestland,Nigeria) = 17.415811676;
+shock afeall(AEZ7,v_f,Argentina) =  -0.58735640702;
+shock afeall(AEZ8,gro,Argentina) = -15.34341616060;
+shock afeall(AEZ8,osd,Argentina) = -14.77518724044;
+shock afeall(AEZ8,v_f,Argentina) =  -2.15455785427;
+shock afeall(AEZ8,wht,Argentina) = -14.52032070287;
+shock afeall(AEZ9,gro,Argentina) = -12.29442620175;
+shock afeall(AEZ9,osd,Argentina) =  -6.59578702744;
+shock afeall(AEZ9,v_f,Argentina) =  -3.30878617539;
+shock afeall(AEZ9,wht,Argentina) =  -1.95236697335;
+shock afeall(AEZ10,gro,Argentina) =  -3.09132775570;
+shock afeall(AEZ10,osd,Argentina) =  -0.75702620723;
+shock afeall(AEZ10,pfb,Argentina) =  -4.77611788290;
+shock afeall(AEZ10,v_f,Argentina) =  -2.38691549822;
+shock afeall(AEZ10,wht,Argentina) =  -1.39992596299;
+shock afeall(AEZ12,c_b,Argentina) =  -0.04972070532;
+shock afeall(AEZ12,gro,Argentina) =  -0.73854078385;
+shock afeall(AEZ12,ocr,Argentina) =  -1.31044027985;
+shock afeall(AEZ12,pfb,Argentina) =  -1.06370370471;
+shock afeall(AEZ12,v_f,Argentina) =  -1.45524869361;
+shock afeall(AEZ4,c_b,Brasil) =  -0.95677135029;
+shock afeall(AEZ4,gro,Brasil) =  -0.64189175698;
+shock afeall(AEZ4,ocr,Brasil) =  -8.38778883119;
+shock afeall(AEZ4,osd,Brasil) =  -0.61736561027;
+shock afeall(AEZ4,v_f,Brasil) =  -0.84722453542;
+shock afeall(AEZ4,wht,Brasil) =  -0.34927527048;
+shock afeall(AEZ5,ocr,Brasil) =  -5.93564488960;
+shock afeall(AEZ5,wht,Brasil) =  -1.18725976619;
+shock afeall(AEZ6,ocr,Brasil) =  -5.65022604012;
+shock afeall(AEZ6,ruminant,Brasil) =  -2.69649353328;
+shock afeall(AEZ12,c_b,Brasil) =  -0.34757644904;
+shock afeall(AEZ12,ocr,Brasil) =  -5.93644310425;
+shock afeall(AEZ6,c_b,Paraguay) =  -4.60587907937;
+shock afeall(AEZ6,ocr,Paraguay) = -11.97919918244;
+shock afeall(AEZ6,pdr,Paraguay) =  -3.79923792033;
+shock afeall(AEZ6,pfb,Paraguay) = -21.08940155479;
+shock afeall(AEZ6,v_f,Paraguay) =  -2.39650814426;
+shock afeall(AEZ12,c_b,Paraguay) =  -1.32569479923;
+shock afeall(AEZ12,ocr,Paraguay) =  -4.37518513063;
+shock afeall(AEZ4,v_f,Venezuela) =  -7.10642795139;
+shock afeall(AEZ5,v_f,Venezuela) =  -6.99646988840;
+shock afeall(AEZ6,gro,Venezuela) =  -1.49244960953;
+shock afeall(AEZ6,ocr,Venezuela) =  -1.94264387796;
+shock afeall(AEZ6,osd,Venezuela) = -14.65974912957;
+shock afeall(AEZ6,pdr,Venezuela) = -12.26074875195;
+shock afeall(AEZ6,v_f,Venezuela) =  -8.77911795928;
+shock afeall(AEZ4,ocr,Angola) =  -1.34691506761;
+shock afeall(AEZ4,osd,Angola) =  -0.32691879370;
+shock afeall(AEZ4,v_f,Angola) =  -0.22156224297;
+shock afeall(AEZ5,c_b,Angola) =  -1.34396345043;
+shock afeall(AEZ5,gro,Angola) =  -0.32799003514;
+shock afeall(AEZ5,ocr,Angola) =  -1.87508379235;
+shock afeall(AEZ5,osd,Angola) =  -0.81942601335;
+shock afeall(AEZ5,ruminant,Angola) =  -0.20853986577;
+shock afeall(AEZ5,v_f,Angola) =  -0.52374232858;
+shock afeall(AEZ10,osd,Angola) =  -0.39206397087;
+shock afeall(AEZ10,v_f,Angola) =  -0.27663429814;
+shock afeall(AEZ4,c_b,CAfr) =  -3.09408733569;
+shock afeall(AEZ4,ocr,CAfr) =  -0.27249943675;
+shock afeall(AEZ4,osd,CAfr) =  -0.05437478658;
+shock afeall(AEZ4,v_f,CAfr) =  -2.28794671733;
+shock afeall(AEZ5,c_b,CAfr) =  -2.33573745684;
+shock afeall(AEZ5,v_f,CAfr) =  -2.16118732968;
+shock afeall(AEZ6,c_b,CAfr) =  -9.03900056239;
+shock afeall(AEZ6,gro,CAfr) =  -4.78143446948;
+shock afeall(AEZ6,ocr,CAfr) =  -8.60758217654;
+shock afeall(AEZ6,osd,CAfr) = -12.28747615196;
+shock afeall(AEZ6,pdr,CAfr) = -15.91943160519;
+shock afeall(AEZ6,pfb,CAfr) = -14.63645331624;
+shock afeall(AEZ6,v_f,CAfr) = -12.47852679093;
+shock afeall(AEZ4,ruminant,Nigeria) =  -0.59579039390;
+shock afeall(AEZ5,pfb,Nigeria) =  -9.26468385301;
+shock afeall(AEZ5,ruminant,Nigeria) =  -2.07510824152;
+shock afeall(AEZ6,pdr,Nigeria) =  -0.91593173622;
+shock afeall(AEZ6,ruminant,Nigeria) = -18.86152201111;
+shock afeall(AEZ6,v_f,Nigeria) =  -0.02781692516;
+swap p_LANDCOVER_L(AEZ9,Forestland,japan) = tinc(AEZ9,forest,japan);
+swap p_LANDCOVER_L(AEZ10,Forestland,japan) = tinc(AEZ10,forest,japan);
+swap p_LANDCOVER_L(AEZ11,Forestland,japan) = tinc(AEZ11,forest,japan);
+swap p_LANDCOVER_L(AEZ12,Forestland,japan) = tinc(AEZ12,forest,japan);
+swap p_LANDCOVER_L(AEZ15,Forestland,japan) = tinc(AEZ15,forest,japan);
+swap p_LANDCOVER_L(AEZ10,Forestland,korea) = tinc(AEZ10,forest,korea);
+swap p_LANDCOVER_L(AEZ11,Forestland,korea) = tinc(AEZ11,forest,korea);
+swap p_LANDCOVER_L(AEZ6,Forestland,eastasia) = tinc(AEZ6,forest,eastasia);
+swap p_LANDCOVER_L(AEZ9,Forestland,eastasia) = tinc(AEZ9,forest,eastasia);
+swap p_LANDCOVER_L(AEZ10,Forestland,eastasia) = tinc(AEZ10,forest,eastasia);
+swap p_LANDCOVER_L(AEZ11,Forestland,eastasia) = tinc(AEZ11,forest,eastasia);
+swap p_LANDCOVER_L(AEZ14,Forestland,eastasia) = tinc(AEZ14,forest,eastasia);
+swap p_LANDCOVER_L(AEZ15,Forestland,eastasia) = tinc(AEZ15,forest,eastasia);
+swap p_LANDCOVER_L(AEZ12,Forestland,uruguay) = tinc(AEZ12,forest,uruguay);
+swap p_LANDCOVER_L(AEZ9,Forestland,eu27) = tinc(AEZ9,forest,eu27);
+swap p_LANDCOVER_L(AEZ10,Forestland,eu27) = tinc(AEZ10,forest,eu27);
+swap p_LANDCOVER_L(AEZ11,Forestland,eu27) = tinc(AEZ11,forest,eu27);
+swap p_LANDCOVER_L(AEZ12,Forestland,eu27) = tinc(AEZ12,forest,eu27);
+swap p_LANDCOVER_L(AEZ14,Forestland,eu27) = tinc(AEZ14,forest,eu27);
+swap p_LANDCOVER_L(AEZ15,Forestland,eu27) = tinc(AEZ15,forest,eu27);
+swap p_LANDCOVER_L(AEZ16,Forestland,eu27) = tinc(AEZ16,forest,eu27);
+swap p_LANDCOVER_L(AEZ10,Forestland,uk) = tinc(AEZ10,forest,uk);
+swap p_LANDCOVER_L(AEZ11,Forestland,uk) = tinc(AEZ11,forest,uk);
+swap p_LANDCOVER_L(AEZ12,Forestland,uk) = tinc(AEZ12,forest,uk);
+swap p_LANDCOVER_L(AEZ16,Forestland,uk) = tinc(AEZ16,forest,uk);
+swap p_LANDCOVER_L(AEZ10,Forestland,efta) = tinc(AEZ10,forest,efta);
+swap p_LANDCOVER_L(AEZ14,Forestland,efta) = tinc(AEZ14,forest,efta);
+swap p_LANDCOVER_L(AEZ15,Forestland,efta) = tinc(AEZ15,forest,efta);
+swap p_LANDCOVER_L(AEZ16,Forestland,efta) = tinc(AEZ16,forest,efta);
+swap p_LANDCOVER_L(AEZ8,Forestland,russia) = tinc(AEZ8,forest,russia);
+swap p_LANDCOVER_L(AEZ9,Forestland,russia) = tinc(AEZ9,forest,russia);
+swap p_LANDCOVER_L(AEZ10,Forestland,russia) = tinc(AEZ10,forest,russia);
+swap p_LANDCOVER_L(AEZ11,Forestland,russia) = tinc(AEZ11,forest,russia);
+swap p_LANDCOVER_L(AEZ13,Forestland,russia) = tinc(AEZ13,forest,russia);
+swap p_LANDCOVER_L(AEZ14,Forestland,russia) = tinc(AEZ14,forest,russia);
+swap p_LANDCOVER_L(AEZ15,Forestland,russia) = tinc(AEZ15,forest,russia);
+swap p_LANDCOVER_L(AEZ1,Forestland,mena) = tinc(AEZ1,forest,mena);
+swap p_LANDCOVER_L(AEZ7,Forestland,mena) = tinc(AEZ7,forest,mena);
+swap p_LANDCOVER_L(AEZ8,Forestland,mena) = tinc(AEZ8,forest,mena);
+swap p_LANDCOVER_L(AEZ9,Forestland,mena) = tinc(AEZ9,forest,mena);
+swap p_LANDCOVER_L(AEZ10,Forestland,mena) = tinc(AEZ10,forest,mena);
+swap p_LANDCOVER_L(AEZ11,Forestland,mena) = tinc(AEZ11,forest,mena);
+swap p_LANDCOVER_L(AEZ15,Forestland,mena) = tinc(AEZ15,forest,mena);
+swap p_LANDCOVER_L(AEZ1,Forestland,nafr) = tinc(AEZ1,forest,nafr);
+swap p_LANDCOVER_L(AEZ7,Forestland,nafr) = tinc(AEZ7,forest,nafr);
+swap p_LANDCOVER_L(AEZ8,Forestland,nafr) = tinc(AEZ8,forest,nafr);
+swap p_LANDCOVER_L(AEZ9,Forestland,nafr) = tinc(AEZ9,forest,nafr);
+swap p_LANDCOVER_L(AEZ10,Forestland,nafr) = tinc(AEZ10,forest,nafr);
+shock p_LANDCOVER_L(AEZ9,Forestland,japan) = 0;
+shock p_LANDCOVER_L(AEZ10,Forestland,japan) = 0;
+shock p_LANDCOVER_L(AEZ11,Forestland,japan) = 0;
+shock p_LANDCOVER_L(AEZ12,Forestland,japan) = 0;
+shock p_LANDCOVER_L(AEZ15,Forestland,japan) = 0;
+shock p_LANDCOVER_L(AEZ10,Forestland,korea) = 0;
+shock p_LANDCOVER_L(AEZ11,Forestland,korea) = 0;
+shock p_LANDCOVER_L(AEZ6,Forestland,eastasia) = 0;
+shock p_LANDCOVER_L(AEZ9,Forestland,eastasia) = 0;
+shock p_LANDCOVER_L(AEZ10,Forestland,eastasia) = 0;
+shock p_LANDCOVER_L(AEZ11,Forestland,eastasia) = 0;
+shock p_LANDCOVER_L(AEZ14,Forestland,eastasia) = 0;
+shock p_LANDCOVER_L(AEZ15,Forestland,eastasia) = 0;
+shock p_LANDCOVER_L(AEZ12,Forestland,uruguay) = 0;
+shock p_LANDCOVER_L(AEZ9,Forestland,eu27) = 0;
+shock p_LANDCOVER_L(AEZ10,Forestland,eu27) = 0;
+shock p_LANDCOVER_L(AEZ11,Forestland,eu27) = 0;
+shock p_LANDCOVER_L(AEZ12,Forestland,eu27) = 0;
+shock p_LANDCOVER_L(AEZ14,Forestland,eu27) = 0;
+shock p_LANDCOVER_L(AEZ15,Forestland,eu27) = 0;
+shock p_LANDCOVER_L(AEZ16,Forestland,eu27) = 0;
+shock p_LANDCOVER_L(AEZ10,Forestland,uk) = 0;
+shock p_LANDCOVER_L(AEZ11,Forestland,uk) = 0;
+shock p_LANDCOVER_L(AEZ12,Forestland,uk) = 0;
+shock p_LANDCOVER_L(AEZ16,Forestland,uk) = 0;
+shock p_LANDCOVER_L(AEZ10,Forestland,efta) = 0;
+shock p_LANDCOVER_L(AEZ14,Forestland,efta) = 0;
+shock p_LANDCOVER_L(AEZ15,Forestland,efta) = 0;
+shock p_LANDCOVER_L(AEZ16,Forestland,efta) = 0;
+shock p_LANDCOVER_L(AEZ8,Forestland,russia) = 0;
+shock p_LANDCOVER_L(AEZ9,Forestland,russia) = 0;
+shock p_LANDCOVER_L(AEZ10,Forestland,russia) = 0;
+shock p_LANDCOVER_L(AEZ11,Forestland,russia) = 0;
+shock p_LANDCOVER_L(AEZ13,Forestland,russia) = 0;
+shock p_LANDCOVER_L(AEZ14,Forestland,russia) = 0;
+shock p_LANDCOVER_L(AEZ15,Forestland,russia) = 0;
+shock p_LANDCOVER_L(AEZ1,Forestland,mena) = 0;
+shock p_LANDCOVER_L(AEZ7,Forestland,mena) = 0;
+shock p_LANDCOVER_L(AEZ8,Forestland,mena) = 0;
+shock p_LANDCOVER_L(AEZ9,Forestland,mena) = 0;
+shock p_LANDCOVER_L(AEZ10,Forestland,mena) = 0;
+shock p_LANDCOVER_L(AEZ11,Forestland,mena) = 0;
+shock p_LANDCOVER_L(AEZ15,Forestland,mena) = 0;
+shock p_LANDCOVER_L(AEZ1,Forestland,nafr) = 0;
+shock p_LANDCOVER_L(AEZ7,Forestland,nafr) = 0;
+shock p_LANDCOVER_L(AEZ8,Forestland,nafr) = 0;
+shock p_LANDCOVER_L(AEZ9,Forestland,nafr) = 0;
+shock p_LANDCOVER_L(AEZ10,Forestland,nafr) = 0;
+! Part for productivity shocks from R;

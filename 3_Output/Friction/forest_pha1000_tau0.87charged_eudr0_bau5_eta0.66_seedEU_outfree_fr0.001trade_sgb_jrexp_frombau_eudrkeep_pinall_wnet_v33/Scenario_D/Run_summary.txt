@@ -1,0 +1,5 @@
+run: pha1000_tau0.87charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v33
+seed: eu27 | dynamics: on | join rule: experience | safeguard: baseline | round cap: 15
+V30: start_from = bau (C:\runGTAP375\Game_theory_2024\3_Output\Baseline_2stage_bau5_eta0.66_v33\A_bau\gdata_bau.upd) | eudr_outsiders = keep | member_pin = all | welfare = ev_net_wedge
+outcome: converged | solves: 9
+final coalition (33): argentina brasil canada china eafr efta eu27 ghana india indonesia ivorycoast korea latinamer madagascar malasya mexico mozambique myanmar nafr newzealand nigeria oceania paraguay peru restofworld russia safr seasia southasia uk uruguay us wafr

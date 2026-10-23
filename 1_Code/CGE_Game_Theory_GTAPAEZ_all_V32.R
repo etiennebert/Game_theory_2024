@@ -359,9 +359,11 @@ if (!(start_from %in% c("bau", "2019"))) stop('V30: start_from must be "bau" or 
 if (!(eudr_outsiders %in% c("keep", "lift"))) stop('V30: eudr_outsiders must be "keep" or "lift"')
 welfare        <- cfg("welfare", "ev")               # V31: "ev" = GTAP's EV (V13-V30) | "ev_net_wedge" = EV minus the welfare contribution of the income tax on AEZ land (cntqe over the AEZ endowments): the deadweight-loss accounting of the clearing wedge tinc is left out of every decision and every EV written out
 if (!(welfare %in% c("ev", "ev_net_wedge"))) stop('V31: welfare must be "ev" or "ev_net_wedge"')
+generation     <- cfg("generation", "v32")          # V33 (20 Oct 2026): "v33" = the Miranda-calibrated elasticities: reads Baseline_2stage_..._v33 and tags the run _v33; "v32" = the runs of 7 Oct
+gen_sfx        <- if (generation == "v32") "" else paste0("_", generation)
 if (start_from == "bau") {
   if (bau_horizon <= 0) stop("V30: start_from = bau needs bau_horizon > 0")
-  baseline_path <- file.path(parent_folder, "3_Output", paste0("Baseline_2stage_bau", bau_horizon, if (bau_eta > 0) paste0("_eta", bau_eta) else ""), "/")
+  baseline_path <- file.path(parent_folder, "3_Output", paste0("Baseline_2stage_bau", bau_horizon, if (bau_eta > 0) paste0("_eta", bau_eta) else "", gen_sfx), "/")
 }
 bl <- function(what) {   # V30: the baseline files of either design
   if (start_from == "bau") switch(what,
@@ -391,7 +393,7 @@ run_tag       <- paste0(run_tag, c(baseline = "_sgb", level = "", off = "_sgoff"
 run_tag       <- paste0(run_tag, c(consecutive = "", baseline = "_jrbase", experience = "_jrexp")[[join_rule]])   # V27/V28: the decision rule in the folder name (nothing for the V13-V27 rule)
 if (start_from == "bau") run_tag <- paste0(run_tag, "_frombau_eudr", eudr_outsiders, if (member_pin == "all") "_pinall" else "")   # V30
 if (welfare == "ev_net_wedge") run_tag <- paste0(run_tag, "_wnet")   # V31: never overwrites a run on GTAP's EV
-if (start_from == "bau") run_tag <- paste0(run_tag, "_v32")   # V32: the EUDR on non-members is in the solves - never overwrites a V30/V31 run
+if (start_from == "bau") run_tag <- paste0(run_tag, "_", generation)   # V32: the EUDR on non-members is in the solves - never overwrites a V30/V31 run; V33: the Miranda elasticities (tag _v33)
 if (!file.exists(bl("ev")))
   stop("Run ", bl("src"), " first: ", bl("ev"), " not found")   # V30: either baseline design
 ev_baseline  <- read.table(bl("ev"), header = FALSE, col.names = c("region", "EV"), stringsAsFactors = FALSE)
