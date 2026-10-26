@@ -70,7 +70,7 @@ off = sorted([r for r in sup if abs(float(r["qo_pct"])) > 10 and float(r["vom_mu
 SN = {"forest": "forestry", "lum": "wood products", "wol": "wool"}
 off_txt = f"{len(off)} points, " + "; ".join(f"{NAMES[r['region']]} {SN.get(r['sector'].lower(), r['sector'])} {float(r['qo_pct']):+.0f} %" for r in off[:6]).replace("-", "−") + (f" and {len(off) - 6} others between 10 and {abs(float(off[6]['qo_pct'])):.0f} %" if len(off) > 6 else "")
 import textwrap as _tw
-for i_, line in enumerate(_tw.wrap(f"{LABEL} runs · penalty club 1.5 % at convergence, relative to the EUDR world · beyond ±10 % (the held forest returns to timber production): {off_txt}", 190)):
+for i_, line in enumerate(_tw.wrap(f"{LABEL} runs · penalty club {D['headline']['penalty']:g} % at convergence, relative to the EUDR world · beyond ±10 % (the held forest returns to timber production): {off_txt}", 190)):
     fig.text(0.01, 0.045 - 0.03 * i_, line, fontsize=5.4, color=MUTED)
 save(fig, "Fig_S9_supply_responses")
 
