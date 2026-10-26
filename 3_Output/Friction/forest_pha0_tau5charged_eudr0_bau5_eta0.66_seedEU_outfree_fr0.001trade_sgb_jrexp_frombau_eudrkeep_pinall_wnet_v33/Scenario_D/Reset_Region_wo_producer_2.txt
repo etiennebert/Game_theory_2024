@@ -1,7 +1,0 @@
-"mexico"
-"eu27"
-"russia"
-"mena"
-"nafr"
-"wafr"
-"cafr"

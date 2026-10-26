@@ -1,6 +1,0 @@
-"brasil"
-"malasya"
-"paraguay"
-"peru"
-"drc"
-"ivorycoast"

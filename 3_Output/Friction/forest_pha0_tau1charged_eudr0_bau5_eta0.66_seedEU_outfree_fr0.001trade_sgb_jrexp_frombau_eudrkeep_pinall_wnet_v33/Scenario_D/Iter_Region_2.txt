@@ -1,7 +1,0 @@
-"eu27"
-"uk"
-"efta"
-"restofworld"
-"russia"
-"ivorycoast"
-"nigeria"

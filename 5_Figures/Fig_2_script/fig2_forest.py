@@ -132,7 +132,7 @@ axd.legend([Line2D([0], [0], color="none", marker="o", markersize=3.0, markerfac
            loc="upper left", bbox_to_anchor=(-0.05, -0.23), frameon=False, fontsize=5.6, handlelength=1.4, labelcolor=INK2, ncol=2, columnspacing=0.8, handletextpad=0.5)
 
 for ext in ("pdf", "png"): fig.savefig(figpath(f"Fig2_forest.{ext}"), dpi=450 if ext == "png" else None)
-with open(figpath("Fig2_source_data.csv"), "w", newline="") as f:
+with open(figpath("Fig2_source_data.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(["panel", "configuration", "item", "value", "unit"])
     for k, lab in rows:
         r = C[k]; mbr = r["members_by_round"]

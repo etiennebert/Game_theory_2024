@@ -1,8 +1,0 @@
-"japan"
-"paraguay"
-"peru"
-"eu27"
-"uk"
-"ivorycoast"
-"ghana"
-"nigeria"

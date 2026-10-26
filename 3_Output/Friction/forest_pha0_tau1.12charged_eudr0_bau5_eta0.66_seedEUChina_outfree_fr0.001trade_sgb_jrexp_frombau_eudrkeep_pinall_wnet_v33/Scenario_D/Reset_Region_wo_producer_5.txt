@@ -1,4 +1,0 @@
-"japan"
-"venezuela"
-"mena"
-"cafr"

@@ -1,0 +1,11 @@
+V22 one-deviation stability check - Friction / forest_pha0_tau1.25charged_eudr0_bau5_eta0.66_seedSminclub125_fixed_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34
+seed: eu27 argentina bolivia brasil canada china eafr eastasia efta india indonesia ivorycoast japan korea latinamer madagascar malasya mena mexico mozambique myanmar nafr newzealand nigeria oceania paraguay peru restofworld russia safr seasia southasia uk uruguay us wafr | dynamics: off | converged: TRUE | safeguard: baseline | iterations: 1
+final coalition S (36): eu27 argentina bolivia brasil indonesia malasya paraguay peru ivorycoast oceania newzealand china japan korea madagascar eastasia seasia myanmar southasia india canada us mexico latinamer uruguay uk efta restofworld russia mena nafr wafr eafr safr nigeria mozambique
+tested - members out alone: all | outsiders in alone: colombia venezuela angola drc cafr ghana
+EV in S vs baseline ($M/yr) - members: -3232 | outsiders: -124 | world: -3356 | members losing vs baseline: eu27 malasya newzealand china japan korea eastasia seasia myanmar southasia canada us uk efta russia mena nafr wafr nigeria mozambique
+tropical forest change (kha, AEZ1-6, world): baseline 8 | S 15177 | difference 15169
+internally stable (no member gains by leaving alone): TRUE
+externally stable (no outsider gains by joining alone): FALSE - would join: ghana
+with the thresholds as moving cost - would leave:  | would join: 
+transfers to keep the leavers ($M/yr): 0 | what the members who prefer S could pay: 8421 | duty raised by the charge in S: 147
+deviation solves failed: 0

@@ -40,7 +40,7 @@ library(HARr)
 library("readxl")
 library("rstudioapi")
 
-script_path <- getSourceEditorContext()$path
+script_path <- if (nzchar(Sys.getenv("FOREST_CLUB_SCRIPT"))) Sys.getenv("FOREST_CLUB_SCRIPT") else getSourceEditorContext()$path   # FOREST_CLUB_SCRIPT: set by run_step.R when run with Rscript (no RStudio), see run_chain_v34.bat
 script_folder <- dirname(script_path)
 parent_folder <- dirname(script_folder)
 GTAPAEZ_path <- file.path(parent_folder, "2_Model/")
@@ -55,7 +55,7 @@ bau_horizon <- 5          # years of business-as-usual clearing
 bau_cap_pct <- 25         # a cell never loses more than this share of its forest cover over the horizon
 bau_eta     <- 0.66       # productivity of the cleared hectares (bau_afeall_eta<eta>.txt from Calibrate_BAU_productivity.R); 0 = none
 run_stage   <- c("A", "B")  # "A" alone recalibrates the BAU world; "B" alone reuses an existing A_bau/gdata_bau.upd
-generation  <- "v33"      # V33 (20 Oct 2026): the Miranda-calibrated elasticities; suffix of the output folder and of the productivity file
+generation  <- "v34"      # V34 (23 Oct 2026): BAU clearing by the observed AEZ shares (bau_deforestation.xlsx of build_deduce_tables.py); V33 (20 Oct 2026): the Miranda-calibrated elasticities; suffix of the output folder and of the productivity file
                           # (bau_afeall_eta<eta>_<generation>.txt from Calibrate_BAU_productivity.R) so that nothing of V32 is overwritten ("" = V32)
 gen_sfx     <- if (nzchar(generation)) paste0("_", generation) else ""
 

@@ -7,11 +7,11 @@
 ## changes (Stage A, Stage B, club), all in kha. Items: the land covers (forestland, cropland, pastureland) from del_luc, the eight
 ## crops from del_harvarea (harvested area), and the national output change of the land-using sectors (qo, % - not kha).
 ## The runs come from brazil_runs_<label>.txt (written by extract_all.py: instrument, run folder, converged solution file).
-## Usage: Rscript extract_brazil_aez.R [repo] [label]   (defaults: FOREST_CLUB_REPO / C:/runGTAP375/Game_theory_2024, V32)
+## Usage: Rscript extract_brazil_aez.R [repo] [label]   (defaults: FOREST_CLUB_REPO / C:/runGTAP375/Game_theory_2024, FOREST_CLUB_VERSION / V33)
 suppressMessages(library(HARr))
 args  <- commandArgs(trailingOnly = TRUE)
 repo  <- if (length(args) >= 1) args[1] else Sys.getenv("FOREST_CLUB_REPO", "C:/runGTAP375/Game_theory_2024")
-label <- if (length(args) >= 2) args[2] else { v <- Sys.getenv("FOREST_CLUB_VERSION", "_wnet_v32"); c("_wnet_v33" = "V33", "_wnet_v32" = "V32", "_wnet" = "V31")[v] }
+label <- if (length(args) >= 2) args[2] else { v <- Sys.getenv("FOREST_CLUB_VERSION", "_wnet_v33"); c("_wnet_v34" = "V34", "_wnet_v33" = "V33", "_wnet_v32" = "V32", "_wnet" = "V31")[v] }
 if (is.na(label)) label <- "V30"
 here  <- tryCatch(dirname(normalizePath(sys.frame(1)$ofile)), error = function(e) {
   f <- grep("^--file=", commandArgs(), value = TRUE); if (length(f)) dirname(normalizePath(sub("^--file=", "", f[1]))) else getwd() })
@@ -20,7 +20,7 @@ if (!file.exists(runs_file)) stop("no ", runs_file, " - run extract_all.py first
 runs <- read.table(runs_file, col.names = c("instrument", "folder", "sl4"), stringsAsFactors = FALSE)
 r <- "brasil"
 bd <- read_har(file.path(repo, "2_Model/in/basedata.har"))
-BASE <- file.path(repo, paste0("3_Output/Baseline_2stage_bau5_eta0.66", if (label == "V33") "_v33" else ""))   # V33 reads the Miranda-calibrated baseline
+BASE <- file.path(repo, paste0("3_Output/Baseline_2stage_bau5_eta0.66", if (label %in% c("V33", "V34")) paste0("_", tolower(label)) else ""))   # V33+ read the suffixed baseline (V33: Miranda-calibrated; V34: HILDA+ clearing shares)
 A <- read_SL4(file.path(BASE, "A_bau/NATDEF_A.sl4"))
 B <- read_SL4(file.path(BASE, "B_eudr/NATDEF_B.sl4"))
 aezs <- paste0("aez", 1:18); crops <- c("pdr", "wht", "gro", "v_f", "osd", "c_b", "pfb", "ocr"); covs <- c("forestland", "cropland", "pastureland")

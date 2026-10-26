@@ -1,8 +1,0 @@
-"oceania"
-"mexico"
-"eu27"
-"efta"
-"russia"
-"nafr"
-"wafr"
-"cafr"

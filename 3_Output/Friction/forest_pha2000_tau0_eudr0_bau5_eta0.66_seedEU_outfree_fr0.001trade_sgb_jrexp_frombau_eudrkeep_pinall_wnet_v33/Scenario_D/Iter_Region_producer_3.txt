@@ -1,6 +1,0 @@
-"malasya"
-"colombia"
-"paraguay"
-"peru"
-"ivorycoast"
-"ghana"

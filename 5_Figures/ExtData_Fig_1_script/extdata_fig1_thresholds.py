@@ -170,7 +170,7 @@ from PIL import Image
 im = Image.open(figpath("ExtData_Fig1_thresholds.png")).convert("RGB"); im.save(figpath("ExtData_Fig1_thresholds.png"), dpi=(450, 450))
 
 # ------------------------------------------------------------------ source data
-with open(figpath("ExtData_Fig1_source_data.csv"), "w", newline="") as fh:
+with open(figpath("ExtData_Fig1_source_data.csv"), "w", newline="", encoding="utf-8") as fh:
     w_ = csv.writer(fh)
     w_.writerow(["panel", "series", "tag", "surcharge_USD_per_ha", "penalty_pct", "switching_cost_share_of_trade", "brazil_switching_cost_MUSD", "brazil_first_round_loss_MUSD",
                  "club_forms_brazil_inside", "members_at_convergence", "tropical_forest_kept_Mha_5yr", "rounds", "note"])

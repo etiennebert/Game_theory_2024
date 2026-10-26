@@ -1,5 +1,0 @@
-"brasil"
-"colombia"
-"angola"
-"drc"
-"ghana"

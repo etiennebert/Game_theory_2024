@@ -1,3 +1,0 @@
-"eastasia"
-"venezuela"
-"cafr"

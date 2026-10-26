@@ -1,0 +1,5 @@
+"korea"
+"venezuela"
+"eu27"
+"cafr"
+"safr"

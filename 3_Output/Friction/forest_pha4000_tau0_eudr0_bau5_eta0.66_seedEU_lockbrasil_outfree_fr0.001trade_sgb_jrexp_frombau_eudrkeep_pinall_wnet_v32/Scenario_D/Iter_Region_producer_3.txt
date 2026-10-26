@@ -1,6 +1,0 @@
-"argentina"
-"malasya"
-"paraguay"
-"peru"
-"ivorycoast"
-"ghana"

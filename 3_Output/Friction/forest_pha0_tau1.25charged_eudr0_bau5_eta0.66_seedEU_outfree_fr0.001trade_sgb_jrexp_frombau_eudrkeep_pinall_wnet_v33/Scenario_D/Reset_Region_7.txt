@@ -1,7 +1,0 @@
-"bolivia"
-"colombia"
-"venezuela"
-"eu27"
-"angola"
-"drc"
-"cafr"

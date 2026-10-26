@@ -1,0 +1,7 @@
+"japan"
+"korea"
+"eastasia"
+"venezuela"
+"uk"
+"mena"
+"cafr"

@@ -1,4 +1,12 @@
 ## =====================================================================================
+##  V34 (Oct 2026): the business-as-usual clearing of each region is allocated to its AEZs with the observed clearing shares
+##  (HILDA+ v2.1, bau_deforestation.xlsx rebuilt by 0_External_data/DeDuCE_rework/zenodo_v2.1/build_deduce_tables.py) instead of
+##  the forest-cover shares of V32-V33; everything else as V33. The whole programme runs from one launch: generation = "v34" (set
+##  below), Y = X = "auto" - the headline penalty and surcharges are read from the grid results when the first block that needs
+##  them starts (lockouts), as the rule the paper states: the lowest grid value at which the club / the coalition forms, and the
+##  surcharge at which Brazil joins on its own first-round loss. Lock-outs of regions that never join the base run are skipped
+##  (V33 hard-coded that for the US and Indonesia below 3,500 USD/ha). Set Y and X to numbers to force them (V33: 1.25, c(2500, 4000)).
+## -------------------------------------------------------------------------------------
 ##  V33 (20-21 Oct 2026): the Miranda-calibrated land-supply elasticities (generation = "v33", see the setting in main()). The
 ##  programme runs in two phases; a run whose csv exists is reused, so the script can be relaunched after an interruption and
 ##  picks up where it was. Results: 4_DB/V33_runs_<date>.txt, one line per run. The V32 programme as it was run on 7 Oct is
@@ -43,20 +51,22 @@
 ## =====================================================================================
 library("rstudioapi")
 
-blocks <- c("grid_core", "grid_penalty", "grid_surcharge", "grid_floor", "grid_seeds", "grid_combined",   # PHASE 1 (done 20-21 Oct: reused from the csv; coalition_4000 is run)
-            "lockouts", "stability", "japan", "brackets")                                                 # PHASE 2 (21 Oct)
-Y <- 1.25             # the headline penalty (%): the lowest grid value at which the club forms (V33 grid)
-X <- c(2500, 4000)    # the headline surcharges (USD/ha), both run: 2,500 = the lowest at which the coalition forms (importers first, Brazil in round 4);
-                      # 4,000 = the lowest, with a margin, at which Brazil joins on its own first-round loss (the V32 value)
+blocks <- c("grid_core", "grid_penalty", "grid_surcharge", "grid_floor", "grid_floor_penalty", "grid_seeds", "grid_combined",   # PHASE 1: the grid (a run whose csv exists is reused)
+            "lockouts", "stability", "japan", "brackets")                                                                      # PHASE 2: what hangs on the headline
+generation <- "v34"   # the generation of runs: "v34" (BAU clearing by HILDA+ AEZ shares), "v33" (the Miranda-calibrated elasticities, 20 Oct 2026),
+                      # "v32" (the runs of 7 Oct). Baseline folder Baseline_2stage_bau5_eta0.66_<generation>, run tags _<generation>, summary 4_DB/<GENERATION>_runs_<date>.txt
+Y <- "auto"           # the headline penalty (%): a number (V33: 1.25), or "auto" = the lowest value of the EU-alone penalty grid at which the club forms
+                      # (converged with Brazil inside), read from the grid results when the first headline block starts
+X <- "auto"           # the headline surcharges (USD/ha), all run: a vector (V33: c(2500, 4000)), or "auto" = c(the lowest grid value at which the coalition
+                      # forms, the one at which Brazil joins in the second round on its own first-round loss: 4,000 kept while it still does, else the lowest grid value where it does)
 stability_scope <- "all"   # outsiders tested for joining alone in the stability block: "all", or a comma-separated list (V32: 19 regions)
 
-main <- function(blocks, stability_scope, Y, X) {
-  force(blocks); force(stability_scope); force(Y); force(X)   # local copies: the game script clears the global environment
-  script_folder <- dirname(getSourceEditorContext()$path)
+main <- function(blocks, stability_scope, Y, X, generation) {
+  force(blocks); force(stability_scope); force(Y); force(X); force(generation)   # local copies: the game script clears the global environment
+  script_folder <- dirname(if (nzchar(Sys.getenv("FOREST_CLUB_SCRIPT"))) Sys.getenv("FOREST_CLUB_SCRIPT") else getSourceEditorContext()$path)   # FOREST_CLUB_SCRIPT: set by run_step.R when run with Rscript (no RStudio), see run_chain_v34.bat
   game_script   <- file.path(script_folder, "CGE_Game_Theory_GTAPAEZ_all_V32.R")
   parent_folder <- dirname(script_folder)
   log_file      <- file.path(parent_folder, "3_Output", "overnight_log.txt")
-  generation    <- "v33"   # V33 (20 Oct 2026): the Miranda-calibrated elasticities - baseline folder Baseline_2stage_bau5_eta0.66_v33, run tags _v33, summary V33_runs_<date>.txt ("v32" = the runs of 7 Oct)
   gen_sfx       <- if (generation == "v32") "" else paste0("_", generation)
   result_file   <- file.path(parent_folder, "4_DB", paste0(toupper(generation), "_runs_", format(Sys.Date()), ".txt"))
   two_stage <- file.path(parent_folder, "3_Output", paste0("Baseline_2stage_bau5_eta0.66", gen_sfx))
@@ -101,6 +111,7 @@ main <- function(blocks, stability_scope, Y, X) {
     tr0 <- setNames(d0$Tropical, d0$Country); tr1 <- setNames(d1$Tropical, d1$Country)
     al0 <- setNames(d0$Tropical + d0$Temperate + d0$Boreal, d0$Country); al1 <- setNames(d1$Tropical + d1$Temperate + d1$Boreal, d1$Country)
     members <- sort(d1$Country[d1$Club == "inside"]); outsiders <- setdiff(d1$Country, members)
+    ins <- d[d$Club == "inside", ]; join_round <- if (nrow(ins)) tapply(ins$Iteration, ins$Country, min) else integer(0)   # the first round a region is inside (2 = it joined on its first-round loss)
     folder <- file.path(parent_folder, "3_Output", cfg$approach, run_tag_of(cfg), "Scenario_D")
     summ <- file.path(folder, "Run_summary.txt")
     outcome <- if (file.exists(summ)) sub("^outcome: ", "", grep("^outcome:", readLines(summ, warn = FALSE), value = TRUE)[1]) else if (last < cfg$max_rounds - 1) "converged" else "stopped at the round cap"
@@ -108,6 +119,7 @@ main <- function(blocks, stability_scope, Y, X) {
     gross <- if (!is.null(g0) && !is.null(g1)) setNames(g1$ev_gross[match(names(ev1), g1$region)] - g0$ev_gross[match(names(ev1), g0$region)], names(ev1)) else NULL
     key <- c("brasil", "china", "eu27", "us", "nigeria", "ivorycoast", "malasya", "drc", "bolivia", "angola")
     list(members = members, outsiders = outsiders, n = length(members), iterations = last, outcome = outcome, converged = startsWith(outcome, "converged"),
+         join_round = join_round, ever_inside = names(join_round),
          kept_Mha = sum(tr1[members] - tr0[members]) / 1e6, kept_all_Mha = sum(al1[members] - al0[members]) / 1e6,
          leak_Mha = -sum(tr1[outsiders] - tr0[outsiders]) / 1e6, leak_all_Mha = -sum(al1[outsiders] - al0[outsiders]) / 1e6,
          world_net = sum(ev1) - sum(ev0), world_gross = if (!is.null(gross)) sum(gross) else NA,
@@ -158,6 +170,8 @@ main <- function(blocks, stability_scope, Y, X) {
     club_1.25           = club(1.25),
     club_1              = club(1),
     club_0.75           = club(0.75),
+    club_0.62           = club(0.62),      # V34: the penalty floor chain, run only while the value above works (as grid_floor for the surcharge)
+    club_0.5            = club(0.5),
     club_2.5            = club(2.5),
     club_5              = club(5),
     coalition_3500      = coalition(3500),
@@ -179,41 +193,80 @@ main <- function(blocks, stability_scope, Y, X) {
     tau1.12_at_pha1000  = modifyList(base, list(price_ha = 1000, tau = 1.12)),
     tau0.87_at_pha1000  = modifyList(base, list(price_ha = 1000, tau = 0.87)),
     tau0.62_at_pha1000  = modifyList(base, list(price_ha = 1000, tau = 0.62)))
-  ## PHASE 2 - the headline runs (Y, X) and their lock-outs; the names carry the values so that nothing is tied to "Y" or "X"
-  headline <- list(club = paste0("club_", fmtv(Y)), coalitions = paste0("coalition_", fmtv(X)))
-  for (nm in c(headline$club, headline$coalitions)) if (is.null(runs[[nm]])) stop("headline run not in the grid: ", nm)
-  lockouts <- character(0)
-  for (lk in c("brasil", "us", "us,china", "indonesia")) {   # the 1.25 % club: all four
-    nm <- paste0(headline$club, "_lock", gsub(",", "_", lk)); runs[[nm]] <- club(Y, locked_out = lk); lockouts <- c(lockouts, nm)
-  }
-  for (x in X) for (lk in c("brasil", "us", "us,china", "indonesia")) {
-    if (x < 3500 && lk %in% c("us", "indonesia")) next   # the US and Indonesia never join below 3,500 USD/ha: locking them out alone is the base run
-    nm <- paste0("coalition_", fmtv(x), "_lock", gsub(",", "_", lk)); runs[[nm]] <- coalition(x, locked_out = lk); lockouts <- c(lockouts, nm)
-  }
+  ## PHASE 2 - the headline runs (Y, X) and what hangs on them: resolved from the grid results when the first headline block starts
+  grid_axes <- list(penalty   = c("club_0.5", "club_0.62", "club_0.75", "club_1", "club_1.25", "club_1.5", "club_2.5", "club_5"),   # the EU-alone grids, low to high (Y = X = "auto" read these)
+                    surcharge = c("coalition_500", "coalition_1000", "coalition_1500", "coalition_2000", "coalition_2500", "coalition_3000", "coalition_3500", "coalition_4000", "coalition_6000"))
+  value_of <- function(nm) as.numeric(sub("^[a-z]+_", "", nm))
   blocks_def <- list(
     grid_core      = c("club_1.5", "coalition_4000", "mercosur_0", "euchina_club_1.12"),
     grid_penalty   = c("club_1.25", "club_1", "club_0.75", "club_2.5", "club_5"),
     grid_surcharge = c("coalition_3500", "coalition_3000", "coalition_2500", "coalition_2000", "coalition_6000"),
     grid_floor     = c("coalition_1500", "coalition_1000", "coalition_500"),   # a chain: the next one only if the previous works (Brazil inside)
+    grid_floor_penalty = c("club_0.62", "club_0.5"),                         # the same below club_0.75, started only if club_0.75 works (V34)
     grid_seeds     = c("euchina_club_0.87", "euchina_club_0.75", "euchina_coal_1000", "euchina_coal_500", "mercosurchina_0", "mercosur5_0"),
     grid_combined  = c("tau0.75_at_pha2000", "tau0.5_at_pha2000", "tau1.12_at_pha1000", "tau0.87_at_pha1000", "tau0.62_at_pha1000"),
-    lockouts       = lockouts,
-    stability      = c(headline$club, headline$coalitions, "mercosur_0", "euchina_club_1.12"),   # the clubs tested (one-deviation, dynamics off)
-    japan          = "club_1.5")                                                                   # Japan joining this club alone (nothing to test where Japan is a member)
-  brackets_def <- list(   # the switching-cost brackets: start = the V32 working value; grid = the candidate values, low to high
+    lockouts = NULL, stability = NULL, japan = NULL)   # filled by resolve_headline() from Y and X
+  brackets_def <- list(   # the switching-cost brackets: start = the V33 working value; grid = the candidate values, low to high
     list(fr = 0.0005, inst = "club",      start = 0.75, grid = c(0.25, 0.5, 0.62, 0.75, 0.87, 1, 1.12, 1.25, 1.5)),
     list(fr = 0.0005, inst = "coalition", start = 1000, grid = c(250, 500, 750, 1000, 1500, 2000, 2500)),
     list(fr = 0.002,  inst = "club",      start = 2.5,  grid = c(1.5, 2, 2.5, 3, 4, 5)),
     list(fr = 0.002,  inst = "coalition", start = 9000, grid = c(4000, 6000, 8000, 9000, 10000, 12000)))
-  cat(paste0("== ", toupper(generation), " runs, ", format(Sys.time()), " - welfare = ev_net_wedge | start_from = bau, eudr_outsiders = keep, member_pin = all | Y = ", Y, " % | X = ", paste(X, collapse = " / "), " USD/ha | stability_scope = ", stability_scope, " | blocks: ", paste(blocks, collapse = " "), "\n"), file = result_file, append = TRUE)
+  cat(paste0("== ", toupper(generation), " runs, ", format(Sys.time()), " - welfare = ev_net_wedge | start_from = bau, eudr_outsiders = keep, member_pin = all | Y = ", paste(Y, collapse = "/"), " % | X = ", paste(X, collapse = " / "), " USD/ha | stability_scope = ", stability_scope, " | blocks: ", paste(blocks, collapse = " "), "\n"), file = result_file, append = TRUE)
   note <- function(msg) { print(msg); cat(msg, "\n", file = result_file, append = TRUE) }
   done <- list()
+  headline <- NULL
+  resolve_headline <- function() {   # Y and X from the grid results on the disk (numbers are kept as given), then the lock-out runs and the stability / Japan lists
+    on_disk <- function(nm) { r <- done[[nm]]; if (is.null(r)) r <- read_result(runs[[nm]]); r }
+    tested  <- function(axis) axis[vapply(axis, function(n) !is.null(on_disk(n)), logical(1))]
+    if (identical(Y, "auto")) {
+      ok <- grid_axes$penalty[vapply(grid_axes$penalty, function(n) works(on_disk(n)), logical(1))]
+      if (length(ok) == 0) stop("Y = \"auto\": no EU-alone club of the penalty grid forms (converged with Brazil inside) - run the grid blocks first, or extend grid_axes$penalty")
+      Y <<- value_of(ok[1])
+      note(paste0("headline penalty: Y = ", Y, " % - the lowest value of the grid at which the club forms (grid on the disk: ", paste(tested(grid_axes$penalty), collapse = " "), ")",
+                  if (ok[1] == grid_axes$penalty[1]) " - WARNING: the lowest value of the grid works, the threshold is not bracketed from below" else ""))
+    }
+    if (identical(X, "auto")) {
+      ok <- grid_axes$surcharge[vapply(grid_axes$surcharge, function(n) works(on_disk(n)), logical(1))]
+      if (length(ok) == 0) stop("X = \"auto\": no EU-alone coalition of the surcharge grid forms - run the grid blocks first, or extend grid_axes$surcharge")
+      own <- ok[vapply(ok, function(n) isTRUE(on_disk(n)$join_round["brasil"] <= 2), logical(1))]   # Brazil inside from the second round: it joined on its own first-round loss
+      x_min <- value_of(ok[1]); x_own <- if ("coalition_4000" %in% own) 4000 else if (length(own)) value_of(own[1]) else NA
+      X <<- unique(c(x_min, x_own[!is.na(x_own)]))
+      note(paste0("headline surcharges: X = ", paste(X, collapse = " / "), " USD/ha - ", x_min, " = the lowest grid value at which the coalition forms (grid on the disk: ", paste(tested(grid_axes$surcharge), collapse = " "), ")",
+                  if (is.na(x_own)) "; Brazil joins on its own first-round loss at none of the working values" else
+                  paste0("; ", x_own, " = ", if (x_own == 4000) "the V32-V33 value, at which Brazil still joins on its own first-round loss (round 2)" else "the lowest grid value at which Brazil joins on its own first-round loss (round 2)")))
+    }
+    cat(paste0("== headline: Y = ", Y, " % | X = ", paste(X, collapse = " / "), " USD/ha\n"), file = result_file, append = TRUE)   # the line 5_Figures/common/extract_all.py reads
+    headline <<- list(club = paste0("club_", fmtv(Y)), coalitions = paste0("coalition_", fmtv(X)))
+    for (nm in c(headline$club, headline$coalitions)) if (is.null(runs[[nm]])) stop("headline run not in the grid: ", nm)
+    lockouts <- character(0)
+    for (lk in c("brasil", "us", "us,china", "indonesia")) {   # the club: all four
+      nm <- paste0(headline$club, "_lock", gsub(",", "_", lk)); runs[[nm]] <<- club(Y, locked_out = lk); lockouts <- c(lockouts, nm)
+    }
+    for (x in X) for (lk in c("brasil", "us", "us,china", "indonesia")) {
+      nm <- paste0("coalition_", fmtv(x), "_lock", gsub(",", "_", lk)); runs[[nm]] <<- coalition(x, locked_out = lk); lockouts <- c(lockouts, nm)
+    }
+    blocks_def$lockouts  <<- lockouts                                                                    # a lock-out of regions that never join the base run is skipped when the block runs
+    blocks_def$stability <<- c(headline$club, headline$coalitions, "mercosur_0", "euchina_club_1.12")   # the clubs tested (one-deviation, dynamics off)
+    blocks_def$japan     <<- unique(c("club_1.5", headline$club))                                       # Japan joining alone where it is an outsider (nothing to test where it is a member)
+  }
   for (blk in blocks) {
+    if (blk %in% c("lockouts", "stability", "japan") && is.null(headline)) resolve_headline()
     cat(paste0("== block ", blk, "\n"), file = result_file, append = TRUE)
-    if (blk == "grid_floor") {   # 7 Oct: the floor of the surcharge - each run only if the one above it works (Brazil inside at convergence)
+    if (blk %in% c("grid_floor", "grid_floor_penalty")) {   # 7 Oct: the floor of the surcharge - each run only if the one above it works (Brazil inside at convergence); V34: the same for the penalty
+      parent <- c(grid_floor = NA, grid_floor_penalty = "club_0.75")[[blk]]
+      if (!is.na(parent)) { rp <- done[[parent]]; if (is.null(rp)) rp <- read_result(runs[[parent]]); if (!works(rp)) { note(paste(blk, ":", parent, "does not work (or is not run) - nothing lower to run")); next } }
       for (nm in blocks_def[[blk]]) {
         r <- run_one(nm, runs[[nm]]); done[[nm]] <- r
         if (!works(r)) { note(paste(blk, ":", nm, if (is.null(r)) "failed to run" else "fails (Brazil outside) - the floor is bracketed, no lower run needed")); break }
+      }
+      next
+    }
+    if (blk == "lockouts") {   # a lock-out only changes the game when a locked-out region joins the base run (V33: the US and Indonesia never join below 3,500 USD/ha)
+      for (nm in blocks_def$lockouts) {
+        base_nm <- sub("_lock.*$", "", nm); rb <- done[[base_nm]]; if (is.null(rb)) rb <- read_result(runs[[base_nm]])
+        regs <- trimws(strsplit(runs[[nm]]$locked_out, ",")[[1]])
+        if (!is.null(rb) && !any(regs %in% rb$ever_inside)) { note(paste0(nm, ": ", runs[[nm]]$locked_out, " never joins ", base_nm, " - the lock-out would repeat the base run, skipped")); next }
+        done[[nm]] <- run_one(nm, runs[[nm]])
       }
       next
     }
@@ -258,4 +311,4 @@ main <- function(blocks, stability_scope, Y, X) {
   }
   print(paste("done - see", result_file))
 }
-main(blocks, stability_scope, Y, X)
+main(blocks, stability_scope, Y, X, generation)

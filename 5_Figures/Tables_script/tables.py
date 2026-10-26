@@ -124,8 +124,8 @@ if t3:
     for r in t3:
         L.append(f"| {r['inst']} | {r['lock']} | {r['rounds']} | {r['n']} | {r['forest']:.1f} | {lk(r['leak'])} | {bn(r['world'])} ({bn(r['world_g']) if r['world_g'] is not None else '–'}) | "
                  f"{m(r['brasil'])} / {m(r['eu'])} / {m(r['us'])} / {m(r['china'])} | {', '.join(r['out']) or 'none'} |")
-open(figpath(f"Tables_{LABEL}.md"), "w").write("\n".join(L) + "\n")
-with open(figpath(f"Table1_{LABEL}.csv"), "w", newline="") as f:
+open(figpath(f"Tables_{LABEL}.md"), "w", encoding="utf-8").write("\n".join(L) + "\n")
+with open(figpath(f"Table1_{LABEL}.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); keys = ["seed", "inst", "works", "fails", "note", "tag", "pha", "tau", "rounds", "n", "brazil_in", "forest", "forest_all", "leak", "leak_all", "net", "net_all",
                                "ev_in", "ev_out", "world", "ev_in_g", "ev_out_g", "world_g", "brasil", "eu", "us", "china", "brasil_g", "eu_g", "us_g", "china_g"]
     w.writerow(["starting_coalition", "instrument", "charge_works", "charge_fails", "note", "tag", "surcharge_usd_per_ha", "penalty_pct", "rounds", "members", "brazil_inside",
@@ -133,13 +133,13 @@ with open(figpath(f"Table1_{LABEL}.csv"), "w", newline="") as f:
                 "EV_net_inside_MUSD", "EV_net_outside_MUSD", "EV_net_world_MUSD", "EV_gross_inside_MUSD", "EV_gross_outside_MUSD", "EV_gross_world_MUSD",
                 "Brazil_net_MUSD", "EU_net_MUSD", "US_net_MUSD", "China_net_MUSD", "Brazil_gross_MUSD", "EU_gross_MUSD", "US_gross_MUSD", "China_gross_MUSD"])
     for r in rows: w.writerow([round(r[k], 3) if isinstance(r[k], float) else r[k] for k in keys])
-with open(figpath(f"Table2_{LABEL}.csv"), "w", newline="") as f:
+with open(figpath(f"Table2_{LABEL}.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(["switching_cost_share_of_trade", "brazil_switching_cost_MUSD", "penalty_fails_pct", "penalty_works_pct", "members_at_working_penalty", "forest_Mha_at_working_penalty", "members_at_failing_penalty", "forest_Mha_at_failing_penalty",
                                    "surcharge_fails_usd_per_ha", "surcharge_works_usd_per_ha", "members_at_working_surcharge", "forest_Mha_at_working_surcharge", "members_at_failing_surcharge", "forest_Mha_at_failing_surcharge"])
     for r in t2:
         p, s = r["penalty"], r["surcharge"]; rd = lambda v: "" if v is None else (round(v, 3) if isinstance(v, float) else v)
         w.writerow([r["fr"], round(r["T"], 1), rd(p["fail"]), rd(p["work"]), rd(p["n"]), rd(p["forest"]), rd(p["n_f"]), rd(p["forest_f"]), rd(s["fail"]), rd(s["work"]), rd(s["n"]), rd(s["forest"]), rd(s["n_f"]), rd(s["forest_f"])])
-with open(figpath(f"Table3_{LABEL}.csv"), "w", newline="") as f:
+with open(figpath(f"Table3_{LABEL}.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(["instrument", "locked_out", "tag", "rounds", "members", "forest_kept_inside_tropical_Mha", "forest_lost_outside_tropical_kha", "EV_net_world_MUSD", "EV_gross_world_MUSD", "Brazil_net_MUSD", "EU_net_MUSD", "US_net_MUSD", "China_net_MUSD", "largest_deforesters_outside"])
     for r in t3: w.writerow([r["inst"], r["lock"], r["tag"], r["rounds"], r["n"], round(r["forest"], 3), round(r["leak"], 1), round(r["world"], 1), "" if r["world_g"] is None else round(r["world_g"], 1), round(r["brasil"], 1), round(r["eu"], 1), round(r["us"], 1), round(r["china"], 1), "; ".join(r["out"])])
 print("ok:", len(rows), "rows in Table 1,", len(t2), "in Table 2,", len(t3), "in Table 3 ->", figpath(f"Tables_{LABEL}.md"))

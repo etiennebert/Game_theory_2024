@@ -1,7 +1,0 @@
-"japan"
-"colombia"
-"venezuela"
-"mena"
-"angola"
-"drc"
-"cafr"

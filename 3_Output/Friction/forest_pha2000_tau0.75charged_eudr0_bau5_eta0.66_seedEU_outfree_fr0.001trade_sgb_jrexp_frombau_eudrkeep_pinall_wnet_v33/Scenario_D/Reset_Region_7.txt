@@ -1,7 +1,0 @@
-"bolivia"
-"eastasia"
-"colombia"
-"venezuela"
-"angola"
-"drc"
-"cafr"

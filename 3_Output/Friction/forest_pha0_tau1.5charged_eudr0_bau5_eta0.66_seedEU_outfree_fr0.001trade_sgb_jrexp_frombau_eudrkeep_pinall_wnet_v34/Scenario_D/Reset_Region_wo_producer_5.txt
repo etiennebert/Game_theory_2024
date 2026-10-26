@@ -1,0 +1,6 @@
+"japan"
+"korea"
+"eastasia"
+"venezuela"
+"eu27"
+"cafr"

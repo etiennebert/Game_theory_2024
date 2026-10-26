@@ -1,0 +1,8 @@
+"canada"
+"colombia"
+"venezuela"
+"angola"
+"drc"
+"cafr"
+"ghana"
+"mozambique"

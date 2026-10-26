@@ -1,4 +1,0 @@
-"myanmar"
-"venezuela"
-"mena"
-"cafr"

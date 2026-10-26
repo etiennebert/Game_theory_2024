@@ -1,7 +1,0 @@
-"colombia"
-"paraguay"
-"peru"
-"eu27"
-"cafr"
-"ivorycoast"
-"ghana"

@@ -1,0 +1,7 @@
+"newzealand"
+"japan"
+"eu27"
+"uk"
+"russia"
+"nigeria"
+"mozambique"

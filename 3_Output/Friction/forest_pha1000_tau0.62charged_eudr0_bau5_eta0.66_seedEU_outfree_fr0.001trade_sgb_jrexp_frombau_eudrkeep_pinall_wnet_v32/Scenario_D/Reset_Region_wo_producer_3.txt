@@ -1,6 +1,0 @@
-"southasia"
-"india"
-"venezuela"
-"uk"
-"efta"
-"cafr"

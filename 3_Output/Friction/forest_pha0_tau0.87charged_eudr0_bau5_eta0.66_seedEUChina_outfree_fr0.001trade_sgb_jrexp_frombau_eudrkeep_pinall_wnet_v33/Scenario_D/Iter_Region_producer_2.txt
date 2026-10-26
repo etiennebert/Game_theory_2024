@@ -1,6 +1,0 @@
-"brasil"
-"indonesia"
-"malasya"
-"angola"
-"ivorycoast"
-"ghana"

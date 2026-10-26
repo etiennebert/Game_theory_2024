@@ -1,5 +1,0 @@
-"eastasia"
-"venezuela"
-"mena"
-"wafr"
-"cafr"

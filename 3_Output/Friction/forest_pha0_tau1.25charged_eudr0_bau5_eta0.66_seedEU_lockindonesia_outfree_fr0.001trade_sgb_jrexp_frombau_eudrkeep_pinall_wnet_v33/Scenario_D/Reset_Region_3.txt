@@ -1,8 +1,0 @@
-"indonesia"
-"mexico"
-"colombia"
-"venezuela"
-"efta"
-"angola"
-"drc"
-"cafr"

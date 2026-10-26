@@ -1,8 +1,0 @@
-"colombia"
-"venezuela"
-"eu27"
-"uk"
-"efta"
-"angola"
-"drc"
-"cafr"

@@ -1,0 +1,7 @@
+"japan"
+"madagascar"
+"seasia"
+"us"
+"venezuela"
+"mena"
+"cafr"

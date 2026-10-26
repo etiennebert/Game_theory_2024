@@ -108,7 +108,7 @@ axs.legend(leg_h, leg_l, loc="lower left", bbox_to_anchor=(-0.05, 1.0), frameon=
 fig.text(0.012, 0.005, f"{LABEL} runs", fontsize=5, color=MUTED, ha="left", va="bottom")
 
 for ext in ("pdf", "png"): fig.savefig(figpath(f"Fig4_welfare.{ext}"), dpi=450 if ext == "png" else None)
-with open(figpath("Fig4_source_data.csv"), "w", newline="") as f:
+with open(figpath("Fig4_source_data.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(["panel", "configuration", "tag", "region", "member", "EV_net_MUSD_per_year", "EV_gross_MUSD_per_year", "EV_net_pct_GDP",
                                    "stability_status", "stability_gain_from_moving_MUSD", "switching_cost_MUSD"])
     for k, lab in cols:

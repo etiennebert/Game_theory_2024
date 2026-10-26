@@ -130,7 +130,7 @@ for i, (item, label, qo) in enumerate(ROWS):
 ftext(56.0, H - 2.0, f"{LABEL} runs \u00b7 {RUNS.get(INST, '')}", 5.0, MUTED)
 fig.savefig(figpath("Fig5_brazil_aez.pdf")); fig.savefig(figpath("Fig5_brazil_aez.png"), dpi=450)
 # source data: both instruments, every cell
-with open(figpath("Fig5_source_data.csv"), "w", newline="") as f:
+with open(figpath("Fig5_source_data.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(["instrument", "run", "item", "label", "zone", "level_2019_kha", "stageA_bau_clearing_change_kha", "stageB_eudr_change_kha", "baseline_level_kha", "club_change_from_stageA_kha", "club_vs_baseline_kha", "club_vs_baseline_pct"])
     for inst in sorted(set(d.instrument)):
         ss = d[(d.instrument == inst) & (d.aez != "national")]

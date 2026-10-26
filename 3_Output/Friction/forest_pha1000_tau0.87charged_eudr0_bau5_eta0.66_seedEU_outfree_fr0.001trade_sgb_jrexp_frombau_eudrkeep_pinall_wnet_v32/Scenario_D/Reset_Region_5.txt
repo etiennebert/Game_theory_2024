@@ -1,7 +1,0 @@
-"myanmar"
-"canada"
-"colombia"
-"venezuela"
-"drc"
-"wafr"
-"cafr"

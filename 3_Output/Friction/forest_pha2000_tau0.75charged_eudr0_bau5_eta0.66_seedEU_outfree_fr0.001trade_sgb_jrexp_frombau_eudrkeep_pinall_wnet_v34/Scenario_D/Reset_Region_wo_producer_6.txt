@@ -1,0 +1,7 @@
+"eastasia"
+"us"
+"venezuela"
+"mena"
+"wafr"
+"cafr"
+"nigeria"

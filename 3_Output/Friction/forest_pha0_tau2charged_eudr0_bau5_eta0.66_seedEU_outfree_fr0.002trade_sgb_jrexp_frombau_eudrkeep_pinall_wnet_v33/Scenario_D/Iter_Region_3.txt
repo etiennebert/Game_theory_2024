@@ -1,7 +1,0 @@
-"madagascar"
-"eu27"
-"uk"
-"efta"
-"restofworld"
-"ivorycoast"
-"ghana"

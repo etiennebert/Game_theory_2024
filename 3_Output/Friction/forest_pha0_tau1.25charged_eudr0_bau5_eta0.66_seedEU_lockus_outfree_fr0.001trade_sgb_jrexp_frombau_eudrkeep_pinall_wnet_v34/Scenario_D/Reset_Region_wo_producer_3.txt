@@ -1,0 +1,6 @@
+"us"
+"mexico"
+"latinamer"
+"venezuela"
+"eu27"
+"cafr"

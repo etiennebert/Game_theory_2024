@@ -1,0 +1,6 @@
+"bolivia"
+"colombia"
+"peru"
+"angola"
+"drc"
+"ghana"

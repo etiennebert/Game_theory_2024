@@ -1,6 +1,0 @@
-"bolivia"
-"japan"
-"colombia"
-"venezuela"
-"drc"
-"cafr"

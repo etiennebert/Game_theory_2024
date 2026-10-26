@@ -1,5 +1,0 @@
-"japan"
-"venezuela"
-"mena"
-"cafr"
-"mozambique"

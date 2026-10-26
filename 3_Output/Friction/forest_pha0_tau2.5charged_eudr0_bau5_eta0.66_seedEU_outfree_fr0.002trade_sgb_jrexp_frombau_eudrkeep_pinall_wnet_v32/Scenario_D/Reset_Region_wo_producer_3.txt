@@ -1,8 +1,0 @@
-"eastasia"
-"southasia"
-"india"
-"canada"
-"us"
-"mexico"
-"venezuela"
-"cafr"

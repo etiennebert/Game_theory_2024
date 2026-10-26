@@ -1,0 +1,7 @@
+"india"
+"eu27"
+"uk"
+"efta"
+"restofworld"
+"russia"
+"nigeria"

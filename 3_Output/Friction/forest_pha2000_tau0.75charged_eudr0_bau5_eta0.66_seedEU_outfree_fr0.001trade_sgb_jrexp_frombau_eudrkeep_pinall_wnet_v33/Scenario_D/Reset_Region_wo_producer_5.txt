@@ -1,8 +1,0 @@
-"china"
-"eastasia"
-"canada"
-"us"
-"venezuela"
-"uk"
-"mena"
-"cafr"

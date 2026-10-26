@@ -1,5 +1,0 @@
-"china"
-"japan"
-"eu27"
-"ivorycoast"
-"nigeria"

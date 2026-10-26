@@ -1,6 +1,6 @@
 """Rebuild every data file, figure and table of one generation of runs, in order. Run from anywhere:
 
-  python make_all.py                      the V32 runs (tag suffix _wnet_v32): data\\ then every <Figure>_Output\\
+  python make_all.py                      the current generation (paths.VERSION, _wnet_v34 = V34): data\\ then every <Figure>_Output\\
   python make_all.py --version _wnet      another generation (V31; --version "" for V30) - its data files get their own label
   python make_all.py --figures            redraw the figures and tables from data\\ alone, without the model folder
   python make_all.py --no-r               skip the two R steps (Fig. 5 and the SI figures are then drawn from the last csv files)
@@ -28,7 +28,7 @@ steps = [("common/extract_all.py", "data\\all_data_<L>.json: every run of the ge
          ("Fig_5_script/fig5_brazil_aez.py", "Fig. 5: Brazil's land use by agro-ecological zone at the club equilibrium"),
          ("ExtData_Fig_1_script/extdata_fig1_thresholds.py", "Extended Data Fig. 1: Brazil's first-round loss against the charge and the switching cost"),
          ("ExtData_Fig_2_script/extdata_fig2_deforesters.py", "Extended Data Fig. 2: the largest deforesters' first-round loss and joining round"),
-         ("SI_script/si_v32_extract.R", "SI_script\\data\\*.csv: baseline forest change, welfare decomposition, supply responses, Brazil's commodities (R, HARr)"),
+         ("SI_script/si_extract.R", "SI_script\\data_<l>\\*.csv: baseline forest change, welfare decomposition, supply responses, Brazil's commodities (R, HARr)"),
          ("SI_script/si_figures.py", "SI_Output: Figs S7, S9, S10, S11 and Tables S9-S12")]
 for script, what in steps:
     if only_figures and (script.startswith("common/extract") or script.endswith("stats.py") or script.endswith(".R")): continue
@@ -37,7 +37,7 @@ for script, what in steps:
         if no_r: print(f"\n== {script}: skipped (--no-r)"); continue
         rs = shutil.which("Rscript")
         if not rs: print(f"\n== {script}: Rscript not on the PATH - run it by hand: Rscript \"{path}\" \"{paths.REPO}\" {paths.LABEL}"); continue
-        cmd = [rs, path, paths.REPO] + ([paths.LABEL] if "brazil" in script else [])
+        cmd = [rs, path, paths.REPO, paths.LABEL]
     else: cmd = [sys.executable, path]
     t0 = time.time(); print(f"\n== {script}: {what.replace('<L>', paths.LABEL)}")
     r = subprocess.run(cmd, cwd=cwd)

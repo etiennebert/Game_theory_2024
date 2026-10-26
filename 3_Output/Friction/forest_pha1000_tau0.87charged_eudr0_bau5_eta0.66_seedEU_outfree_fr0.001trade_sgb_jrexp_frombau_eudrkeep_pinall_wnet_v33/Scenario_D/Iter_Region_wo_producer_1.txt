@@ -1,5 +1,0 @@
-"eu27"
-"uk"
-"efta"
-"restofworld"
-"cafr"

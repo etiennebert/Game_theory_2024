@@ -22,8 +22,20 @@ import json, os, glob, re
 from paths import here, LABEL, VERSION
 import v30
 
-HEADLINE = {"_wnet_v33": {"penalty": 1.25, "surcharge": 4000}}.get(VERSION, {"penalty": 1.5, "surcharge": 4000})   # the EU-alone values the programme is built on (Run_V32_all.R: Y and X);
+def headline_from_runs_file():
+    """The Y / X line Run_V32_all.R writes at the top of 4_DB/<LABEL>_runs_<date>.txt ('... | Y = 1.25 % | X = 2500 / 4000 USD/ha | ...'),
+    also written when it resolves Y = X = "auto" after the grid; the last such line of the most recent file. The headline surcharge is the
+    last X value (the one Brazil joins on its own first-round loss at); the first is the lowest working surcharge (EU_sur_min)."""
+    files = sorted(glob.glob(os.path.join(v30.DB, f"{LABEL}_runs_*.txt")), key=os.path.getmtime)
+    for f in reversed(files):
+        hits = re.findall(r"Y = ([0-9.]+) % \| X = ([0-9 /]+) USD/ha", open(f, encoding="utf-8", errors="replace").read())
+        if hits: return {"penalty": float(hits[-1][0]), "surcharge": float(hits[-1][1].split("/")[-1])}
+    return None
+HEADLINE = {"_wnet_v33": {"penalty": 1.25, "surcharge": 4000}, "_wnet_v32": {"penalty": 1.5, "surcharge": 4000}, "_wnet": {"penalty": 1.5, "surcharge": 4000}, "": {"penalty": 1.5, "surcharge": 4000}}.get(VERSION) \
+           or headline_from_runs_file() or {"penalty": 1.25, "surcharge": 4000}   # the EU-alone values the programme is built on (Run_V32_all.R: Y and X)
 # V33 (21 Oct 2026): Y = 1.25 % (the lowest working penalty), X = 4,000 USD/ha; the 2,500 coalition (lowest working surcharge) is EU_sur_min with its own lock-outs
+# V34 and later: read from the batch's results file (the values Run_V32_all.R used or resolved)
+print(f"headline: penalty {HEADLINE['penalty']} %, surcharge {HEADLINE['surcharge']:.0f} USD/ha")
 
 gdp = v30.read_gdp()
 metas = v30.all_runs(pin="all", eudr="keep")
@@ -142,8 +154,8 @@ for key in ("EU_pen", "EU_sur", "EUM_0", "EUC_pen"):
 slim = lambda s: {k: v for k, v in s.items() if k not in ("ev_path", "members_by_round")}
 data = dict(version=VERSION, label=LABEL, headline=HEADLINE, gdp=gdp, T=T, bau=base, thresholds=thr, configs=configs, runs=[slim(s) for s in S], stability=stab,
             top=v30.TOP, seeds=SEEDS)
-json.dump(data, open(here("all_data.json"), "w"))
-with open(here("brazil_runs.txt"), "w") as f:
+json.dump(data, open(here("all_data.json"), "w", encoding="utf-8"))
+with open(here("brazil_runs.txt"), "w", encoding="utf-8") as f:
     for key in ("EU_pen", "EU_sur"):
         if key in configs:
             c = configs[key]; f.write(f"{'penalty' if key == 'EU_pen' else 'surcharge'} forest_{c['tag']} NATDEF_{c['last']}.sl4\n")

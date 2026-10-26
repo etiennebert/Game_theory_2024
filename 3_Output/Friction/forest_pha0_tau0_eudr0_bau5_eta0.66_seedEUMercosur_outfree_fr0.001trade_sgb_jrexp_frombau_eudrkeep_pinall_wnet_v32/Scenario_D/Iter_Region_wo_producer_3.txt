@@ -1,6 +1,0 @@
-"china"
-"eastasia"
-"uruguay"
-"mena"
-"nafr"
-"nigeria"

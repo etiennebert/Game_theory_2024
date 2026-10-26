@@ -1,0 +1,6 @@
+"japan"
+"eastasia"
+"venezuela"
+"efta"
+"mena"
+"cafr"

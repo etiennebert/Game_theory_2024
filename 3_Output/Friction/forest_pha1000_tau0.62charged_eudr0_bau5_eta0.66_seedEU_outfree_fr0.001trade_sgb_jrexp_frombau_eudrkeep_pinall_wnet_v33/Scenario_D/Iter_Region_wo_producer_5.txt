@@ -1,4 +1,0 @@
-"madagascar"
-"latinamer"
-"eu27"
-"nigeria"

@@ -1,0 +1,4 @@
+"japan"
+"korea"
+"latinamer"
+"efta"

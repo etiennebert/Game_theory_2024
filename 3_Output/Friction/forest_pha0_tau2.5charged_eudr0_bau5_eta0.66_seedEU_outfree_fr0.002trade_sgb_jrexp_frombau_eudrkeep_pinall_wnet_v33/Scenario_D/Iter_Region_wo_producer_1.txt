@@ -1,8 +1,0 @@
-"madagascar"
-"uruguay"
-"eu27"
-"uk"
-"efta"
-"restofworld"
-"nafr"
-"cafr"

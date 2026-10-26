@@ -1,6 +1,0 @@
-"colombia"
-"paraguay"
-"peru"
-"angola"
-"ivorycoast"
-"ghana"

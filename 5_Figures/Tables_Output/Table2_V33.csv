@@ -1,4 +1,0 @@
-switching_cost_share_of_trade,brazil_switching_cost_MUSD,penalty_fails_pct,penalty_works_pct,members_at_working_penalty,forest_Mha_at_working_penalty,members_at_failing_penalty,forest_Mha_at_failing_penalty,surcharge_fails_usd_per_ha,surcharge_works_usd_per_ha,members_at_working_surcharge,forest_Mha_at_working_surcharge,members_at_failing_surcharge,forest_Mha_at_failing_surcharge
-0.0005,36.7,0.25,0.5,31,13.736,3,0.0,500,750,23,11.704,15,3.187
-0.001,73.4,1.0,1.25,36,14.936,8,1.9,2000,2500,18,11.648,14,3.868
-0.002,146.9,2.0,2.5,36,15.235,7,1.664,8000,9000,19,12.123,8,2.7

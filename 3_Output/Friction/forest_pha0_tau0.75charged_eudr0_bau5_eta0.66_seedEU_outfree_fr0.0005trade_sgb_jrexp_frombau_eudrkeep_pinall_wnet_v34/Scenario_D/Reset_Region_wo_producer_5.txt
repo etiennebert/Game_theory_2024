@@ -1,0 +1,6 @@
+"china"
+"eastasia"
+"southasia"
+"venezuela"
+"cafr"
+"mozambique"

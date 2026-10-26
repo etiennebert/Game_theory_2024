@@ -1,0 +1,5 @@
+run: pha4000_tau0_eudr0_bau5_eta0.66_seedSmincoalition4000_fixed_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34
+seed: eu27 bolivia brasil canada china eafr eastasia ghana india indonesia ivorycoast latinamer madagascar malasya mexico mozambique myanmar newzealand paraguay peru safr southasia us | dynamics: off | join rule: experience | safeguard: baseline | round cap: 15
+V30: start_from = bau (C:\runGTAP375\Game_theory_2024\3_Output\Baseline_2stage_bau5_eta0.66_v34\A_bau\gdata_bau.upd) | eudr_outsiders = keep | member_pin = all | welfare = ev_net_wedge
+outcome: converged | solves: 1
+final coalition (23): bolivia brasil canada china eafr eastasia eu27 ghana india indonesia ivorycoast latinamer madagascar malasya mexico mozambique myanmar newzealand paraguay peru safr southasia us

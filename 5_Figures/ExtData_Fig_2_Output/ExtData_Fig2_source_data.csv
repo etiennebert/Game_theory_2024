@@ -1,185 +1,185 @@
 seed,tag,surcharge_usd_per_ha,penalty_pct,rounds_to_convergence,club_forms_brazil_inside,region,first_round_loss_MUSD,switching_cost_MUSD,joins_in_round,inside_at_convergence,EV_net_at_convergence_MUSD_per_yr
-EU,,1500,0.0,7,False,Brazil,34.85,73.434,never,0,2.6
-EU,,1500,0.0,7,False,DRC,1.75,2.0,never,0,-2.7
-EU,,1500,0.0,7,False,South-East Asia,3.07,104.153,never,0,-28.4
-EU,,1500,0.0,7,False,Bolivia,0.93,2.0,3,0,-13.8
-EU,,1500,0.0,7,False,Ivory Coast,71.5,6.88,2,1,54.0
-EU,,1500,0.0,7,False,Indonesia,3.47,43.346,never,0,-15.2
-EU,,1500,0.0,7,False,Colombia,8.06,10.847,4,0,15.7
-EU,,1500,0.0,7,False,Nigeria,-0.03,4.935,3,1,72.9
-EU,,2000,0.0,7,False,Brazil,45.6,73.434,never,0,-21.7
-EU,,2000,0.0,7,False,DRC,2.08,2.0,2,0,-5.0
-EU,,2000,0.0,7,False,South-East Asia,4.27,104.153,never,0,-44.0
-EU,,2000,0.0,7,False,Bolivia,1.21,2.0,3,0,-18.1
-EU,,2000,0.0,7,False,Ivory Coast,93.03,6.88,2,1,60.0
-EU,,2000,0.0,7,False,Indonesia,4.67,43.346,never,0,-10.1
-EU,,2000,0.0,7,False,Colombia,10.74,10.847,4,0,14.2
-EU,,2000,0.0,7,False,Nigeria,-0.05,4.935,3,1,73.0
-EU,,2500,0.0,7,True,Brazil,55.88,73.434,4,1,973.5
-EU,,2500,0.0,7,True,DRC,2.34,2.0,2,0,-5.9
-EU,,2500,0.0,7,True,South-East Asia,5.54,104.153,never,0,-95.1
-EU,,2500,0.0,7,True,Bolivia,1.47,2.0,3,0,-21.7
-EU,,2500,0.0,7,True,Ivory Coast,113.47,6.88,2,1,75.3
-EU,,2500,0.0,7,True,Indonesia,5.9,43.346,never,0,-41.2
-EU,,2500,0.0,7,True,Colombia,13.41,10.847,2,0,23.7
-EU,,2500,0.0,7,True,Nigeria,-0.06,4.935,3,1,69.3
-EU,,3000,0.0,7,True,Brazil,65.74,73.434,4,1,981.7
-EU,,3000,0.0,7,True,DRC,2.55,2.0,2,0,-6.5
-EU,,3000,0.0,7,True,South-East Asia,6.87,104.153,never,0,-108.2
-EU,,3000,0.0,7,True,Bolivia,1.72,2.0,3,0,-26.0
-EU,,3000,0.0,7,True,Ivory Coast,132.89,6.88,2,1,76.2
-EU,,3000,0.0,7,True,Indonesia,7.13,43.346,never,0,-50.8
-EU,,3000,0.0,7,True,Colombia,16.05,10.847,2,0,20.8
-EU,,3000,0.0,7,True,Nigeria,-0.07,4.935,3,1,69.1
-EU,,3500,0.0,5,True,Brazil,75.19,73.434,2,1,1017.4
-EU,,3500,0.0,5,True,DRC,2.72,2.0,2,0,-8.9
-EU,,3500,0.0,5,True,South-East Asia,8.26,104.153,never,0,-134.1
-EU,,3500,0.0,5,True,Bolivia,1.95,2.0,3,0,-31.4
-EU,,3500,0.0,5,True,Ivory Coast,151.34,6.88,2,1,80.7
-EU,,3500,0.0,5,True,Indonesia,8.38,43.346,never,0,-75.3
-EU,,3500,0.0,5,True,Colombia,18.67,10.847,2,0,13.2
-EU,,3500,0.0,5,True,Nigeria,-0.08,4.935,3,1,65.9
-EU,,4000,0.0,7,True,Brazil,84.26,73.434,2,1,1088.0
-EU,,4000,0.0,7,True,DRC,2.87,2.0,2,0,-15.5
-EU,,4000,0.0,7,True,South-East Asia,9.71,104.153,never,0,-139.7
-EU,,4000,0.0,7,True,Bolivia,2.18,2.0,2,1,-31.3
-EU,,4000,0.0,7,True,Ivory Coast,168.86,6.88,2,1,95.2
-EU,,4000,0.0,7,True,Indonesia,9.64,43.346,4,1,54.1
-EU,,4000,0.0,7,True,Colombia,21.26,10.847,2,0,-19.5
-EU,,4000,0.0,7,True,Nigeria,-0.08,4.935,3,1,18.7
-EU,,6000,0.0,6,True,Brazil,117.25,73.434,2,1,1082.8
-EU,,6000,0.0,6,True,DRC,3.3,2.0,2,0,-17.3
-EU,,6000,0.0,6,True,South-East Asia,16.08,104.153,4,1,-135.7
-EU,,6000,0.0,6,True,Bolivia,2.99,2.0,2,1,-31.5
-EU,,6000,0.0,6,True,Ivory Coast,230.6,6.88,2,1,106.2
-EU,,6000,0.0,6,True,Indonesia,14.76,43.346,4,1,16.3
-EU,,6000,0.0,6,True,Colombia,31.45,10.847,2,0,-40.9
-EU,,6000,0.0,6,True,Nigeria,-0.05,4.935,3,1,21.2
-EU,,2000,0.5,10,True,Brazil,80.4,73.434,2,1,1149.6
-EU,,2000,0.5,10,True,DRC,2.2,2.0,2,0,-13.3
-EU,,2000,0.5,10,True,South-East Asia,36.4,104.153,4,1,-130.4
-EU,,2000,0.5,10,True,Bolivia,1.28,2.0,3,0,-22.4
-EU,,2000,0.5,10,True,Ivory Coast,98.24,6.88,2,1,106.5
-EU,,2000,0.5,10,True,Indonesia,11.82,43.346,4,1,12.9
-EU,,2000,0.5,10,True,Colombia,15.07,10.847,2,0,-3.1
-EU,,2000,0.5,10,True,Nigeria,1.52,4.935,3,1,64.4
-EU,,1000,0.62,6,False,Brazil,67.41,73.434,never,0,-28.6
-EU,,1000,0.62,6,False,DRC,1.49,2.0,never,0,-1.8
-EU,,1000,0.62,6,False,South-East Asia,41.79,104.153,never,0,-64.4
-EU,,1000,0.62,6,False,Bolivia,0.74,2.0,3,0,-10.0
-EU,,1000,0.62,6,False,Ivory Coast,55.98,6.88,2,1,61.5
-EU,,1000,0.62,6,False,Indonesia,11.21,43.346,never,0,-23.1
-EU,,1000,0.62,6,False,Colombia,10.8,10.847,4,0,12.7
-EU,,1000,0.62,6,False,Nigeria,1.93,4.935,3,1,72.7
-EU,,0,0.75,4,False,Brazil,53.38,73.434,never,0,-46.8
-EU,,0,0.75,4,False,DRC,0.22,2.0,never,0,-0.5
-EU,,0,0.75,4,False,South-East Asia,48.08,104.153,never,0,-95.2
-EU,,0,0.75,4,False,Bolivia,0.13,2.0,never,0,-0.2
-EU,,0,0.75,4,False,Ivory Coast,9.45,6.88,2,1,50.5
-EU,,0,0.75,4,False,Indonesia,10.88,43.346,never,0,-19.1
-EU,,0,0.75,4,False,Colombia,6.58,10.847,never,0,1.0
-EU,,0,0.75,4,False,Nigeria,2.37,4.935,never,0,-7.2
-EU,,2000,0.75,9,True,Brazil,97.55,73.434,2,1,1151.0
-EU,,2000,0.75,9,True,DRC,2.25,2.0,2,0,-13.5
-EU,,2000,0.75,9,True,South-East Asia,52.31,104.153,4,1,-131.8
-EU,,2000,0.75,9,True,Bolivia,1.32,2.0,3,0,-23.8
-EU,,2000,0.75,9,True,Ivory Coast,100.81,6.88,2,1,106.6
-EU,,2000,0.75,9,True,Indonesia,15.35,43.346,4,1,12.7
-EU,,2000,0.75,9,True,Colombia,17.21,10.847,2,0,-19.9
-EU,,2000,0.75,9,True,Nigeria,2.3,4.935,3,1,63.8
-EU,,1000,0.87,8,True,Brazil,84.77,73.434,2,1,1147.5
-EU,,1000,0.87,8,True,DRC,1.55,2.0,5,0,-9.3
-EU,,1000,0.87,8,True,South-East Asia,57.68,104.153,4,1,-128.4
-EU,,1000,0.87,8,True,Bolivia,0.78,2.0,4,0,-11.4
-EU,,1000,0.87,8,True,Ivory Coast,58.82,6.88,2,1,106.4
-EU,,1000,0.87,8,True,Indonesia,14.75,43.346,4,1,14.9
-EU,,1000,0.87,8,True,Colombia,12.96,10.847,2,0,-3.0
-EU,,1000,0.87,8,True,Nigeria,2.7,4.935,3,1,63.9
-EU,,0,1.0,4,False,Brazil,70.97,73.434,never,0,-77.0
-EU,,0,1.0,4,False,DRC,0.3,2.0,never,0,-0.6
-EU,,0,1.0,4,False,South-East Asia,63.95,104.153,never,0,-125.4
-EU,,0,1.0,4,False,Bolivia,0.17,2.0,never,0,0.4
-EU,,0,1.0,4,False,Ivory Coast,12.59,6.88,2,1,55.9
-EU,,0,1.0,4,False,Indonesia,14.44,43.346,never,0,-31.1
-EU,,0,1.0,4,False,Colombia,8.77,10.847,never,0,-2.2
-EU,,0,1.0,4,False,Nigeria,3.14,4.935,3,1,71.9
-EU,,1000,1.12,7,True,Brazil,101.96,73.434,2,1,1146.2
-EU,,1000,1.12,7,True,DRC,1.61,2.0,5,0,-9.5
-EU,,1000,1.12,7,True,South-East Asia,73.46,104.153,4,1,-132.5
-EU,,1000,1.12,7,True,Bolivia,0.82,2.0,3,0,-14.0
-EU,,1000,1.12,7,True,Ivory Coast,61.64,6.88,2,1,105.7
-EU,,1000,1.12,7,True,Indonesia,18.27,43.346,4,1,12.7
-EU,,1000,1.12,7,True,Colombia,15.11,10.847,2,0,-21.7
-EU,,1000,1.12,7,True,Nigeria,3.47,4.935,3,1,63.8
-EU,,0,1.25,7,True,Brazil,88.39,73.434,2,1,1144.1
-EU,,0,1.25,7,True,DRC,0.37,2.0,never,0,-2.7
-EU,,0,1.25,7,True,South-East Asia,79.71,104.153,3,1,-131.7
-EU,,0,1.25,7,True,Bolivia,0.21,2.0,4,0,-1.8
-EU,,0,1.25,7,True,Ivory Coast,15.71,6.88,2,1,104.4
-EU,,0,1.25,7,True,Indonesia,17.98,43.346,4,1,11.4
-EU,,0,1.25,7,True,Colombia,10.93,10.847,2,0,-16.5
-EU,,0,1.25,7,True,Nigeria,3.91,4.935,3,1,64.4
-EU,,0,1.5,7,True,Brazil,105.63,73.434,2,1,1143.8
-EU,,0,1.5,7,True,DRC,0.44,2.0,never,0,-3.0
-EU,,0,1.5,7,True,South-East Asia,95.36,104.153,3,1,-131.8
-EU,,0,1.5,7,True,Bolivia,0.26,2.0,4,0,-3.4
-EU,,0,1.5,7,True,Ivory Coast,18.81,6.88,2,1,104.9
-EU,,0,1.5,7,True,Indonesia,21.48,43.346,4,1,11.7
-EU,,0,1.5,7,True,Colombia,13.08,10.847,2,0,-28.3
-EU,,0,1.5,7,True,Nigeria,4.67,4.935,3,1,64.1
-EU,,0,2.5,5,True,Brazil,172.94,73.434,2,1,1153.7
-EU,,0,2.5,5,True,DRC,0.73,2.0,3,0,-4.2
-EU,,0,2.5,5,True,South-East Asia,156.9,104.153,2,1,-123.7
-EU,,0,2.5,5,True,Bolivia,0.42,2.0,3,0,-9.8
-EU,,0,2.5,5,True,Ivory Coast,30.98,6.88,2,1,106.6
-EU,,0,2.5,5,True,Indonesia,35.22,43.346,3,1,15.0
-EU,,0,2.5,5,True,Colombia,21.47,10.847,2,0,-94.9
-EU,,0,2.5,5,True,Nigeria,7.67,4.935,2,1,63.8
-EU,,0,5.0,5,True,Brazil,329.91,73.434,2,1,1162.1
-EU,,0,5.0,5,True,DRC,1.44,2.0,3,0,-7.4
-EU,,0,5.0,5,True,South-East Asia,303.2,104.153,2,1,-128.1
-EU,,0,5.0,5,True,Bolivia,0.8,2.0,3,0,-24.1
-EU,,0,5.0,5,True,Ivory Coast,59.98,6.88,2,1,110.2
-EU,,0,5.0,5,True,Indonesia,67.57,43.346,2,1,15.0
-EU,,0,5.0,5,True,Colombia,41.2,10.847,2,0,-246.0
-EU,,0,5.0,5,True,Nigeria,14.81,4.935,2,1,63.4
-EUChina,,500,0.0,3,False,Brazil,32.31,73.434,never,0,-15.2
-EUChina,,500,0.0,3,False,DRC,0.86,2.0,never,0,-1.1
-EUChina,,500,0.0,3,False,South-East Asia,-6.74,104.153,never,0,-23.3
-EUChina,,500,0.0,3,False,Bolivia,0.25,2.0,never,0,-0.2
-EUChina,,500,0.0,3,False,Ivory Coast,23.66,6.88,2,1,44.7
-EUChina,,500,0.0,3,False,Indonesia,3.73,43.346,never,0,-10.6
-EUChina,,500,0.0,3,False,Colombia,1.03,10.847,never,0,8.7
-EUChina,,500,0.0,3,False,Nigeria,1.21,4.935,3,1,73.8
-EUChina,,1000,0.0,4,True,Brazil,107.69,73.434,2,1,819.5
-EUChina,,1000,0.0,4,True,DRC,1.46,2.0,never,0,-2.3
-EUChina,,1000,0.0,4,True,South-East Asia,-4.06,104.153,never,0,-89.6
-EUChina,,1000,0.0,4,True,Bolivia,0.55,2.0,never,0,1.2
-EUChina,,1000,0.0,4,True,Ivory Coast,48.63,6.88,2,1,56.6
-EUChina,,1000,0.0,4,True,Indonesia,7.99,43.346,never,0,-7.1
-EUChina,,1000,0.0,4,True,Colombia,3.99,10.847,never,0,10.8
-EUChina,,1000,0.0,4,True,Nigeria,1.31,4.935,3,1,70.3
-EUChina,,0,0.75,3,False,Brazil,66.64,73.434,never,0,-86.6
-EUChina,,0,0.75,3,False,DRC,0.27,2.0,never,0,-0.5
-EUChina,,0,0.75,3,False,South-East Asia,91.52,104.153,never,0,-171.9
-EUChina,,0,0.75,3,False,Bolivia,-0.01,2.0,never,0,0.0
-EUChina,,0,0.75,3,False,Ivory Coast,9.19,6.88,2,1,52.4
-EUChina,,0,0.75,3,False,Indonesia,21.41,43.346,never,0,-42.1
-EUChina,,0,0.75,3,False,Colombia,5.73,10.847,never,0,0.5
-EUChina,,0,0.75,3,False,Nigeria,3.32,4.935,3,1,73.2
-EUChina,,0,0.87,10,True,Brazil,84.38,73.434,2,1,1139.4
-EUChina,,0,0.87,10,True,DRC,0.3,2.0,never,0,-2.1
-EUChina,,0,0.87,10,True,South-East Asia,107.35,104.153,2,1,-134.1
-EUChina,,0,0.87,10,True,Bolivia,0.01,2.0,6,0,0.7
-EUChina,,0,0.87,10,True,Ivory Coast,11.05,6.88,2,1,103.6
-EUChina,,0,0.87,10,True,Indonesia,24.86,43.346,3,1,10.9
-EUChina,,0,0.87,10,True,Colombia,6.95,10.847,4,0,10.5
-EUChina,,0,0.87,10,True,Nigeria,3.67,4.935,3,1,64.3
-EUChina,,0,1.12,7,True,Brazil,121.11,73.434,2,1,1141.5
-EUChina,,0,1.12,7,True,DRC,0.37,2.0,never,0,-2.5
-EUChina,,0,1.12,7,True,South-East Asia,140.06,104.153,2,1,-133.0
-EUChina,,0,1.12,7,True,Bolivia,0.03,2.0,6,0,-0.9
-EUChina,,0,1.12,7,True,Ivory Coast,14.91,6.88,2,1,104.2
-EUChina,,0,1.12,7,True,Indonesia,32.0,43.346,3,1,11.1
-EUChina,,0,1.12,7,True,Colombia,9.45,10.847,4,0,-4.8
-EUChina,,0,1.12,7,True,Nigeria,4.39,4.935,3,1,64.2
+EU,,1500,0.0,7,False,Brazil,35.11,73.434,never,0,-0.1
+EU,,1500,0.0,7,False,DRC,1.86,2.0,never,0,-3.2
+EU,,1500,0.0,7,False,South-East Asia,3.62,104.153,never,0,-52.2
+EU,,1500,0.0,7,False,Bolivia,0.8,2.0,3,1,6.3
+EU,,1500,0.0,7,False,Ivory Coast,71.11,6.88,2,1,79.1
+EU,,1500,0.0,7,False,Indonesia,3.43,43.346,never,0,-1.5
+EU,,1500,0.0,7,False,Colombia,7.86,10.847,4,0,-0.4
+EU,,1500,0.0,7,False,Nigeria,-0.04,4.935,3,0,-9.9
+EU,,2000,0.0,7,False,Brazil,45.92,73.434,never,0,-10.3
+EU,,2000,0.0,7,False,DRC,2.2,2.0,2,0,-5.7
+EU,,2000,0.0,7,False,South-East Asia,5.0,104.153,never,0,-45.6
+EU,,2000,0.0,7,False,Bolivia,1.04,2.0,3,1,7.0
+EU,,2000,0.0,7,False,Ivory Coast,92.52,6.88,2,1,87.9
+EU,,2000,0.0,7,False,Indonesia,4.62,43.346,never,0,-11.0
+EU,,2000,0.0,7,False,Colombia,10.47,10.847,4,0,2.9
+EU,,2000,0.0,7,False,Nigeria,-0.05,4.935,3,1,-13.3
+EU,,2500,0.0,6,True,Brazil,56.28,73.434,4,1,672.8
+EU,,2500,0.0,6,True,DRC,2.48,2.0,2,0,-6.3
+EU,,2500,0.0,6,True,South-East Asia,6.45,104.153,never,0,-95.4
+EU,,2500,0.0,6,True,Bolivia,1.26,2.0,3,1,8.6
+EU,,2500,0.0,6,True,Ivory Coast,112.85,6.88,2,1,106.3
+EU,,2500,0.0,6,True,Indonesia,5.83,43.346,never,0,-39.9
+EU,,2500,0.0,6,True,Colombia,13.06,10.847,2,0,17.6
+EU,,2500,0.0,6,True,Nigeria,-0.07,4.935,3,0,-16.4
+EU,,3000,0.0,6,True,Brazil,66.2,73.434,4,1,679.5
+EU,,3000,0.0,6,True,DRC,2.7,2.0,2,0,-6.8
+EU,,3000,0.0,6,True,South-East Asia,7.97,104.153,never,0,-107.1
+EU,,3000,0.0,6,True,Bolivia,1.47,2.0,3,1,8.6
+EU,,3000,0.0,6,True,Ivory Coast,132.16,6.88,2,1,107.1
+EU,,3000,0.0,6,True,Indonesia,7.06,43.346,never,0,-49.1
+EU,,3000,0.0,6,True,Colombia,15.63,10.847,2,0,14.5
+EU,,3000,0.0,6,True,Nigeria,-0.08,4.935,3,0,-16.7
+EU,,3500,0.0,5,True,Brazil,75.71,73.434,2,1,713.3
+EU,,3500,0.0,5,True,DRC,2.89,2.0,2,0,-9.9
+EU,,3500,0.0,5,True,South-East Asia,9.54,104.153,never,0,-123.0
+EU,,3500,0.0,5,True,Bolivia,1.67,2.0,3,1,8.9
+EU,,3500,0.0,5,True,Ivory Coast,150.51,6.88,2,1,112.7
+EU,,3500,0.0,5,True,Indonesia,8.29,43.346,never,0,-68.0
+EU,,3500,0.0,5,True,Colombia,18.19,10.847,2,0,11.3
+EU,,3500,0.0,5,True,Nigeria,-0.08,4.935,3,1,-19.5
+EU,,4000,0.0,7,True,Brazil,84.85,73.434,2,1,781.5
+EU,,4000,0.0,7,True,DRC,3.04,2.0,2,0,-16.1
+EU,,4000,0.0,7,True,South-East Asia,11.18,104.153,never,0,-147.2
+EU,,4000,0.0,7,True,Bolivia,1.86,2.0,3,1,9.6
+EU,,4000,0.0,7,True,Ivory Coast,167.93,6.88,2,1,125.9
+EU,,4000,0.0,7,True,Indonesia,9.54,43.346,4,1,62.3
+EU,,4000,0.0,7,True,Colombia,20.72,10.847,2,0,-14.5
+EU,,4000,0.0,7,True,Nigeria,-0.09,4.935,3,0,-20.5
+EU,,6000,0.0,6,True,Brazil,118.05,73.434,2,1,808.1
+EU,,6000,0.0,6,True,DRC,3.5,2.0,2,0,-19.3
+EU,,6000,0.0,6,True,South-East Asia,18.26,104.153,4,1,-271.8
+EU,,6000,0.0,6,True,Bolivia,2.55,2.0,2,1,9.4
+EU,,6000,0.0,6,True,Ivory Coast,229.32,6.88,2,1,145.3
+EU,,6000,0.0,6,True,Indonesia,14.6,43.346,4,1,41.2
+EU,,6000,0.0,6,True,Colombia,30.65,10.847,2,0,-29.0
+EU,,6000,0.0,6,True,Nigeria,-0.06,4.935,3,1,-18.5
+EU,,2000,0.5,11,True,Brazil,80.94,73.434,2,1,875.4
+EU,,2000,0.5,11,True,DRC,2.32,2.0,2,0,-15.2
+EU,,2000,0.5,11,True,South-East Asia,37.42,104.153,4,1,-269.4
+EU,,2000,0.5,11,True,Bolivia,1.09,2.0,3,1,9.8
+EU,,2000,0.5,11,True,Ivory Coast,97.67,6.88,2,1,146.7
+EU,,2000,0.5,11,True,Indonesia,11.75,43.346,5,1,36.2
+EU,,2000,0.5,11,True,Colombia,14.63,10.847,2,0,-4.5
+EU,,2000,0.5,11,True,Nigeria,1.52,4.935,3,1,-23.2
+EU,,1000,0.62,6,False,Brazil,67.85,73.434,never,0,-47.5
+EU,,1000,0.62,6,False,DRC,1.57,2.0,never,0,-2.3
+EU,,1000,0.62,6,False,South-East Asia,42.52,104.153,never,0,-110.0
+EU,,1000,0.62,6,False,Bolivia,0.62,2.0,3,1,8.1
+EU,,1000,0.62,6,False,Ivory Coast,55.64,6.88,2,1,90.0
+EU,,1000,0.62,6,False,Indonesia,11.15,43.346,never,0,-16.9
+EU,,1000,0.62,6,False,Colombia,10.46,10.847,4,0,-4.8
+EU,,1000,0.62,6,False,Nigeria,1.93,4.935,3,1,-13.4
+EU,,0,0.75,4,False,Brazil,53.7,73.434,never,0,-43.6
+EU,,0,0.75,4,False,DRC,0.24,2.0,never,0,-0.5
+EU,,0,0.75,4,False,South-East Asia,48.53,104.153,never,0,-92.5
+EU,,0,0.75,4,False,Bolivia,0.09,2.0,never,0,-0.1
+EU,,0,0.75,4,False,Ivory Coast,9.36,6.88,2,1,79.1
+EU,,0,0.75,4,False,Indonesia,10.85,43.346,never,0,-19.9
+EU,,0,0.75,4,False,Colombia,6.33,10.847,never,0,1.8
+EU,,0,0.75,4,False,Nigeria,2.38,4.935,3,1,-10.5
+EU,,2000,0.75,9,True,Brazil,98.19,73.434,2,1,876.4
+EU,,2000,0.75,9,True,DRC,2.39,2.0,2,0,-15.4
+EU,,2000,0.75,9,True,South-East Asia,53.47,104.153,4,1,-269.1
+EU,,2000,0.75,9,True,Bolivia,1.11,2.0,3,1,9.8
+EU,,2000,0.75,9,True,Ivory Coast,100.22,6.88,2,1,147.1
+EU,,2000,0.75,9,True,Indonesia,15.27,43.346,4,1,36.4
+EU,,2000,0.75,9,True,Colombia,16.68,10.847,2,0,-20.8
+EU,,2000,0.75,9,True,Nigeria,2.3,4.935,3,1,-23.2
+EU,,1000,0.87,9,True,Brazil,85.31,73.434,2,1,874.1
+EU,,1000,0.87,9,True,DRC,1.64,2.0,5,0,-10.8
+EU,,1000,0.87,9,True,South-East Asia,58.55,104.153,4,1,-269.9
+EU,,1000,0.87,9,True,Bolivia,0.65,2.0,3,1,9.8
+EU,,1000,0.87,9,True,Ivory Coast,58.45,6.88,2,1,145.9
+EU,,1000,0.87,9,True,Indonesia,14.69,43.346,4,1,36.5
+EU,,1000,0.87,9,True,Colombia,12.53,10.847,2,0,-9.1
+EU,,1000,0.87,9,True,Nigeria,2.71,4.935,3,1,-23.1
+EU,,0,1.0,4,False,Brazil,71.4,73.434,never,0,-69.9
+EU,,0,1.0,4,False,DRC,0.31,2.0,never,0,-0.6
+EU,,0,1.0,4,False,South-East Asia,64.54,104.153,never,0,-123.4
+EU,,0,1.0,4,False,Bolivia,0.12,2.0,never,0,0.7
+EU,,0,1.0,4,False,Ivory Coast,12.47,6.88,2,1,85.0
+EU,,0,1.0,4,False,Indonesia,14.4,43.346,never,0,-41.6
+EU,,0,1.0,4,False,Colombia,8.43,10.847,never,0,0.4
+EU,,0,1.0,4,False,Nigeria,3.15,4.935,3,1,-11.1
+EU,,1000,1.12,9,True,Brazil,102.6,73.434,2,1,875.0
+EU,,1000,1.12,9,True,DRC,1.7,2.0,5,0,-11.1
+EU,,1000,1.12,9,True,South-East Asia,74.48,104.153,4,1,-269.6
+EU,,1000,1.12,9,True,Bolivia,0.67,2.0,3,1,9.8
+EU,,1000,1.12,9,True,Ivory Coast,61.25,6.88,2,1,146.3
+EU,,1000,1.12,9,True,Indonesia,18.2,43.346,4,1,36.7
+EU,,1000,1.12,9,True,Colombia,14.59,10.847,2,0,-25.4
+EU,,1000,1.12,9,True,Nigeria,3.48,4.935,3,1,-23.2
+EU,,0,1.25,7,True,Brazil,88.92,73.434,2,1,864.6
+EU,,0,1.25,7,True,DRC,0.39,2.0,never,0,-3.7
+EU,,0,1.25,7,True,South-East Asia,80.44,104.153,3,1,-272.8
+EU,,0,1.25,7,True,Bolivia,0.15,2.0,7,1,9.7
+EU,,0,1.25,7,True,Ivory Coast,15.55,6.88,2,1,141.4
+EU,,0,1.25,7,True,Indonesia,17.92,43.346,4,1,36.4
+EU,,0,1.25,7,True,Colombia,10.51,10.847,5,0,-17.5
+EU,,0,1.25,7,True,Nigeria,3.92,4.935,3,1,-21.5
+EU,,0,1.5,7,True,Brazil,106.27,73.434,2,1,873.7
+EU,,0,1.5,7,True,DRC,0.47,2.0,5,0,-4.1
+EU,,0,1.5,7,True,South-East Asia,96.24,104.153,4,1,-270.1
+EU,,0,1.5,7,True,Bolivia,0.18,2.0,4,1,9.8
+EU,,0,1.5,7,True,Ivory Coast,18.62,6.88,2,1,145.4
+EU,,0,1.5,7,True,Indonesia,21.42,43.346,4,1,35.5
+EU,,0,1.5,7,True,Colombia,12.58,10.847,2,0,-30.6
+EU,,0,1.5,7,True,Nigeria,4.69,4.935,3,1,-23.1
+EU,,0,2.5,7,True,Brazil,173.97,73.434,2,1,877.6
+EU,,0,2.5,7,True,DRC,0.77,2.0,3,0,-5.5
+EU,,0,2.5,7,True,South-East Asia,158.35,104.153,2,1,-268.9
+EU,,0,2.5,7,True,Bolivia,0.3,2.0,3,1,9.6
+EU,,0,2.5,7,True,Ivory Coast,30.67,6.88,2,1,146.8
+EU,,0,2.5,7,True,Indonesia,35.12,43.346,3,1,36.5
+EU,,0,2.5,7,True,Colombia,20.65,10.847,2,0,-94.1
+EU,,0,2.5,7,True,Nigeria,7.69,4.935,2,1,-23.2
+EU,,0,5.0,5,True,Brazil,331.79,73.434,2,1,887.5
+EU,,0,5.0,5,True,DRC,1.5,2.0,3,0,-8.7
+EU,,0,5.0,5,True,South-East Asia,306.01,104.153,2,1,-265.9
+EU,,0,5.0,5,True,Bolivia,0.56,2.0,3,1,9.2
+EU,,0,5.0,5,True,Ivory Coast,59.4,6.88,2,1,150.5
+EU,,0,5.0,5,True,Indonesia,67.37,43.346,2,1,38.8
+EU,,0,5.0,5,True,Colombia,39.62,10.847,2,0,-242.8
+EU,,0,5.0,5,True,Nigeria,14.86,4.935,2,1,-23.6
+EUChina,,500,0.0,3,False,Brazil,42.98,73.434,never,0,-24.9
+EUChina,,500,0.0,3,False,DRC,0.92,2.0,never,0,-1.2
+EUChina,,500,0.0,3,False,South-East Asia,-6.55,104.153,never,0,-24.3
+EUChina,,500,0.0,3,False,Bolivia,0.2,2.0,never,0,-0.3
+EUChina,,500,0.0,3,False,Ivory Coast,23.6,6.88,2,1,71.1
+EUChina,,500,0.0,3,False,Indonesia,4.42,43.346,never,0,-11.4
+EUChina,,500,0.0,3,False,Colombia,1.08,10.847,never,0,8.5
+EUChina,,500,0.0,3,False,Nigeria,1.33,4.935,3,1,-10.6
+EUChina,,1000,0.0,4,True,Brazil,119.19,73.434,2,1,516.9
+EUChina,,1000,0.0,4,True,DRC,1.55,2.0,never,0,-2.8
+EUChina,,1000,0.0,4,True,South-East Asia,-3.64,104.153,never,0,-88.6
+EUChina,,1000,0.0,4,True,Bolivia,0.44,2.0,never,0,1.1
+EUChina,,1000,0.0,4,True,Ivory Coast,48.42,6.88,2,1,87.5
+EUChina,,1000,0.0,4,True,Indonesia,8.65,43.346,never,0,-4.0
+EUChina,,1000,0.0,4,True,Colombia,3.96,10.847,never,0,15.2
+EUChina,,1000,0.0,4,True,Nigeria,1.44,4.935,3,1,-16.0
+EUChina,,0,0.75,4,True,Brazil,77.56,73.434,2,1,603.1
+EUChina,,0,0.75,4,True,DRC,0.3,2.0,never,0,-1.0
+EUChina,,0,0.75,4,True,South-East Asia,92.17,104.153,never,0,-191.2
+EUChina,,0,0.75,4,True,Bolivia,-0.05,2.0,never,0,2.3
+EUChina,,0,0.75,4,True,Ivory Coast,9.15,6.88,2,1,99.4
+EUChina,,0,0.75,4,True,Indonesia,22.04,43.346,never,0,-48.7
+EUChina,,0,0.75,4,True,Colombia,5.52,10.847,never,0,14.9
+EUChina,,0,0.75,4,True,Nigeria,3.44,4.935,3,1,-14.7
+EUChina,,0,0.87,8,True,Brazil,95.48,73.434,2,1,863.2
+EUChina,,0,0.87,8,True,DRC,0.34,2.0,3,0,-3.1
+EUChina,,0,0.87,8,True,South-East Asia,108.11,104.153,2,1,-273.6
+EUChina,,0,0.87,8,True,Bolivia,-0.05,2.0,6,1,9.8
+EUChina,,0,0.87,8,True,Ivory Coast,10.99,6.88,2,1,142.7
+EUChina,,0,0.87,8,True,Indonesia,25.48,43.346,3,1,34.7
+EUChina,,0,0.87,8,True,Colombia,6.67,10.847,4,0,12.0
+EUChina,,0,0.87,8,True,Nigeria,3.79,4.935,3,0,-28.7
+EUChina,,0,1.12,7,True,Brazil,132.56,73.434,2,1,856.2
+EUChina,,0,1.12,7,True,DRC,0.42,2.0,3,0,-3.3
+EUChina,,0,1.12,7,True,South-East Asia,141.04,104.153,2,1,-270.8
+EUChina,,0,1.12,7,True,Bolivia,-0.05,2.0,never,0,-0.6
+EUChina,,0,1.12,7,True,Ivory Coast,14.8,6.88,2,1,143.4
+EUChina,,0,1.12,7,True,Indonesia,32.58,43.346,3,1,35.1
+EUChina,,0,1.12,7,True,Colombia,9.06,10.847,4,0,6.2
+EUChina,,0,1.12,7,True,Nigeria,4.51,4.935,3,1,-21.6

@@ -1,0 +1,5 @@
+"myanmar"
+"venezuela"
+"wafr"
+"cafr"
+"nigeria"

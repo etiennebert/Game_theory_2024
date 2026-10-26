@@ -1,0 +1,5 @@
+"eastasia"
+"southasia"
+"mexico"
+"venezuela"
+"cafr"

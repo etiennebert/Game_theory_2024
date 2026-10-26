@@ -1,6 +1,0 @@
-"colombia"
-"venezuela"
-"eu27"
-"efta"
-"angola"
-"cafr"

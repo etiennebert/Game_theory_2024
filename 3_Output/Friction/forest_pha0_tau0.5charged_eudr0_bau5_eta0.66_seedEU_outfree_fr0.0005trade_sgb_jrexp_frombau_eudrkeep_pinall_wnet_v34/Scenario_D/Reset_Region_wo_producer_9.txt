@@ -1,0 +1,7 @@
+"japan"
+"southasia"
+"venezuela"
+"wafr"
+"cafr"
+"safr"
+"mozambique"

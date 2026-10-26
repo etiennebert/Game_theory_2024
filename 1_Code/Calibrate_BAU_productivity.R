@@ -33,7 +33,7 @@ library(HARr)
 library("readxl")
 library("rstudioapi")
 
-script_path <- getSourceEditorContext()$path
+script_path <- if (nzchar(Sys.getenv("FOREST_CLUB_SCRIPT"))) Sys.getenv("FOREST_CLUB_SCRIPT") else getSourceEditorContext()$path   # FOREST_CLUB_SCRIPT: set by run_step.R when run with Rscript (no RStudio), see run_chain_v34.bat
 script_folder <- dirname(script_path)
 parent_folder <- dirname(script_folder)
 GTAPAEZ_path <- file.path(parent_folder, "2_Model/")
@@ -46,7 +46,7 @@ eudr_scale  <- 1
 bau_horizon <- 5
 bau_cap_pct <- 25
 bau_eta     <- 0.66      # yield of the cleared hectares relative to the activity's existing land (0.66 = the model's ETA for new cropland)
-generation  <- "v33"     # V33 (20 Oct 2026): the Miranda-calibrated land-supply elasticities (2_Model/in/default.prm = default_miranda_final.prm); suffix of the
+generation  <- "v34"     # V34 (23 Oct 2026): BAU clearing allocated to the AEZs by the observed clearing (bau_deforestation.xlsx rebuilt by build_deduce_tables.py); V33 (20 Oct 2026): the Miranda-calibrated land-supply elasticities (2_Model/in/default.prm = default_miranda_final.prm); suffix of the
                          # output file and the log folder so that nothing of V32 is overwritten ("" = the V32 files)
 max_pass    <- 6
 dedu_sheet  <- "D_unamort_w2018_2023"   # DeDuCE hectares by region x GTAP activity, the window of bau_deforestation.xlsx

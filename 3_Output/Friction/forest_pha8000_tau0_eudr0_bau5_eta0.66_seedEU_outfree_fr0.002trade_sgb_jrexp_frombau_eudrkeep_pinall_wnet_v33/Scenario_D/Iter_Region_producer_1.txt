@@ -1,7 +1,0 @@
-"bolivia"
-"colombia"
-"paraguay"
-"peru"
-"drc"
-"ivorycoast"
-"ghana"

@@ -1,2 +1,0 @@
-iter_1 1 4 7 TRUE  
-dev_japan 1 4.1 7 TRUE  

@@ -1,6 +1,0 @@
-"china"
-"korea"
-"us"
-"mexico"
-"venezuela"
-"cafr"

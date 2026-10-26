@@ -1,6 +1,0 @@
-"japan"
-"madagascar"
-"venezuela"
-"nafr"
-"cafr"
-"mozambique"

@@ -1,5 +1,0 @@
-"madagascar"
-"myanmar"
-"venezuela"
-"eu27"
-"cafr"

@@ -1,0 +1,8 @@
+"argentina"
+"bolivia"
+"indonesia"
+"colombia"
+"paraguay"
+"peru"
+"drc"
+"ghana"

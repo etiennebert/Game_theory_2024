@@ -1,8 +1,0 @@
-"colombia"
-"paraguay"
-"peru"
-"eu27"
-"drc"
-"cafr"
-"ivorycoast"
-"ghana"

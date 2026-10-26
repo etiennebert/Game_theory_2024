@@ -195,7 +195,7 @@ if len(lines) > N_FOOT: print(f"  note: the footnote has {len(lines)} lines, {N_
 for i, line in enumerate(lines): ftext(2.0, H - 1.5 - 2.9 * (len(lines) - 1 - i), line, color=MUTED)   # bottom-anchored, never clipped
 
 fig.savefig(figpath("Fig3_plane.pdf")); fig.savefig(figpath("Fig3_plane.png"), dpi=450)
-with open(figpath("Fig3_plane_source_data.csv"), "w", newline="") as f:
+with open(figpath("Fig3_plane_source_data.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["panel", "seed", "locked_out", "surcharge_usd_per_ha", "penalty_pct", "rounds_to_convergence", "members", "brazil_inside",
                 "tropical_forest_kept_Mha", "tropical_leakage_Mha", "world_EV_net_MUSD_per_yr", "world_EV_gross_MUSD_per_yr", "members_EV_MUSD_per_yr", "outsiders_EV_MUSD_per_yr",

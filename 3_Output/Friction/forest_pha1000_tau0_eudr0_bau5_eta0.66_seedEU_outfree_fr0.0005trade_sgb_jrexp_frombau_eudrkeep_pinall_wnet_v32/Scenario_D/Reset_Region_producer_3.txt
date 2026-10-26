@@ -1,6 +1,0 @@
-"argentina"
-"bolivia"
-"indonesia"
-"colombia"
-"angola"
-"ghana"

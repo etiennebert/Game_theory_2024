@@ -1,5 +1,0 @@
-"japan"
-"eastasia"
-"venezuela"
-"mena"
-"cafr"

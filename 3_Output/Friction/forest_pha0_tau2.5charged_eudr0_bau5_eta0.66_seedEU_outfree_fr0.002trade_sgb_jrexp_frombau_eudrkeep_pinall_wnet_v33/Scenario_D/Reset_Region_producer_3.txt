@@ -1,6 +1,0 @@
-"bolivia"
-"malasya"
-"colombia"
-"peru"
-"angola"
-"drc"

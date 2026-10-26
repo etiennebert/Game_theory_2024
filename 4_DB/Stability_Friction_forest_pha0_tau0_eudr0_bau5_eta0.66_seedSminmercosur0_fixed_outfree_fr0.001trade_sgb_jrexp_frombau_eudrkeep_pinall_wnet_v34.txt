@@ -1,0 +1,184 @@
+V22 one-deviation stability check - Friction / forest_pha0_tau0_eudr0_bau5_eta0.66_seedSminmercosur0_fixed_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34
+seed: eu27 argentina brasil china eastasia efta korea mena nafr paraguay uk uruguay | dynamics: off | converged: TRUE | safeguard: baseline | iterations: 1
+final coalition S (12): eu27 argentina brasil paraguay china korea eastasia uruguay uk efta mena nafr
+tested - members out alone: all | outsiders in alone: bolivia oceania newzealand japan indonesia madagascar seasia malasya myanmar southasia india canada us mexico colombia latinamer peru venezuela restofworld russia angola drc wafr cafr eafr safr ivorycoast ghana nigeria mozambique
+EV in S vs baseline ($M/yr) - members: -490 | outsiders: -88 | world: -578 | members losing vs baseline: eu27 china korea eastasia uk efta mena nafr
+tropical forest change (kha, AEZ1-6, world): baseline 8 | S 7697 | difference 7689
+internally stable (no member gains by leaving alone): FALSE - would leave: eastasia uruguay mena
+externally stable (no outsider gains by joining alone): FALSE - would join: bolivia oceania newzealand japan indonesia malasya southasia india canada mexico restofworld russia safr ivorycoast
+with the thresholds as moving cost - would leave:  | would join: bolivia malasya southasia india mexico safr ivorycoast
+transfers to keep the leavers ($M/yr): 0 | what the members who prefer S could pay: 587 | duty raised by the charge in S: 0
+deviation solves failed: 0
+
+      region      status EV_baseline   EV_in_S EV_in_S_vs_baseline EV_deviation
+        eu27 eu27_anchor  -148.41488 -439.4451           -291.0303           NA
+   argentina      member     3.65533   91.6479             87.9926       74.072
+      brasil      member   -12.90119  513.1788            526.0800       38.690
+    paraguay      member    -0.49993  104.7782            105.2781       12.816
+       china      member    -1.86537 -480.6232           -478.7578     -482.751
+       korea      member     0.15325  -79.0273            -79.1806      -79.422
+    eastasia      member    -0.14496  -23.6478            -23.5028      -23.479
+     uruguay      member     0.15230    7.9845              7.8322        8.201
+          uk      member    -5.11993  -72.5788            -67.4588      -72.677
+        efta      member    -3.21288  -37.4528            -34.2400      -38.068
+        mena      member    -2.38667 -176.4656           -174.0789     -176.373
+        nafr      member    -0.04464  -69.0514            -69.0068      -69.061
+     bolivia    outsider    -0.11174    2.7334              2.8452        6.240
+     oceania    outsider    -1.30021   21.4131             22.7133       29.889
+  newzealand    outsider     1.35886    8.6274              7.2685       11.826
+       japan    outsider     0.32432 -160.2884           -160.6127     -158.813
+   indonesia    outsider    -1.37041   -5.3171             -3.9467       28.981
+  madagascar    outsider    -0.86269    1.7812              2.6438       -3.118
+      seasia    outsider    -9.61637  -41.7075            -32.0911     -281.464
+     malasya    outsider     0.40429   -9.1073             -9.5116       30.887
+     myanmar    outsider    -0.08315    3.0452              3.1283      -14.657
+   southasia    outsider     0.82825  -25.9092            -26.7375       10.191
+       india    outsider     5.05242  -11.1970            -16.2494      168.372
+      canada    outsider     3.78954   -2.1729             -5.9624        8.124
+          us    outsider     9.93356   20.6558             10.7222       15.891
+      mexico    outsider     0.36377    9.5334              9.1697       70.591
+    colombia    outsider    -8.74318    5.7572             14.5004     -355.873
+   latinamer    outsider    -4.70412   50.2602             54.9643       26.006
+        peru    outsider    -3.77450    6.9058             10.6803       -1.157
+   venezuela    outsider     0.01968   -5.7623             -5.7820      -17.617
+ restofworld    outsider     5.35834   50.3785             45.0202       51.168
+      russia    outsider     0.25420  -41.3582            -41.6124      -39.932
+      angola    outsider    -0.08543   -3.4688             -3.3833       -6.031
+         drc    outsider    -0.57467   -1.1778             -0.6032     -114.308
+        wafr    outsider    -0.34764   -2.1429             -1.7952      -21.478
+        cafr    outsider    -1.90166   -6.0817             -4.1801      -78.489
+        eafr    outsider    -1.83593   21.2631             23.0990       14.431
+        safr    outsider     0.24171   -1.1887             -1.4304       55.089
+  ivorycoast    outsider   -38.64171  -19.3648             19.2769       46.194
+       ghana    outsider    -6.17158    0.7128              6.8844      -27.986
+     nigeria    outsider    -0.84106   -7.8183             -6.9773      -11.957
+  mozambique    outsider     0.08822    0.5198              0.4315       -4.794
+ world_EV_deviation tropical_forest_kha_deviation solve_ok gain_from_moving
+                 NA                            NA       NA               NA
+             -692.8                          7703     TRUE       -1.758e+01
+             -515.6                           178     TRUE       -4.745e+02
+             -769.4                          7491     TRUE       -9.196e+01
+             -643.3                          7734     TRUE       -2.128e+00
+             -801.4                          7697     TRUE       -3.943e-01
+             -800.9                          7697     TRUE        1.686e-01
+             -800.4                          7697     TRUE        2.161e-01
+             -801.3                          7697     TRUE       -9.861e-02
+             -801.7                          7697     TRUE       -6.152e-01
+             -800.9                          7697     TRUE        9.269e-02
+             -801.2                          7697     TRUE       -9.337e-03
+             -937.5                          8811     TRUE        3.506e+00
+             -895.1                          7654     TRUE        8.476e+00
+             -804.6                          7696     TRUE        3.199e+00
+             -799.0                          7696     TRUE        1.475e+00
+            -1042.1                          8396     TRUE        3.430e+01
+             -808.0                          7914     TRUE       -4.899e+00
+            -1697.3                          8448     TRUE       -2.398e+02
+             -887.9                          7757     TRUE        3.999e+01
+             -879.5                          8016     TRUE       -1.770e+01
+             -831.0                          7727     TRUE        3.610e+01
+             -769.5                          8083     TRUE        1.796e+02
+             -808.6                          7694     TRUE        1.030e+01
+             -826.1                          7673     TRUE       -4.765e+00
+            -1092.3                          8120     TRUE        6.106e+01
+            -1295.4                          8395     TRUE       -3.616e+02
+            -1052.1                          8047     TRUE       -2.425e+01
+             -972.2                          8005     TRUE       -8.063e+00
+             -828.5                          7810     TRUE       -1.186e+01
+             -802.0                          7696     TRUE        7.894e-01
+             -801.4                          7696     TRUE        1.426e+00
+             -804.7                          8005     TRUE       -2.562e+00
+             -921.6                         10003     TRUE       -1.131e+02
+             -823.2                          7896     TRUE       -1.934e+01
+             -879.7                          8160     TRUE       -7.241e+01
+             -834.4                          7913     TRUE       -6.833e+00
+             -825.6                          7814     TRUE        5.628e+01
+            -1082.6                          8711     TRUE        6.556e+01
+             -865.5                          8014     TRUE       -2.870e+01
+             -846.7                          8286     TRUE       -4.139e+00
+             -802.8                          7842     TRUE       -5.314e+00
+ threshold wants_to_move wants_to_move_with_friction transfer_needed
+        NA            NA                          NA         0.00000
+    36.918         FALSE                       FALSE         0.00000
+    73.434         FALSE                       FALSE         0.00000
+     4.785         FALSE                       FALSE         0.00000
+   214.886         FALSE                       FALSE         0.00000
+    24.625         FALSE                       FALSE         0.00000
+    12.340          TRUE                       FALSE         0.16865
+     4.998          TRUE                       FALSE         0.21610
+    48.126         FALSE                       FALSE         0.00000
+    23.362         FALSE                       FALSE         0.00000
+    82.750          TRUE                       FALSE         0.09269
+    38.950         FALSE                       FALSE         0.00000
+     2.000          TRUE                        TRUE         0.00000
+    35.860          TRUE                       FALSE         0.00000
+    21.678          TRUE                       FALSE         0.00000
+    39.501          TRUE                       FALSE         0.00000
+    43.346          TRUE                       FALSE         0.00000
+     2.000         FALSE                       FALSE         0.00000
+   104.153         FALSE                       FALSE         0.00000
+    25.656          TRUE                        TRUE         0.00000
+     5.707         FALSE                       FALSE         0.00000
+    28.333          TRUE                        TRUE         0.00000
+    49.589          TRUE                        TRUE         0.00000
+    45.568          TRUE                       FALSE         0.00000
+   195.710         FALSE                       FALSE         0.00000
+    41.697          TRUE                        TRUE         0.00000
+    10.847         FALSE                       FALSE         0.00000
+    46.226         FALSE                       FALSE         0.00000
+    10.730         FALSE                       FALSE         0.00000
+     2.000         FALSE                       FALSE         0.00000
+    46.033          TRUE                       FALSE         0.00000
+    35.817          TRUE                       FALSE         0.00000
+     2.000         FALSE                       FALSE         0.00000
+     2.000         FALSE                       FALSE         0.00000
+     8.743         FALSE                       FALSE         0.00000
+     2.764         FALSE                       FALSE         0.00000
+    17.128         FALSE                       FALSE         0.00000
+    11.418          TRUE                        TRUE         0.00000
+     6.880          TRUE                        TRUE         0.00000
+     4.004         FALSE                       FALSE         0.00000
+     4.935         FALSE                       FALSE         0.00000
+     2.000         FALSE                       FALSE         0.00000
+ revenue_charge
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0
+              0

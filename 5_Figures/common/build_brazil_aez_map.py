@@ -1,6 +1,8 @@
 """brazil_aez.geojson: Brazil's GTAP agro-ecological zones as polygons, built the way GTAP-AEZ defines them, from the two FAO GAEZ v4
 rasters in the Supplementary Materials (thermal climate mc3_CRUTS32_Hist_8110.tif, length of growing period lgd_CRUTS32_Hist_0010.tif):
-zone = tropical (thermal classes 1-2), temperate (3-20) or boreal (21+); moisture class from the growing period, 0-59 days = 1 (arid),
+zone = tropical (thermal class 1, tropics lowland), temperate (classes 2-18: tropics highland, subtropics, temperate) or boreal (19+) -
+the rule that reproduces the FAO GAEZ 18-class AEZ map and the GTAP-AEZ land cover of the model (23 Oct 2026; the version of
+19 Oct counted class 2 as tropical, which put 20 Mha of southern Brazil in AEZ6 instead of AEZ12); moisture class from the growing period, 0-59 days = 1 (arid),
 60-119 = 2 (dry semi-arid), 120-179 = 3 (moist semi-arid), 180-239 = 4 (sub-humid), 240-299 = 5 (humid), 300+ = 6 (year-round humid);
 AEZ = 6 x zone + moisture class. Clipped to Natural Earth's Brazil. Needs rasterio and geopandas; the result is kept in this folder, so
 fig5_brazil_aez.py does not need this script or the rasters.  Usage: python build_brazil_aez_map.py <folder with the two tif files>"""
@@ -15,7 +17,7 @@ mc = rasterio.open(os.path.join(D, "mc3_CRUTS32_Hist_8110.tif")); lg = rasterio.
 win = from_bounds(-75, -35, -33, 6, mc.transform)
 A = mc.read(1, window=win).astype(int); B = lg.read(1, window=win).astype(int); T = mc.window_transform(win)
 moist = np.select([B < 0, B < 60, B < 120, B < 180, B < 240, B < 300], [0, 1, 2, 3, 4, 5], default=6)
-zone = np.where(np.isin(A, [1, 2]), 0, np.where(A == 0, -1, np.where(A >= 21, 2, 1)))
+zone = np.where(A == 1, 0, np.where(A == 0, -1, np.where(A >= 19, 2, 1)))   # 23 Oct 2026: class 2 (tropics highland) is temperate, 19+ boreal
 aez = np.where((zone >= 0) & (moist > 0), zone * 6 + moist, 0).astype(np.int32)
 bra = gpd.read_file(here(os.path.join("ne110", "ne_110m_admin_0_countries.shp"))); bra = bra[bra["ADM0_A3"] == "BRA"].to_crs(4326)
 shapes = [(shape(g), int(v)) for g, v in features.shapes(aez, transform=T) if v > 0]

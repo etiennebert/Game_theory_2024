@@ -96,7 +96,7 @@ ftext(BX + 26.0, ly + 4.6, "joins, then leaves before convergence", color=INK2)
 ftext(BX, ly + 8.4, "Column headers in black: the club forms (Brazil inside); grey: it does not", color=MUTED)
 ftext(2.0, H - 2.5, f"{LABEL} runs", color=MUTED)
 fig.savefig(figpath("ExtData_Fig2_largest_deforesters.pdf")); fig.savefig(figpath("ExtData_Fig2_largest_deforesters.png"), dpi=450)
-with open(figpath("ExtData_Fig2_source_data.csv"), "w", newline="") as fh:   # one row per run x region
+with open(figpath("ExtData_Fig2_source_data.csv"), "w", newline="", encoding="utf-8") as fh:   # one row per run x region
     w = csv.writer(fh); w.writerow(["seed", "tag", "surcharge_usd_per_ha", "penalty_pct", "rounds_to_convergence", "club_forms_brazil_inside", "region", "first_round_loss_MUSD", "switching_cost_MUSD", "joins_in_round", "inside_at_convergence", "EV_net_at_convergence_MUSD_per_yr"])
     for r in sorted(R, key=lambda r: (r["seed"], r["tau"], r["pha"])):
         for c in TOP: w.writerow([r["seed"], r.get("tag", ""), r["pha"], r["tau"], r["last"], r["works"], NAMES[c], r[c]["r1"], r[c]["T"], r[c]["joins"] if r[c]["joins"] is not None else "never", int(r[c]["final"]), r[c]["dev_final"]])

@@ -76,9 +76,12 @@ wmiccap.tmpwmic
 !4_DB/Database_GTAPAEZ_all_results_2024_agg*.csv
 
 # ---- 5. archives, temporary and system files --------------------------------------------
+__pycache__/
+*.pyc
 *.zip
 *.7z
 *.bak
+*.pkl
 *.hyper
 *.twbr
 .RData

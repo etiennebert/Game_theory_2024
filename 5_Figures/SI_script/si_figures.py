@@ -1,5 +1,5 @@
-"""Supplementary figures and tables of the V32 generation (SI sections 6.2, 6.4 and 7).
-Reads si2/data/*.csv (si_v32_extract.R: forest change of the baseline, welfare decomposition, sectoral supply, Brazil's commodities),
+"""Supplementary figures and tables of one generation of runs (paths.VERSION; SI sections 6.2, 6.4 and 7).
+Reads data_<label>/*.csv (si_extract.R: forest change of the baseline, welfare decomposition, sectoral supply, Brazil's commodities),
 all_data_<label>.json and the result csv files; writes Fig_S7 (baseline forest change), Fig_S9 (sectoral supply responses), Fig_S10
 (members by round, every run), Fig_S11 (welfare of members and outsiders by round, every run) and Tables S9-S12 as markdown."""
 import json, csv, math, os, sys
@@ -10,9 +10,10 @@ from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 from figstyle import style, clean, NAMES, INK, INK2, MUTED, GRID, BASE, SURF, GREENS, ORANGES, BLUES, DARK, LIGHT, NEUTRAL
 style()
-from paths import here, LABEL, out_dir
+from paths import here, LABEL, VERSION, out_dir
 import v30
-DATA = os.path.join(_HERE, "data")   # the csv files written by si_v32_extract.R
+DATA = os.path.join(_HERE, f"data_{LABEL.lower()}")   # the csv files written by si_extract.R for this generation (V32: data\)
+if not os.path.isdir(DATA): DATA = os.path.join(_HERE, "data")
 OUT = out_dir()                       # SI_Output\
 D = json.load(open(here("all_data.json"))); C = D["configs"]; T = D["T"]; BAU = D["bau"]
 MM = 1 / 25.4
@@ -124,7 +125,7 @@ L.append("|---|---|---|---|---|---|---|---|---|")
 for s in order:
     L.append(f"| {SEEDL[s['seed']]} | {({'brasil': 'Brazil', 'us': 'United States', 'us-china': 'US and China', 'indonesia': 'Indonesia'}.get(s['lock'], '–'))} | {100 * s['fr']:g} | {inst_lab(s)} | "
              f"{s['last']}{'' if s['converged'] else ' (cap)'} | {s['n']} ({'in' if 'brasil' in s['final_members'] else 'out'}) | {s['forest']:.2f} ({s['forest_all']:.2f}) | {fmt(s['leakage'], 2)} ({fmt(s['leakage_all'], 2)}) | {fmt(s['world'])} ({fmt(s['world_gross']) if s['world_gross'] is not None else '–'}) |")
-open(os.path.join(OUT, "Table_S9_runs.md"), "w").write("\n".join(L) + "\n")
+open(os.path.join(OUT, "Table_S9_runs.md"), "w", encoding="utf-8").write("\n".join(L) + "\n")
 
 # ------------------------------------------------------------------ Table S10: the one-deviation tests
 L = ["| Coalition tested (run) | Members | Would leave (no switching cost) | Would join (no switching cost) | Would move, switching cost counted | Transfer that retains the leavers, M USD/yr | What the members who prefer the club could pay, M USD/yr | Duty raised by the charge, M USD/yr |", "|---|---|---|---|---|---|---|---|"]
@@ -134,14 +135,14 @@ for key in ("EU_pen", "EU_sur", "EUC_pen_1.12", "EUM_0"):
     c = C[key]; rows = D["stability"][key]
     leave0 = [t["region"] for t in rows if t["status"] == "member" and t["gain"] > 0]; join0 = [t["region"] for t in rows if t["status"] == "outsider" and t["gain"] > 0]
     move = [t["region"] for t in rows if t["gain"] - t["threshold"] > 0]
-    f = [p for p in glob.glob(os.path.join(v30.DB, "Stability_*_wnet_v32.txt")) if f"pha{c['pha']}_tau{c['tau']:g}" in os.path.basename(p)]
+    f = [p for p in glob.glob(os.path.join(v30.DB, f"Stability_*{VERSION}.txt")) if f"pha{c['pha']}_tau{c['tau']:g}" in os.path.basename(p)]
     f = sorted(f, key=lambda p: -os.path.getsize(p))   # the full test first (a one-region supplement such as the Japan file is smaller)
     txt = open(f[0]).read() if f else ""
     m = re.search(r"transfers to keep the leavers \(\$M/yr\): (\S+) \| what the members who prefer S could pay: (\S+) \| duty raised by the charge in S: (\S+)", txt)
     tr, pay, duty = (m.group(1), m.group(2), m.group(3)) if m else ("", "", "")
     nm = lambda L_: ", ".join(NAMES[r] for r in L_) if L_ else "nobody"
     L.append(f"| {c['label']} | {c['n']} | {nm(leave0)} | {nm(join0)} | {nm(move)} | {tr} | {pay} | {duty} |")
-open(os.path.join(OUT, "Table_S10_stability.md"), "w").write("\n".join(L) + "\n")
+open(os.path.join(OUT, "Table_S10_stability.md"), "w", encoding="utf-8").write("\n".join(L) + "\n")
 
 # ------------------------------------------------------------------ Table S11: welfare decomposition, club and coalition, all regions
 dc = {r["region"]: r for r in rd(os.path.join(DATA, "si_welfare_decomp_club.csv"))}; ds = {r["region"]: r for r in rd(os.path.join(DATA, "si_welfare_decomp_coalition.csv"))}
@@ -152,7 +153,7 @@ for r in regs_all:
     L.append(f"| {NAMES[r]}{' (out)' if r not in C['EU_pen']['final_members'] else ''} | {fmt(float(a['ev_gross']))} | {fmt(float(a['wedge']))} | {fmt(float(a['ev_net']))} | {fmt(float(a['alloc']))} | {fmt(float(a['tech']))} | {fmt(float(a['tot']))} | {fmt(float(a['pinv']))} | {fmt(float(b['ev_net']))}{' (out)' if r not in C['EU_sur']['final_members'] else ''} | {fmt(float(b['tot']))} |")
 w = lambda d, k: sum(float(x[k]) for x in d.values())
 L.append(f"| **World** | {fmt(w(dc, 'ev_gross'))} | {fmt(w(dc, 'wedge'))} | {fmt(w(dc, 'ev_net'))} | {fmt(w(dc, 'alloc'))} | {fmt(w(dc, 'tech'))} | {fmt(w(dc, 'tot'))} | {fmt(w(dc, 'pinv'))} | {fmt(w(ds, 'ev_net'))} | {fmt(w(ds, 'tot'))} |")
-open(os.path.join(OUT, "Table_S11_welfare_decomposition.md"), "w").write("\n".join(L) + "\n")
+open(os.path.join(OUT, "Table_S11_welfare_decomposition.md"), "w", encoding="utf-8").write("\n".join(L) + "\n")
 
 # ------------------------------------------------------------------ Table S12: Brazil's commodities at the two equilibria
 bc = {r["item"]: r for r in rd(os.path.join(DATA, "si_brazil_club.csv"))}; bs = {r["item"]: r for r in rd(os.path.join(DATA, "si_brazil_coalition.csv"))}
@@ -165,6 +166,6 @@ rc = rd(os.path.join(DATA, "si_brazil_rents_club.csv"))
 rent = lambda v, z: next((float(x["change_pct"]) for x in rc if x["var"] == v and x["aez"] == z), float("nan"))
 L.append("")
 L.append("Land rents at the club equilibrium (%, zones with cover): cropland " + ", ".join(f"AEZ {z[3:]} {fmt(rent('pecroplnd', z), 1)}" for z in ("aez2", "aez3", "aez4", "aez5", "aez6", "aez12")) + "; pasture " + ", ".join(f"AEZ {z[3:]} {fmt(rent('pegrazlnd', z), 1)}" for z in ("aez4", "aez5", "aez6", "aez12")) + "; forest " + ", ".join(f"AEZ {z[3:]} {fmt(rent('peforslnd', z), 1)}" for z in ("aez4", "aez5", "aez6", "aez12")) + ".")
-open(os.path.join(OUT, "Table_S12_brazil.md"), "w").write("\n".join(L) + "\n")
+open(os.path.join(OUT, "Table_S12_brazil.md"), "w", encoding="utf-8").write("\n".join(L) + "\n")
 wp = rd(os.path.join(DATA, "si_world_prices_club.csv")); print("world prices (club):", {r["item"]: round(float(r["pw_pct"]), 2) for r in wp if r["item"].lower() in LAND})
 print("done")

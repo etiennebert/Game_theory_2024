@@ -1,8 +1,0 @@
-"bolivia"
-"brasil"
-"malasya"
-"paraguay"
-"peru"
-"angola"
-"ivorycoast"
-"ghana"

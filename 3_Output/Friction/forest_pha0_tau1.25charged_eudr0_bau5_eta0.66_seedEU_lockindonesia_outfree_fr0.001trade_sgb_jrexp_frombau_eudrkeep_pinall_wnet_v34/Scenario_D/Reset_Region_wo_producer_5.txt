@@ -1,0 +1,5 @@
+"china"
+"venezuela"
+"eu27"
+"russia"
+"cafr"

@@ -1,0 +1,8 @@
+"us"
+"colombia"
+"venezuela"
+"angola"
+"drc"
+"wafr"
+"cafr"
+"nigeria"

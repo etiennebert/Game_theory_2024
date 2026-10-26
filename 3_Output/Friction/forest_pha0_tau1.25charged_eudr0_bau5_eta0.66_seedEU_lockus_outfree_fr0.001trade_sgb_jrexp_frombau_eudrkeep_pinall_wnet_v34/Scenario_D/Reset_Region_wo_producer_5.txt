@@ -1,0 +1,6 @@
+"japan"
+"us"
+"mexico"
+"latinamer"
+"venezuela"
+"cafr"

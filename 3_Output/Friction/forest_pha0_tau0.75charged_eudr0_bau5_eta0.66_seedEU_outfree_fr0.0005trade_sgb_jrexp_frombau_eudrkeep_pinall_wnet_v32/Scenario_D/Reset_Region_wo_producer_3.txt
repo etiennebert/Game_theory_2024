@@ -1,7 +1,0 @@
-"korea"
-"southasia"
-"venezuela"
-"russia"
-"mena"
-"wafr"
-"cafr"
