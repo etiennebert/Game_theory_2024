@@ -4,8 +4,10 @@ a  tropical forest kept, b  members at convergence, c  world welfare (decision m
    charging; the dashed line is Brazil's fitted break-even (first-round loss = switching cost), one per seed.
 d  the eight largest tropical deforesters: inside (filled) or outside (open) at convergence, same runs; the dashed lines are each
    region's own fitted break-even (its first-round loss = its switching cost), drawn where they cross the plane.
-e  the headline club and coalition with Brazil, the United States (and, when run, the US + China or Indonesia) locked out.
-Reads plane_runs_<label>.json, counterfactuals_<label>.json, all_data_<label>.json; writes Fig3_plane.png/.pdf and Fig3_plane_source_data.csv."""
+The lock-outs (the headline club and coalition with Brazil, the United States, the US + China or Indonesia locked out) are a separate
+figure, Fig3_lockouts (for the Extended Data; its panel letter is FIG3_E_LETTER, default "d"), with its own source data.
+Reads plane_runs_<label>.json, counterfactuals_<label>.json, all_data_<label>.json; writes Fig3_plane.png/.pdf, Fig3_plane_source_data.csv,
+Fig3_lockouts.png/.pdf and Fig3_lockouts_source_data.csv."""
 import os, sys; sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "common"))   # the shared modules of the pipeline (paths, figstyle, mapping, v30)
 import json, os, csv, math, textwrap
 import numpy as np
@@ -61,9 +63,8 @@ for c in TOP:
 ROWS_E = [("All free to join", "free"), ("Brazil locked out", "lockBRA"), ("United States locked out", "lockUS"), ("US and China locked out", "lockUS-CN"), ("Indonesia locked out", "lockIDN")]
 N_E = [sum(1 for _, suf in ROWS_E if f"{inst} {suf}" in E) for inst in ("pen", "sur")]      # rows of panel e on the disk, per block
 RH_E = 4.3
-E_TOP, E_H = 161.0, 16.0 + sum(4.2 + n * RH_E + 1.4 for n in N_E if n) + 3.5                  # the panel's height follows its rows
-N_FOOT = 6
-MM = 1 / 25.4; W, H = 183.0, E_TOP + E_H + 2.9 * N_FOOT + 3.0
+E_H = 16.0 + sum(4.2 + n * RH_E + 1.4 for n in N_E if n) + 3.5                    # height of the lock-out figure's panel                  # the panel's height follows its rows
+MM = 1 / 25.4; W, H = 183.0, 155.0                                                                        # a-d only; the lock-outs are a second figure
 BEEF = 8.1 / 4000 * 100   # % tariff on Brazilian beef per 100 USD/ha (AVE 8.1 % at 4,000 USD/ha)
 FS_S, FS_M, FS_L = 6.3, 7.0, 8.0
 GREEN = "#349130"; BLUE = "#3280de"; ORANGE = "#d0531e"
@@ -162,9 +163,15 @@ for k, c in enumerate(TOP):
     if k % 4 == 0: ax.set_ylabel("Penalty (%)", fontsize=5.8, labelpad=2, color=INK2)
     if k // 4 == 1: ax.set_xlabel("Surcharge (USD per ha deforested)", fontsize=5.8, labelpad=2, color=INK2)
 
-# ---------------- row 3: the thresholds with a region locked out ----------------
-letter(2.0, 158.5, "e", "The headline club and coalition when a region refuses to join")
-axe = ax_mm(0, E_TOP, W, E_H); axe.set_xlim(0, W); axe.set_ylim(E_H, 0); axe.set_axis_off()
+fig.savefig(figpath("Fig3_plane.pdf")); fig.savefig(figpath("Fig3_plane.png"), dpi=450)
+
+# ---------------- the lock-outs: a separate figure (Extended Data) ----------------
+E_LETTER = os.environ.get("FIG3_E_LETTER", "d")
+H2 = E_H + 8.0
+fig2 = plt.figure(figsize=(W * MM, H2 * MM))
+fig2.text(2.0 / W, 1 - 3.6 / H2, E_LETTER, fontsize=FS_L, color=INK, fontweight="bold", ha="left", va="baseline")
+fig2.text(6.2 / W, 1 - 3.6 / H2, "The headline club and coalition when a region refuses to join", fontsize=FS_M, color=INK, ha="left", va="baseline")
+axe = fig2.add_axes([0, 0, 1, E_H / H2]); axe.set_xlim(0, W); axe.set_ylim(E_H, 0); axe.set_axis_off()
 XL, XSTRIP, PITCH, SQ = 12.0, 53.0, 2.55, 2.0
 XF0, FSCALE = 82.0, 2.2
 XN = 134.0
@@ -218,17 +225,17 @@ join_later = [c for c in TOP if any((RUNS[p["tag"]]["joins"].get(c) or 0) >= 3 a
 below = [c for c in TOP if why_absent(c) == "below the origin"]; beyond = [c for c in TOP if why_absent(c) in ("beyond the plane", "no fit")]
 absent = ((f" No EU-alone line for {names(below)} (first-round loss above the switching cost at any charge)" if below else "") +
           (("; none" if below else " No EU-alone line") + f" for {names(beyond)} (break-even beyond the plane)" if beyond else "") + ("." if below or beyond else ""))
-note = (f"{LABEL} runs. a-c: the dashed lines are Brazil's fitted break-even (first-round loss = switching cost of {T_BRA:.0f} M USD), EU alone" + (f" ({RATE:.2f} points of penalty per 1,000 USD per hectare)" if RATE == RATE else "") + " and EU + China."
-        " d: business-as-usual clearing over five years in each title." +
-        ({"own": " The dashed lines are each region's own break-even, fitted on its first-round loss (EU alone and EU + China): beyond it the region joins at once. The markers show convergence:"
-                 f" a region can join at once and leave again ({names(leave_again)}) or join later, as the club grows ({names(join_later)})." + absent,
-          "brazil": " The dashed lines are Brazil's break-even, as in a-c.", "none": ""}[D_LINES]) + extra +
-        " e: a locked-out region is an outsider at every decision. Filled squares: inside at convergence, in the order of d. Welfare on the decision measure (net of the forest-land wedge term).")
-lines = textwrap.wrap(note, 163)
-if len(lines) > N_FOOT: print(f"  note: the footnote has {len(lines)} lines, {N_FOOT} planned")
-for i, line in enumerate(lines): ftext(2.0, H - 1.5 - 2.9 * (len(lines) - 1 - i), line, color=MUTED)   # bottom-anchored, never clipped
+#note = (f"{LABEL} runs. a-c: the dashed lines are Brazil's fitted break-even (first-round loss = switching cost of {T_BRA:.0f} M USD), EU alone" + (f" ({RATE:.2f} points of penalty per 1,000 USD per hectare)" if RATE == RATE else "") + " and EU + China."
+#        " d: business-as-usual clearing over five years in each title." +
+#        ({"own": " The dashed lines are each region's own break-even, fitted on its first-round loss (EU alone and EU + China): beyond it the region joins at once. The markers show convergence:"
+#                 f" a region can join at once and leave again ({names(leave_again)}) or join later, as the club grows ({names(join_later)})." + absent,
+#          "brazil": " The dashed lines are Brazil's break-even, as in a-c.", "none": ""}[D_LINES]) + extra +
+#        " e: a locked-out region is an outsider at every decision. Filled squares: inside at convergence, in the order of d. Welfare on the decision measure (net of the forest-land wedge term).")
+#lines = textwrap.wrap(note, 163)
+#if len(lines) > N_FOOT: print(f"  note: the footnote has {len(lines)} lines, {N_FOOT} planned")
+#for i, line in enumerate(lines): ftext(2.0, H - 1.5 - 2.9 * (len(lines) - 1 - i), line, color=MUTED)   # bottom-anchored, never clipped
 
-fig.savefig(figpath("Fig3_plane.pdf")); fig.savefig(figpath("Fig3_plane.png"), dpi=450)
+fig2.savefig(figpath("Fig3_lockouts.pdf")); fig2.savefig(figpath("Fig3_lockouts.png"), dpi=450)
 with open(figpath("Fig3_plane_source_data.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["panel", "seed", "locked_out", "surcharge_usd_per_ha", "penalty_pct", "rounds_to_convergence", "members", "brazil_inside",
@@ -240,9 +247,14 @@ with open(figpath("Fig3_plane_source_data.csv"), "w", newline="", encoding="utf-
                     round(o["forest"], 3), round(o["leakage"], 3), round(o["world"], 1), "" if o["world_gross"] is None else round(o["world_gross"], 1), round(o["members_ev"], 1), round(o["outsiders_ev"], 1),
                     round(o["eu"], 1), round(o["brasil"], 1), round(o["china"], 1), round(o["us"], 1), round(o["brazil_r1"], 1)] + [int(c in o["top_in"]) for c in TOP]
                    + [round(r1_of(o, c), 2) for c in TOP] + [round(D["T"][c], 2) for c in TOP])
+with open(figpath("Fig3_lockouts_source_data.csv"), "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f)
+    w.writerow(["panel", "seed", "locked_out", "surcharge_usd_per_ha", "penalty_pct", "rounds_to_convergence", "members", "brazil_inside",
+                "tropical_forest_kept_Mha", "tropical_leakage_Mha", "world_EV_net_MUSD_per_yr", "world_EV_gross_MUSD_per_yr", "members_EV_MUSD_per_yr", "outsiders_EV_MUSD_per_yr",
+                "EU_EV_MUSD_per_yr", "Brazil_EV_MUSD_per_yr", "China_EV_MUSD_per_yr", "US_EV_MUSD_per_yr", "Brazil_first_round_loss_MUSD"] + [f"{NAMES[c]}_inside" for c in TOP]
+               + [f"{NAMES[c]}_first_round_loss_MUSD" for c in TOP] + [f"{NAMES[c]}_switching_cost_MUSD" for c in TOP])
     for key, r in E.items():
-        if r["lock"] == "": continue
-        w.writerow(["e", "EU alone", r["lock"], r["pha"], r["tau"], r["rounds"], r["n"], int("brasil" in r["members"]), round(r["forest"], 3), round(r["leakage"], 3), round(r["world"], 1),
+        w.writerow([E_LETTER, "EU alone", r["lock"] or "none", r["pha"], r["tau"], r["rounds"], r["n"], int("brasil" in r["members"]), round(r["forest"], 3), round(r["leakage"], 3), round(r["world"], 1),
                     "" if r["world_gross"] is None else round(r["world_gross"], 1), "", "", round(r["eu"], 1), round(r["brasil"], 1), round(r["china"], 1), round(r["us"], 1), ""] + [int(c in r["top_in"]) for c in TOP]
                    + [""] * (2 * len(TOP)))
 print("ok", "rate", round(RATE, 3) if RATE == RATE else None)

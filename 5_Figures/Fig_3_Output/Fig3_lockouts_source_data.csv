@@ -1,0 +1,11 @@
+panel,seed,locked_out,surcharge_usd_per_ha,penalty_pct,rounds_to_convergence,members,brazil_inside,tropical_forest_kept_Mha,tropical_leakage_Mha,world_EV_net_MUSD_per_yr,world_EV_gross_MUSD_per_yr,members_EV_MUSD_per_yr,outsiders_EV_MUSD_per_yr,EU_EV_MUSD_per_yr,Brazil_EV_MUSD_per_yr,China_EV_MUSD_per_yr,US_EV_MUSD_per_yr,Brazil_first_round_loss_MUSD,Brazil_inside,DRC_inside,South-East Asia_inside,Bolivia_inside,Ivory Coast_inside,Indonesia_inside,Colombia_inside,Nigeria_inside,Brazil_first_round_loss_MUSD,DRC_first_round_loss_MUSD,South-East Asia_first_round_loss_MUSD,Bolivia_first_round_loss_MUSD,Ivory Coast_first_round_loss_MUSD,Indonesia_first_round_loss_MUSD,Colombia_first_round_loss_MUSD,Nigeria_first_round_loss_MUSD,Brazil_switching_cost_MUSD,DRC_switching_cost_MUSD,South-East Asia_switching_cost_MUSD,Bolivia_switching_cost_MUSD,Ivory Coast_switching_cost_MUSD,Indonesia_switching_cost_MUSD,Colombia_switching_cost_MUSD,Nigeria_switching_cost_MUSD
+d,EU alone,none,0,1.25,7,36,1,15.839,0.67,-3355.7,-1433.1,,,-1320.0,864.6,-1011.6,-804.1,,1,0,1,1,1,1,0,1,,,,,,,,,,,,,,,,
+d,EU alone,brasil,0,1.25,11,33,0,7.118,0.644,-3173.5,-1310.2,,,-1039.3,-357.2,-402.2,-779.7,,0,0,1,0,1,1,0,1,,,,,,,,,,,,,,,,
+d,EU alone,us,0,1.25,6,30,1,13.631,0.809,-2675.3,-819.9,,,-915.7,827.7,-691.1,-1142.8,,1,0,1,0,1,1,0,1,,,,,,,,,,,,,,,,
+d,EU alone,us-china,0,1.25,6,27,1,13.483,0.778,-2564.4,-733.5,,,-734.6,737.9,-1072.9,-856.8,,1,0,1,0,1,1,0,1,,,,,,,,,,,,,,,,
+d,EU alone,indonesia,0,1.25,7,35,1,15.041,0.737,-3198.9,-1375.9,,,-1187.8,851.0,-928.1,-700.2,,1,0,1,1,1,0,0,1,,,,,,,,,,,,,,,,
+d,EU alone,none,4000,0.0,7,23,1,14.219,0.478,-2301.5,-768.0,,,-967.8,781.5,-809.5,-626.2,,1,0,0,1,1,1,0,0,,,,,,,,,,,,,,,,
+d,EU alone,brasil,4000,0.0,5,18,0,5.045,-0.008,-1294.8,278.4,,,-443.3,-169.4,-167.2,-319.1,,0,0,0,1,1,0,0,1,,,,,,,,,,,,,,,,
+d,EU alone,us,4000,0.0,5,25,1,14.441,0.518,-1984.5,-137.3,,,-884.9,742.3,-703.5,-475.6,,1,0,0,1,1,1,0,1,,,,,,,,,,,,,,,,
+d,EU alone,us-china,4000,0.0,5,24,1,13.277,0.443,-1565.0,153.6,,,-638.4,659.1,-704.5,-314.2,,1,0,0,1,1,0,0,1,,,,,,,,,,,,,,,,
+d,EU alone,indonesia,4000,0.0,5,23,1,13.424,0.494,-1770.0,-31.4,,,-770.1,720.4,-625.7,-383.5,,1,0,0,1,1,0,0,1,,,,,,,,,,,,,,,,
