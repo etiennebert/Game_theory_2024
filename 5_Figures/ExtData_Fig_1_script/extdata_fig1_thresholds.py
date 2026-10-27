@@ -58,7 +58,7 @@ if UNSETTLED:
     dag = " † " + "; ".join(f"{'EU alone' if u['seed'] == 'EU' else 'EU + China'}, {u['x']:g}{'%' if u['inst'] == 'penalty' else ' USD/ha'} at {100 * u['fr']:g}% of trade: the round cap ({u['last']} rounds) was reached with {u['n']} members and Brazil {'inside' if 'brasil' in u['final_members'] else 'outside'}, no settled club" for u in UNSETTLED) + "."
 FOOT = textwrap.wrap(f"Forest kept relative to the EUDR world (Stage B); the EUDR alone keeps {EUDR:.3f} Mha of the {BAU:.1f} Mha of business-as-usual tropical clearing.{dag}", 168)
 MM = 1 / 25.4; W = 183.0; ROW = 4.2; C_TOP = 80.0; H = C_TOP + ROW * len(CASES) + 12.5 + 2.9 * len(FOOT)
-COL = dict(zip(FR, (BLUE3 if len(FR) <= 3 else BLUE3 + ["#082a55"])[:len(FR)])); COL1 = COL.get(0.001, BLUE3[1]); ORANGE = "#eb6834"; GREEN = "#349130"
+COL = dict(zip(FR, (BLUE3 if len(FR) <= 3 else ["#9cc3f0", "#4a8de0", "#1a4f9c", "#061a36"])[:len(FR)])); COL1 = COL.get(0.001, BLUE3[1]); ORANGE = "#eb6834"; GREEN = "#349130"   # four costs (the 1 % bracket): a four-step ramp
 FS_S, FS_M, FS_L = 6.3, 7.0, 8.0
 fig = plt.figure(figsize=(W * MM, H * MM))
 def ax_mm(l, t, w, h): return fig.add_axes([l / W, 1 - (t + h) / H, w / W, h / H])
@@ -85,11 +85,13 @@ def key_marker(x, works):
     marker(axk, 0.5, 0.5, INK2, works, s=20)
 key_marker(2.9, False); ftext(4.9, KY, "No club (Brazil stays out)", va="center")
 key_marker(34.5, True); ftext(36.5, KY, "Club forms (Brazil joins)", va="center")
-ftext(68.1, KY, "Switching cost, % of trade (Brazil, M USD per year):", va="center")
-x0 = 121.6
+hdr = "Switching cost, % of trade (Brazil, M USD per year):" if len(FR) <= 3 else "Switching cost, % of trade (Brazil, M USD/yr):"
+ftext(63.5, KY, hdr, va="center")
+x0 = 63.5 + 1.05 * len(hdr) + 2.5 if len(FR) > 3 else 121.6
+cw, gap = (1.05, 2.0) if len(FR) > 3 else (1.12, 3.0)
 for fr in FR:
     fig.lines.append(plt.Line2D([fx(x0), fx(x0 + 4.0)], [fy(KY), fy(KY)], transform=fig.transFigure, color=COL[fr], linewidth=3.0, solid_capstyle="butt"))
-    lab = f"{FRLAB[fr]}% ({TB[fr]:.0f})"; ftext(x0 + 5.1, KY, lab, va="center"); x0 += 5.1 + 1.12 * len(lab) + 3.0
+    lab = f"{FRLAB[fr]}% ({TB[fr]:.0f})"; ftext(x0 + 4.8, KY, lab, va="center"); x0 += 4.8 + cw * len(lab) + gap
 
 # ============================ a: Brazil's first-round loss ============================
 letter(2.0, 11.0, "a", "Brazil's first-round loss, EU alone charging: the switching cost decides under the penalty, the surcharge recruits Brazil below it")
@@ -136,7 +138,8 @@ for i, (inst, left, xmax, ticks, tlab, xlab) in enumerate((("penalty", 14.0, XP,
         axb.set_ylabel("Brazil's first-round loss\n(M USD per year" + (", log scale)" if LOG else ")"), fontsize=FS_M, labelpad=3, color=INK)
         if off_p: axb.text(0.02 * xmax, YTOP - 28, "off scale: " + ", ".join(f"{x:g}% → {y:.0f}" for x, y in off_p), fontsize=FS_S, color=MUTED, va="top")
     else:
-        axb.text(0.02, 0.97, "Open and filled points: the highest failing and the lowest working\ncharge at each switching cost (b, c), at Brazil's loss in that run;\nthe bar on the rule is the bracket", fontsize=FS_S, color=MUTED, va="top", ha="left", linespacing=1.15, transform=axb.transAxes)
+        if LOG: axb.text(0.02, 0.84, "Open and filled points: the highest failing and\nthe lowest working charge at each switching cost\n(b, c), at Brazil's loss in that run; the bar on\nthe rule is the bracket", fontsize=FS_S, color=MUTED, va="top", ha="left", linespacing=1.15, transform=axb.transAxes)
+        else: axb.text(0.02, 0.97, "Open and filled points: the highest failing and the lowest working\ncharge at each switching cost (b, c), at Brazil's loss in that run;\nthe bar on the rule is the bracket", fontsize=FS_S, color=MUTED, va="top", ha="left", linespacing=1.15, transform=axb.transAxes)
 
 # ============================ b, c: what changes when Brazil joins ============================
 n_rows = len(CASES); C_H = ROW * n_rows

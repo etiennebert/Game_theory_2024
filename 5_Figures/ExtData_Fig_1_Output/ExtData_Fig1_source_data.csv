@@ -10,7 +10,7 @@ a/b/c,"EU alone, penalty",pha0_tau1charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0
 a/b/c,"EU alone, penalty",pha0_tau1.25charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,1.25,0.001,73.4,88.9,True,36,15.839,7,
 a/b/c,"EU alone, penalty",pha0_tau1.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,1.5,0.001,73.4,106.3,True,37,16.237,7,
 a/b/c,"EU alone, penalty",pha0_tau2.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,2.5,0.001,73.4,174.0,True,37,16.237,7,
-a/b/c,"EU alone, penalty",pha0_tau5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,5.0,0.001,73.4,331.8,True,37,16.237,5,off scale in a
+a/b/c,"EU alone, penalty",pha0_tau5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,5.0,0.001,73.4,331.8,True,37,16.237,5,
 -,"EU alone, combined",pha1000_tau0.62charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,1000,0.62,0.001,73.4,67.8,False,14,4.423,6,both instruments: Fig. 3 only
 -,"EU alone, combined",pha1000_tau0.87charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,1000,0.87,0.001,73.4,85.3,True,37,16.237,9,both instruments: Fig. 3 only
 -,"EU alone, combined",pha1000_tau1.12charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,1000,1.12,0.001,73.4,102.6,True,37,16.237,9,both instruments: Fig. 3 only
@@ -27,16 +27,24 @@ a/b/c,"EU alone, penalty",pha0_tau2charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0
 a/b/c,"EU alone, penalty",pha0_tau2.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.002trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,2.5,0.002,146.9,174.0,True,37,16.237,6,
 a/b/c,"EU alone, surcharge",pha8000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.002trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,8000,0.0,0.002,146.9,146.9,False,9,3.739,5,
 a/b/c,"EU alone, surcharge",pha9000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.002trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,9000,0.0,0.002,146.9,160.0,True,20,12.208,5,
+a/b/c,"EU alone, penalty",pha0_tau12.5charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.01trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,12.5,0.01,734.3,718.9,False,7,1.664,3,
+a/b/c,"EU alone, penalty",pha0_tau15charged_eudr0_bau5_eta0.66_seedEU_outfree_fr0.01trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,15.0,0.01,734.3,823.1,True,13,9.483,3,
+a/b/c,"EU alone, surcharge",pha40000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.01trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,40000,0.0,0.01,734.3,415.3,False,6,3.097,3,
+a/b/c,"EU alone, surcharge",pha45000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.01trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,45000,0.0,0.01,734.3,446.9,False,6,3.097,3,
+a/b/c,"EU alone, surcharge",pha50000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.01trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,50000,0.0,0.01,734.3,477.4,False,6,3.097,3,
+a/b/c,"EU alone, surcharge",pha60000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.01trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,60000,0.0,0.01,734.3,535.3,False,6,3.097,3,
 a/b/c,"EU + China, penalty",pha0_tau0.75charged_eudr0_bau5_eta0.66_seedEUChina_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,0.75,0.001,73.4,77.6,True,22,11.295,4,
 a/b/c,"EU + China, penalty",pha0_tau0.87charged_eudr0_bau5_eta0.66_seedEUChina_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,0.87,0.001,73.4,95.5,True,35,15.595,8,
 a/b/c,"EU + China, penalty",pha0_tau1.12charged_eudr0_bau5_eta0.66_seedEUChina_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,0,1.12,0.001,73.4,132.6,True,35,15.124,7,
 a/b/c,"EU + China, surcharge",pha500_tau0_eudr0_bau5_eta0.66_seedEUChina_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,500,0.0,0.001,73.4,43.0,False,5,1.696,3,
 a/b/c,"EU + China, surcharge",pha1000_tau0_eudr0_bau5_eta0.66_seedEUChina_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34,1000,0.0,0.001,73.4,119.2,True,13,9.93,4,
-b/c,"EU alone, penalty",,,,0.0005,36.7,,,- -> 35,- -> 15.699840755281164,,charge - -> 0.62
-b/c,"EU alone, penalty",,,,0.001,73.4,,,9 -> 36,2.3433999130872505 -> 15.838546360139878,,charge 1.0 -> 1.25
-b/c,"EU alone, penalty",,,,0.002,146.9,,,7 -> 37,1.6637297728955711 -> 16.236657755640476,,charge 2.0 -> 2.5
-b/c,"EU alone, surcharge",,,,0.0005,36.7,,,12 -> 23,2.239628850371575 -> 12.325651750223937,,charge 500 -> 750
-b/c,"EU alone, surcharge",,,,0.001,73.4,,,15 -> 18,4.9066082150468135 -> 12.623903874072475,,charge 2000 -> 2500
-b/c,"EU alone, surcharge",,,,0.002,146.9,,,9 -> 20,3.7385119446257566 -> 12.20759415267426,,charge 8000 -> 9000
-b/c,"EU + China, penalty",,,,0.001,73.4,,,- -> 22,- -> 11.294745891964649,,charge - -> 0.75
+b/c,"EU alone, penalty",,,,0.0005,36.7,,,- -> 35,- -> 15.699840755281166,,charge - -> 0.62
+b/c,"EU alone, penalty",,,,0.001,73.4,,,9 -> 36,2.343399913087251 -> 15.838546360139878,,charge 1.0 -> 1.25
+b/c,"EU alone, penalty",,,,0.002,146.9,,,7 -> 37,1.6637297728955711 -> 16.236657755640483,,charge 2.0 -> 2.5
+b/c,"EU alone, penalty",,,,0.01,734.3,,,7 -> 13,1.6637298515737085 -> 9.48326072898758,,charge 12.5 -> 15.0
+b/c,"EU alone, surcharge",,,,0.0005,36.7,,,12 -> 23,2.2396288503715747 -> 12.32565175022394,,charge 500 -> 750
+b/c,"EU alone, surcharge",,,,0.001,73.4,,,15 -> 18,4.9066082150468135 -> 12.623903874072472,,charge 2000 -> 2500
+b/c,"EU alone, surcharge",,,,0.002,146.9,,,9 -> 20,3.7385119446257566 -> 12.207594152674261,,charge 8000 -> 9000
+b/c,"EU alone, surcharge",,,,0.01,734.3,,,6 -> -,3.0969035681271926 -> -,,charge 60000 -> -
+b/c,"EU + China, penalty",,,,0.001,73.4,,,- -> 22,- -> 11.29474589196465,,charge - -> 0.75
 b/c,"EU + China, surcharge",,,,0.001,73.4,,,5 -> 13,1.6958626072623246 -> 9.930463858161765,,charge 500 -> 1000

@@ -39,6 +39,7 @@ Inside = members at convergence, outside = non-members. Forest kept and lost rel
 | 0.05 % of trade (37) | 0.5 % / 0.62 % | 35, 15.7 | 500 / 750 | 23, 12.3 |
 | 0.1 % of trade (73) | 1 % / 1.25 % | 36, 15.8 | 2,000 / 2,500 | 18, 12.6 |
 | 0.2 % of trade (147) | 2 % / 2.5 % | 37, 16.2 | 8,000 / 9,000 | 20, 12.2 |
+| 1 % of trade (734) | 12.5 % / 15 % | 13, 9.5 | 60,000 / – | –, – |
 
 ## Table 3 | The headline club and coalition with a region locked out
 
