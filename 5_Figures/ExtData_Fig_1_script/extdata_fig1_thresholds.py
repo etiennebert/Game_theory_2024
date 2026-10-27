@@ -56,7 +56,7 @@ import textwrap
 dag = ""
 if UNSETTLED:
     dag = " † " + "; ".join(f"{'EU alone' if u['seed'] == 'EU' else 'EU + China'}, {u['x']:g}{'%' if u['inst'] == 'penalty' else ' USD/ha'} at {100 * u['fr']:g}% of trade: the round cap ({u['last']} rounds) was reached with {u['n']} members and Brazil {'inside' if 'brasil' in u['final_members'] else 'outside'}, no settled club" for u in UNSETTLED) + "."
-FOOT = textwrap.wrap(f"{LABEL} runs. Forest kept relative to the EUDR world (Stage B); the EUDR alone keeps {EUDR:.3f} Mha of the {BAU:.1f} Mha of business-as-usual tropical clearing.{dag}", 168)
+FOOT = textwrap.wrap(f"Forest kept relative to the EUDR world (Stage B); the EUDR alone keeps {EUDR:.3f} Mha of the {BAU:.1f} Mha of business-as-usual tropical clearing.{dag}", 168)
 MM = 1 / 25.4; W = 183.0; ROW = 4.2; C_TOP = 80.0; H = C_TOP + ROW * len(CASES) + 12.5 + 2.9 * len(FOOT)
 COL = dict(zip(FR, (BLUE3 if len(FR) <= 3 else BLUE3 + ["#082a55"])[:len(FR)])); COL1 = COL.get(0.001, BLUE3[1]); ORANGE = "#eb6834"; GREEN = "#349130"
 FS_S, FS_M, FS_L = 6.3, 7.0, 8.0
@@ -95,14 +95,30 @@ for fr in FR:
 letter(2.0, 11.0, "a", "Brazil's first-round loss, EU alone charging: the switching cost decides under the penalty, the surcharge recruits Brazil below it")
 YMAX = max([y for k in r1 for x, y in r1[k] if (k == "surcharge" or x <= XP + 1e-9)] + list(TB.values()) + [100]); YTOP = math.ceil(YMAX / 50) * 50 + 20
 pticks = [t / 2 for t in range(0, int(XP * 2) + 1)]
+# log axes when a bracket lies beyond the linear planes (the 1 % of trade bracket, 27 Oct 2026: penalties above 3 %, surcharges above 12,000 USD/ha); EDF1_LOG=1|0 forces
+LOG = {"1": True, "0": False}.get(os.environ.get("EDF1_LOG", "auto"), any(r["x"] > 3.0 for i, fr in BRK if i == "penalty" for r in BRK[(i, fr)] if r) or any(r["x"] > 12000 for i, fr in BRK if i == "surcharge" for r in BRK[(i, fr)] if r))
+if LOG:
+    XP = max([x for x, _ in r1["penalty"]] + [3.0]); off_p = []
+    def _lim(vals, lo, cands): hi = max(vals); return lo, next((c for c in cands if c >= hi * 1.15), hi * 1.3)
+    PX = _lim([x for x, _ in r1["penalty"]], 0.2, [3, 5, 10, 20, 30, 50]); SX = _lim([x for x, _ in r1["surcharge"]], 200, [5000, 10000, 20000, 50000, 100000, 200000])
+    YL = (max(5.0, min(min(y for k in r1 for _, y in r1[k]), min(TB.values())) / 1.5), max(max(y for k in r1 for _, y in r1[k]), max(TB.values())) * 1.6)
+    LT = {"penalty": [t for t in (0.25, 0.5, 1, 2, 5, 10, 20, 50) if PX[0] <= t <= PX[1]], "surcharge": [t for t in (250, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000) if SX[0] <= t <= SX[1]]}
+    YLT = [t for t in (5, 10, 20, 50, 100, 200, 500, 1000, 2000) if YL[0] <= t <= YL[1]]
 for i, (inst, left, xmax, ticks, tlab, xlab) in enumerate((("penalty", 14.0, XP, pticks, [f"{t:g}" for t in pticks], "Flat penalty (%)"),
         ("surcharge", 106.0, XS, list(range(0, int(XS) + 1, 1000 if XS <= 6000 else 2000)), None, "Footprint surcharge (USD per hectare)"))):
     if tlab is None: tlab = [usd(t) for t in ticks]
     axb = ax_mm(left, 15.0, 73.0, 40.0)
-    axb.set_xlim(-0.02 * xmax, xmax * 1.03); axb.set_ylim(-45, YTOP); spines(axb)
-    axb.spines["bottom"].set_bounds(0, xmax); axb.spines["left"].set_bounds(-40, YTOP - 20)
-    axb.set_xticks(ticks); axb.set_xticklabels(tlab); axb.set_yticks(list(range(0, YTOP - 19, 50)))
-    axb.axhline(0, color=BASE, linewidth=0.5, zorder=1)
+    if LOG:
+        lo, hi = PX if inst == "penalty" else SX; ticks = LT[inst]; tlab = [f"{t:g}" if inst == "penalty" else usd(t) for t in ticks]
+        axb.set_xscale("log"); axb.set_yscale("log"); axb.set_xlim(lo, hi); axb.set_ylim(*YL); spines(axb)
+        axb.spines["bottom"].set_bounds(lo, hi); axb.spines["left"].set_bounds(*YL)
+        axb.set_xticks(ticks); axb.set_xticklabels(tlab); axb.set_yticks(YLT); axb.set_yticklabels([str(t) for t in YLT])
+        axb.xaxis.set_minor_locator(plt.NullLocator()); axb.yaxis.set_minor_locator(plt.NullLocator()); xmax = hi
+    else:
+        axb.set_xlim(-0.02 * xmax, xmax * 1.03); axb.set_ylim(-45, YTOP); spines(axb)
+        axb.spines["bottom"].set_bounds(0, xmax); axb.spines["left"].set_bounds(-40, YTOP - 20)
+        axb.set_xticks(ticks); axb.set_xticklabels(tlab); axb.set_yticks(list(range(0, YTOP - 19, 50)))
+        axb.axhline(0, color=BASE, linewidth=0.5, zorder=1)
     for fr in FR:
         axb.axhline(TB[fr], color=COL[fr], linewidth=0.75, zorder=2)
         f, w = BRK[(inst, fr)]
@@ -111,16 +127,16 @@ for i, (inst, left, xmax, ticks, tlab, xlab) in enumerate((("penalty", 14.0, XP,
         if w: marker(axb, w["x"], w["brazil_r1_loss"], COL[fr], True, s=20, z=5)
     for u in [u for u in UNSETTLED if u["inst"] == inst and u["seed"] == "EU" and u["x"] <= xmax + 1e-9]:
         axb.scatter([u["x"]], [u["brazil_r1_loss"]], s=20, facecolor=NEUTRAL, edgecolor=COL[u["fr"]], linewidth=1.0, zorder=5, clip_on=False)
-        axb.text(u["x"], u["brazil_r1_loss"] + 9, "†", fontsize=FS_S, color=COL[u["fr"]], ha="center", va="bottom")
-    pts = [(x, y) for x, y in r1[inst] if x <= xmax + 1e-9]
+        axb.text(u["x"], u["brazil_r1_loss"] * (1.12 if LOG else 1) + (0 if LOG else 9), "†", fontsize=FS_S, color=COL[u["fr"]], ha="center", va="bottom")
+    pts = [(x, y) for x, y in r1[inst] if x <= xmax + 1e-9 and (not LOG or (x > 0 and y > 0))]
     if pts:
         x, y = zip(*pts); axb.plot(x, y, color=INK2, linewidth=1.0, zorder=3); axb.scatter(x, y, s=6, color=INK2, zorder=3)
-    axb.set_xlabel(xlab, fontsize=FS_M, labelpad=2, color=INK)
+    axb.set_xlabel(xlab + (" (log scale)" if LOG else ""), fontsize=FS_M, labelpad=2, color=INK)
     if i == 0:
-        axb.set_ylabel("Brazil's first-round loss\n(M USD per year)", fontsize=FS_M, labelpad=3, color=INK)
+        axb.set_ylabel("Brazil's first-round loss\n(M USD per year" + (", log scale)" if LOG else ")"), fontsize=FS_M, labelpad=3, color=INK)
         if off_p: axb.text(0.02 * xmax, YTOP - 28, "off scale: " + ", ".join(f"{x:g}% → {y:.0f}" for x, y in off_p), fontsize=FS_S, color=MUTED, va="top")
     else:
-        axb.text(0.02 * xmax, YTOP - 17, "Open and filled points: the highest failing and the lowest working\ncharge at each switching cost (b, c), at Brazil's loss in that run;\nthe bar on the rule is the bracket", fontsize=FS_S, color=MUTED, va="top", linespacing=1.15)
+        axb.text(0.02, 0.97, "Open and filled points: the highest failing and the lowest working\ncharge at each switching cost (b, c), at Brazil's loss in that run;\nthe bar on the rule is the bracket", fontsize=FS_S, color=MUTED, va="top", ha="left", linespacing=1.15, transform=axb.transAxes)
 
 # ============================ b, c: what changes when Brazil joins ============================
 n_rows = len(CASES); C_H = ROW * n_rows

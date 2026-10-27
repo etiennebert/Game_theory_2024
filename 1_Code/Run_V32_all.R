@@ -6,6 +6,10 @@
 ##  them starts (lockouts), as the rule the paper states: the lowest grid value at which the club / the coalition forms, and the
 ##  surcharge at which Brazil joins on its own first-round loss. Lock-outs of regions that never join the base run are skipped
 ##  (V33 hard-coded that for the US and Indonesia below 3,500 USD/ha). Set Y and X to numbers to force them (V33: 1.25, c(2500, 4000)).
+##  27 Oct 2026: a third switching-cost bracket, 1 % of trade (fr = 0.01, ten times the headline; Brazil's cost 734 M USD), for the
+##  EU-alone club and coalition (brackets_def; grid steps 2.5 points and 5,000 USD/ha, scaled like the other brackets). Launch only
+##  that block with run_brackets_1pct.bat (it sets FOREST_CLUB_BLOCKS=brackets; the 0.05 % and 0.2 % brackets are reused from
+##  their csv). Expected 4-6 runs. Results: 4_DB/V34_runs_<date>.txt, then python 5_Figures/make_all.py.
 ## -------------------------------------------------------------------------------------
 ##  V33 (20-21 Oct 2026): the Miranda-calibrated land-supply elasticities (generation = "v33", see the setting in main()). The
 ##  programme runs in two phases; a run whose csv exists is reused, so the script can be relaunched after an interruption and
@@ -53,6 +57,7 @@ library("rstudioapi")
 
 blocks <- c("grid_core", "grid_penalty", "grid_surcharge", "grid_floor", "grid_floor_penalty", "grid_seeds", "grid_combined",   # PHASE 1: the grid (a run whose csv exists is reused)
             "lockouts", "stability", "japan", "brackets")                                                                      # PHASE 2: what hangs on the headline
+if (nzchar(Sys.getenv("FOREST_CLUB_BLOCKS"))) blocks <- strsplit(Sys.getenv("FOREST_CLUB_BLOCKS"), "[ ,]+")[[1]]              # a launcher can restrict the blocks (run_brackets_1pct.bat: "brackets")
 generation <- "v34"   # the generation of runs: "v34" (BAU clearing by HILDA+ AEZ shares), "v33" (the Miranda-calibrated elasticities, 20 Oct 2026),
                       # "v32" (the runs of 7 Oct). Baseline folder Baseline_2stage_bau5_eta0.66_<generation>, run tags _<generation>, summary 4_DB/<GENERATION>_runs_<date>.txt
 Y <- "auto"           # the headline penalty (%): a number (V33: 1.25), or "auto" = the lowest value of the EU-alone penalty grid at which the club forms
@@ -210,7 +215,9 @@ main <- function(blocks, stability_scope, Y, X, generation) {
     list(fr = 0.0005, inst = "club",      start = 0.75, grid = c(0.25, 0.5, 0.62, 0.75, 0.87, 1, 1.12, 1.25, 1.5)),
     list(fr = 0.0005, inst = "coalition", start = 1000, grid = c(250, 500, 750, 1000, 1500, 2000, 2500)),
     list(fr = 0.002,  inst = "club",      start = 2.5,  grid = c(1.5, 2, 2.5, 3, 4, 5)),
-    list(fr = 0.002,  inst = "coalition", start = 9000, grid = c(4000, 6000, 8000, 9000, 10000, 12000)))
+    list(fr = 0.002,  inst = "coalition", start = 9000, grid = c(4000, 6000, 8000, 9000, 10000, 12000)),
+    list(fr = 0.01,   inst = "club",      start = 12.5, grid = c(5, 7.5, 10, 12.5, 15, 17.5, 20, 25)),                       # 27 Oct: 1 % of trade; start = Brazil's fitted break-even
+    list(fr = 0.01,   inst = "coalition", start = 40000, grid = c(20000, 25000, 30000, 35000, 40000, 45000, 50000, 60000, 80000)))   # (loss 8.9 + 64.9/point, + 18.8/1,000 USD: 11.2 % and 38,600 USD/ha)
   cat(paste0("== ", toupper(generation), " runs, ", format(Sys.time()), " - welfare = ev_net_wedge | start_from = bau, eudr_outsiders = keep, member_pin = all | Y = ", paste(Y, collapse = "/"), " % | X = ", paste(X, collapse = " / "), " USD/ha | stability_scope = ", stability_scope, " | blocks: ", paste(blocks, collapse = " "), "\n"), file = result_file, append = TRUE)
   note <- function(msg) { print(msg); cat(msg, "\n", file = result_file, append = TRUE) }
   done <- list()
