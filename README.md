@@ -49,11 +49,3 @@ Launch of step 3: open `1_Code\Run_V32_all.R` in RStudio and run it (Ctrl+Alt+R)
 ## Requirements
 
 GEMPACK with RunGTAP 3.75 (the folder name `runGTAP375`) for the model; R ≥ 4.2 with `HARr`, `readxl`, `writexl`, `xlsx`, `dplyr`, `tidyr`, `rstudioapi`, `devtools` for steps 1–3 and the SI extraction; Python ≥ 3.10 with `numpy`, `pandas`, `matplotlib`, `geopandas`, `rasterio` (the Brazil zone map only) for step 4. Step 3 needs the GTAP Data Base in `2_Model\in\`; step 4 runs from the csv files of `4_DB\` alone (`python make_all.py --figures` redraws from the json files without the model folder).
-
-## Where the manuscript is
-
-The manuscript, its Extended Data and Supplementary Information live outside this repository, in `Deforestation_Nature\Nature\Revision 1\Revision 2\` (OneDrive; V34 versions of 26 October 2026 with their change logs); the figures they use are the ones in `5_Figures\<Figure>_Output\`.
-
-## Not in the pipeline
-
-The agronomic-suitability check of SI 7.6 (Fig. S11 and `Zabel_suitability_V34.xlsx`: the new cropland of the twelve producers at the two headline equilibria against Zabel's rainfed suitability by country × AEZ × sector) was computed on 25 October from the Zabel (2022) rasters clipped to the producer countries (`1. Data\4. Suitability\clipped_rasters`, outside this repository) and the headline solutions, with four Python scripts (`zabel_by_aez.py`, `combine.py`, `make_workbook.py`, `fig_s18.py`) that are not yet in the repository; the figure (`Figure_S18_V34.png/pdf`) and the workbook are in `5_Figures\SI_Output\`.
