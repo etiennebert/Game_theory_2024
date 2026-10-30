@@ -1,5 +1,5 @@
 @echo off
-rem  V34 chain, unattended: Calibrate_BAU_productivity.R -> Baseline_2stage.R -> Run_V32_all.R, each in its own Rscript process
+rem  V34 chain, unattended: Calibrate_BAU_productivity.R -> Baseline_2stage.R -> Run_V34_all.R, each in its own Rscript process
 rem  (run_step.R). Double-click this file, or in a terminal:  cd C:\runGTAP375\Game_theory_2024\1_Code  then  run_chain_v34.bat
 rem  Steps whose output exists are skipped (step 1: bau_afeall_eta0.66_v34.txt; step 2: B_eudr\NATDEF_B.sl4; step 3 reuses its own runs),
 rem  so the chain can be relaunched after an interruption. Log of the steps: 3_Output\chain_v34_log.txt (the runs themselves log to
@@ -31,9 +31,9 @@ if exist "..\3_Output\Baseline_2stage_bau5_eta0.66_v34\B_eudr\NATDEF_B.sl4" (
   Rscript run_step.R Baseline_2stage.R || goto :fail
   echo %date% %time% DONE Baseline_2stage.R >> "%LOG%"
 )
-echo %date% %time% START Run_V32_all.R >> "%LOG%"
-Rscript run_step.R Run_V32_all.R || goto :fail
-echo %date% %time% DONE Run_V32_all.R - chain finished >> "%LOG%"
+echo %date% %time% START Run_V34_all.R >> "%LOG%"
+Rscript run_step.R Run_V34_all.R || goto :fail
+echo %date% %time% DONE Run_V34_all.R - chain finished >> "%LOG%"
 echo chain finished
 pause
 exit /b 0
