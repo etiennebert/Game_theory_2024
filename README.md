@@ -3,7 +3,7 @@
 Code and results behind *The Forest Club*: a trade-based club in which members hold their forest at its 2019 extent, are deemed compliant with the EU Deforestation Regulation, and apply a border charge to the land-based commodities they import from non-members. The membership game is run on the GTAP-AEZ v7 computable general equilibrium model (GEMPACK), 42 regions × 35 sectors × 18 agro-ecological zones, with the GTAP Data Base aggregation of `2_Model\in\gtp32_45.agg`.
 
 * Remark 1 :*The paper's runs are the V34 generation of October 2026 (46 membership processes and 5 one-deviation tests, `4_DB\V34_runs_2026-10-23.txt`).*
-* Remark 2: All **input data and output results** related to the whole *The Forest Club* manuscript [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20518753.svg)](https://doi.org/10.5281/zenodo.20518753)
+* Remark 2: All **input data and output results** related to the whole *The Forest Club* manuscript [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23823497.svg)](https://doi.org/10.5281/zenodo.23823497)
 
 ## The pipeline in four steps
 

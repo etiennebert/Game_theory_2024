@@ -47,6 +47,8 @@ SaveSims/
 *.exs
 *.rdt
 *.upd
+# GEMPACK's intermediate updated data of multi-step solves (e.g. NATDEF-1-2.uc6): they hold the GTAP Data Base arrays
+*.u[a-z][0-9]
 *.shk
 *.sli
 *.log
