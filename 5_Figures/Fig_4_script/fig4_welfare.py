@@ -105,7 +105,7 @@ leg_h = [Line2D([0], [0], color="none", marker=mk, markersize=3.6, markerfacecol
 leg_l = [f"{'Penalty club' if k == 'EU_pen' else 'Surcharge coalition'} ({C[k]['n']} members)" for k, *_ in stab]
 leg_h.append(Line2D([0], [0], color="none", marker="s", markersize=5.5, markerfacecolor="none", markeredgecolor=MUTED)); leg_l.append("Non-member tested for joining")
 axs.legend(leg_h, leg_l, loc="lower left", bbox_to_anchor=(-0.05, 1.0), frameon=False, fontsize=5.8, handletextpad=0.3, labelcolor=INK2, ncol=1, borderaxespad=0)
-fig.text(0.012, 0.005, f"{LABEL} runs", fontsize=5, color=MUTED, ha="left", va="bottom")
+#fig.text(0.012, 0.005, f"{LABEL} runs", fontsize=5, color=MUTED, ha="left", va="bottom")
 
 for ext in ("pdf", "png"): fig.savefig(figpath(f"Fig4_welfare.{ext}"), dpi=450 if ext == "png" else None)
 with open(figpath("Fig4_source_data.csv"), "w", newline="", encoding="utf-8") as f:
