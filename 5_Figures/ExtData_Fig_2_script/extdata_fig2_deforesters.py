@@ -20,7 +20,7 @@ COLS = [("surcharge", sorted([(r["pha"], r["tau"]) for r in EU if r["tau"] == 0 
         ("penalty", sorted([(r["pha"], r["tau"]) for r in EU if r["pha"] == 0 and r["tau"] > 0], key=lambda x: x[1])),
         ("both", sorted([(r["pha"], r["tau"]) for r in EU if r["pha"] > 0 and r["tau"] > 0]))]
 COLS = [(k, v) for k, v in COLS if v]; ncols = sum(len(v) for _, v in COLS)
-HEAD = [(HL["surcharge"], 0, "#4a3aa7", -0.17, f"Surcharge {HL['surcharge']:,} USD/ha"), (0, HL["penalty"], "#1baf7a", 0.17, f"Penalty {HL['penalty']:g}%")]
+HEAD = [(HL["surcharge"], 0, "#4a3aa7", -0.17, f"Surcharge {HL['surcharge']:,.0f} USD/ha"), (0, HL["penalty"], "#1baf7a", 0.17, f"Penalty {HL['penalty']:g}%")]
 HEAD = [h for h in HEAD if run(h[0], h[1])]
 MM = 1 / 25.4; W, H = 183.0, 92.0
 FS_S, FS_M, FS_L = 6.3, 7.0, 8.0

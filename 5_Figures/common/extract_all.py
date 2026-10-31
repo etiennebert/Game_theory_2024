@@ -29,7 +29,9 @@ def headline_from_runs_file():
     files = sorted(glob.glob(os.path.join(v30.DB, f"{LABEL}_runs_*.txt")), key=os.path.getmtime)
     for f in reversed(files):
         hits = re.findall(r"Y = ([0-9.]+) % \| X = ([0-9 /]+) USD/ha", open(f, encoding="utf-8", errors="replace").read())
-        if hits: return {"penalty": float(hits[-1][0]), "surcharge": float(hits[-1][1].split("/")[-1])}
+        if hits:
+            x = float(hits[-1][1].split("/")[-1])   # an integer surcharge is kept an integer, so that labels print 4,000 and not 4,000.0
+            return {"penalty": float(hits[-1][0]), "surcharge": int(x) if x.is_integer() else x}
     return None
 HEADLINE = {"_wnet_v33": {"penalty": 1.25, "surcharge": 4000}, "_wnet_v32": {"penalty": 1.5, "surcharge": 4000}, "_wnet": {"penalty": 1.5, "surcharge": 4000}, "": {"penalty": 1.5, "surcharge": 4000}}.get(VERSION) \
            or headline_from_runs_file() or {"penalty": 1.25, "surcharge": 4000}   # the EU-alone values the programme is built on (Run_V32_all.R: Y and X)

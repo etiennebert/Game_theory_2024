@@ -2257,7 +2257,7 @@
   },
   "world_gross": 415.09295188635355
  },
- "EU alone \u00b7 surcharge 4,000.0 USD/ha": {
+ "EU alone \u00b7 surcharge 4,000 USD/ha": {
   "tag": "pha4000_tau0_eudr0_bau5_eta0.66_seedEU_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34",
   "pha": 4000,
   "tau": 0.0,
@@ -7522,7 +7522,7 @@
   },
   "world_gross": -819.87904775888
  },
- "EU alone \u00b7 surcharge 4,000.0 USD/ha \u00b7 Brazil locked out": {
+ "EU alone \u00b7 surcharge 4,000 USD/ha \u00b7 Brazil locked out": {
   "tag": "pha4000_tau0_eudr0_bau5_eta0.66_seedEU_lockbrasil_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34",
   "pha": 4000,
   "tau": 0.0,
@@ -8274,7 +8274,7 @@
   },
   "world_gross": 278.4137865230443
  },
- "EU alone \u00b7 surcharge 4,000.0 USD/ha \u00b7 United States locked out": {
+ "EU alone \u00b7 surcharge 4,000 USD/ha \u00b7 United States locked out": {
   "tag": "pha4000_tau0_eudr0_bau5_eta0.66_seedEU_lockus_outfree_fr0.001trade_sgb_jrexp_frombau_eudrkeep_pinall_wnet_v34",
   "pha": 4000,
   "tau": 0.0,

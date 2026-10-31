@@ -286,7 +286,7 @@
   "tau": 1.25
  },
  "sur free": {
-  "label": "EU alone \u00b7 surcharge 4,000.0 USD/ha",
+  "label": "EU alone \u00b7 surcharge 4,000 USD/ha",
   "lock": "",
   "n": 23,
   "forest": 14.218569976963819,
@@ -333,7 +333,7 @@
   "tau": 0.0
  },
  "sur lockBRA": {
-  "label": "EU alone \u00b7 surcharge 4,000.0 USD/ha \u00b7 Brazil locked out",
+  "label": "EU alone \u00b7 surcharge 4,000 USD/ha \u00b7 Brazil locked out",
   "lock": "brasil",
   "n": 18,
   "forest": 5.045314444829189,
@@ -374,7 +374,7 @@
   "tau": 0.0
  },
  "sur lockUS": {
-  "label": "EU alone \u00b7 surcharge 4,000.0 USD/ha \u00b7 United States locked out",
+  "label": "EU alone \u00b7 surcharge 4,000 USD/ha \u00b7 United States locked out",
   "lock": "us",
   "n": 25,
   "forest": 14.441270695375938,
@@ -424,7 +424,7 @@
   "tau": 0.0
  },
  "sur lockUS-CN": {
-  "label": "EU alone \u00b7 surcharge 4,000.0 USD/ha \u00b7 US and China locked out",
+  "label": "EU alone \u00b7 surcharge 4,000 USD/ha \u00b7 US and China locked out",
   "lock": "us-china",
   "n": 24,
   "forest": 13.276948999405478,
@@ -472,7 +472,7 @@
   "tau": 0.0
  },
  "sur lockIDN": {
-  "label": "EU alone \u00b7 surcharge 4,000.0 USD/ha \u00b7 Indonesia locked out",
+  "label": "EU alone \u00b7 surcharge 4,000 USD/ha \u00b7 Indonesia locked out",
   "lock": "indonesia",
   "n": 23,
   "forest": 13.42436670238286,

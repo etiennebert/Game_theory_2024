@@ -127,7 +127,7 @@ for i, (item, label, qo) in enumerate(ROWS):
     axh.add_patch(Rectangle((x0, y + 0.9), x1 - x0, RH - 2.2, facecolor="#d0531e" if o < 0 else "#3280de", edgecolor="none"))
     axh.text((x0 - 0.8) if o < 0 else (x1 + 0.8), y + RH / 2 - 0.2, minus(f"{o:+.1f}"), fontsize=5.6, color=INK2, ha="right" if o < 0 else "left", va="center")
 
-ftext(56.0, H - 2.0, f"{LABEL} runs \u00b7 {RUNS.get(INST, '')}", 5.0, MUTED)
+#ftext(56.0, H - 2.0, f"{LABEL} runs \u00b7 {RUNS.get(INST, '')}", 5.0, MUTED)   # no run-tag stamp in the published figure
 fig.savefig(figpath("Fig5_brazil_aez.pdf")); fig.savefig(figpath("Fig5_brazil_aez.png"), dpi=450)
 # source data: both instruments, every cell
 with open(figpath("Fig5_source_data.csv"), "w", newline="", encoding="utf-8") as f:
