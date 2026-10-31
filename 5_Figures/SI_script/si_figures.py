@@ -70,7 +70,7 @@ off = sorted([r for r in sup if abs(float(r["qo_pct"])) > 10 and float(r["vom_mu
 SN = {"forest": "forestry", "lum": "wood products", "wol": "wool"}
 off_txt = f"{len(off)} points, " + "; ".join(f"{NAMES[r['region']]} {SN.get(r['sector'].lower(), r['sector'])} {float(r['qo_pct']):+.0f} %" for r in off[:6]).replace("-", "−") + (f" and {len(off) - 6} others between 10 and {abs(float(off[6]['qo_pct'])):.0f} %" if len(off) > 6 else "")
 import textwrap as _tw
-for i_, line in enumerate(_tw.wrap(f"{LABEL} runs · penalty club {D['headline']['penalty']:g} % at convergence, relative to the EUDR world · beyond ±10 % (the held forest returns to timber production): {off_txt}", 190)):
+for i_, line in enumerate(_tw.wrap(f"Penalty club {D['headline']['penalty']:g} % at convergence, relative to the EUDR world · beyond ±10 % (the held forest returns to timber production): {off_txt}", 190)):
     fig.text(0.01, 0.045 - 0.03 * i_, line, fontsize=5.4, color=MUTED)
 save(fig, "Fig_S9_supply_responses")
 
@@ -82,7 +82,7 @@ def inst_lab(s):
     if s["pha"] > 0: parts.append(f"{s['pha']:,} USD/ha")
     if s["tau"] > 0: parts.append(f"{s['tau']:g} %")
     return " + ".join(parts) if parts else "no charge"
-SEEDL = {"EU": "EU", "EUChina": "EU + China", "EUMercosur": "EU + Mercosur", "EUMercosurChina": "EU + Mercosur + China", "EUMercosur5": "EU + Mercosur-5"}
+SEEDL = {"EU": "EU", "EUChina": "EU + China", "EUMercosur": "EU + Mercosur", "EUMercosurChina": "EU + Mercosur + China", "EUMercosur5": "EU + Mercosur + Bolivia"}
 def title_of(s):
     t = f"{SEEDL[s['seed']]}, {inst_lab(s)}"; q = []
     if s["lock"]: q.append({"brasil": "Brazil", "us": "US", "us-china": "US + China", "indonesia": "Indonesia"}[s["lock"]] + " locked out")
@@ -101,8 +101,8 @@ for i, s in enumerate(order):
     ax.text(0.98, 0.95, f"{s['n']} · {s['forest']:.1f} Mha" + ("" if s["converged"] else " · cap"), transform=ax.transAxes, ha="right", va="top", fontsize=5.4, color=INK2 if s["works"] else ORANGES[2])
     ax.tick_params(labelsize=5.4, length=2)
 for j in range(len(order), nr * nc): axs[j // nc][j % nc].set_axis_off()
-fig.text(0.01, 0.018, f"{LABEL} runs · bars: tropical forest regions (dark) and other regions (light) inside the club after each round (round 0 = the EUDR world, the seed alone); the label gives the members at", fontsize=5.6, color=MUTED)
-fig.text(0.01, 0.005, "convergence and the tropical forest they keep, in orange when the club does not form (Brazil outside at convergence, or 'cap': the 15-round cap reached without convergence)", fontsize=5.6, color=MUTED)
+fig.text(0.01, 0.018, f"Bars: tropical forest regions (dark) and other regions (light) inside the club after each round (round 0 = the EUDR world, the seed alone); the label gives the members at", fontsize=5.6, color=MUTED)
+fig.text(0.01, 0.005, "convergence and the tropical forest they keep, in orange when the club does not form (Brazil outside at convergence, or 'cap': the 14-round cap reached without convergence)", fontsize=5.6, color=MUTED)
 save(fig, "Fig_S10_members_by_round")
 
 fig, axs = plt.subplots(nr, nc, figsize=(183 * MM, (22 * nr + 16) * MM)); plt.subplots_adjust(left=0.06, right=0.99, bottom=0.055, top=0.965, wspace=0.32, hspace=1.0)
@@ -114,7 +114,7 @@ for i, s in enumerate(order):
     ax.axhline(0, color=BASE, linewidth=0.5); ax.set_xlim(-0.7, 14.7); ax.set_xticks([0, 5, 10]); ax.set_ylim(-4.2, 1.8); ax.set_yticks([-4, -2, 0]); clean(ax, x=False)
     ax.set_title(title_of(s), fontsize=5.6, loc="left", pad=2, color=INK); ax.tick_params(labelsize=5.4, length=2)
 for j in range(len(order), nr * nc): axs[j // nc][j % nc].set_axis_off()
-fig.text(0.01, 0.018, f"{LABEL} runs · welfare relative to the EUDR world (bn USD per year, on the decision measure): the sum over the members (green), over the non-members (orange) and the world (dashed)", fontsize=5.6, color=MUTED)
+fig.text(0.01, 0.018, f"Welfare relative to the EUDR world (bn USD per year, on the decision measure): the sum over the members (green), over the non-members (orange) and the world (dashed)", fontsize=5.6, color=MUTED)
 fig.text(0.01, 0.005, "after each round, with the membership of that round", fontsize=5.6, color=MUTED)
 save(fig, "Fig_S11_welfare_by_round")
 
